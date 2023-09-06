@@ -9,6 +9,8 @@ import Clients from "../../component/Clients";
 import Head from "next/head";
 import Blogs from "../../component/Blogs";
 import Faq from "../../component/Faq";
+import Contact from "../../component/Contact";
+import Footer from "../../component/Footer";
 
 export default function Home() {
   return (
@@ -32,6 +34,8 @@ export default function Home() {
         <Clients />
         <Blogs />
         <Faq />
+        <Contact />
+        <Footer />
       </div>
     </>
   );
