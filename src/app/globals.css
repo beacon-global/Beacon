@@ -16,12 +16,503 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+body {
+    background: #FFF;
+    font-family: 'Sora', sans-serif;
+}
+
+/* Header Start */
+
+.hContainer{
+  width: 100%;
+  height: 94px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 130px;
+  background-color: rgba(247, 247, 248, 1);
+}
+
+.hUlList{
+  color: #02040E;
+  display: flex;
+  gap: 30px;
+  font-family: 'Sora', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; 
+}
+
+.hButtonContainer{
+  display: inline-flex;
+  padding: 15px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 61px;
+  background: #13670B;
+}
+
+.btn{
+  color: #FFF;
+  font-family: 'Sora', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+/* Header End */
+
+/* Hero Start */
+
+.heroContainer{
+}
+
+.imageWithText{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+
+.imageOverlay {
+  position: relative;
+}
+
+.hImage {
+  width: 100%;  
+  height: auto;
+  object-fit: cover;
+}
+
+.textOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 50%;
+  height: 100%;
+  /* color: white;  */
+  gap: 30px;
+  text-align: center;
+  padding-left: 150px; /* Adjust as needed */
+  /* padding-top: 300px;  */
+}
+
+.textOverlay h1 {
+  margin-bottom: 10px;
+  color: #FFF;
+  font-family: 'Sora', sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 76.8px */
+  text-transform: capitalize;
+  text-align: left;
+}
+
+.textOverlay p {
+  color: rgba(255, 255, 255, 0.60);
+  font-family: 'Sora', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; 
+  text-align: left;
+}
+
+.mainContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 130px;
+}
+/* Hero End */
+
+
+/* Location Start  */
+
+.locationContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:60px;
+  background: #FFF;
+  padding: 0 150px;
+}
+
+.locationHeading{
+  color: #02040E;
+  font-family: 'Sora', sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 56px */
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.locationDesc{
+  color: #58595B;
+  font-family: 'Sora', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+  width: 546px;
+  height: 220px;
+}
+
+/* Location End */
+
+/* Business Setup Start */
+
+.bussinessContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  padding: 0px 150px;
+}
+
+.businessHeading{
+  color: #13670B;
+  text-align: center;
+  font-family: 'Sora', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 19.2px */
+  text-transform: uppercase;
+}
+
+.businessDesc{
+  color: #02040E;
+  text-align: center;
+  font-family: 'Sora', sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 56px */
+  text-transform: capitalize;
+}
+
+.businessVideoContainer{
+  display: flex;
+  gap: 40px;
+}
+
+/* Business Setup End */
+
+/* Services Start */
+
+.serviceContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  padding: 0px 150px;
+}
+
+.cardMainContainer{
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardContainer{
+  width: 324px;
+  height: 304px;
+  flex-shrink: 0;
+  background-color: rgba(247, 247, 248, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+}
+
+.servicesHeading{
+  color: #02040E;
+  font-family: 'Sora', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 28.8px */
+  text-transform: capitalize;
+}
+
+.servicesDescContainer{
+  width:  258px;
+  height: 110px;
+}
+
+.servicesDesc{
+  color: #58595B;
+/* r1 */
+font-family: 'Sora', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%;
+}
+
+/* Services End */
+
+/* Why Beacon Start */
+
+.whyBeaconContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  padding: 0px 150px;
+}
+
+.whyBeaconContentsContainer{
+  display: flex;
+  gap: 30px;
+}
+
+.whyBeaconContentsContainer .businessHeading{
+  padding-top: 20px;
+}
+
+.whyBeaconLeft{
+  display: flex;
+  justify-content: flex-start;
+  flex: 1;
+}
+
+.whyBeaconRight{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex: 2;
+}
+
+.whyBeaconHeading{
+  color: #02040E;
+  font-family: 'Sora', sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 56px */
+  text-transform: capitalize;
+}
+
+.whyBeaconDesc{
+  color: #58595B;
+  font-family: 'Sora', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+}
+
+.whyBeaconImgContainer{
+  height: 100%;
+  width: 100%;
+}
+
+.whyBeaconImg{
+  /* width: 100% !important;
+  height: 100% !important; */
+  object-fit: contain;
+}
+
+.beaconMainContainer{
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.beaconContainer{
+  width: 330px;
+  height: 143px;
+  display: flex;
+  gap: 15px;
+}
+
+.beaconContentContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.beaconHeading{
+  color: #02040E;
+  font-family: 'Sora', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 24px */
+  text-transform: capitalize;
+}
+
+.beaconDesc{
+  width: 289px;
+  color: #58595B;
+  font-family: 'Sora', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+}
+
+
+/* Why Beacon End */
+
+/* Clients Start  */
+
+.clientsContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 73px;
+}
+
+/* Clients End  */
+
+/* Blogs Start */
+
+.blogsContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  padding: 0px 150px;
+}
+
+.rectangleContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.rectangleContainer .cardContainer{
+  background-color: white;
+  height: auto;
+  padding: 0px;
+}
+
+.rectangleContainer .servicesDescContainer{
+  width: auto;
+}
+
+.blogBtnMainContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.blogButtonContainer{
+  width: 224px;
+  height: 38px;
+  flex-shrink: 0;
+  border-radius: 82px;
+  background: #13670B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blogBtn{
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+}
+
+.blogsContainer > div:nth-child(3) {
+  margin-top: -20px;
+}
+
+/* Blogs End */
+
+/* FAQ Starts */
+
+.faqMainContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  padding: 0px 150px;
+}
+
+.faqContainer{
+  display: flex;
+  gap: 20px;
+}
+
+.faqLeft{
+  flex: 90%;
+}
+
+.faqLeft .businessHeading{
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.faqLeft .businessDesc{
+  text-align: left;
+}
+
+.faqRight{
+  flex: 70%;
+  display: flex;
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.faqRight:first-child {
+  margin: 0px;
+}
+
+.faqContentContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 555.812px;
+}
+
+.faqQuestion h1{
+  color: #02040E;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 28.8px */
+  text-transform: capitalize;
+}
+
+.faqDesc{
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+/* FAQ Ends */
