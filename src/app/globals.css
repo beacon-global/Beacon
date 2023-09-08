@@ -808,6 +808,11 @@ body {
   background: rgba(255, 255, 255, 0.60);
 }
 
+.socialIcons{
+  width: 55px;
+  height: 55px;
+}
+
 .footerCopyRight{
   color: #FFF;
   font-size: 18px;
