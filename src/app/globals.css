@@ -27,6 +27,10 @@ body {
     font-family: 'Sora', sans-serif !important;
 }
 
+li{
+  cursor: pointer;
+}
+
 .activeListItem {
   color: #13670B; 
 }
@@ -66,7 +70,7 @@ body {
 
   border-radius: 61px;
   background: #13670B;
-  width: 233px;
+  width: 195px;
 }
 
 .btn{
@@ -185,6 +189,10 @@ body {
   font-weight: 400;
   line-height: 140%; /* 22.4px */
   width: 546px;
+}
+
+.locationContainer .hButtonContainer{
+  width: 210px;
 }
 
 /* Location End */
@@ -811,6 +819,7 @@ body {
 .socialIcons{
   width: 55px;
   height: 55px;
+  cursor: pointer;
 }
 
 .footerCopyRight{
