@@ -5,7 +5,7 @@ function Hero() {
   return (
     <div className="heroContainer">
       <div className="imageWithText">
-        <img className="hImage" src="hero.png" alt="Asian Engineer" />
+        <Image className="hImage" src="/hero.png" alt="Asian Engineer" width={1366} height={670} layout="responsive"/>
         <div className="textOverlay">
           <div>
             <h1 className="heorHeading">

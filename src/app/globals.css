@@ -125,7 +125,7 @@ body {
 .textOverlay h1 {
   margin-bottom: 10px;
   color: #FFF;
-  font-size: 64px;
+  font-size: 4rem;
   font-style: normal;
   font-weight: 600;
   line-height: 120%; /* 76.8px */
@@ -257,7 +257,6 @@ body {
 .ksaHeading{
   color: #FFF;
   text-align: center;
-  font-family: Sora;
   font-size: 30px;
   font-style: normal;
   font-weight: 600;
@@ -269,7 +268,6 @@ body {
 .ksaDesc{
   color: #FFF;
   text-align: center;
-  font-family: Sora;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -475,6 +473,89 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.testimonialMainContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(247, 247, 248, 1);
+  height: 424px;
+  padding: 0 150px;
+  margin-top: 60px;
+}
+
+.testimonialLeftContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  height: 54%;
+}
+
+.testimonialRightContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.testimonialImageButtonContainer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonialHeading{
+  color: #02040E;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 56px */
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.testimonialDesc{
+  color: #58595B;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  width: 293px;
+}
+
+.testimonialMessage h1{
+  color: #02040E;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 36px */
+  text-transform: capitalize;
+}
+
+.testimonialProfile{
+  display: flex;
+  gap: 10px;
+}
+
+.testimonialProfile img{
+  border-radius: 50%;
+}
+
+.profileName{
+  color: #02040E;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 28px */
+}
+
+.profileDesignation{
+  color: #58595B;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
 }
 
 /* Clients End  */
