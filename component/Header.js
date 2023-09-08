@@ -1,7 +1,17 @@
+"use client"
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 function Header() {
+
+  const menuList = ["Home","Business Setup","About Us","Services","Blogs","Contact Us"]
+
+  const [activeItem, setActiveItem] = useState(0);
+
+  const handleListItemClick = (index) => {
+    setActiveItem(index);
+  };
+
   return (
     <div className="hContainer bg-white">
       <div className="logoContainer">
@@ -10,12 +20,15 @@ function Header() {
       <div className="hMenuContainer">
         <div className="hMenu">
           <ul className="hUlList">
-            <li>Home</li>
-            <li>Business Setup</li>
-            <li>About Us</li>
-            <li>Services</li>
-            <li>Blogs</li>
-            <li>Contact Us</li>
+          {menuList.map((item, index) => (
+        <li
+          key={index}
+          onClick={() => handleListItemClick(index)}
+          className={activeItem === index ? 'activeListItem' : ''}
+        >
+          {item}
+        </li>
+      ))}
           </ul>
         </div>
       </div>

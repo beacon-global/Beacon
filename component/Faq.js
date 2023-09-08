@@ -37,9 +37,12 @@ function Faq() {
   ]);
 
   const toggleAnswerVisibility = (index) => {
-    const updatedFaqData = [...faqData];
-    updatedFaqData[index].isAnswerVisible =
-      !updatedFaqData[index].isAnswerVisible;
+    // Create a copy of the FAQ data with all answers initially set to false
+    const updatedFaqData = faqData.map((item, i) => ({
+      ...item,
+      isAnswerVisible: i === index ? !item.isAnswerVisible : false,
+    }));
+
     setFaqData(updatedFaqData);
   };
 

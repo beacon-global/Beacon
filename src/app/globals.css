@@ -24,7 +24,11 @@
 
 body {
     background: #FFF;
-    font-family: 'Sora', sans-serif;
+    font-family: 'Sora', sans-serif !important;
+}
+
+.activeListItem {
+  color: #13670B; 
 }
 
 /* Header Start */
@@ -43,11 +47,14 @@ body {
   color: #02040E;
   display: flex;
   gap: 30px;
-  font-family: 'Sora', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 140%; 
+}
+
+.hUlList li{
+  cursor: pointer;
 }
 
 .hButtonContainer{
@@ -59,11 +66,11 @@ body {
 
   border-radius: 61px;
   background: #13670B;
+  width: 233px;
 }
 
 .btn{
   color: #FFF;
-  font-family: 'Sora', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -75,6 +82,7 @@ body {
 /* Hero Start */
 
 .heroContainer{
+  margin-bottom: 20px;
 }
 
 .imageWithText{
@@ -117,18 +125,17 @@ body {
 .textOverlay h1 {
   margin-bottom: 10px;
   color: #FFF;
-  font-family: 'Sora', sans-serif;
   font-size: 64px;
   font-style: normal;
   font-weight: 600;
   line-height: 120%; /* 76.8px */
   text-transform: capitalize;
   text-align: left;
+  margin-bottom: -10px;
 }
 
 .textOverlay p {
   color: rgba(255, 255, 255, 0.60);
-  font-family: 'Sora', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -155,26 +162,29 @@ body {
   padding: 0 150px;
 }
 
+.locationContentContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
 .locationHeading{
   color: #02040E;
-  font-family: 'Sora', sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 600;
   line-height: 140%; /* 56px */
   text-transform: capitalize;
-  margin-bottom: 20px;
+  margin-bottom: -10px;
 }
 
 .locationDesc{
   color: #58595B;
-  font-family: 'Sora', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%; /* 22.4px */
   width: 546px;
-  height: 220px;
 }
 
 /* Location End */
@@ -193,7 +203,6 @@ body {
 .businessHeading{
   color: #13670B;
   text-align: center;
-  font-family: 'Sora', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -204,7 +213,6 @@ body {
 .businessDesc{
   color: #02040E;
   text-align: center;
-  font-family: 'Sora', sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 600;
@@ -234,12 +242,12 @@ body {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
 .cardContainer{
-  width: 324px;
+  width: 328px;
   height: 304px;
   flex-shrink: 0;
   background-color: rgba(247, 247, 248, 1);
@@ -251,7 +259,6 @@ body {
 
 .servicesHeading{
   color: #02040E;
-  font-family: 'Sora', sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -267,11 +274,14 @@ body {
 .servicesDesc{
   color: #58595B;
 /* r1 */
-font-family: 'Sora', sans-serif;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 140%;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.serviceContainer .servicesButton{
+  margin-top: -20px;
 }
 
 /* Services End */
@@ -331,6 +341,9 @@ line-height: 140%;
 .whyBeaconImgContainer{
   height: 100%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .whyBeaconImg{
@@ -634,7 +647,6 @@ line-height: 140%;
 
 .footerCopyRight{
   color: #FFF;
-  font-family: Sora;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
