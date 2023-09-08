@@ -74,7 +74,7 @@ function WhyBeacon() {
         {beaconData.map((data, index) => (
           <div className="beaconContainer" key={index}>
             <div className="beaconimgContainer">
-              <Image className="becaonIconImg" src={data.img} width={60} height={60} />
+              <Image className="becaonIconImg" src={data.img} width={60} height={40} />
             </div>
             <div className="beaconContentContainer">
               <div className="beaconHeadingContainer">

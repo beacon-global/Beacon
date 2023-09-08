@@ -9,11 +9,32 @@ function BusinessSetup() {
         <h2 className="businessDesc">dummy typesetting the printiones</h2>
       </div>
       <div className="businessVideoContainer">
-        <div className="video">
-          <Image src="/video1.png" width={586} height={300} />
+        <div className="ksa">
+          <Image src="/KSA.png" width={586} height={300} layout="responsive" />
+          <div className="businessCardContentContainer">
+            <h1 className="ksaHeading">Saudi arabia</h1>
+            <p className="ksaDesc">
+              Lorem Ipsum is simply dummy the printiones and futuresion future
+              typesetting industryha dummy typesetting.
+            </p>
+            <div className="businessCircle">
+              <Image src="/whiteArrow.png" width={30} height={30} />
+            </div>
+          </div>
         </div>
-        <div className="video">
-          <Image src="/video2.png" width={586} height={300} />
+
+        <div className="uae">
+          <Image src="/UAE.png" width={586} height={300} layout="responsive" />
+          <div className="businessCardContentContainer">
+            <h1 className="ksaHeading">United Arab Emirates</h1>
+            <p className="ksaDesc">
+              Lorem Ipsum is simply dummy the printiones and futuresion future
+              typesetting industryha dummy typesetting.
+            </p>
+            <div className="businessCircle">
+              <Image src="/whiteArrow.png" width={30} height={30} />
+            </div>
+          </div>
         </div>
       </div>
     </div>
