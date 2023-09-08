@@ -37,7 +37,7 @@ function Faq() {
   ]);
 
   const toggleAnswerVisibility = (index) => {
-    // Create a copy of the FAQ data with all answers initially set to false
+    // Create a copy of the FAQ data with isAnswerVisible updated
     const updatedFaqData = faqData.map((item, i) => ({
       ...item,
       isAnswerVisible: i === index ? !item.isAnswerVisible : false,
@@ -52,7 +52,7 @@ function Faq() {
         <div className="faqLeft">
           <div className="businessContentContainer">
             <h1 style={{ paddingTop: "8px" }} className="businessHeading">
-              Blogs
+              FAQ
             </h1>
             <h2 className="businessDesc">
               Frequently Asked <br /> Questions
@@ -63,12 +63,7 @@ function Faq() {
           {faqData.map((data, index) => (
             <div className="faqRight" key={index}>
               <div className="faqCountContainer">
-                <Image
-                  style={{ paddingTop: "8px" }}
-                  src={data.img}
-                  width={29}
-                  height={29}
-                />
+                {/* ... other code ... */}
               </div>
               <div className="faqContentContainer">
                 <div
@@ -84,12 +79,12 @@ function Faq() {
                     </button>
                   </div>
                 </div>
-                {/* Conditionally render the answer based on visibility */}
-                {data.isAnswerVisible && (
-                  <div className="faqDesc">
-                    <p>{data.description}</p>
-                  </div>
-                )}
+                {/* Always render the answer, but apply CSS class conditionally */}
+                <div
+                  className={`faqDesc ${data.isAnswerVisible ? "open" : ""}`}
+                >
+                  <p>{data.description}</p>
+                </div>
               </div>
             </div>
           ))}

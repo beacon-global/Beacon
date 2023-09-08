@@ -605,6 +605,16 @@ body {
   line-height: 140%;
 }
 
+.faqDesc {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.8s ease-in-out;
+}
+
+.faqDesc.open {
+  max-height: 200px; /* Adjust the maximum height as needed */
+}
+
 /* FAQ Ends */
 
 /* Contact Start */
