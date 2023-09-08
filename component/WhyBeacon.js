@@ -64,6 +64,7 @@ function WhyBeacon() {
         <Image
           className="whyBeaconImg"
           src="/WhyBeacon.png"
+          layout="responsive"
           width={1049}
           height={434}
         />
