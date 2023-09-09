@@ -32,6 +32,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Sora';
+  src: url('/Fonts/Sora-SemiBold.ttf') format('truetype');
+  font-weight: lighter;
+  font-style: normal;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -95,7 +102,7 @@ li{
 
   border-radius: 61px;
   background: #13670B;
-  width: 195px;
+  width: 200px;
 }
 
 .btn{
@@ -146,7 +153,7 @@ li{
   align-items: flex-start;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.1);
-  width: 50%;
+  width: 100%;
   height: 100%;
   /* color: white;  */
   gap: 30px;
@@ -160,11 +167,12 @@ li{
   color: #FFF;
   font-size: 64px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 120%; /* 76.8px */
   text-transform: capitalize;
   text-align: left;
   margin-bottom: -10px;
+  white-space: nowrap;
 }
 
 .textOverlay p {
