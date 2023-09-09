@@ -158,7 +158,7 @@ li{
 .textOverlay h1 {
   margin-bottom: 10px;
   color: #FFF;
-  font-size: 4rem;
+  font-size: 64px;
   font-style: normal;
   font-weight: 600;
   line-height: 120%; /* 76.8px */
@@ -203,7 +203,7 @@ li{
 
 .locationHeading{
   color: #02040E;
-  font-size: 40px;
+  font-size: 38px;
   font-style: normal;
   font-weight: 600;
   line-height: 140%; /* 56px */
@@ -250,7 +250,7 @@ li{
 .businessDesc{
   color: #02040E;
   text-align: center;
-  font-size: 40px;
+  font-size: 38px;
   font-style: normal;
   font-weight: 600;
   line-height: 140%; /* 56px */
@@ -359,7 +359,7 @@ li{
 
 .servicesHeading{
   color: #02040E;
-  font-size: 24px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 600;
   line-height: 120%; /* 28.8px */
@@ -421,7 +421,7 @@ li{
 
 .whyBeaconHeading{
   color: #02040E;
-  font-size: 40px;
+  font-size: 38px;
   font-style: normal;
   font-weight: 600;
   line-height: 140%; /* 56px */
@@ -547,7 +547,7 @@ li{
 
 .testimonialHeading{
   color: #02040E;
-  font-size: 40px;
+  font-size: 38px;
   font-style: normal;
   font-weight: 600;
   line-height: 140%; /* 56px */
@@ -624,6 +624,10 @@ li{
   height: auto;
   padding: 0px;
 }
+
+/* .cardContainer .imgContainer{
+  align-self: center;
+} */
 
 .rectangleContainer .servicesDescContainer{
   width: auto;
@@ -709,7 +713,7 @@ li{
 
 .faqQuestion h1{
   color: #02040E;
-  font-size: 24px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 500;
   line-height: 120%; /* 28.8px */
@@ -762,7 +766,7 @@ li{
 .contactHeading{
   color: #FFF;
   text-align: center;
-  font-size: 40px;
+  font-size: 38px;
   font-style: normal;
   font-weight: 600;
   line-height: 140%; /* 56px */
