@@ -51,7 +51,7 @@ function Services() {
         {servicesData.map((data, index) => (
           <div className="cardContainer" key={index}>
             <div className="imgContainer">
-              <Image src={data.img} width={70} height={70} />
+              <Image src={data.img} width={70} height={70} alt="ImageService" />
             </div>
             <div className="servicesHeadingContainer">
               <h1 className="servicesHeading">{data.heading}</h1>
@@ -64,8 +64,13 @@ function Services() {
       </div>
 
       <div className="servicesButton">
-        <button class="image-button">
-          <Image src="/ServicesBtn.png" width={233} height={65} alt="Image Alt Text" />
+        <button className="image-button">
+          <Image
+            src="/ServicesBtn.png"
+            width={233}
+            height={65}
+            alt="Image Alt Text"
+          />
         </button>
       </div>
     </div>

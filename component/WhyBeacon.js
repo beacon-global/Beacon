@@ -45,11 +45,11 @@ function WhyBeacon() {
     <div className="whyBeaconContainer">
       <div className="whyBeaconContentsContainer">
         <div className="whyBeaconLeft">
-          <h1 className="businessHeading">Business Setup</h1>
+          <h1 className="businessHeading">Why Beacon?</h1>
         </div>
         <div className="whyBeaconRight">
           <h2 className="whyBeaconHeading">
-            purus terdum euismod All in one place
+            purus terdum euismod<br /> All in one place
           </h2>
           <p className="whyBeaconDesc">
             Lorem Ipsum is simply dummy text of the printiones and futuresion
@@ -67,6 +67,7 @@ function WhyBeacon() {
           layout="responsive"
           width={1049}
           height={434}
+          alt="ImageWhyBeacon"
         />
       </div>
 
@@ -74,7 +75,7 @@ function WhyBeacon() {
         {beaconData.map((data, index) => (
           <div className="beaconContainer" key={index}>
             <div className="beaconimgContainer">
-              <Image className="becaonIconImg" src={data.img} width={60} height={40} />
+              <Image className="becaonIconImg" src={data.img} width={60} height={40} alt="whyBeaconIcon"/>
             </div>
             <div className="beaconContentContainer">
               <div className="beaconHeadingContainer">

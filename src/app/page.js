@@ -31,7 +31,7 @@ export default function Home() {
         <BusinessSetup />
         <Services />
         <WhyBeacon />
-        <Image src="/Stats.png" width={100} height={100} layout="responsive" />
+        <Image src="/Stats.png" width={100} height={100} layout="responsive" alt="ImageStats"/>
         <Clients />
         <Blogs />
         <Faq />

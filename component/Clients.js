@@ -84,30 +84,35 @@ function ScrollingLogos() {
         width={100}
         height={100}
         layout="responsive"
+        alt="ImageClients"
       />
       <Image
         src="/LogoClients.png"
         width={100}
         height={100}
         layout="responsive"
+        alt="ImageClients"
       />
       <Image
         src="/LogoClients.png"
         width={100}
         height={100}
         layout="responsive"
+        alt="ImageClients"
       />
       <Image
         src="/LogoClients.png"
         width={100}
         height={100}
         layout="responsive"
+        alt="ImageClients"
       />
       <Image
         src="/LogoClients.png"
         width={100}
         height={100}
         layout="responsive"
+        alt="ImageClients"
       />
     </motion.div>
   );

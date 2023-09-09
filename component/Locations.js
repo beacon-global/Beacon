@@ -30,7 +30,7 @@ function Locations() {
       </div>
 
       <div className="locationImgContainer">
-        <Image src="/map.png" width={606} height={527} />
+        <Image src="/map.png" width={606} height={527} alt="ImageLocation"/>
       </div>
     </div>
   );

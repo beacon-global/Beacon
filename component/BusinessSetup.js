@@ -10,7 +10,7 @@ function BusinessSetup() {
       </div>
       <div className="businessVideoContainer">
         <div className="ksa">
-          <Image src="/KSA.png" width={586} height={300} layout="responsive" />
+          <Image src="/KSA.png" width={586} height={300} layout="responsive" alt="ImageBusiness" />
           <div className="businessCardContentContainer">
             <h1 className="ksaHeading">Saudi arabia</h1>
             <p className="ksaDesc">
@@ -18,13 +18,13 @@ function BusinessSetup() {
               typesetting industryha dummy typesetting.
             </p>
             <div className="businessCircle">
-              <Image src="/whiteArrow.png" width={30} height={30} />
+              <Image src="/whiteArrow.png" width={30} height={30} alt="ImageBusiness" />
             </div>
           </div>
         </div>
 
         <div className="uae">
-          <Image src="/UAE.png" width={586} height={300} layout="responsive" />
+          <Image src="/UAE.png" width={586} height={300} layout="responsive" alt="ImageBusiness" />
           <div className="businessCardContentContainer">
             <h1 className="ksaHeading">United Arab Emirates</h1>
             <p className="ksaDesc">
@@ -32,7 +32,7 @@ function BusinessSetup() {
               typesetting industryha dummy typesetting.
             </p>
             <div className="businessCircle">
-              <Image src="/whiteArrow.png" width={30} height={30} />
+              <Image src="/whiteArrow.png" width={30} height={30} alt="ImageBusiness" />
             </div>
           </div>
         </div>

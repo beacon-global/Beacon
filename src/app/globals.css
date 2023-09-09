@@ -397,6 +397,7 @@ li{
   font-weight: 600;
   line-height: 140%; /* 56px */
   text-transform: capitalize;
+  width: 100%;
 }
 
 .whyBeaconDesc{

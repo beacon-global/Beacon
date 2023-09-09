@@ -15,7 +15,7 @@ function Contact() {
           </p>
         </div>
         <div className="contactButtonContainer">
-            <button className="contactBtn">Contact Us <Image src='/whiteArrow.png'  width={18} height={18}/></button>
+            <button className="contactBtn">Contact Us <Image src='/whiteArrow.png'  width={18} height={18} alt="imageContact"/></button>
         </div>
       </div>
     </div>

@@ -39,14 +39,14 @@ function Blogs() {
         {blogsData.map((data, index) => (
           <div className="cardContainer" key={index}>
             <div className="imgContainer">
-              <Image src={data.img} width={350} height={250} />
+              <Image src={data.img} width={350} height={250} alt="Image"/>
             </div>
             <div className="blogBtnMainContainer">
               <div className="blogButtonContainer">
                 <button className="blogBtn">{data.btnText}</button>
               </div>
               <button className="arrowButton">
-                <Image src="/Arrow.png" width={23} height={23} />
+                <Image src="/Arrow.png" width={23} height={23} alt="Image"/>
               </button>
             </div>
             <div className="servicesHeadingContainer">
@@ -60,7 +60,7 @@ function Blogs() {
       </div>
 
       <div className="servicesButton">
-        <button class="image-button">
+        <button className="image-button">
           <Image
             src="/ServicesBtn.png"
             width={233}

@@ -75,7 +75,7 @@ function Faq() {
                   </div>
                   <div className="faqAddIcon">
                     <button onClick={() => toggleAnswerVisibility(index)}>
-                      <Image src="/+.png" width={16} height={16} />
+                      <Image src="/+.png" width={16} height={16} alt="ImageFaq" />
                     </button>
                   </div>
                 </div>
