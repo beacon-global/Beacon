@@ -9,35 +9,51 @@
 }
 
 
-@font-face {
-  font-family: 'Sora';
-  src: url('/Fonts/Sora-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
 
-/* Sora Bold */
+
 @font-face {
   font-family: 'Sora';
   src: url('/Fonts/Sora-Bold.ttf') format('truetype');
-  font-weight: bold;
+  font-weight: 700; /* Bold font weight */
   font-style: normal;
 }
 
-/* Sora Light */
 @font-face {
   font-family: 'Sora';
-  src: url('/Fonts/Sora-Light.ttf') format('truetype');
-  font-weight: lighter;
+  src: url('/Fonts/Sora-ExtraLight.ttf') format('truetype');
+  font-weight: 200; /* Extra-Light font weight */
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Sora';
   src: url('/Fonts/Sora-SemiBold.ttf') format('truetype');
-  font-weight: lighter;
+  font-weight: 600; /* Semi-Bold font weight */
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Sora';
+  src: url('/Fonts/Sora-Light.ttf') format('truetype');
+  font-weight: 300; /* Light font weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sora';
+  src: url('/Fonts/Sora-Medium.ttf') format('truetype');
+  font-weight: 500; /* Medium font weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sora';
+  src: url('/Fonts/Sora-Regular.ttf') format('truetype');
+  font-weight: 400; /* Regular font weight */
+  font-style: normal;
+}
+
+
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -56,7 +72,6 @@
 body {
     background: #FFF;
     font-family: 'Sora', sans-serif !important;
-    /* font-family: 'Noto Sans Sora Sompeng', sans-serif !important; */
 }
 
 li{
@@ -152,7 +167,7 @@ li{
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.2);
   width: 100%;
   height: 100%;
   /* color: white;  */
@@ -165,9 +180,9 @@ li{
 .textOverlay h1 {
   margin-bottom: 10px;
   color: #FFF;
-  font-size: 64px;
+  font-size: 60px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 120%; /* 76.8px */
   text-transform: capitalize;
   text-align: left;
