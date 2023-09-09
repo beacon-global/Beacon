@@ -33,7 +33,7 @@ function Header() {
         </div>
       </div>
       <div className="hButtonContainer">
-        <button className="btn">+971 800 4392</button>
+        <button className="btn"><Image src='/telephone.png'  width={18} height={18} alt="imageTelephone"/> +971 800 4392</button>
       </div>
     </div>
   );

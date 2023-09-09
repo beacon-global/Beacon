@@ -43,7 +43,7 @@ function Services() {
   return (
     <div className="serviceContainer">
       <div className="businessContentContainer">
-        <h1 className="businessHeading">Business Setup</h1>
+        <h1 className="businessHeading">Services</h1>
         <h2 className="businessDesc">dummy typesetting the printiones</h2>
       </div>
 

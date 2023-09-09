@@ -21,7 +21,7 @@ function Hero() {
             </p>
           </div>
           <div className="hButtonContainer">
-            <button className="btn">Our Services</button>
+            <button className="btn">Our Services <Image src='/whiteArrow.png'  width={18} height={18} alt="heroContact"/></button>
           </div>
         </div>
       </div>

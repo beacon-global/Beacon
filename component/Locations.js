@@ -25,7 +25,7 @@ function Locations() {
           </p>
         </div>
         <div className="hButtonContainer">
-          <button className="btn">EXPLORE MORE</button>
+          <button className="btn">EXPLORE MORE <Image src='/whiteArrow.png'  width={18} height={18} alt="imageContact"/></button>
         </div>
       </div>
 

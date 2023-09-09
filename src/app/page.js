@@ -20,7 +20,7 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link
-          href="https://fonts.googleapis.com/css2?family=Arimo&family=Barlow+Condensed:wght@100&family=Dancing+Script:wght@700&family=Encode+Sans:wght@800&family=GFS+Neohellenic&family=Inter:wght@500;800&family=Karla:wght@200&family=Lato:wght@100&family=Libre+Franklin:wght@100&family=Manrope:wght@200;300&family=McLaren&family=Montserrat:wght@200&family=Open+Sans:wght@300&family=Orbitron&family=Playfair+Display:wght@700&family=Poppins&family=Rakkas&family=Raleway:ital,wght@0,100;0,500;0,700;1,600&family=Roboto+Slab:wght@100;400;500;700;800;900&family=Sawarabi+Gothic&family=Sora:wght@200;400;600&family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Sora:wght@200;400;600&display=swap"
           rel="stylesheet"
         />
       </Head>
@@ -31,7 +31,13 @@ export default function Home() {
         <BusinessSetup />
         <Services />
         <WhyBeacon />
-        <Image src="/Stats.png" width={100} height={100} layout="responsive" alt="ImageStats"/>
+        <Image
+          src="/Stats.png"
+          width={100}
+          height={100}
+          layout="responsive"
+          alt="ImageStats"
+        />
         <Clients />
         <Blogs />
         <Faq />

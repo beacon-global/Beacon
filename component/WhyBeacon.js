@@ -7,37 +7,37 @@ function WhyBeacon() {
       img: "/BeaconIcon1.png",
       heading: "data-driven",
       description:
-        "Lorem Ipsum is simply dummy text of the printiones and futuresion future typesetting to industryhas been the industry's standard dummy text ever and typesetting.",
+        "Lorem Ipsum is simply dummy future printiones futuresion future typesetting industryha dummy typesetting.",
     },
     {
       img: "/BeaconIcon2.png",
       heading: "global perspective",
       description:
-        "Lorem Ipsum is simply dummy text of the printiones and futuresion future typesetting to industryhas been the industry's standard dummy text ever and typesetting.",
+        "Lorem Ipsum is simply dummy future printiones futuresion future typesetting industryha dummy typesetting.",
     },
     {
       img: "/BeaconIcon3.png",
       heading: "challenge everything",
       description:
-        "Lorem Ipsum is simply dummy text of the printiones and futuresion future typesetting to industryhas been the industry's standard dummy text ever and typesetting.",
+        "Lorem Ipsum is simply dummy future printiones futuresion future typesetting industryha dummy typesetting.",
     },
     {
       img: "/BeaconIcon4.png",
       heading: "collaborative first",
       description:
-        "Lorem Ipsum is simply dummy text of the printiones and futuresion future typesetting to industryhas been the industry's standard dummy text ever and typesetting.",
+        "Lorem Ipsum is simply dummy future printiones futuresion future typesetting industryha dummy typesetting.",
     },
     {
       img: "/BeaconIcon5.png",
       heading: "communication",
       description:
-        "Lorem Ipsum is simply dummy text of the printiones and futuresion future typesetting to industryhas been the industry's standard dummy text ever and typesetting.",
+        "Lorem Ipsum is simply dummy future printiones futuresion future typesetting industryha dummy typesetting.",
     },
     {
       img: "/BeaconIcon6.png",
       heading: "dedicated teams",
       description:
-        "Lorem Ipsum is simply dummy text of the printiones and futuresion future typesetting to industryhas been the industry's standard dummy text ever and typesetting.",
+        "Lorem Ipsum is simply dummy future printiones futuresion future typesetting industryha dummy typesetting.",
     },
   ];
 

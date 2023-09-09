@@ -8,6 +8,30 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+
+@font-face {
+  font-family: 'Sora';
+  src: url('/Fonts/Sora-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Sora Bold */
+@font-face {
+  font-family: 'Sora';
+  src: url('/Fonts/Sora-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Sora Light */
+@font-face {
+  font-family: 'Sora';
+  src: url('/Fonts/Sora-Light.ttf') format('truetype');
+  font-weight: lighter;
+  font-style: normal;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -25,6 +49,7 @@
 body {
     background: #FFF;
     font-family: 'Sora', sans-serif !important;
+    /* font-family: 'Noto Sans Sora Sompeng', sans-serif !important; */
 }
 
 li{
@@ -51,7 +76,7 @@ li{
   color: #02040E;
   display: flex;
   gap: 30px;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 140%; 
@@ -63,7 +88,7 @@ li{
 
 .hButtonContainer{
   display: inline-flex;
-  padding: 15px 30px;
+  padding: 15px 25px;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -75,10 +100,14 @@ li{
 
 .btn{
   color: #FFF;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 /* Header End */
@@ -140,7 +169,7 @@ li{
 
 .textOverlay p {
   color: rgba(255, 255, 255, 0.60);
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%; 
@@ -184,7 +213,7 @@ li{
 
 .locationDesc{
   color: #58595B;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%; /* 22.4px */
@@ -211,7 +240,7 @@ li{
 .businessHeading{
   color: #13670B;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: 120%; /* 19.2px */
@@ -277,7 +306,7 @@ li{
 .ksaDesc{
   color: #FFF;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
@@ -345,7 +374,7 @@ li{
 .servicesDesc{
   color: #58595B;
 /* r1 */
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
@@ -398,11 +427,12 @@ li{
   line-height: 140%; /* 56px */
   text-transform: capitalize;
   width: 100%;
+  margin-bottom: 30px;
 }
 
 .whyBeaconDesc{
   color: #58595B;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%; /* 22.4px */
@@ -455,7 +485,7 @@ li{
 .beaconDesc{
   width: 289px;
   color: #58595B;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%; /* 22.4px */
@@ -493,6 +523,7 @@ li{
   height: 424px;
   padding: 0 150px;
   margin-top: 60px;
+  gap: 28px;
 }
 
 .testimonialLeftContainer{
@@ -527,7 +558,7 @@ li{
 .testimonialDesc{
   color: #58595B;
 
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
@@ -562,7 +593,7 @@ li{
 
 .profileDesignation{
   color: #58595B;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%; /* 22.4px */
@@ -617,14 +648,14 @@ li{
 
 .blogBtn{
   color: #FFF;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%; /* 22.4px */
 }
 
 .blogsContainer > div:nth-child(3) {
-  margin-top: -20px;
+  margin-top: -50px;
 }
 
 /* Blogs End */
@@ -686,7 +717,7 @@ li{
 }
 
 .faqDesc{
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
@@ -695,7 +726,7 @@ li{
 .faqDesc {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.8s ease-in-out;
+  transition: max-height 0.4s ease-in-out;
 }
 
 .faqDesc.open {
@@ -760,7 +791,7 @@ li{
 
 .contactBtn {
   color: #FFF;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
@@ -796,7 +827,7 @@ li{
 
 .footercontent li{
   color: #FFF;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 120%; /* 21.6px */
@@ -826,7 +857,7 @@ li{
 
 .footerCopyRight{
   color: #FFF;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%; /* 25.2px */
