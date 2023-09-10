@@ -17,7 +17,7 @@ function Hero() {
               Lorem Ipsum is simply dummy text of the printing and futuresion
               <br />
               typesetting industryhas been the industrys standard dummis <br />
-              industryhas been the industry's standard dummy.
+              industryhas been the industrys standard dummy.
             </p>
           </div>
           <div className="hButtonContainer">
