@@ -23,10 +23,10 @@ function Footer() {
           <Image src="/FooterContact.png" width={650} height={71} alt="ImageFooter2" />
         </div>
         <div className="footerSocialContainer">
-          <Image className="socialIcons" src="/WhatsApp.png" width={50} height={40} alt="ImageFooter3" />
-          <Image className="socialIcons" src="/Instagram.png" width={50} height={40} alt="ImageFooter4" />
-          <Image className="socialIcons" src="/Facebook.png" width={50} height={40} alt="ImageFooter5" />
-          <Image className="socialIcons" src="/LinkedIn.png" width={50} height={40} alt="ImageFooter6" />
+          <Image className="socialIcons" src="/Social/WhatsApp.png" width={50} height={40} alt="ImageFooter3" />
+          <Image className="socialIcons" src="/Social/Instagram.png" width={50} height={40} alt="ImageFooter4" />
+          <Image className="socialIcons" src="/Social/Facebook.png" width={50} height={40} alt="ImageFooter5" />
+          <Image className="socialIcons" src="/Social/LinkedIn.png" width={50} height={40} alt="ImageFooter6" />
         </div>
       </div>
       <hr />

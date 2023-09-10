@@ -7,7 +7,7 @@ import React from "react";
 function Services() {
   const servicesPageData = [
     {
-      img: "/servicesPage1.png",
+      img: "/ServicesPage/servicesPage1.png",
       heading: "Company Formation",
       description:
         "Lorem ipsum dolor sit amet consectetur. Eu elit vitae bibendum bibendum accumsan facilisis libero. At arcu augue ante varius. Integer tellus donec nunc montes rhoncus adipiscing fringilla. Elit dictumst neque tempus porta lorem egestasullamcorper nunc sit quis egestas lectus facilisis nulla fringilla. Vestibulum dis mauris nullam tellus interdum. Consectetur felis euismod urna fusce imperdiet.",
@@ -15,7 +15,7 @@ function Services() {
       alt: "servicesPage1",
     },
     {
-      img: "/servicesPage2.png",
+      img: "/ServicesPage/servicesPage2.png",
       heading: "PRO Services",
       description:
         "Lorem ipsum dolor sit amet consectetur. Eu elit vitae bibendum bibendum accumsan facilisis libero. At arcu augue ante varius. Integer tellus donec nunc montes rhoncus adipiscing fringilla. Elit dictumst neque tempus porta lorem egestasullamcorper nunc sit quis egestas lectus facilisis nulla fringilla. Vestibulum dis mauris nullam tellus interdum. Consectetur felis euismod urna fusce imperdiet.",
@@ -23,7 +23,7 @@ function Services() {
       alt: "servicesPage2",
     },
     {
-      img: "/servicesPage3.png",
+      img: "/ServicesPage/servicesPage3.png",
       heading: "Trade License",
       description:
         "Lorem ipsum dolor sit amet consectetur. Eu elit vitae bibendum bibendum accumsan facilisis libero. At arcu augue ante varius. Integer tellus donec nunc montes rhoncus adipiscing fringilla. Elit dictumst neque tempus porta lorem egestasullamcorper nunc sit quis egestas lectus facilisis nulla fringilla. Vestibulum dis mauris nullam tellus interdum. Consectetur felis euismod urna fusce imperdiet.",
@@ -31,7 +31,7 @@ function Services() {
       alt: "servicesPage3",
     },
     {
-      img: "/servicesPage4.png",
+      img: "/ServicesPage/servicesPage4.png",
       heading: "Attestation Services",
       description:
         "Lorem ipsum dolor sit amet consectetur. Eu elit vitae bibendum bibendum accumsan facilisis libero. At arcu augue ante varius. Integer tellus donec nunc montes rhoncus adipiscing fringilla. Elit dictumst neque tempus porta lorem egestasullamcorper nunc sit quis egestas lectus facilisis nulla fringilla. Vestibulum dis mauris nullam tellus interdum. Consectetur felis euismod urna fusce imperdiet.",
@@ -39,7 +39,7 @@ function Services() {
       alt: "servicesPage4",
     },
     {
-      img: "/servicesPage5.png",
+      img: "/ServicesPage/servicesPage5.png",
       heading: "Visa Services",
       description:
         "Lorem ipsum dolor sit amet consectetur. Eu elit vitae bibendum bibendum accumsan facilisis libero. At arcu augue ante varius. Integer tellus donec nunc montes rhoncus adipiscing fringilla. Elit dictumst neque tempus porta lorem egestasullamcorper nunc sit quis egestas lectus facilisis nulla fringilla. Vestibulum dis mauris nullam tellus interdum. Consectetur felis euismod urna fusce imperdiet.",
@@ -47,7 +47,7 @@ function Services() {
       alt: "servicesPage5",
     },
     {
-      img: "/servicesPage6.png",
+      img: "/ServicesPage/servicesPage6.png",
       heading: "Labour Services",
       description:
         "Lorem ipsum dolor sit amet consectetur. Eu elit vitae bibendum bibendum accumsan facilisis libero. At arcu augue ante varius. Integer tellus donec nunc montes rhoncus adipiscing fringilla. Elit dictumst neque tempus porta lorem egestasullamcorper nunc sit quis egestas lectus facilisis nulla fringilla. Vestibulum dis mauris nullam tellus interdum. Consectetur felis euismod urna fusce imperdiet.",

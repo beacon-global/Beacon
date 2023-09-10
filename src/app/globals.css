@@ -367,6 +367,7 @@ li{
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .cardContainer{
@@ -701,6 +702,7 @@ li{
 .faqContainer{
   display: flex;
   gap: 20px;
+  width: 100%;
 }
 
 .faqLeft{

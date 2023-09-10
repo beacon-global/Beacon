@@ -4,37 +4,37 @@ import React from "react";
 function Services() {
   const servicesData = [
     {
-      img: "/Services1.png",
+      img: "/Services/Services1.png",
       heading: "Company Formation",
       description:
         "Lorem Ipsum is simply dummy text of the printiones and futuresion future typesetting to industryhas been the industry's standard dummy text ever and typesetting.",
     },
     {
-      img: "/Services2.png",
+      img: "/Services/Services2.png",
       heading: "PRO Services",
       description:
         "Lorem Ipsum is simply dummy text of the printiones and futuresion future typesetting to industryhas been the industry's standard dummy text ever and typesetting.",
     },
     {
-      img: "/Services3.png",
+      img: "/Services/Services3.png",
       heading: "Trade License",
       description:
         "Lorem Ipsum is simply dummy text of the printiones and futuresion future typesetting to industryhas been the industry's standard dummy text ever and typesetting.",
     },
     {
-      img: "/Services4.png",
+      img: "/Services/Services4.png",
       heading: "Attestation Services",
       description:
         "Lorem Ipsum is simply dummy text of the printiones and futuresion future typesetting to industryhas been the industry's standard dummy text ever and typesetting.",
     },
     {
-      img: "/Services5.png",
+      img: "/Services/Services5.png",
       heading: "Visa Services",
       description:
         "Lorem Ipsum is simply dummy text of the printiones and futuresion future typesetting to industryhas been the industry's standard dummy text ever and typesetting.",
     },
     {
-      img: "/Services6.png",
+      img: "/Services/Services6.png",
       heading: "Labour Services",
       description:
         "Lorem Ipsum is simply dummy text of the printiones and futuresion future typesetting to industryhas been the industry's standard dummy text ever and typesetting.",

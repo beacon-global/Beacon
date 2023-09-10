@@ -5,31 +5,31 @@ import React, { useState } from "react";
 function Faq() {
   const [faqData, setFaqData] = useState([
     {
-      img: "/01.png",
+      img: "/Numbers/01.png",
       heading: "How much time does it take?",
       description:
         "Lorem Ipsum is simply dummy text of the printiones and futuresion future typesetting to industryhas been the industry's standard dummy text ever and typesetting.",
     },
     {
-      img: "/02.png",
+      img: "/Numbers/02.png",
       heading: "What is your class naming convention?",
       description:
         "Lorem Ipsum is simply dummy text of the printiones and futuresion future typesetting to industryhas been the industry's standard dummy text ever and typesetting.",
     },
     {
-      img: "/03.png",
+      img: "/Numbers/03.png",
       heading: "How do you communicate?",
       description:
         "Lorem Ipsum is simply dummy text of the printiones and futuresion future typesetting to industryhas been the industry's standard dummy text ever and typesetting.",
     },
     {
-      img: "/04.png",
+      img: "/Numbers/04.png",
       heading: "I have a bigger project. Can you handle it?",
       description:
         "Lorem Ipsum is simply dummy text of the printiones and futuresion future typesetting to industryhas been the industry's standard dummy text ever and typesetting.",
     },
     {
-      img: "/05.png",
+      img: "/Numbers/05.png",
       heading: "What is your class naming convention?",
       description:
         "Lorem Ipsum is simply dummy text of the printiones and futuresion future typesetting to industryhas been the industry's standard dummy text ever and typesetting.",
@@ -63,7 +63,7 @@ function Faq() {
           {faqData.map((data, index) => (
             <div className="faqRight" key={index}>
               <div className="faqCountContainer">
-                {/* ... other code ... */}
+                <Image src={data.img} width={24} height={24} layout="responsive" alt={`faqImageNumber ${index}`} />
               </div>
               <div className="faqContentContainer">
                 <div

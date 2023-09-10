@@ -4,37 +4,37 @@ import React from "react";
 function WhyBeacon() {
   const beaconData = [
     {
-      img: "/BeaconIcon1.png",
+      img: "/BeaconIcon/BeaconIcon1.png",
       heading: "data-driven",
       description:
         "Lorem Ipsum is simply dummy future printiones futuresion future typesetting industryha dummy typesetting.",
     },
     {
-      img: "/BeaconIcon2.png",
+      img: "/BeaconIcon/BeaconIcon2.png",
       heading: "global perspective",
       description:
         "Lorem Ipsum is simply dummy future printiones futuresion future typesetting industryha dummy typesetting.",
     },
     {
-      img: "/BeaconIcon3.png",
+      img: "/BeaconIcon/BeaconIcon3.png",
       heading: "challenge everything",
       description:
         "Lorem Ipsum is simply dummy future printiones futuresion future typesetting industryha dummy typesetting.",
     },
     {
-      img: "/BeaconIcon4.png",
+      img: "/BeaconIcon/BeaconIcon4.png",
       heading: "collaborative first",
       description:
         "Lorem Ipsum is simply dummy future printiones futuresion future typesetting industryha dummy typesetting.",
     },
     {
-      img: "/BeaconIcon5.png",
+      img: "/BeaconIcon/BeaconIcon5.png",
       heading: "communication",
       description:
         "Lorem Ipsum is simply dummy future printiones futuresion future typesetting industryha dummy typesetting.",
     },
     {
-      img: "/BeaconIcon6.png",
+      img: "/BeaconIcon/BeaconIcon6.png",
       heading: "dedicated teams",
       description:
         "Lorem Ipsum is simply dummy future printiones futuresion future typesetting industryha dummy typesetting.",
