@@ -1,16 +1,16 @@
 import Image from "next/image";
-import Header from "../../component/Header";
-import Hero from "../../component/Hero";
-import Locations from "../../component/Locations";
-import BusinessSetup from "../../component/BusinessSetup";
-import Services from "../../component/Services";
-import WhyBeacon from "../../component/WhyBeacon";
-import Clients from "../../component/Clients";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Locations from "./components/Locations";
+import BusinessSetup from "./components/BusinessSetup";
+import Services from "./components/Services";
+import WhyBeacon from "./components/WhyBeacon";
+import Clients from "./components/Clients";
 import Head from "next/head";
-import Blogs from "../../component/Blogs";
-import Faq from "../../component/Faq";
-import Contact from "../../component/Contact";
-import Footer from "../../component/Footer";
+import Blogs from "./components/Blogs";
+import Faq from "./components/Faq";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
