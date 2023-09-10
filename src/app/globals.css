@@ -916,14 +916,14 @@ li{
 
 .servicesPageRowContainer{
   display: flex;
-  gap: 74px;
+  gap: 70px;
   align-items: center;
   width: 100%;
   
 }
 
 .servicesPageImageContainer{
-  width: 60%;
+  width: 67%;
 }
 
 .servicesPageNo h1{

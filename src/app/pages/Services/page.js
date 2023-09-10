@@ -62,7 +62,7 @@ function Services() {
       <div className="servicesPageMainContainer">
         <div className="businessContentContainer">
           <h1 className="businessHeading">Business Setup</h1>
-          <h2 className="businessDesc">dummy typesetting the printiones</h2>
+          <h2 className="businessDesc">purus interdum euismod feugiat</h2>
         </div>
 
         <div className="servicesPageColomnContainer">
