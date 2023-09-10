@@ -33,9 +33,9 @@ function Header() {
                 onClick={() => handleListItemClick(index)}
                 className={activeItem === index ? "activeListItem" : ""}
               >
-                <Link href={item.href}>
+                <a href={item.href}>
                   {item.text}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>
