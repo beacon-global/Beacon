@@ -38,8 +38,8 @@ function Clients() {
         <div className="testimonialRightContainer">
           <div className="testimonialMessage">
             <h1>
-            &quot;The best agency we’ve worked with so far. They understand our
-              product and are able to add new features with a great focus.&quot;
+              "The best agency we,ve worked with so far. They understand our
+              product and are able to add new features with a great focus."
             </h1>
           </div>
           <div className="testimonialImageButtonContainer">
