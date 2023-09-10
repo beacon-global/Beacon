@@ -53,7 +53,7 @@ function WhyBeacon() {
           </h2>
           <p className="whyBeaconDesc">
             Lorem Ipsum is simply dummy text of the printiones and futuresion
-            future typesetting industryhas been the industry's standard dummy
+            future typesetting industryhas been the industry&quot;s standard dummy
             text ever since thescrambledLorem Ipsum is simply dummy text of the
             printing and typesetting.
           </p>

@@ -14,9 +14,9 @@ function Hero() {
           </div>
           <div>
             <p className="heroDesc">
-              Lorem Ipsum is simply dummy text of the printing and futuresion{" "}
+              Lorem Ipsum is simply dummy text of the printing and futuresion
               <br />
-              typesetting industryhas been the industry's standard dummis <br />
+              typesetting industryhas been the industry&quot;s standard dummis <br />
               industryhas been the industry's standard dummy.
             </p>
           </div>
