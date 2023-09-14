@@ -59,14 +59,10 @@ function Blogs() {
         ))}
       </div>
 
-      <div className="servicesButton">
-        <button className="image-button">
-          <Image
-            src="/ServicesBtn.png"
-            width={233}
-            height={65}
-            alt="Image Alt Text"
-          />
+      <div className="hButtonContainer servicesButton">
+        <button className="btn">
+          Our Services{" "}
+          <Image src="/Arrow.png" width={23} height={23} alt="heroContact" />
         </button>
       </div>
     </div>

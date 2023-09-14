@@ -63,15 +63,31 @@ function Services() {
         ))}
       </div>
 
-      <div className="servicesButton">
-        <button className="image-button">
-          <Image
-            src="/ServicesBtn.png"
-            width={233}
-            height={65}
-            alt="Image Alt Text"
-          />
-        </button>
+      <div className="hButtonContainer servicesButton">
+        <div className="visibleWrapperContainer">
+          <div className="topVisibleContainer">
+            <a href="/pages/Services" className="btn">
+              Our Services
+              <Image
+                src="/Arrow.png"
+                width={23}
+                height={23}
+                alt="heroContact"
+              />
+            </a>
+          </div>
+          <div className="bottomVisibleContainer">
+            <a href="/pages/Services" className="btn">
+              Our Services
+              <Image
+                src="/Arrow.png"
+                width={23}
+                height={23}
+                alt="heroContact"
+              />
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );
