@@ -24,13 +24,36 @@ function Locations() {
             iaculis ultrices cursus tristique eget mattis.
           </p>
         </div>
-        <div className="hButtonContainer">
-          <button className="btn">EXPLORE MORE <Image src='/whiteArrow.png'  width={18} height={18} alt="imageContact"/></button>
+        <div className="hButtonContainer locationButton">
+          <div className="visibleWrapperContainer">
+            <div className="topVisibleContainer">
+              <a href="/pages/Services" className="btn">
+                Explore More
+                <Image
+                  src="/whiteArrow.png"
+                  width={23}
+                  height={23}
+                  alt="heroContact"
+                />
+              </a>
+            </div>
+            <div className="bottomVisibleContainer">
+              <a href="/pages/Services" className="btn">
+                Explore More
+                <Image
+                  src="/whiteArrow.png"
+                  width={23}
+                  height={23}
+                  alt="heroContact"
+                />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 
       <div className="locationImgContainer">
-        <Image src="/map.png" width={606} height={527} alt="ImageLocation"/>
+        <Image src="/map.png" width={606} height={527} alt="ImageLocation" />
       </div>
     </div>
   );

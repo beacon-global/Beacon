@@ -41,17 +41,32 @@ function Header() {
           </ul>
         </div>
       </div>
-      <div className="hButtonContainer">
-        <button className="btn">
-          <Image
-            src="/telephone.png"
-            width={18}
-            height={18}
-            alt="imageTelephone"
-          />{" "}
-          +971 800 4392
-        </button>
-      </div>
+      <div className="hButtonContainer headerContactButton">
+            <div className="visibleWrapperContainer">
+              <div className="topVisibleContainer">
+                <a href="/pages/Services" className="btn">
+                  +971 800 4392
+                  <Image
+                    src="/telephone.png"
+                    width={23}
+                    height={23}
+                    alt="heroContact"
+                  />
+                </a>
+              </div>
+              <div className="bottomVisibleContainer">
+                <a href="/pages/Services" className="btn">
+                  +971 800 4392
+                  <Image
+                    src="/telephone.png"
+                    width={23}
+                    height={23}
+                    alt="heroContact"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
     </div>
   );
 }

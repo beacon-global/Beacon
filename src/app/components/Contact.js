@@ -14,9 +14,32 @@ function Contact() {
             message/call us for anyservices anywhere in UAE.
           </p>
         </div>
-        <div className="contactButtonContainer">
-            <button className="contactBtn">Contact Us <Image src='/whiteArrow.png'  width={18} height={18} alt="imageContact"/></button>
-        </div>
+        <div className="hButtonContainer contactImageButton">
+            <div className="visibleWrapperContainer">
+              <div className="topVisibleContainer">
+                <a href="/pages/Services" className="btn">
+                  Contact Us
+                  <Image
+                    src="/whiteArrow.png"
+                    width={23}
+                    height={23}
+                    alt="heroContact"
+                  />
+                </a>
+              </div>
+              <div className="bottomVisibleContainer">
+                <a href="/pages/Services" className="btn">
+                  Contact Us
+                  <Image
+                    src="/whiteArrow.png"
+                    width={23}
+                    height={23}
+                    alt="heroContact"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
       </div>
     </div>
   );

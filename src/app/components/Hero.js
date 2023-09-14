@@ -5,7 +5,14 @@ function Hero() {
   return (
     <div className="heroContainer">
       <div className="imageWithText">
-        <Image className="hImage" src="/hero.png" alt="Asian Engineer" width={1366} height={670} layout="responsive"/>
+        <Image
+          className="hImage"
+          src="/hero.png"
+          alt="Asian Engineer"
+          width={1366}
+          height={670}
+          layout="responsive"
+        />
         <div className="textOverlay">
           <div>
             <h1 className="heorHeading">
@@ -20,8 +27,31 @@ function Hero() {
               industryhas been the industrys standard dummy.
             </p>
           </div>
-          <div className="hButtonContainer">
-            <button className="btn">Our Services <Image src='/whiteArrow.png'  width={18} height={18} alt="heroContact"/></button>
+          <div className="hButtonContainer heroButton">
+            <div className="visibleWrapperContainer">
+              <div className="topVisibleContainer">
+                <a href="/pages/Services" className="btn">
+                  Our Services
+                  <Image
+                    src="/whiteArrow.png"
+                    width={23}
+                    height={23}
+                    alt="heroContact"
+                  />
+                </a>
+              </div>
+              <div className="bottomVisibleContainer">
+                <a href="/pages/Services" className="btn">
+                  Our Services
+                  <Image
+                    src="/whiteArrow.png"
+                    width={23}
+                    height={23}
+                    alt="heroContact"
+                  />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

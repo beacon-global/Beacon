@@ -39,14 +39,14 @@ function Blogs() {
         {blogsData.map((data, index) => (
           <div className="cardContainer" key={index}>
             <div className="imgContainer">
-              <Image src={data.img} width={350} height={250} alt="Image"/>
+              <Image src={data.img} width={350} height={250} alt="Image" />
             </div>
             <div className="blogBtnMainContainer">
               <div className="blogButtonContainer">
                 <button className="blogBtn">{data.btnText}</button>
               </div>
               <button className="arrowButton">
-                <Image src="/Arrow.png" width={23} height={23} alt="Image"/>
+                <Image src="/Arrow.png" width={23} height={23} alt="Image" />
               </button>
             </div>
             <div className="servicesHeadingContainer">
@@ -60,10 +60,30 @@ function Blogs() {
       </div>
 
       <div className="hButtonContainer servicesButton">
-        <button className="btn">
-          Our Services{" "}
-          <Image src="/Arrow.png" width={23} height={23} alt="heroContact" />
-        </button>
+        <div className="visibleWrapperContainer">
+          <div className="topVisibleContainer">
+            <a href="/pages/Services" className="btn">
+              Explore More
+              <Image
+                src="/Arrow.png"
+                width={23}
+                height={23}
+                alt="heroContact"
+              />
+            </a>
+          </div>
+          <div className="bottomVisibleContainer">
+            <a href="/pages/Services" className="btn">
+              Explore More
+              <Image
+                src="/Arrow.png"
+                width={23}
+                height={23}
+                alt="heroContact"
+              />
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );

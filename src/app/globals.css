@@ -120,6 +120,26 @@ li{
   width: 200px;
 }
 
+.hContainer .headerContactButton{
+  width: 233px;
+  height: 65px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.heroContainer .heroButton{
+  width: 233px;
+  height: 65px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
 .btn{
   color: #FFF;
   font-size: 16px;
@@ -130,6 +150,7 @@ li{
   display: flex;
   align-items: center;
   gap: 10px;
+  white-space: nowrap;
 }
 
 /* Header End */
@@ -243,8 +264,14 @@ li{
   width: 546px;
 }
 
-.locationContainer .hButtonContainer{
-  width: 210px;
+.locationContainer .locationButton{
+  width: 233px;
+  height: 65px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
 }
 
 /* Location End */
@@ -414,6 +441,7 @@ li{
   flex-direction: column;
   position: relative;
   overflow: hidden;
+  margin-top: -20px;
 }
 
 .visibleWrapperContainer{
@@ -864,27 +892,14 @@ li{
   line-height: 140%; /* 28px */
 }
 
-.contactButtonContainer{
-  display: inline-flex;
-  padding: 15px 30px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-
-  border-radius: 61px;
-  background: #13670B;
-}
-
-.contactBtn {
-  color: #FFF;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
-
+.contactContainer .contactImageButton{
+  width: 233px;
+  height: 65px;
+  cursor: pointer;
   display: flex;
-  align-items: center;
-  gap: 5px;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
 }
 
 /* Contact End */
