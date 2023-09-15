@@ -62,7 +62,7 @@ function Blogs() {
       <div className="hButtonContainer servicesButton">
         <div className="visibleWrapperContainer">
           <div className="topVisibleContainer">
-            <a href="/pages/Services" className="btn">
+            <a href="/" className="btn">
               Explore More
               <Image
                 src="/Arrow.png"
@@ -73,7 +73,7 @@ function Blogs() {
             </a>
           </div>
           <div className="bottomVisibleContainer">
-            <a href="/pages/Services" className="btn">
+            <a href="/" className="btn">
               Explore More
               <Image
                 src="/Arrow.png"

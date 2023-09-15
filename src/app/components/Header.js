@@ -44,7 +44,7 @@ function Header() {
       <div className="hButtonContainer headerContactButton">
             <div className="visibleWrapperContainer">
               <div className="topVisibleContainer">
-                <a href="/pages/Services" className="btn">
+                <a href="/" className="btn">
                   +971 800 4392
                   <Image
                     src="/telephone.png"
@@ -55,7 +55,7 @@ function Header() {
                 </a>
               </div>
               <div className="bottomVisibleContainer">
-                <a href="/pages/Services" className="btn">
+                <a href="/" className="btn">
                   +971 800 4392
                   <Image
                     src="/telephone.png"

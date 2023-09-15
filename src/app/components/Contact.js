@@ -17,7 +17,7 @@ function Contact() {
         <div className="hButtonContainer contactImageButton">
             <div className="visibleWrapperContainer">
               <div className="topVisibleContainer">
-                <a href="/pages/Services" className="btn">
+                <a href="/" className="btn">
                   Contact Us
                   <Image
                     src="/whiteArrow.png"
@@ -28,7 +28,7 @@ function Contact() {
                 </a>
               </div>
               <div className="bottomVisibleContainer">
-                <a href="/pages/Services" className="btn">
+                <a href="/" className="btn">
                   Contact Us
                   <Image
                     src="/whiteArrow.png"

@@ -30,7 +30,7 @@ function Hero() {
           <div className="hButtonContainer heroButton">
             <div className="visibleWrapperContainer">
               <div className="topVisibleContainer">
-                <a href="/pages/Services" className="btn">
+                <a href="/" className="btn">
                   Our Services
                   <Image
                     src="/whiteArrow.png"
@@ -41,7 +41,7 @@ function Hero() {
                 </a>
               </div>
               <div className="bottomVisibleContainer">
-                <a href="/pages/Services" className="btn">
+                <a href="/" className="btn">
                   Our Services
                   <Image
                     src="/whiteArrow.png"
