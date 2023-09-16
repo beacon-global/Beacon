@@ -80,7 +80,11 @@ function Faq() {
                   <div className="faqQuestion">
                     <h1>{data.heading}</h1>
                   </div>
-                  <div className="faqAddIcon">
+                  <div
+                    className={`faqAddIcon ${
+                      data.isAnswerVisible ? "rotateIcon" : ""
+                    }`}
+                  >
                     <button onClick={() => toggleAnswerVisibility(index)}>
                       <Image
                         src="/+.png"

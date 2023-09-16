@@ -1,7 +1,12 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 function Services() {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const imageSrc = isHovered ? "/whiteArrow.svg" : "/blackArrow.svg";
+
   const servicesData = [
     {
       img: "/Services/Services1.png",
@@ -59,22 +64,40 @@ function Services() {
             <div className="servicesDescContainer">
               <p className="servicesDesc">{data.description}</p>
             </div>
+            <div className="cardContainerOverlay">
+              <div className="cardContainerOverlayContent">
+                <h2>Service Details</h2>
+                <ul>
+                  <li>Lorem ipsum dolor sit amet consectetur.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur.</li>
+                </ul>
+              </div>
+            </div>
           </div>
         ))}
       </div>
 
-      <div className="hButtonContainer servicesButton">
+      <div
+        className="hButtonContainer servicesButton"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
         <div className="visibleWrapperContainer">
           <div className="topVisibleContainer">
             <a href="/pages/Services" className="btn">
               Our Services
               <div className="topVisibleArrow">
-              <Image
-                src="/blackArrow.svg"
-                width={23}
-                height={23}
-                alt="heroContact"
-              />
+                <Image
+                  src={imageSrc}
+                  width={23}
+                  height={23}
+                  alt="heroContact"
+                />
               </div>
             </a>
           </div>
@@ -82,12 +105,12 @@ function Services() {
             <a href="/pages/Services" className="btn">
               Our Services
               <div className="bottomVisibleArrow">
-              <Image
-                src="/blackArrow.svg"
-                width={23}
-                height={23}
-                alt="heroContact"
-              />
+                <Image
+                  src={imageSrc}
+                  width={23}
+                  height={23}
+                  alt="heroContact"
+                />
               </div>
             </a>
           </div>

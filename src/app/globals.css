@@ -74,6 +74,11 @@ body {
     font-family: 'Sora', sans-serif !important;
 }
 
+p {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+}
+
 li{
   cursor: pointer;
 }
@@ -106,40 +111,6 @@ li{
   line-height: 140%; 
   position: relative;
   white-space: nowrap;
-}
-
-
-.huListTransitionWrapper{
-  /* width: 100%; */
-  height: 90%;
-  overflow: hidden;
-  position: relative;
-}
-
-.listHoverTop, 
-.listBottomHover{
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  transform: translate(-0%, -0%);
-  transition: transform 0.6s ease;
-}
-
-.listHoverTop{
-  transform: translate(0%, -0%);
-}
-
-.listHoverBottom{
-  transition: transform 0.6s ease;
-  transform: translate(0%, 250%);
-}
-
-.huListTransitionWrapper:hover .listHoverTop {
-  transform: translate(0%, -250%);
-}
-
-.huListTransitionWrapper:hover  .listHoverBottom {
-  transform: translate(0%, 0%);
 }
 
 .hUlList li{
@@ -232,7 +203,7 @@ li{
   /* color: white;  */
   gap: 30px;
   text-align: center;
-  padding-left: 150px; /* Adjust as needed */
+  padding-left: 135px; /* Adjust as needed */
   /* padding-top: 300px;  */
 }
 
@@ -251,7 +222,7 @@ li{
 
 .textOverlay p {
   color: rgba(255, 255, 255, 0.60);
-  font-size: 13px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%; 
@@ -272,15 +243,17 @@ li{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap:60px;
+  gap:70px;
   background: #FFF;
-  padding: 0 150px;
+  padding: 0 135px;
 }
 
 .locationContentContainer{
   display: flex;
   flex-direction: column;
   gap: 30px;
+  width: 80%;
+  justify-content: center;
 }
 
 .locationHeading{
@@ -295,11 +268,11 @@ li{
 
 .locationDesc{
   color: #58595B;
-  font-size: 13px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%; /* 22.4px */
-  width: 546px;
+  width: 476px;
 }
 
 .locationContainer .locationButton{
@@ -312,7 +285,14 @@ li{
   overflow: hidden;
 }
 
+.locationImgContainer{
+  width: 100%;
+}
+
 /* Location End */
+
+
+
 
 /* Business Setup Start */
 
@@ -322,13 +302,13 @@ li{
   justify-content: center;
   align-items: center;
   gap: 70px;
-  padding: 0px 150px;
+  padding: 0px 135px;
 }
 
 .businessHeading{
   color: #13670B;
   text-align: center;
-  font-size: 13px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: 120%; /* 19.2px */
@@ -395,7 +375,7 @@ li{
 .ksaDesc{
   color: #FFF;
   text-align: center;
-  font-size: 13px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
@@ -424,7 +404,7 @@ li{
   justify-content: center;
   align-items: center;
   gap: 70px;
-  padding: 0px 150px;
+  padding: 0px 135px;
 }
 
 .cardMainContainer{
@@ -436,7 +416,14 @@ li{
   width: 100%;
 }
 
-.cardContainer{
+.cardMainContainer .cardContainer{
+  gap: 30px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding: 60px 30px;
+}
+
+.cardContainer {
   width: 328px;
   width: 31.4%;
   /* height: 304px; */
@@ -447,7 +434,56 @@ li{
   align-items: center;
   gap: 20px;
   padding: 30px;
+  position: relative; /* Create a stacking context */
+  overflow: hidden; /* Hide overflow to contain the animation */
 }
+
+.cardContainer:hover::before {
+  height: 100%; /* Expand the "curtain" from bottom to top on hover */
+  transition: height 0.6s ease;
+  z-index: 1; /* Keep it below the content while expanding */
+}
+
+.cardContainerOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #13670B;
+  overflow: hidden;
+  transition: height 0.6s ease;
+  display: flex;
+  justify-content: center;
+  padding: 1px 0;
+}
+
+.cardContainer:hover .cardContainerOverlay {
+  height: 100%;
+  transition: height 0.6s ease;
+}
+
+.cardContainerOverlayContent h2{
+  margin: 50px 0;
+  color: #fff;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 28.8px */
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.cardContainerOverlayContent li {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  text-align: center;
+  margin: 15px 0;
+}
+
 
 .servicesHeading{
   color: #02040E;
@@ -461,12 +497,12 @@ li{
 .servicesDescContainer{
   width:  258px;
   height: 110px;
+  margin-top: -15px;
 }
 
 .servicesDesc{
   color: #58595B;
-/* r1 */
-  font-size: 13px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
@@ -486,66 +522,11 @@ li{
   margin-top: -20px;
 }
 
-.visibleWrapperContainer{
-  width: 100%;
-  height: 90%;
-  overflow: hidden;
-  position: relative;
-}
 
-.topVisibleArrow,
-.bottomVisibleArrow{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(285%, -50%);
-  transition: transform 0.5s ease;
-}
 
-.topVisibleArrow{
-  transform: translate(285%, -50%);
-}
 
-.bottomVisibleArrow{
-  transform: translate(175.5%, -198%);
-}
-
-.hButtonContainer:hover .topVisibleArrow{
-  transform: translate(395%, 15%);
-}
-
-.hButtonContainer:hover .bottomVisibleArrow{
-  transform: translate(285%, -50%);
-}
-
-.hButtonContainer:hover .bottomVisibleArrow{}
-
-.topVisibleContainer,
-.bottomVisibleContainer {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-55%, -50%);
-  transition: transform 0.5s ease;
-}
-
-.topVisibleContainer {
-  transform: translate(-55%, -50%);
-}
-.bottomVisibleContainer {
-  transform: translate(-55%, 250%);
-}
-
-.hButtonContainer:hover .topVisibleContainer {
-  transform: translate(-55%, -250%);
-}
-
-.hButtonContainer:hover .bottomVisibleContainer {
-  transform: translate(-55%, -50%);
-}
 
 .servicesButton .btn{
-  color: #02040E;
   color: #02040E;
   font-size: 16px;
   font-style: normal;
@@ -553,7 +534,11 @@ li{
   line-height: 120%; /* 19.2px */
   text-transform: uppercase;
   white-space: nowrap;
+  transition: height 0.6s ease;
+  z-index: 1; /* Ensure the text is above the pseudo-element */
 }
+
+
 
 /* Services End */
 
@@ -565,7 +550,7 @@ li{
   justify-content: center;
   align-items: center;
   gap: 70px;
-  padding: 0px 150px;
+  padding: 0px 135px;
 }
 
 .whyBeaconContentsContainer{
@@ -603,7 +588,7 @@ li{
 
 .whyBeaconDesc{
   color: #58595B;
-  font-size: 13px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%; /* 22.4px */
@@ -657,7 +642,7 @@ li{
 .beaconDesc{
   width: 289px;
   color: #58595B;
-  font-size: 13px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%; /* 22.4px */
@@ -700,7 +685,7 @@ li{
   align-items: center;
   background-color: rgba(247, 247, 248, 1);
   height: 424px;
-  padding: 0 150px;
+  padding: 0 135px;
   margin-top: 60px;
   gap: 28px;
 }
@@ -738,7 +723,7 @@ li{
 .testimonialDesc{
   color: #58595B;
 
-  font-size: 13px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
@@ -774,7 +759,7 @@ li{
 
 .profileDesignation{
   color: #58595B;
-  font-size: 13px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%; /* 22.4px */
@@ -790,7 +775,7 @@ li{
   justify-content: center;
   align-items: center;
   gap: 70px;
-  padding: 0px 150px;
+  padding: 0px 135px;
 }
 
 .rectangleContainer{
@@ -807,10 +792,6 @@ li{
   padding: 0px;
 }
 
-/* .cardContainer .imgContainer{
-  align-self: center;
-} */
-
 .rectangleContainer .servicesDescContainer{
   width: auto;
 }
@@ -822,25 +803,6 @@ li{
   width: 100%;
 }
 
-.blogButtonContainer{
-  width: 224px;
-  height: 38px;
-  flex-shrink: 0;
-  border-radius: 82px;
-  background: #13670B;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.blogBtn{
-  color: #FFF;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%; /* 22.4px */
-}
-
 .blogsContainer > div:nth-child(3) {
   margin-top: -50px;
 }
@@ -850,6 +812,10 @@ li{
   border: 1px solid #02040E;
   width: 233px;
   height: 65px;
+  transition: height 0.6s ease;
+  overflow: hidden;
+  z-index: 1; 
+  position: relative;
 }
 
 /* Blogs End */
@@ -862,7 +828,7 @@ li{
   justify-content: center;
   align-items: center;
   gap: 70px;
-  padding: 0px 150px;
+  padding: 0px 135px;
 }
 
 .faqContainer{
@@ -912,7 +878,7 @@ li{
 }
 
 .faqDesc{
-  font-size: 13px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
@@ -925,7 +891,16 @@ li{
 }
 
 .faqDesc.open {
-  max-height: 200px; /* Adjust the maximum height as needed */
+  max-height: 200px; 
+}
+
+.faqAddIcon {
+  transition: transform 0.4s ease-in-out; 
+  transform: rotate(0deg);
+}
+
+.rotateIcon {
+  transform: rotate(45deg); 
 }
 
 /* FAQ Ends */
@@ -938,7 +913,7 @@ li{
   justify-content: center;
   align-items: center;
   gap: 70px;
-  padding: 0px 150px;
+  padding: 0px 135px;
 }
 
 .contactContainer {
@@ -994,7 +969,7 @@ li{
   background-color: rgba(2, 24, 1, 1);
   
   gap: 51px;
-  padding: 70px 150px 50px 150px;
+  padding: 70px 135px 50px 135px;
 }
 
 .topContainer{
@@ -1046,7 +1021,7 @@ li{
 
 .footerContactTextDetails h1{
   color: #FFF;
-  font-size: 13px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
@@ -1088,7 +1063,7 @@ li{
   flex-direction: column;
   /* align-items: center; */
   justify-content: center;
-  padding: 0 150px;
+  padding: 0 135px;
 }
 
 .servicesPageColomnContainer{
@@ -1138,7 +1113,7 @@ li{
 
 .servicesDesc{
   color: #58595B;
-  font-size: 13px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%; 
@@ -1151,3 +1126,135 @@ li{
 /* Services Page End */
 
 
+
+
+/* Animations or Transitions Start */
+
+/* Header Anim or Transi Start */
+
+.huListTransitionWrapper{
+  /* width: 100%; */
+  height: 90%;
+  overflow: hidden;
+  position: relative;
+}
+
+.listHoverTop, 
+.listBottomHover{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translate(-0%, -0%);
+  transition: transform 0.6s ease;
+}
+
+.listHoverTop{
+  transform: translate(0%, -0%);
+}
+
+.listHoverBottom{
+  transition: transform 0.6s ease;
+  transform: translate(0%, 250%);
+}
+
+.huListTransitionWrapper:hover .listHoverTop {
+  transform: translate(0%, -250%);
+}
+
+.huListTransitionWrapper:hover  .listHoverBottom {
+  transform: translate(0%, 0%);
+}
+
+/* Header Anim or Transi Ends */
+
+/* Button Text Anim or Transi Start */
+
+.topVisibleContainer,
+.bottomVisibleContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-55%, -50%);
+  transition: transform 0.5s ease;
+}
+
+.topVisibleContainer {
+  transform: translate(-55%, -50%);
+}
+.bottomVisibleContainer {
+  transform: translate(-55%, 250%);
+}
+
+.hButtonContainer:hover .topVisibleContainer {
+  transform: translate(-55%, -250%);
+}
+
+.hButtonContainer:hover .bottomVisibleContainer {
+  transform: translate(-55%, -50%);
+}
+
+/* ButtonText Anim or Transi End */
+
+/* ButtonArrow Anim or Transi End */
+
+.visibleWrapperContainer{
+  width: 100%;
+  height: 90%;
+  overflow: hidden;
+  position: relative;
+}
+
+.topVisibleArrow,
+.bottomVisibleArrow{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(285%, -50%);
+  transition: transform 0.5s ease;
+}
+
+.topVisibleArrow{
+  transform: translate(285%, -50%);
+}
+
+.bottomVisibleArrow{
+  transform: translate(175.5%, -198%);
+}
+
+.hButtonContainer:hover .topVisibleArrow{
+  transform: translate(395%, 15%);
+}
+
+.hButtonContainer:hover .bottomVisibleArrow{
+  transform: translate(285%, -50%);
+}
+
+/* ButtonArrow Anim or Transi Start */
+
+
+/* card Anim or Transi Start */
+
+.servicesButton::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #13670b;
+  overflow: hidden;
+  z-index: 0; 
+  transition: height 0.6s ease;
+}
+
+.servicesButton:hover::before {
+  height: 100%; 
+  transition: height 0.6s ease;
+} 
+
+.servicesButton:hover .btn{
+  color: #fff;
+}
+
+/* card Anim or Transi End */
+/* Animations End */

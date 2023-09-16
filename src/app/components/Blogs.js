@@ -1,7 +1,12 @@
+"use client"
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 function Blogs() {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const imageSrc = isHovered ? "/whiteArrow.svg" : "/blackArrow.svg";
+
   const blogsData = [
     {
       img: "/Blogs/Blogs1.png",
@@ -64,14 +69,18 @@ function Blogs() {
         ))}
       </div>
 
-      <div className="hButtonContainer servicesButton">
+      <div
+        className="hButtonContainer servicesButton"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
         <div className="visibleWrapperContainer">
           <div className="topVisibleContainer">
             <a href="/" className="btn">
               Explore More
               <div className="topVisibleArrow">
                 <Image
-                  src="blackArrow.svg"
+                  src={imageSrc}
                   width={23}
                   height={23}
                   alt="heroContact"
@@ -84,7 +93,7 @@ function Blogs() {
               Explore More
               <div className="bottomVisibleArrow">
                 <Image
-                  src="blackArrow.svg"
+                  src={imageSrc}
                   width={23}
                   height={23}
                   alt="heroContact"
