@@ -32,23 +32,27 @@ function Hero() {
               <div className="topVisibleContainer">
                 <a href="/" className="btn">
                   Our Services
-                  <Image
-                    src="/whiteArrow.png"
-                    width={23}
-                    height={23}
-                    alt="heroContact"
-                  />
+                  <div className="topVisibleArrow">
+                    <Image
+                      src="/whiteArrow.svg"
+                      width={23}
+                      height={23}
+                      alt="heroContact"
+                    />
+                  </div>
                 </a>
               </div>
               <div className="bottomVisibleContainer">
                 <a href="/" className="btn">
                   Our Services
-                  <Image
-                    src="/whiteArrow.png"
-                    width={23}
-                    height={23}
-                    alt="heroContact"
-                  />
+                  <div className="bottomVisibleArrow">
+                    <Image
+                      src="/whiteArrow.svg"
+                      width={23}
+                      height={23}
+                      alt="heroContact"
+                    />
+                  </div>
                 </a>
               </div>
             </div>

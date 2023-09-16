@@ -1,25 +1,51 @@
 "use client";
 import { motion } from "framer-motion";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
-import ButtonSvg from "./ButtonSvg";
+import { LeftArrowSvg, RightArrowSvg } from "./ButtonSvg";
 
 function Clients() {
+
+  const testimonials = [
+    {
+      message:
+        "The best agency we've worked with so far. They understand our product and are able to add new features with a great focus.",
+      name: "Jenny Wilson",
+      designation: "Vice President",
+      img: "/TestimonialDp.png"
+    },
+    {
+      message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.",
+      name: "John Doe",
+      designation: "CEO",
+      img: "/TestimonialDp.png"
+    },
+    // Add more testimonials here
+  ];
+
+  const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
+
+  const nextTestimonial = () => {
+    setCurrentTestimonialIndex((prevIndex) =>
+      prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const previousTestimonial = () => {
+    setCurrentTestimonialIndex((prevIndex) =>
+      prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
+    );
+  };
+
+  const currentTestimonial = testimonials[currentTestimonialIndex];
+
   return (
     <div className="clientsContainer">
       <div className="businessContentContainer">
         <h1 className="businessHeading">our CLIENTS</h1>
         <h2 className="businessDesc">Our core partners</h2>
       </div>
-      <div
-        className="clientsImgContainer"
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          overflow: "hidden",
-        }}
-      >
+      <div className="clientsImgContainer">
         <ScrollingLogos />
       </div>
       {/* <Image
@@ -30,38 +56,41 @@ function Clients() {
         /> */}
       <div className="testimonialMainContainer">
         <div className="testimonialLeftContainer">
-          <h1 className="testimonialHeading">What our clients<br/>say about us</h1>
+          <h1 className="testimonialHeading">
+            What our clients
+            <br />
+            say about us
+          </h1>
           <p className="testimonialDesc">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.
           </p>
         </div>
         <div className="testimonialRightContainer">
           <div className="testimonialMessage">
-            <h1>
-            &quot;The best agency we,ve worked with so far. They understand our
-              product and are able to add new features with a great focus.&quot;
-            </h1>
+            <h1>&quot;{currentTestimonial.message}&quot;</h1>
           </div>
           <div className="testimonialImageButtonContainer">
             <div className="testimonialProfile">
-              <Image
-                src="/TestimonialDp.png"
+            <Image
+                src={currentTestimonial.img}
                 width={67}
                 height={60}
                 alt="person"
               />
               <div style={{display:"flex", flexDirection:"column"}}>
-              <p className="profileName">
-                Jenny Wilson 
-              </p>
+              {/* Display current testimonial's profile */}
+              <p className="profileName">{currentTestimonial.name}</p>
               <p className="profileDesignation">
-              Vice President
+                {currentTestimonial.designation}
               </p>
               </div>
             </div>
             <div className="testimonialButtonContainer">
-              <button>
-                <ButtonSvg />
+              <button onClick={nextTestimonial}>
+                <RightArrowSvg />
+              </button>
+              <button onClick={previousTestimonial}>
+                <LeftArrowSvg />
               </button>
             </div>
           </div>
@@ -82,37 +111,42 @@ function ScrollingLogos() {
       <Image
         src="/LogoClients.png"
         width={100}
-        height={100}
+        height={0}
         layout="responsive"
         alt="ImageClients"
+        className="logoClients"
       />
       <Image
         src="/LogoClients.png"
         width={100}
-        height={100}
+        height={0}
         layout="responsive"
         alt="ImageClients"
+        className="logoClients"
       />
       <Image
         src="/LogoClients.png"
         width={100}
-        height={100}
+        height={0}
         layout="responsive"
         alt="ImageClients"
+        className="logoClients"
       />
       <Image
         src="/LogoClients.png"
         width={100}
-        height={100}
+        height={0}
         layout="responsive"
         alt="ImageClients"
+        className="logoClients"
       />
       <Image
         src="/LogoClients.png"
         width={100}
-        height={100}
+        height={0}
         layout="responsive"
         alt="ImageClients"
+        className="logoClients"
       />
     </motion.div>
   );

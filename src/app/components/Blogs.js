@@ -46,7 +46,12 @@ function Blogs() {
                 <button className="blogBtn">{data.btnText}</button>
               </div>
               <button className="arrowButton">
-                <Image src="/Arrow.png" width={23} height={23} alt="Image" />
+                <Image
+                  src="blackArrow.svg"
+                  width={23}
+                  height={23}
+                  alt="Image"
+                />
               </button>
             </div>
             <div className="servicesHeadingContainer">
@@ -64,23 +69,27 @@ function Blogs() {
           <div className="topVisibleContainer">
             <a href="/" className="btn">
               Explore More
-              <Image
-                src="/Arrow.png"
-                width={23}
-                height={23}
-                alt="heroContact"
-              />
+              <div className="topVisibleArrow">
+                <Image
+                  src="blackArrow.svg"
+                  width={23}
+                  height={23}
+                  alt="heroContact"
+                />
+              </div>
             </a>
           </div>
           <div className="bottomVisibleContainer">
             <a href="/" className="btn">
               Explore More
-              <Image
-                src="/Arrow.png"
-                width={23}
-                height={23}
-                alt="heroContact"
-              />
+              <div className="bottomVisibleArrow">
+                <Image
+                  src="blackArrow.svg"
+                  width={23}
+                  height={23}
+                  alt="heroContact"
+                />
+              </div>
             </a>
           </div>
         </div>

@@ -29,23 +29,27 @@ function Locations() {
             <div className="topVisibleContainer">
               <a href="/" className="btn">
                 Explore More
-                <Image
-                  src="/whiteArrow.png"
-                  width={23}
-                  height={23}
-                  alt="heroContact"
-                />
+                <div className="topVisibleArrow">
+                  <Image
+                    src="/whiteArrow.svg"
+                    width={23}
+                    height={23}
+                    alt="heroContact"
+                  />
+                </div>
               </a>
             </div>
             <div className="bottomVisibleContainer">
               <a href="/" className="btn">
                 Explore More
-                <Image
-                  src="/whiteArrow.png"
-                  width={23}
-                  height={23}
-                  alt="heroContact"
-                />
+                <div className="bottomVisibleArrow">
+                  <Image
+                    src="/whiteArrow.svg"
+                    width={23}
+                    height={23}
+                    alt="heroContact"
+                  />
+                </div>
               </a>
             </div>
           </div>
@@ -53,7 +57,13 @@ function Locations() {
       </div>
 
       <div className="locationImgContainer">
-        <Image src="/map.png" width={606} height={527} alt="ImageLocation" />
+        <Image
+          src="/map.svg"
+          width={606}
+          height={527}
+          alt="ImageLocation"
+          layout="responsive"
+        />
       </div>
     </div>
   );

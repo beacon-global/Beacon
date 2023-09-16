@@ -10,16 +10,16 @@ function BusinessSetup() {
       </div>
       <div className="businessVideoContainer">
         <div className="ksa">
-          <Image src="/KSA.png" width={586} height={300} layout="responsive" alt="ImageBusiness" />
+          <Image src="/KSA.svg" width={586} height={300} layout="responsive" alt="ImageBusiness" />
           <div className="businessCardContentContainer">
             <h1 className="ksaHeading">Saudi arabia</h1>
             <p className="ksaDesc">
               Lorem Ipsum is simply dummy the printiones and futuresion future
               typesetting industryha dummy typesetting.
             </p>
-            <div className="businessCircle">
-              <Image src="/whiteArrow.png" width={30} height={30} alt="ImageBusiness" />
-            </div>
+            {/* <div className="businessCircle"> */}
+              <Image src="/whiteArrowCircle.svg" width={40} height={40} alt="ImageBusiness" />
+            {/* </div> */}
           </div>
         </div>
 
@@ -31,9 +31,9 @@ function BusinessSetup() {
               Lorem Ipsum is simply dummy the printiones and futuresion future
               typesetting industryha dummy typesetting.
             </p>
-            <div className="businessCircle">
-              <Image src="/whiteArrow.png" width={30} height={30} alt="ImageBusiness" />
-            </div>
+            {/* <div className="businessCircle"> */}
+              <Image src="/whiteArrowCircle.svg" width={40} height={40} alt="ImageBusiness" />
+            {/* </div> */}
           </div>
         </div>
       </div>

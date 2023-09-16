@@ -68,23 +68,27 @@ function Services() {
           <div className="topVisibleContainer">
             <a href="/pages/Services" className="btn">
               Our Services
+              <div className="topVisibleArrow">
               <Image
-                src="/Arrow.png"
+                src="/blackArrow.svg"
                 width={23}
                 height={23}
                 alt="heroContact"
               />
+              </div>
             </a>
           </div>
           <div className="bottomVisibleContainer">
             <a href="/pages/Services" className="btn">
               Our Services
+              <div className="bottomVisibleArrow">
               <Image
-                src="/Arrow.png"
+                src="/blackArrow.svg"
                 width={23}
                 height={23}
                 alt="heroContact"
               />
+              </div>
             </a>
           </div>
         </div>

@@ -84,6 +84,8 @@ li{
 
 /* Header Start */
 
+
+
 .hContainer{
   width: 100%;
   height: 94px;
@@ -102,6 +104,42 @@ li{
   font-style: normal;
   font-weight: 500;
   line-height: 140%; 
+  position: relative;
+  white-space: nowrap;
+}
+
+
+.huListTransitionWrapper{
+  /* width: 100%; */
+  height: 90%;
+  overflow: hidden;
+  position: relative;
+}
+
+.listHoverTop, 
+.listBottomHover{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translate(-0%, -0%);
+  transition: transform 0.6s ease;
+}
+
+.listHoverTop{
+  transform: translate(0%, -0%);
+}
+
+.listHoverBottom{
+  transition: transform 0.6s ease;
+  transform: translate(0%, 250%);
+}
+
+.huListTransitionWrapper:hover .listHoverTop {
+  transform: translate(0%, -250%);
+}
+
+.huListTransitionWrapper:hover  .listHoverBottom {
+  transform: translate(0%, 0%);
 }
 
 .hUlList li{
@@ -122,7 +160,7 @@ li{
 
 .hContainer .headerContactButton{
   width: 233px;
-  height: 65px;
+  height: 55px;
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -213,7 +251,7 @@ li{
 
 .textOverlay p {
   color: rgba(255, 255, 255, 0.60);
-  font-size: 14px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%; 
@@ -257,7 +295,7 @@ li{
 
 .locationDesc{
   color: #58595B;
-  font-size: 14px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%; /* 22.4px */
@@ -290,11 +328,12 @@ li{
 .businessHeading{
   color: #13670B;
   text-align: center;
-  font-size: 14px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 600;
   line-height: 120%; /* 19.2px */
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .businessDesc{
@@ -335,7 +374,7 @@ li{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
   height: 100%;
   padding: 0 103px;
@@ -356,7 +395,7 @@ li{
 .ksaDesc{
   color: #FFF;
   text-align: center;
-  font-size: 14px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
@@ -399,11 +438,13 @@ li{
 
 .cardContainer{
   width: 328px;
-  height: 304px;
+  width: 31.4%;
+  /* height: 304px; */
   flex-shrink: 0;
   background-color: rgba(247, 247, 248, 1);
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
   padding: 30px;
 }
@@ -425,10 +466,11 @@ li{
 .servicesDesc{
   color: #58595B;
 /* r1 */
-  font-size: 14px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
+  text-align: center;
 }
 
 .serviceContainer .servicesButton{
@@ -450,6 +492,33 @@ li{
   overflow: hidden;
   position: relative;
 }
+
+.topVisibleArrow,
+.bottomVisibleArrow{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(285%, -50%);
+  transition: transform 0.5s ease;
+}
+
+.topVisibleArrow{
+  transform: translate(285%, -50%);
+}
+
+.bottomVisibleArrow{
+  transform: translate(175.5%, -198%);
+}
+
+.hButtonContainer:hover .topVisibleArrow{
+  transform: translate(395%, 15%);
+}
+
+.hButtonContainer:hover .bottomVisibleArrow{
+  transform: translate(285%, -50%);
+}
+
+.hButtonContainer:hover .bottomVisibleArrow{}
 
 .topVisibleContainer,
 .bottomVisibleContainer {
@@ -534,7 +603,7 @@ li{
 
 .whyBeaconDesc{
   color: #58595B;
-  font-size: 14px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%; /* 22.4px */
@@ -558,13 +627,14 @@ li{
   display: flex;
   gap: 28px;
   flex-wrap: wrap;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
+  width: 100%;
 }
 
 .beaconContainer{
   width: 330px;
-  height: 143px;
+  /* height: 143px; */
   display: flex;
   gap: 15px;
 }
@@ -587,7 +657,7 @@ li{
 .beaconDesc{
   width: 289px;
   color: #58595B;
-  font-size: 14px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%; /* 22.4px */
@@ -615,6 +685,13 @@ li{
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+}
+
+.logoClients{
+  height: 55px !important;
+  /* width: 100% !important; */
+  object-fit: contain;
 }
 
 .testimonialMainContainer{
@@ -640,6 +717,7 @@ li{
   display: flex;
   flex-direction: column;
   gap: 50px;
+  width: 140vw;
 }
 
 .testimonialImageButtonContainer{
@@ -660,7 +738,7 @@ li{
 .testimonialDesc{
   color: #58595B;
 
-  font-size: 14px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
@@ -674,6 +752,7 @@ li{
   font-weight: 400;
   line-height: 120%; /* 36px */
   text-transform: capitalize;
+  height: 144px;
 }
 
 .testimonialProfile{
@@ -695,7 +774,7 @@ li{
 
 .profileDesignation{
   color: #58595B;
-  font-size: 14px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%; /* 22.4px */
@@ -719,6 +798,7 @@ li{
   justify-content: center;
   align-items: center;
   gap: 30px;
+  width: 100%;
 }
 
 .rectangleContainer .cardContainer{
@@ -739,6 +819,7 @@ li{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 100%;
 }
 
 .blogButtonContainer{
@@ -754,7 +835,7 @@ li{
 
 .blogBtn{
   color: #FFF;
-  font-size: 14px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%; /* 22.4px */
@@ -831,7 +912,7 @@ li{
 }
 
 .faqDesc{
-  font-size: 14px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
@@ -910,7 +991,8 @@ li{
   display: flex;
   flex-direction: column;
   height: 380px;
-  background-color: #02040E;
+  background-color: rgba(2, 24, 1, 1);
+  
   gap: 51px;
   padding: 70px 150px 50px 150px;
 }
@@ -948,6 +1030,36 @@ li{
 
 .footerContainer hr{
   background: rgba(255, 255, 255, 0.60);
+}
+
+.footerContactImgContainer{
+  display: flex;
+  gap: 46px;
+}
+
+.footerContactDetails{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.footerContactTextDetails h1{
+  color: #FFF;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  margin-bottom: 5px;
+}
+
+.footerContactTextDetails p{
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 21.6px */
+  text-transform: capitalize;
 }
 
 .socialIcons{
@@ -1026,7 +1138,7 @@ li{
 
 .servicesDesc{
   color: #58595B;
-  font-size: 14px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%; 
@@ -1037,3 +1149,5 @@ li{
 }
 
 /* Services Page End */
+
+

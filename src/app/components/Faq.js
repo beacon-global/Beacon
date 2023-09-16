@@ -9,6 +9,7 @@ function Faq() {
       heading: "How much time does it take?",
       description:
         "Lorem Ipsum is simply dummy text of the printiones and futuresion future typesetting to industryhas been the industry's standard dummy text ever and typesetting.",
+      isAnswerVisible: true,
     },
     {
       img: "/Numbers/02.png",
@@ -63,7 +64,13 @@ function Faq() {
           {faqData.map((data, index) => (
             <div className="faqRight" key={index}>
               <div className="faqCountContainer">
-                <Image src={data.img} width={24} height={24} layout="responsive" alt={`faqImageNumber ${index}`} />
+                <Image
+                  src={data.img}
+                  width={24}
+                  height={24}
+                  layout="responsive"
+                  alt={`faqImageNumber ${index}`}
+                />
               </div>
               <div className="faqContentContainer">
                 <div
@@ -75,7 +82,12 @@ function Faq() {
                   </div>
                   <div className="faqAddIcon">
                     <button onClick={() => toggleAnswerVisibility(index)}>
-                      <Image src="/+.png" width={16} height={16} alt="ImageFaq" />
+                      <Image
+                        src="/+.png"
+                        width={16}
+                        height={16}
+                        alt="ImageFaq"
+                      />
                     </button>
                   </div>
                 </div>

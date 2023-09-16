@@ -13,12 +13,6 @@ function Header() {
     { text: "Contact Us", href: "/" },
   ];
 
-  const [activeItem, setActiveItem] = useState(0);
-
-  const handleListItemClick = (index) => {
-    setActiveItem(index);
-  };
-
   return (
     <div className="hContainer bg-white">
       <div className="logoContainer">
@@ -28,13 +22,10 @@ function Header() {
         <div className="hMenu">
           <ul className="hUlList">
             {menuList.map((item, index) => (
-              <li
-                key={index}
-                onClick={() => handleListItemClick(index)}
-                className={activeItem === index ? "activeListItem" : ""}
-              >
+              <li key={index} className="huListTransitionWrapper">
                 <a href={item.href}>
-                  {item.text}
+                  <div className="listHoverTop">{item.text}</div>
+                  <div className="listHoverBottom">{item.text}</div>
                 </a>
               </li>
             ))}
@@ -42,31 +33,31 @@ function Header() {
         </div>
       </div>
       <div className="hButtonContainer headerContactButton">
-            <div className="visibleWrapperContainer">
-              <div className="topVisibleContainer">
-                <a href="/" className="btn">
-                  +971 800 4392
-                  <Image
-                    src="/telephone.png"
-                    width={23}
-                    height={23}
-                    alt="heroContact"
-                  />
-                </a>
-              </div>
-              <div className="bottomVisibleContainer">
-                <a href="/" className="btn">
-                  +971 800 4392
-                  <Image
-                    src="/telephone.png"
-                    width={23}
-                    height={23}
-                    alt="heroContact"
-                  />
-                </a>
-              </div>
-            </div>
+        <div className="visibleWrapperContainer">
+          <div className="topVisibleContainer">
+            <a href="/" className="btn">
+              <Image
+                src="/telephone.svg"
+                width={23}
+                height={23}
+                alt="heroContact"
+              />
+              +971 800 4392
+            </a>
           </div>
+          <div className="bottomVisibleContainer">
+            <a href="/" className="btn">
+              <Image
+                src="/telephone.svg"
+                width={23}
+                height={23}
+                alt="heroContact"
+              />
+              +971 800 4392
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
