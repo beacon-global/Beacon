@@ -10,7 +10,7 @@ function BusinessSetup() {
       </div>
       <div className="businessVideoContainer">
         <div className="ksa">
-          <Image src="/Backgrounds/KSA.svg" width={586} height={300} layout="responsive" alt="ImageBusiness1" />
+          <Image src="/KSA.svg" width={586} height={300} layout="responsive" alt="ImageBusiness1" />
           <div className="businessCardContentContainer">
             <h1 className="ksaHeading">Saudi arabia</h1>
             <p className="ksaDesc">
