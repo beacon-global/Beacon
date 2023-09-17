@@ -97,7 +97,7 @@ function Footer() {
       <div className="footerCopyRightContainer">
         <p className="footerCopyRight">
           © 2023 by Beacon Management Consultants CO.LTD | All Right Reserved |
-          Powered by <a href="https://procube.cx/">procube.cx</a>
+          Powered by <a href="https://procube.cx/" style={{textDecoration:"underline"}}>procube.cx</a>
         </p>
       </div>
     </div>

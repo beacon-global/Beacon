@@ -52,7 +52,7 @@ function Faq() {
       <div className="faqContainer">
         <div className="faqLeft">
           <div className="businessContentContainer">
-            <h1 style={{ paddingTop: "8px" }} className="businessHeading">
+            <h1 className="businessHeading">
               FAQ
             </h1>
             <h2 className="businessDesc">

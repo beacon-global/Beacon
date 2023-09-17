@@ -5,20 +5,19 @@ import Image from "next/image";
 import { LeftArrowSvg, RightArrowSvg } from "./ButtonSvg";
 
 function Clients() {
-
   const testimonials = [
     {
       message:
         "The best agency we've worked with so far. They understand our product and are able to add new features with a great focus.",
       name: "Jenny Wilson",
       designation: "Vice President",
-      img: "/TestimonialDp.png"
+      img: "/TestimonialDp.png",
     },
     {
       message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.",
       name: "John Doe",
       designation: "CEO",
-      img: "/TestimonialDp.png"
+      img: "/TestimonialDp.png",
     },
     // Add more testimonials here
   ];
@@ -48,12 +47,6 @@ function Clients() {
       <div className="clientsImgContainer">
         <ScrollingLogos />
       </div>
-      {/* <Image
-          src="/Testimonial.png"
-          width={100}
-          height={100}
-          layout="responsive"
-        /> */}
       <div className="testimonialMainContainer">
         <div className="testimonialLeftContainer">
           <h1 className="testimonialHeading">
@@ -71,18 +64,18 @@ function Clients() {
           </div>
           <div className="testimonialImageButtonContainer">
             <div className="testimonialProfile">
-            <Image
+              <Image
                 src={currentTestimonial.img}
                 width={67}
                 height={60}
                 alt="person"
               />
-              <div style={{display:"flex", flexDirection:"column"}}>
-              {/* Display current testimonial's profile */}
-              <p className="profileName">{currentTestimonial.name}</p>
-              <p className="profileDesignation">
-                {currentTestimonial.designation}
-              </p>
+              <div style={{ display: "flex", flexDirection: "column" }}>
+                {/* Display current testimonial's profile */}
+                <p className="profileName">{currentTestimonial.name}</p>
+                <p className="profileDesignation">
+                  {currentTestimonial.designation}
+                </p>
               </div>
             </div>
             <div className="testimonialButtonContainer">
@@ -109,7 +102,7 @@ function ScrollingLogos() {
       transition={{ repeat: Infinity, duration: 25, ease: "linear" }}
     >
       <Image
-        src="/LogoClients.png"
+        src="/clients/microsoft.svg"
         width={100}
         height={0}
         layout="responsive"
@@ -117,7 +110,7 @@ function ScrollingLogos() {
         className="logoClients"
       />
       <Image
-        src="/LogoClients.png"
+        src="/clients/google.svg"
         width={100}
         height={0}
         layout="responsive"
@@ -125,7 +118,7 @@ function ScrollingLogos() {
         className="logoClients"
       />
       <Image
-        src="/LogoClients.png"
+        src="/clients/apple.svg"
         width={100}
         height={0}
         layout="responsive"
@@ -133,7 +126,7 @@ function ScrollingLogos() {
         className="logoClients"
       />
       <Image
-        src="/LogoClients.png"
+        src="/clients/ola.svg"
         width={100}
         height={0}
         layout="responsive"
@@ -141,7 +134,223 @@ function ScrollingLogos() {
         className="logoClients"
       />
       <Image
-        src="/LogoClients.png"
+        src="/clients/fedex.svg"
+        width={100}
+        height={0}
+        layout="responsive"
+        alt="ImageClients"
+        className="logoClients"
+      />
+      <Image
+        src="/clients/airBnb.svg"
+        width={100}
+        height={0}
+        layout="responsive"
+        alt="ImageClients"
+        className="logoClients"
+      />
+      <Image
+        src="/clients/bookMyShow.svg"
+        width={100}
+        height={0}
+        layout="responsive"
+        alt="ImageClients"
+        className="logoClients"
+      />
+      <Image
+        src="/clients/Amazon.svg"
+        width={100}
+        height={0}
+        layout="responsive"
+        alt="ImageClients"
+        className="logoClients"
+      />
+      <Image
+        src="/clients/microsoft.svg"
+        width={100}
+        height={0}
+        layout="responsive"
+        alt="ImageClients"
+        className="logoClients"
+      />
+      <Image
+        src="/clients/google.svg"
+        width={100}
+        height={0}
+        layout="responsive"
+        alt="ImageClients"
+        className="logoClients"
+      />
+      <Image
+        src="/clients/apple.svg"
+        width={100}
+        height={0}
+        layout="responsive"
+        alt="ImageClients"
+        className="logoClients"
+      />
+      <Image
+        src="/clients/ola.svg"
+        width={100}
+        height={0}
+        layout="responsive"
+        alt="ImageClients"
+        className="logoClients"
+      />
+      <Image
+        src="/clients/fedex.svg"
+        width={100}
+        height={0}
+        layout="responsive"
+        alt="ImageClients"
+        className="logoClients"
+      />
+      <Image
+        src="/clients/airBnb.svg"
+        width={100}
+        height={0}
+        layout="responsive"
+        alt="ImageClients"
+        className="logoClients"
+      />
+      <Image
+        src="/clients/bookMyShow.svg"
+        width={100}
+        height={0}
+        layout="responsive"
+        alt="ImageClients"
+        className="logoClients"
+      />
+      <Image
+        src="/clients/Amazon.svg"
+        width={100}
+        height={0}
+        layout="responsive"
+        alt="ImageClients"
+        className="logoClients"
+      />
+      <Image
+        src="/clients/microsoft.svg"
+        width={100}
+        height={0}
+        layout="responsive"
+        alt="ImageClients"
+        className="logoClients"
+      />
+      <Image
+        src="/clients/google.svg"
+        width={100}
+        height={0}
+        layout="responsive"
+        alt="ImageClients"
+        className="logoClients"
+      />
+      <Image
+        src="/clients/apple.svg"
+        width={100}
+        height={0}
+        layout="responsive"
+        alt="ImageClients"
+        className="logoClients"
+      />
+      <Image
+        src="/clients/ola.svg"
+        width={100}
+        height={0}
+        layout="responsive"
+        alt="ImageClients"
+        className="logoClients"
+      />
+      <Image
+        src="/clients/fedex.svg"
+        width={100}
+        height={0}
+        layout="responsive"
+        alt="ImageClients"
+        className="logoClients"
+      />
+      <Image
+        src="/clients/airBnb.svg"
+        width={100}
+        height={0}
+        layout="responsive"
+        alt="ImageClients"
+        className="logoClients"
+      />
+      <Image
+        src="/clients/bookMyShow.svg"
+        width={100}
+        height={0}
+        layout="responsive"
+        alt="ImageClients"
+        className="logoClients"
+      />
+      <Image
+        src="/clients/Amazon.svg"
+        width={100}
+        height={0}
+        layout="responsive"
+        alt="ImageClients"
+        className="logoClients"
+      />
+      <Image
+        src="/clients/microsoft.svg"
+        width={100}
+        height={0}
+        layout="responsive"
+        alt="ImageClients"
+        className="logoClients"
+      />
+      <Image
+        src="/clients/google.svg"
+        width={100}
+        height={0}
+        layout="responsive"
+        alt="ImageClients"
+        className="logoClients"
+      />
+      <Image
+        src="/clients/apple.svg"
+        width={100}
+        height={0}
+        layout="responsive"
+        alt="ImageClients"
+        className="logoClients"
+      />
+      <Image
+        src="/clients/ola.svg"
+        width={100}
+        height={0}
+        layout="responsive"
+        alt="ImageClients"
+        className="logoClients"
+      />
+      <Image
+        src="/clients/fedex.svg"
+        width={100}
+        height={0}
+        layout="responsive"
+        alt="ImageClients"
+        className="logoClients"
+      />
+      <Image
+        src="/clients/airBnb.svg"
+        width={100}
+        height={0}
+        layout="responsive"
+        alt="ImageClients"
+        className="logoClients"
+      />
+      <Image
+        src="/clients/bookMyShow.svg"
+        width={100}
+        height={0}
+        layout="responsive"
+        alt="ImageClients"
+        className="logoClients"
+      />
+      <Image
+        src="/clients/Amazon.svg"
         width={100}
         height={0}
         layout="responsive"
@@ -151,5 +360,94 @@ function ScrollingLogos() {
     </motion.div>
   );
 }
+
+// function LogosSlide() {
+//   return (
+//     <div class="slider">
+//       <div class="slide-track">
+//         <div class="slide">
+//           <Image
+//             src="/clients/bookMyShow.svg"
+//             width={100}
+//             height={0}
+//             layout="responsive"
+//             alt="ImageClients"
+//             className="logoClients"
+//           />
+//         </div>
+//         <div class="slide">
+//           <Image
+//             src="/clients/airBnb.svg"
+//             width={100}
+//             height={0}
+//             layout="responsive"
+//             alt="ImageClients"
+//             className="logoClients"
+//           />
+//         </div>
+//         <div class="slide">
+//           <Image
+//             src="/clients/fedex.svg"
+//             width={100}
+//             height={0}
+//             layout="responsive"
+//             alt="ImageClients"
+//             className="logoClients"
+//           />
+//         </div>
+//         <div class="slide">
+//           <Image
+//             src="/clients/apple.svg"
+//             width={100}
+//             height={0}
+//             layout="responsive"
+//             alt="ImageClients"
+//             className="logoClients"
+//           />
+//         </div>
+//         <div class="slide">
+//           <Image
+//             src="/clients/google.svg"
+//             width={100}
+//             height={0}
+//             layout="responsive"
+//             alt="ImageClients"
+//             className="logoClients"
+//           />
+//         </div>
+//         <div class="slide">
+//           <Image
+//             src="/clients/microsoft.svg"
+//             width={100}
+//             height={0}
+//             layout="responsive"
+//             alt="ImageClients"
+//             className="logoClients"
+//           />
+//         </div>
+//         <div class="slide">
+//           <Image
+//             src="/clients/ola.svg"
+//             width={100}
+//             height={0}
+//             layout="responsive"
+//             alt="ImageClients"
+//             className="logoClients"
+//           />
+//         </div>
+//         <div class="slide">
+//           <Image
+//             src="/clients/Amazon.svg"
+//             width={100}
+//             height={0}
+//             layout="responsive"
+//             alt="ImageClients"
+//             className="logoClients"
+//           />
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
 
 export default Clients;

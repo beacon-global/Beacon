@@ -10,7 +10,7 @@ function BusinessSetup() {
       </div>
       <div className="businessVideoContainer">
         <div className="ksa">
-          <Image src="/KSA.svg" width={586} height={300} layout="responsive" alt="ImageBusiness" />
+          <Image src="/Backgrounds/KSA.svg" width={586} height={300} layout="responsive" alt="ImageBusiness1" />
           <div className="businessCardContentContainer">
             <h1 className="ksaHeading">Saudi arabia</h1>
             <p className="ksaDesc">
@@ -18,13 +18,13 @@ function BusinessSetup() {
               typesetting industryha dummy typesetting.
             </p>
             {/* <div className="businessCircle"> */}
-              <Image src="/whiteArrowCircle.svg" width={40} height={40} alt="ImageBusiness" />
+              <Image src="/whiteArrowCircle.svg" width={40} height={40} alt="ImageBusinessIcon" />
             {/* </div> */}
           </div>
         </div>
 
         <div className="uae">
-          <Image src="/UAE.png" width={586} height={300} layout="responsive" alt="ImageBusiness" />
+          <Image src="/UAE.png" width={586} height={300} layout="responsive" alt="ImageBusiness2" />
           <div className="businessCardContentContainer">
             <h1 className="ksaHeading">United Arab Emirates</h1>
             <p className="ksaDesc">
@@ -32,7 +32,7 @@ function BusinessSetup() {
               typesetting industryha dummy typesetting.
             </p>
             {/* <div className="businessCircle"> */}
-              <Image src="/whiteArrowCircle.svg" width={40} height={40} alt="ImageBusiness" />
+              <Image src="/whiteArrowCircle.svg" width={40} height={40} alt="ImageBusinessIcon2" />
             {/* </div> */}
           </div>
         </div>
