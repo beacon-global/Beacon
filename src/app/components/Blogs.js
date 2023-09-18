@@ -7,8 +7,8 @@ function Blogs() {
 
   const imageSrc = isHovered ? "/whiteArrow.svg" : "/blackArrow.svg";
 
-  // const screenSize = window.innerWidth;
-  const [screenWidth, setScreenWidth] = useState(null);
+  const screenSize = window.innerWidth;
+  const [screenWidth, setScreenWidth] = useState(screenSize);
 
   useEffect(() => {
     const handleResize = () => {

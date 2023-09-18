@@ -3,8 +3,8 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 function Hero() {
-  // const screenSize = window.innerWidth;
-  const [screenWidth, setScreenWidth] = useState(null);
+  const screenSize = window.innerWidth;
+  const [screenWidth, setScreenWidth] = useState(screenSize);
 
   useEffect(() => {
     const handleResize = () => {
