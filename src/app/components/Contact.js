@@ -6,7 +6,7 @@ function Contact() {
     <div className="contactMainContainer">
       <div className="contactContainer">
         <div className="contactHeadingContainer">
-          <h1 className="contactHeading">Contact Us. It’s Easy.</h1>
+          <h2 className="contactHeading">Contact Us. It’s Easy.</h2>
         </div>
         <div className="contactDescContainer">
           <p className="contactDesc">

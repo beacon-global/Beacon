@@ -14,6 +14,7 @@ function Header() {
   ];
 
   return (
+    <>
     <div className="hContainer bg-white">
       <div className="logoContainer">
         <Image src="/beacon.png" width={180} height={45} alt="ImageHeader" />
@@ -59,6 +60,7 @@ function Header() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

@@ -248,6 +248,12 @@ li{
   padding: 0 135px;
 }
 
+.locationFlexContainer {
+  display: flex;
+  width:100%;
+  gap:60px;
+}
+
 .locationContentContainer{
   display: flex;
   flex-direction: column;
@@ -829,8 +835,9 @@ li{
   border-radius: 82px;
   background: #13670B;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
+  padding-left: 15px;
 }
 
 .blogBtn{
@@ -1304,3 +1311,139 @@ li{
   0% {transform: translateX(0);}
   100% {transform: translatex(-1000%)}
 } */
+
+@media (max-width: 600px) {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  h2{
+    color: #FFF;
+    text-align: center;
+    font-size: 24px !important;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 33.6px */
+    text-transform: capitalize;
+  }
+
+  h6{
+    font-size: 12px;
+  }
+
+  p{
+    font-size: 12px !important;
+    text-align: center !important;
+  }
+
+  .hContainer{
+    display: none;
+  }
+  
+  .imageWithText{
+    width: 375px;
+    height: 600px;
+  }
+
+  .textOverlay{
+    padding: 0;
+  }
+
+  .textOverlay h1{
+    color: #FFF;
+    text-align: center !important;
+    font-family: Sora;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 43.2px */
+    text-transform: capitalize;
+  }
+
+  .locationContainer{
+    padding: 0;
+  }
+
+  .locationFlexContainer{
+    flex-direction: column;
+  }
+
+  .locationDesc{
+    width: auto;
+  }
+
+  .bussinessContainer{
+    padding: 0;
+  }
+
+  .businessVideoContainer{
+    flex-direction: column;
+  }
+
+  .serviceContainer{
+    padding: 0;
+  }
+
+  .cardMainContainer{
+    flex-direction: column;
+  }
+  
+  .cardMainContainer .cardContainer{
+    width: 100%;
+  }
+
+  .whyBeaconContainer{
+    padding: 0;
+  }
+
+  .whyBeaconContentsContainer{
+    flex-direction: column;
+  }
+
+  .whyBeaconLeft .businessHeading{
+    width: 100%;
+  }
+
+  .testimonialMainContainer{
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .blogsContainer{
+    padding: 0;
+  }
+
+  .faqMainContainer{
+    padding: 0;
+  }
+
+  .faqContainer{
+    flex-direction: column;
+  }
+
+  .contactMainContainer{
+    padding: 0;
+  }
+
+  .footerContainer{
+    padding: 0;
+  }
+
+  .footerContentContainer{
+    display: none;
+  }
+
+  .bottomContainer{
+    flex-direction: column;
+  }
+
+  .footerContactImgContainer{
+    flex-direction: column;
+  }
+  
+  .footerContactDetails{
+    justify-content: flex-start;
+  }
+
+}

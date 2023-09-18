@@ -41,7 +41,7 @@ function Clients() {
   return (
     <div className="clientsContainer">
       <div className="businessContentContainer">
-        <h1 className="businessHeading">our CLIENTS</h1>
+        <h6 className="businessHeading">our CLIENTS</h6>
         <h2 className="businessDesc">Our core partners</h2>
       </div>
       <div className="clientsImgContainer">

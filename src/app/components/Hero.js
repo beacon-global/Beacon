@@ -1,13 +1,31 @@
+"use client"
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 function Hero() {
+  const [screenWidth, setScreenWidth] = useState(null);
+
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const imageSrc = screenWidth < 600 ? "/MobileHero.png" : "/hero.png";
+
   return (
     <div className="heroContainer">
       <div className="imageWithText">
         <Image
           className="hImage"
-          src="/hero.png"
+          src={imageSrc}
           alt="Asian Engineer"
           width={1366}
           height={670}

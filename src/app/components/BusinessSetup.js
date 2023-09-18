@@ -5,7 +5,7 @@ function BusinessSetup() {
   return (
     <div className="bussinessContainer">
       <div className="businessContentContainer">
-        <h1 className="businessHeading">Business Setup</h1>
+        <h6 className="businessHeading">Business Setup</h6>
         <h2 className="businessDesc">dummy typesetting the printiones</h2>
       </div>
       <div className="businessVideoContainer">

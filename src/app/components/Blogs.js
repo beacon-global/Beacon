@@ -1,11 +1,25 @@
 "use client"
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 function Blogs() {
   const [isHovered, setIsHovered] = useState(false);
 
   const imageSrc = isHovered ? "/whiteArrow.svg" : "/blackArrow.svg";
+
+  const [screenWidth, setScreenWidth] = useState(null);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const blogsData = [
     {
@@ -31,17 +45,20 @@ function Blogs() {
     },
   ];
 
+  const displayedBlogs = screenWidth < 600 ? blogsData.slice(0, 2) : blogsData;
+
+
   return (
     <div className="blogsContainer">
       <div className="businessContentContainer">
-        <h1 className="businessHeading">Blogs</h1>
+        <h6 className="businessHeading">Blogs</h6>
         <h2 className="businessDesc">
           purus interdum euismod feugiat the rutrum
         </h2>
       </div>
 
       <div className="rectangleContainer">
-        {blogsData.map((data, index) => (
+        {displayedBlogs.map((data, index) => (
           <div className="cardContainer" key={index}>
             <div className="imgContainer">
               <Image src={data.img} width={350} height={250} alt="Image" />

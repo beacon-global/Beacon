@@ -52,9 +52,9 @@ function Faq() {
       <div className="faqContainer">
         <div className="faqLeft">
           <div className="businessContentContainer">
-            <h1 className="businessHeading">
+            <h6 className="businessHeading">
               FAQ
-            </h1>
+            </h6>
             <h2 className="businessDesc">
               Frequently Asked <br /> Questions
             </h2>

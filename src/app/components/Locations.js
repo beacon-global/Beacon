@@ -4,12 +4,12 @@ import React from "react";
 function Locations() {
   return (
     <div className="locationContainer">
-      <div style={{width:"100%", display:"flex", gap:"60px"}}>
+      <div className="locationFlexContainer" >
         <div className="locationContentContainer">
           <div>
-            <h1 className="locationHeading">
+            <h2 className="locationHeading">
               Porttitor the curabitur <br /> Adipiscing euismod .
-            </h1>
+            </h2>
           </div>
           <div>
             <p className="locationDesc">
