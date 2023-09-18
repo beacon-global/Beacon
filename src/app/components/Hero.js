@@ -1,22 +1,24 @@
-"use client"
+"use client";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 function Hero() {
+  // const screenSize = window.innerWidth; 
   const [screenWidth, setScreenWidth] = useState(null);
 
-
   useEffect(() => {
-    const handleResize = () => {
-      setScreenWidth(window.innerWidth);
-    };
+  const handleResize = () => {
+    const newScreenWidth = window.innerWidth;
+    console.log("Screen Width:", newScreenWidth);
+    setScreenWidth(newScreenWidth);
+  };
 
-    window.addEventListener("resize", handleResize);
+  window.addEventListener("resize", handleResize);
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  return () => {
+    window.removeEventListener("resize", handleResize);
+  };
+}, []);
 
   const imageSrc = screenWidth < 600 ? "/MobileHero.png" : "/hero.png";
 
@@ -42,6 +44,11 @@ function Hero() {
               Lorem Ipsum is simply dummy text of the printing and futuresion
               <br />
               typesetting industryhas been the industrys standard dummis <br />
+              industryhas been the industrys standard dummy.
+            </p>
+            <p className="mHeroDesc">
+              Lorem Ipsum is simply dummy text of the printing and futuresion
+              typesetting industryhas been the industrys standard dummis
               industryhas been the industrys standard dummy.
             </p>
           </div>

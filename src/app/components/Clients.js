@@ -49,18 +49,18 @@ function Clients() {
       </div>
       <div className="testimonialMainContainer">
         <div className="testimonialLeftContainer">
-          <h1 className="testimonialHeading">
+          <h2 className="testimonialHeading">
             What our clients
             <br />
             say about us
-          </h1>
+          </h2>
           <p className="testimonialDesc">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.
           </p>
         </div>
         <div className="testimonialRightContainer">
           <div className="testimonialMessage">
-            <h1>&quot;{currentTestimonial.message}&quot;</h1>
+            <h3>&quot;{currentTestimonial.message}&quot;</h3>
           </div>
           <div className="testimonialImageButtonContainer">
             <div className="testimonialProfile">

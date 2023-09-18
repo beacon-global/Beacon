@@ -175,6 +175,7 @@ li{
   align-items: center;
   height: 100%;
   position: relative;
+  height: auto;
 }
 
 .imageOverlay {
@@ -185,6 +186,10 @@ li{
   width: 100%;  
   height: auto;
   object-fit: cover;
+}
+
+.mHeroDesc{
+  display: none;
 }
 
 .textOverlay {
@@ -433,7 +438,7 @@ li{
   width: 328px;
   width: 31.4%;
   /* height: 304px; */
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
   background-color: rgba(247, 247, 248, 1);
   display: flex;
   flex-direction: column;
@@ -831,7 +836,7 @@ li{
 .blogButtonContainer{
   width: 224px;
   height: 38px;
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
   border-radius: 82px;
   background: #13670B;
   display: flex;
@@ -930,7 +935,7 @@ li{
 }
 
 .rotateIcon {
-  transform: rotate(45deg); 
+  transform: rotate(-45deg); 
 }
 
 /* FAQ Ends */
@@ -1337,17 +1342,39 @@ li{
     text-align: center !important;
   }
 
+  .topVisibleArrow img{
+    width: 14px;
+    height: 14px;
+    margin-right: 2px;
+  }
+
+  .topVisibleContainer img{
+    margin-left: 1px;
+  }
+
+
+  .bottomVisibleArrow img{
+    width: 14px;
+    height: 14px;
+    margin-right: 2px;
+  }
+
   .hContainer{
     display: none;
   }
   
   .imageWithText{
-    width: 375px;
     height: 600px;
   }
 
+  .heroContainer .heroButton{
+    width: 166px;
+    height: 46px;
+  }
+
   .textOverlay{
-    padding: 0;
+    padding: 0 24px;
+    align-items: center;
   }
 
   .textOverlay h1{
@@ -1361,24 +1388,60 @@ li{
     text-transform: capitalize;
   }
 
+  .heroDesc{
+    display: none;
+  }
+
+  .mHeroDesc{
+    display: flex;
+    color: rgba(255, 255, 255, 0.80);
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 16.8px */
+  }
+
   .locationContainer{
-    padding: 0;
+    padding: 0 24px;
   }
 
   .locationFlexContainer{
     flex-direction: column;
   }
 
+  .locationContentContainer{
+    align-items: center;
+    width: auto;
+  }
+
   .locationDesc{
     width: auto;
   }
 
-  .bussinessContainer{
-    padding: 0;
+  .locationContainer .locationButton{
+    display: none;
   }
 
-  .businessVideoContainer{
+  .bussinessContainer{
+    padding: 0 24px;
+  }
+
+   .businessVideoContainer{
     flex-direction: column;
+  }
+
+  .businessCardContentContainer{
+    padding: 36px 20px;
+  }
+
+  .businessCardContentContainer h1{
+    font-size: 18px;
+  }
+
+  .businessCardContentContainer img{
+    width: 30px;
+    height: 30px;
   }
 
   .serviceContainer{
@@ -1387,14 +1450,25 @@ li{
 
   .cardMainContainer{
     flex-direction: column;
+    padding: 0 24px;
   }
   
   .cardMainContainer .cardContainer{
     width: 100%;
+    padding: 20px 15px 25px 15px;
+  }
+  
+  .serviceContainer .servicesButton{
+    width: 170px;
+    height: 44px;
+  }
+
+  a{
+    font-size: 12px !important;
   }
 
   .whyBeaconContainer{
-    padding: 0;
+    padding: 0 24px;
   }
 
   .whyBeaconContentsContainer{
@@ -1405,25 +1479,149 @@ li{
     width: 100%;
   }
 
-  .testimonialMainContainer{
-    padding: 0;
+  .beaconMainContainer{
+    gap: 21px;
+    justify-content: space-between;
+  }
+
+  .beaconContainer{
     flex-direction: column;
+    width: 150px;
+  }
+
+  .beaconDesc{
+    width: auto;
+  }
+
+  .beaconimgContainer img{
+    width: 30px;
+    height: 30px;
+  }
+
+  .beaconHeading{
+    font-size: 14px;
+  }
+
+  .beaconDescContainer p{
+    text-align: left !important;
+  }
+
+  .testimonialMainContainer{
+    padding: 40px 24px;
+    flex-direction: column;
+  }
+ 
+  .testimonialLeftContainer{
+    align-items: flex-start;
+    text-align: left;
+  }
+  
+  .testimonialLeftContainer h2 , p{
+    text-align: left !important;
+  }
+
+  .testimonialRightContainer{
+    width: auto;
+  }
+
+  .testimonialProfile img{
+    width: 44px;
+    height: 40px;
+  }
+
+  .testimonialButtonContainer svg{
+    width: 35px;
+    height: 35px;
   }
 
   .blogsContainer{
-    padding: 0;
+    padding: 0 24px;
+  }
+
+  .blogsContainer .servicesHeading{
+    font-size: 14px;
+  }
+
+  .rectangleContainer{
+    justify-content: unset;
+  }
+
+  .rectangleContainer .cardContainer{
+    width: auto;
+  }
+
+  .blogButtonContainer{
+    width: 82px;
+    height: 24px;
+  }
+
+  .arrowButton img{
+    width: 14px;
+    height: 14px;
+  }
+
+  .blogBtn{
+    font-size: 10px;
+    white-space: nowrap;
+  }
+
+  .blogsContainer .servicesButton{
+    width: 170px;
+    height: 44px;
   }
 
   .faqMainContainer{
-    padding: 0;
+    padding: 0 24px;
   }
 
   .faqContainer{
     flex-direction: column;
   }
 
+  .faqLeft .businessContentContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .faqLeft .businessDesc{
+    text-align: center;
+  }
+
+  .faqRight{
+    gap: 15px;
+  }
+
+  .faqCountContainer img{
+    margin-top: 2px;
+    width: 19px !important;
+    height: 16px !important;
+  }
+
+  .faqContentMainContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .faqContentContainer{
+    width: 293px;
+  }
+
+  .faqQuestion h1{
+    font-size: 16px;
+  }
+
   .contactMainContainer{
-    padding: 0;
+    padding: 0 24px;
+  }
+
+  .contactContainer{
+    width: 327px;
+    height: 250px;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
   }
 
   .footerContainer{
