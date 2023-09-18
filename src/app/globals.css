@@ -192,6 +192,10 @@ li{
   display: none;
 }
 
+.heroDescContainer{
+  width: 45%;
+}
+
 .textOverlay {
   position: absolute;
   top: 0;
@@ -210,6 +214,10 @@ li{
   text-align: center;
   padding-left: 135px; /* Adjust as needed */
   /* padding-top: 300px;  */
+}
+
+.heroDescContainer{
+  width: auto;
 }
 
 .textOverlay h1 {
@@ -275,6 +283,7 @@ li{
   line-height: 140%; /* 56px */
   text-transform: capitalize;
   margin-bottom: -10px;
+  white-space: nowrap;
 }
 
 .locationDesc{
@@ -693,10 +702,10 @@ li{
 .testimonialMainContainer{
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   background-color: rgba(247, 247, 248, 1);
-  height: 424px;
-  padding: 0 135px;
+  /* height: 424px; */
+  padding: 100px 135px;
   margin-top: 60px;
   gap: 28px;
 }
@@ -741,14 +750,13 @@ li{
   width: 293px;
 }
 
-.testimonialMessage h1{
+.testimonialMessage h3{
   color: #02040E;
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
   line-height: 120%; /* 36px */
   text-transform: capitalize;
-  height: 144px;
 }
 
 .testimonialProfile{
@@ -801,6 +809,7 @@ li{
   background-color: white;
   height: auto;
   padding: 0px;
+  gap: 10px;
 }
 
 .rectangleContainer .servicesDescContainer {
@@ -903,6 +912,10 @@ li{
   width: 555.812px;
 }
 
+.faqQuestion{
+  width: 90%;
+}
+
 .faqQuestion h1{
   color: #02040E;
   font-size: 22px;
@@ -919,7 +932,7 @@ li{
   line-height: 140%;
 }
 
-.faqDesc {
+.faqDesc{
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease-in-out;
@@ -972,6 +985,10 @@ li{
   font-weight: 600;
   line-height: 140%; /* 56px */
   text-transform: capitalize;
+}
+
+.mContactDesc{
+  display: none;
 }
 
 .contactDesc{
@@ -1334,13 +1351,26 @@ li{
   }
 
   h6{
-    font-size: 12px;
+    font-size: 12px !important;
   }
 
   p{
     font-size: 12px !important;
     text-align: center !important;
   }
+
+  a{
+    font-size: 12px !important;
+  }
+
+  .businessHeading{
+    margin-bottom: 3px;
+  }
+
+  .mainContainer{
+    gap: 50px;
+  }
+
 
   .topVisibleArrow img{
     width: 14px;
@@ -1408,6 +1438,7 @@ li{
 
   .locationFlexContainer{
     flex-direction: column;
+    gap: 30px;
   }
 
   .locationContentContainer{
@@ -1425,10 +1456,12 @@ li{
 
   .bussinessContainer{
     padding: 0 24px;
+    gap: 30px;
   }
 
    .businessVideoContainer{
     flex-direction: column;
+    gap: 20px;
   }
 
   .businessCardContentContainer{
@@ -1446,11 +1479,13 @@ li{
 
   .serviceContainer{
     padding: 0;
+    gap: 30px;
   }
 
   .cardMainContainer{
     flex-direction: column;
     padding: 0 24px;
+    gap: 20px;
   }
   
   .cardMainContainer .cardContainer{
@@ -1459,20 +1494,23 @@ li{
   }
   
   .serviceContainer .servicesButton{
+    margin: 0;
     width: 170px;
     height: 44px;
   }
 
-  a{
-    font-size: 12px !important;
-  }
-
   .whyBeaconContainer{
     padding: 0 24px;
+    gap: 30px;
   }
 
   .whyBeaconContentsContainer{
     flex-direction: column;
+    gap: 3px;
+  }
+
+  .whyBeaconHeading{
+    margin-bottom: 10px;
   }
 
   .whyBeaconLeft .businessHeading{
@@ -1486,7 +1524,7 @@ li{
 
   .beaconContainer{
     flex-direction: column;
-    width: 150px;
+    width: 45%;
   }
 
   .beaconDesc{
@@ -1506,23 +1544,50 @@ li{
     text-align: left !important;
   }
 
+  .clientsContainer{
+    gap: 30px;
+  }
+
+  .scrolling-logos{
+    margin-top: 13px;
+  }
+
+  .scrolling-logos img{
+    width: 107px !important;
+    height: 32px !important;
+  }
+
   .testimonialMainContainer{
     padding: 40px 24px;
     flex-direction: column;
+    margin-top: 64px;
   }
  
   .testimonialLeftContainer{
     align-items: flex-start;
     text-align: left;
   }
-  
-  .testimonialLeftContainer h2 , p{
+
+  .testimonialLeftContainer h2{
+    text-align: left !important;
+  }
+
+  .testimonialLeftContainer p{
+    text-align: left !important;
+  }
+
+  .rectangleContainer .servicesDesc{
     text-align: left !important;
   }
 
   .testimonialRightContainer{
     width: auto;
   }
+
+  .testimonialMessage h3{
+    font-size: 16px;
+  }
+
 
   .testimonialProfile img{
     width: 44px;
@@ -1536,10 +1601,12 @@ li{
 
   .blogsContainer{
     padding: 0 24px;
+    gap: 30px;
   }
 
   .blogsContainer .servicesHeading{
     font-size: 14px;
+    margin-bottom: 5px;
   }
 
   .rectangleContainer{
@@ -1548,6 +1615,10 @@ li{
 
   .rectangleContainer .cardContainer{
     width: auto;
+  }
+
+  .blogsContainer > div:nth-child(3){
+    margin-top: 0px;
   }
 
   .blogButtonContainer{
@@ -1576,12 +1647,17 @@ li{
 
   .faqContainer{
     flex-direction: column;
+    gap: 30px;
   }
 
   .faqLeft .businessContentContainer{
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .faqLeft .businessHeading{
+    margin-bottom: 3px;
   }
 
   .faqLeft .businessDesc{
@@ -1592,10 +1668,9 @@ li{
     gap: 15px;
   }
 
-  .faqCountContainer img{
-    margin-top: 2px;
-    width: 19px !important;
-    height: 16px !important;
+  .faqCountContainer{
+    width: 60px ;
+    margin-top: 1px;
   }
 
   .faqContentMainContainer{
@@ -1606,11 +1681,16 @@ li{
   }
 
   .faqContentContainer{
-    width: 293px;
+    width: auto;
+    gap: 10px;
   }
 
   .faqQuestion h1{
     font-size: 16px;
+  }
+
+  .faqDesc p{
+    text-align: left !important;
   }
 
   .contactMainContainer{
@@ -1618,14 +1698,48 @@ li{
   }
 
   .contactContainer{
-    width: 327px;
+    background: url("../../public/contactMobile.png");
+    width: 90%;
     height: 250px;
+    padding: 46px 20px;
+    gap: 5px;
     background-size: auto 100%;
     background-repeat: no-repeat;
   }
 
+  .contactHeading{
+    font-size: 24px;
+  }
+
+  .contactDesc{
+    display: none;
+  }
+
+  .mContactDesc{
+    display: block;
+    font-size: 14px !important;
+    text-align: center !important;
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */
+  }
+
+  .contactContainer .contactImageButton{
+    width: 166px;
+    height: 46px;
+  }
+
   .footerContainer{
-    padding: 0;
+    padding: 30px 24px;
+    height: auto;
+    gap: 30px;
+  }
+
+  .footerLogoContainer img{
+    width: 124px;
+    height: 40px;
   }
 
   .footerContentContainer{
@@ -1638,10 +1752,33 @@ li{
 
   .footerContactImgContainer{
     flex-direction: column;
+    gap: 24px;
   }
   
   .footerContactDetails{
     justify-content: flex-start;
+  }
+
+  .footerContactTextDetails p{
+    text-align: left !important;
+  }
+
+  .footerContactDetails img{
+    width: 40px;
+    height: 40px;
+  }
+
+  .footerSocialContainer{
+    margin-top: 30px;
+  }
+
+  .footerSocialContainer img{
+    width: 40px;
+    height: 40px;
+  }
+
+  .footerCopyRightContainer{
+    margin-top: -15px;
   }
 
 }

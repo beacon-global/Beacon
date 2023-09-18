@@ -8,7 +8,7 @@ function Clients() {
   const testimonials = [
     {
       message:
-        "The best agency we've worked with so far. They understand our product and are able to add new features with a great focus.",
+        "Beacon Global has been with us throughout the phase of integrating and adapting business to the dynamic marketplace, with end-to-end business consultation services.",
       name: "Jenny Wilson",
       designation: "Vice President",
       img: "/TestimonialDp.png",
@@ -55,7 +55,7 @@ function Clients() {
             say about us
           </h2>
           <p className="testimonialDesc">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.
+            Let&quot;s hear from our clients, the core of whatever we commit.
           </p>
         </div>
         <div className="testimonialRightContainer">

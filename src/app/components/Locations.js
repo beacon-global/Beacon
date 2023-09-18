@@ -8,7 +8,7 @@ function Locations() {
         <div className="locationContentContainer">
           <div>
             <h2 className="locationHeading">
-              Porttitor the curabitur <br /> Adipiscing euismod .
+            Our Journey that Inspires <br /> Businesses Globally
             </h2>
           </div>
           <div>

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
 
@@ -7,7 +7,7 @@ function Blogs() {
 
   const imageSrc = isHovered ? "/whiteArrow.svg" : "/blackArrow.svg";
 
-  // const screenSize = window.innerWidth; 
+  // const screenSize = window.innerWidth;
   const [screenWidth, setScreenWidth] = useState(null);
 
   useEffect(() => {
@@ -48,13 +48,12 @@ function Blogs() {
 
   const displayedBlogs = screenWidth < 600 ? blogsData.slice(0, 2) : blogsData;
 
-
   return (
     <div className="blogsContainer">
       <div className="businessContentContainer">
         <h6 className="businessHeading">Blogs</h6>
         <h2 className="businessDesc">
-          purus interdum euismod feugiat the rutrum
+          Read Through Our Perspectives & Latest Updates
         </h2>
       </div>
 

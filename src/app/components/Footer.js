@@ -39,26 +39,26 @@ function Footer() {
           </div>
           <div className="footerContactDetails">
             <Image
-              src="/Social/footerTelephone.svg"
+              src="/Social/footerMessage.svg"
               width={50}
               height={50}
               alt="ImageFooter2"
             />
             <div className="footerContactTextDetails">
-              <h1>Call us on:</h1>
-              <p>+1 800 100 900</p>
+              <h1>Email us:</h1>
+              <p>Beacon@gmail.com</p>
             </div>
           </div>
           <div className="footerContactDetails">
             <Image
-              src="/Social/footerTelephone.svg"
+              src="/Social/footerLocation.svg"
               width={50}
               height={50}
               alt="ImageFooter2"
             />
             <div className="footerContactTextDetails">
-              <h1>Call us on:</h1>
-              <p>+1 800 100 900</p>
+              <h1>Main office:</h1>
+              <p>195 Devonshire St Boston,<br /> MA 02110</p>
             </div>
           </div>
         </div>

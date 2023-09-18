@@ -6,34 +6,37 @@ function Faq() {
   const [faqData, setFaqData] = useState([
     {
       img: "/Numbers/01.png",
-      heading: "How much time does it take?",
+      heading: "What is Beacon and what services do you offer?",
       description:
-        "Lorem Ipsum is simply dummy text of the printiones and futuresion future typesetting to industryhas been the industry's standard dummy text ever and typesetting.",
+        "Beacon is your global business advisory partner who offers you a range of services that enable your business growth and ultimate business transformation. We provide a plethora of services like Business Incorporation,  Digital Marketing,  Technology Finance and Accounting, Audit and Tax services, and Business Consulting services.",
       isAnswerVisible: true,
     },
     {
       img: "/Numbers/02.png",
-      heading: "What is your class naming convention?",
+      heading:
+        "What sets Beacon apart from the other business incorporation and consulting firms?",
       description:
-        "Lorem Ipsum is simply dummy text of the printiones and futuresion future typesetting to industryhas been the industry's standard dummy text ever and typesetting.",
+        "Beacon is your global business advisory partner who offers you a range of services that enable your business growth and ultimate business transformation. We provide a plethora of services like Business Incorporation,  Digital Marketing,  Technology Finance and Accounting, Audit and Tax services, and Business Consulting services.",
     },
     {
       img: "/Numbers/03.png",
-      heading: "How do you communicate?",
+      heading:
+        "How can Beacon help my business with strategic planning and consultation?",
       description:
-        "Lorem Ipsum is simply dummy text of the printiones and futuresion future typesetting to industryhas been the industry's standard dummy text ever and typesetting.",
+        "Beacon is your global business advisory partner who offers you a range of services that enable your business growth and ultimate business transformation. We provide a plethora of services like Business Incorporation,  Digital Marketing,  Technology Finance and Accounting, Audit and Tax services, and Business Consulting services.",
     },
     {
       img: "/Numbers/04.png",
-      heading: "I have a bigger project. Can you handle it?",
+      heading:
+        "Can Beacon help with financial auditing and reporting requirements?",
       description:
-        "Lorem Ipsum is simply dummy text of the printiones and futuresion future typesetting to industryhas been the industry's standard dummy text ever and typesetting.",
+        "Beacon is your global business advisory partner who offers you a range of services that enable your business growth and ultimate business transformation. We provide a plethora of services like Business Incorporation,  Digital Marketing,  Technology Finance and Accounting, Audit and Tax services, and Business Consulting services.",
     },
     {
       img: "/Numbers/05.png",
-      heading: "What is your class naming convention?",
+      heading: "Do you offer website development and maintenance services?",
       description:
-        "Lorem Ipsum is simply dummy text of the printiones and futuresion future typesetting to industryhas been the industry's standard dummy text ever and typesetting.",
+        "Beacon is your global business advisory partner who offers you a range of services that enable your business growth and ultimate business transformation. We provide a plethora of services like Business Incorporation,  Digital Marketing,  Technology Finance and Accounting, Audit and Tax services, and Business Consulting services.",
     },
   ]);
 
@@ -52,9 +55,7 @@ function Faq() {
       <div className="faqContainer">
         <div className="faqLeft">
           <div className="businessContentContainer">
-            <h6 className="businessHeading">
-              FAQ
-            </h6>
+            <h6 className="businessHeading">FAQ</h6>
             <h2 className="businessDesc">
               Frequently Asked <br /> Questions
             </h2>

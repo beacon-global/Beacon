@@ -5,39 +5,39 @@ function WhyBeacon() {
   const beaconData = [
     {
       img: "/BeaconIcon/BeaconIcon1.png",
-      heading: "data-driven",
+      heading: "Customer Centric",
       description:
-        "Lorem Ipsum is simply dummy future printiones futuresion future typesetting industryha dummy typesetting.",
+        "We understand the customers and consider their expectations to align the services with their needs.",
     },
     {
       img: "/BeaconIcon/BeaconIcon2.png",
       heading: "global perspective",
       description:
-        "Lorem Ipsum is simply dummy future printiones futuresion future typesetting industryha dummy typesetting.",
+        "Our team considers the business concerns and resolves them while addressing them on a global level.",
     },
     {
       img: "/BeaconIcon/BeaconIcon3.png",
-      heading: "challenge everything",
+      heading: "Collaborative Approach",
       description:
-        "Lorem Ipsum is simply dummy future printiones futuresion future typesetting industryha dummy typesetting.",
+        "With collaboration, we equip businesses to face real-world challenges and retain relationships.",
     },
     {
       img: "/BeaconIcon/BeaconIcon4.png",
-      heading: "collaborative first",
+      heading: "Communication",
       description:
-        "Lorem Ipsum is simply dummy future printiones futuresion future typesetting industryha dummy typesetting.",
+        "We adopt the process of sharing ideas and developing solutions based on the client's needs.",
     },
     {
       img: "/BeaconIcon/BeaconIcon5.png",
-      heading: "communication",
+      heading: "Dedicated Teams",
       description:
-        "Lorem Ipsum is simply dummy future printiones futuresion future typesetting industryha dummy typesetting.",
+        "Our team dedicatedly works on project realization right from the beginning to the final deployment.",
     },
     {
       img: "/BeaconIcon/BeaconIcon6.png",
-      heading: "dedicated teams",
+      heading: "Ease of Setup",
       description:
-        "Lorem Ipsum is simply dummy future printiones futuresion future typesetting industryha dummy typesetting.",
+        "With us, your business setup is never going to be a hassle— it becomes as easy as a pie!",
     },
   ];
 
@@ -49,13 +49,14 @@ function WhyBeacon() {
         </div>
         <div className="whyBeaconRight">
           <h2 className="whyBeaconHeading">
-            purus terdum euismod<br /> All in one place
+            Redefining Business With Endless Transformation Possibilities
           </h2>
           <p className="whyBeaconDesc">
-            Lorem Ipsum is simply dummy text of the printiones and futuresion
-            future typesetting industryhas been the industry&quot;s standard dummy
-            text ever since thescrambledLorem Ipsum is simply dummy text of the
-            printing and typesetting.
+            At Beacon Global, we&quot;re passionate about creating measurable
+            impact in everything we do for you. Our DNA is the spirit that lets
+            businesses grow and thrive. Established and specialized in providing
+            Business consulting services across the Middle East, we work towards
+            adding value to every client through our expertise.
           </p>
         </div>
       </div>
@@ -75,7 +76,13 @@ function WhyBeacon() {
         {beaconData.map((data, index) => (
           <div className="beaconContainer" key={index}>
             <div className="beaconimgContainer">
-              <Image className="becaonIconImg" src={data.img} width={60} height={40} alt="whyBeaconIcon"/>
+              <Image
+                className="becaonIconImg"
+                src={data.img}
+                width={60}
+                height={40}
+                alt="whyBeaconIcon"
+              />
             </div>
             <div className="beaconContentContainer">
               <div className="beaconHeadingContainer">

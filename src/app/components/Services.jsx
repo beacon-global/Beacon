@@ -10,46 +10,46 @@ function Services() {
   const servicesData = [
     {
       img: "/Services/Services1.png",
-      heading: "Company Formation",
+      heading: "Business Incorporation",
       description:
-        "Lorem Ipsum is simply dummy text of the printiones and futuresion future typesetting to industryhas been the industry's standard dummy text ever and typesetting.",
+        "Get company incorporation assistance and compliance support right after the registration process. Tell us your requirements and let us drive your investment and growth with business incorporation services",
     },
     {
       img: "/Services/Services2.png",
-      heading: "PRO Services",
+      heading: "Business Consultation",
       description:
-        "Lorem Ipsum is simply dummy text of the printiones and futuresion future typesetting to industryhas been the industry's standard dummy text ever and typesetting.",
+        "Our business consultation services augment your business requirements through essential aspects of businesses like people, processes, technology, and related operations.",
     },
     {
       img: "/Services/Services3.png",
-      heading: "Trade License",
+      heading: "Financial & Accounting",
       description:
-        "Lorem Ipsum is simply dummy text of the printiones and futuresion future typesetting to industryhas been the industry's standard dummy text ever and typesetting.",
+        "Through the regular management of financial reports, accounting, and related activities of the business, we are involved in the analysis and reporting of financial processes.",
     },
     {
       img: "/Services/Services4.png",
-      heading: "Attestation Services",
+      heading: "Audit & Taxation",
       description:
-        "Lorem Ipsum is simply dummy text of the printiones and futuresion future typesetting to industryhas been the industry's standard dummy text ever and typesetting.",
+        "We engage in the routine monitoring, review, and report of the significant tax matters that impact your business with the panel of our audit and tax experts.",
     },
     {
       img: "/Services/Services5.png",
-      heading: "Visa Services",
+      heading: "technology solutions",
       description:
-        "Lorem Ipsum is simply dummy text of the printiones and futuresion future typesetting to industryhas been the industry's standard dummy text ever and typesetting.",
+        "Along with the business experience, we infuse technology into the business processes to address your specific technical needs that reimagine business models.",
     },
     {
       img: "/Services/Services6.png",
-      heading: "Labour Services",
+      heading: "digital marketing",
       description:
-        "Lorem Ipsum is simply dummy text of the printiones and futuresion future typesetting to industryhas been the industry's standard dummy text ever and typesetting.",
+        "Hand over all your digital marketing to-do tasks to our experts and watch through the growth plateau with the finest services that scale your brand outreach.",
     },
   ];
   return (
     <div className="serviceContainer">
       <div className="businessContentContainer">
         <h1 className="businessHeading">Services</h1>
-        <h2 className="businessDesc">dummy typesetting the printiones</h2>
+        <h2 className="businessDesc">Explore what our experts offer</h2>
       </div>
 
       <div className="cardMainContainer">

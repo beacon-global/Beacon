@@ -13,6 +13,10 @@ function Contact() {
             If you think we can do the job for you, do not hesitate. Drop <br />{" "}
             us a message/call us for anyservices anywhere in UAE.
           </p>
+          <p className="mContactDesc">
+            If you think we can do the job for you, do not hesitate. Drop us a
+            message/call us for anyservices anywhere in UAE.
+          </p>
         </div>
         <div className="hButtonContainer contactImageButton">
           <div className="visibleWrapperContainer">
