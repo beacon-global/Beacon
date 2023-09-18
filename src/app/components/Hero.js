@@ -2,25 +2,32 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
-function Hero() {
-  const screenSize = window.innerWidth;
-  const [screenWidth, setScreenWidth] = useState(screenSize);
+function Hero({ initialScreenWidth }) {
+  // const screenSize = window.innerWidth;
+
+  const [isMobileScreen, setIsMobileScreen] = useState(false);
 
   useEffect(() => {
-    const handleResize = () => {
-      const newScreenWidth = window.innerWidth;
-      console.log("Screen Width:", newScreenWidth);
-      setScreenWidth(newScreenWidth);
+    // Check screen size on the client side
+    const checkScreenSize = () => {
+      setIsMobileScreen(window.innerWidth < 600);
     };
 
-    window.addEventListener("resize", handleResize);
+    // Add event listener for window resize
+    window.addEventListener("resize", checkScreenSize);
+
+    // Initial check on component mount
+    checkScreenSize();
 
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("resize", checkScreenSize);
     };
   }, []);
 
-  const imageSrc = screenWidth < 600 ? "/MobileHero.png" : "/hero.png";
+  const imageSrc = isMobileScreen ? "/MobileHero.png" : "/hero.png";
+
+  console.log("Is Mobile Screen:", isMobileScreen); // Log if it's a mobile screen for debugging
+  console.log("Image Source:", imageSrc); // Log the image source for debugging
 
   return (
     <div className="heroContainer">

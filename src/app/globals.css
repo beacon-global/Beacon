@@ -216,10 +216,6 @@ li{
   /* padding-top: 300px;  */
 }
 
-.heroDescContainer{
-  width: auto;
-}
-
 .textOverlay h1 {
   margin-bottom: 10px;
   color: #FFF;
@@ -1400,6 +1396,10 @@ li{
   .heroContainer .heroButton{
     width: 166px;
     height: 46px;
+  }
+
+  .heroDescContainer{
+    width: auto;
   }
 
   .textOverlay{

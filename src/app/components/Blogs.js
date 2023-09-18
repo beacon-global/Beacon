@@ -7,18 +7,22 @@ function Blogs() {
 
   const imageSrc = isHovered ? "/whiteArrow.svg" : "/blackArrow.svg";
 
-  const screenSize = window.innerWidth;
-  const [screenWidth, setScreenWidth] = useState(screenSize);
+  const [isMobileScreen, setIsMobileScreen] = useState(false);
 
   useEffect(() => {
-    const handleResize = () => {
-      setScreenWidth(window.innerWidth);
+    // Check screen size on the client side
+    const checkScreenSize = () => {
+      setIsMobileScreen(window.innerWidth < 600);
     };
 
-    window.addEventListener("resize", handleResize);
+    // Add event listener for window resize
+    window.addEventListener("resize", checkScreenSize);
+
+    // Initial check on component mount
+    checkScreenSize();
 
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("resize", checkScreenSize);
     };
   }, []);
 
@@ -46,7 +50,7 @@ function Blogs() {
     },
   ];
 
-  const displayedBlogs = screenWidth < 600 ? blogsData.slice(0, 2) : blogsData;
+  const displayedBlogs = isMobileScreen ? blogsData.slice(0, 2) : blogsData;
 
   return (
     <div className="blogsContainer">
