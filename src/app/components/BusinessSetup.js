@@ -10,6 +10,10 @@ function BusinessSetup() {
           A breakdown of our global presence to <br /> scale your business
           growth
         </h2>
+        <h2 className="mBusinessDesc">
+          A breakdown of our <br /> global presence to scale <br /> your business
+          growth
+        </h2>
       </div>
       <div className="businessVideoContainer">
         <div className="ksa">

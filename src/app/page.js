@@ -11,6 +11,7 @@ import Blogs from "./components/Blogs";
 import Faq from "./components/Faq";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import MobileHeader from "./components/MobileHeader";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         />
       </Head>
       <Header />
+      <MobileHeader/>
       <div className="mainContainer">
         <Hero />
         <Locations />

@@ -5,12 +5,21 @@ import React, { useEffect, useState } from "react";
 function Hero({ initialScreenWidth }) {
   // const screenSize = window.innerWidth;
 
-  const [isMobileScreen, setIsMobileScreen] = useState(false);
+  const [isMobileScreen, setIsMobileScreen] = useState(true);
+  const [imageSrc, setImageSrc] = useState("");
 
   useEffect(() => {
     // Check screen size on the client side
     const checkScreenSize = () => {
-      setIsMobileScreen(window.innerWidth < 600);
+      const newIsMobileScreen = window.innerWidth < 600;
+      setIsMobileScreen(newIsMobileScreen);
+
+      // Update imageSrc based on screen size
+      if (newIsMobileScreen) {
+        setImageSrc("/MobileHero.png");
+      } else {
+        setImageSrc("/hero.png");
+      }
     };
 
     // Add event listener for window resize
@@ -24,7 +33,7 @@ function Hero({ initialScreenWidth }) {
     };
   }, []);
 
-  const imageSrc = isMobileScreen ? "/MobileHero.png" : "/hero.png";
+  // const imageSrc = isMobileScreen ? "/MobileHero.png" : "/hero.png";
 
   console.log("Is Mobile Screen:", isMobileScreen); // Log if it's a mobile screen for debugging
   console.log("Image Source:", imageSrc); // Log the image source for debugging
@@ -39,6 +48,7 @@ function Hero({ initialScreenWidth }) {
           width={1366}
           height={670}
           layout="responsive"
+          loading="lazy"
         />
         <div className="textOverlay">
           <div>

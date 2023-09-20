@@ -50,6 +50,7 @@ function Services() {
       <div className="businessContentContainer">
         <h1 className="businessHeading">Services</h1>
         <h2 className="businessDesc">Explore what our experts offer</h2>
+        <h2 className="mBusinessDesc">Explore what our experts <br /> offer</h2>
       </div>
 
       <div className="cardMainContainer">

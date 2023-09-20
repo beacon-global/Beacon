@@ -89,7 +89,9 @@ li{
 
 /* Header Start */
 
-
+.mHeader{
+  display: none ;
+}
 
 .hContainer{
   width: 100%;
@@ -321,6 +323,10 @@ li{
   padding: 0px 135px;
 }
 
+.bussinessContainer .mBusinessDesc{
+  display: none;
+}
+
 .businessHeading{
   color: #13670B;
   text-align: center;
@@ -330,6 +336,10 @@ li{
   line-height: 120%; /* 19.2px */
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+
+.mBusinessDesc{
+  display: none;
 }
 
 .businessDesc{
@@ -396,6 +406,7 @@ li{
   font-weight: 400;
   line-height: 140%;
   margin-bottom: 20px;
+  width: 90%;
 }
 
 .businessCircle{
@@ -421,6 +432,20 @@ li{
   align-items: center;
   gap: 70px;
   padding: 0px 135px;
+}
+
+.serviceContainer .businessDesc{
+  display: none;
+}
+
+.serviceContainer .mBusinessDesc{
+  display: block;
+  color: #02040E;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 56px */
+  text-transform: capitalize;
 }
 
 .cardMainContainer{
@@ -726,6 +751,10 @@ li{
   justify-content: space-between;
 }
 
+.mTestimonialHeading{
+  display: none;
+}
+
 .testimonialHeading{
   color: #02040E;
   font-size: 38px;
@@ -922,6 +951,7 @@ li{
 }
 
 .faqDesc{
+  color: #58595B;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -1385,6 +1415,36 @@ li{
     margin-right: 2px;
   }
 
+  .mHeader{
+    display: flex;
+    height: 75px;
+    padding: 0 24px;
+    align-items: center;
+  }
+
+  .mLinks{
+    color: #02040E;
+    text-align: right;
+    font-size: 16px !important;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 22.4px */
+  }
+
+  .mHeaderBtn{
+    width: 150px;
+    height: 39px;
+    padding: 12px 20px;
+  }
+
+  .mBtn{
+    gap: 5px;
+  }
+
+  .mhuList{
+    margin: 0;
+  }
+
   .hContainer{
     display: none;
   }
@@ -1457,6 +1517,20 @@ li{
   .bussinessContainer{
     padding: 0 24px;
     gap: 30px;
+  }
+
+  .businessDesc{
+    display: none;
+  }
+
+  .bussinessContainer .mBusinessDesc{
+    display: block;
+    color: #02040E;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 56px */
+  text-transform: capitalize;
   }
 
    .businessVideoContainer{
@@ -1550,6 +1624,7 @@ li{
 
   .scrolling-logos{
     margin-top: 13px;
+    gap: 26px;
   }
 
   .scrolling-logos img{
@@ -1568,12 +1643,31 @@ li{
     text-align: left;
   }
 
-  .testimonialLeftContainer h2{
+  .testimonialHeading{
+    display: none;
+  }
+
+  .mTestimonialHeading{
+    display: flex;
+    color: #02040E;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 56px */
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    text-align: left !important;
+  }
+
+  .testimonialLeftContainer .mTestimonialHeading h2{
     text-align: left !important;
   }
 
   .testimonialLeftContainer p{
     text-align: left !important;
+  }
+
+  .servicesDescContainer{
+    width: 300px;
   }
 
   .rectangleContainer .servicesDesc{
@@ -1669,7 +1763,7 @@ li{
   }
 
   .faqCountContainer{
-    width: 60px ;
+    width: 120px ;
     margin-top: 1px;
   }
 
@@ -1779,6 +1873,10 @@ li{
 
   .footerCopyRightContainer{
     margin-top: -15px;
+  }
+
+  .footerCopyRightContainer p{
+    text-align: left !important;
   }
 
 }
