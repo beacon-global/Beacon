@@ -434,18 +434,8 @@ li{
   padding: 0px 135px;
 }
 
-.serviceContainer .businessDesc{
-  display: none;
-}
-
 .serviceContainer .mBusinessDesc{
-  display: block;
-  color: #02040E;
-  text-align: center;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 140%; /* 56px */
-  text-transform: capitalize;
+  display: none;
 }
 
 .cardMainContainer{
@@ -538,7 +528,7 @@ li{
 .servicesDescContainer{
   width:  258px;
   height: 110px;
-  margin-top: -15px;
+  margin-top: -9px;
 }
 
 .servicesDesc{
@@ -1554,6 +1544,21 @@ li{
   .serviceContainer{
     padding: 0;
     gap: 30px;
+  }
+
+  .serviceContainer .businessDesc{
+    display: none;
+  }
+
+  .serviceContainer .mBusinessDesc{
+    display: block;
+    color: #02040E;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 56px */
+    text-transform: capitalize;
+
   }
 
   .cardMainContainer{
