@@ -110,12 +110,12 @@ function MobileHeader() {
             </svg>
           )}
         </ToggleButton>
-        <Card isMenuOpen={isMenuOpen} style={{ display: isMenuOpen ? "flex" : "none" }}>
-          <MLink className="mLinks">Home</MLink>
-          <MLink className="mLinks">Business Setup</MLink>
-          <MLink className="mLinks">About Us</MLink>
-          <MLink className="mLinks">Services</MLink>
-          <MLink className="mLinks">Blogs</MLink>
+        <Card $isMenuOpen={isMenuOpen} style={{ display: isMenuOpen ? "flex" : "none" }}>
+          <MLink href="/" className="mLinks">Home</MLink>
+          <MLink href="/" className="mLinks">Business Setup</MLink>
+          <MLink href="/pages/About" className="mLinks">About Us</MLink>
+          <MLink href="/pages/Services" className="mLinks">Services</MLink>
+          <MLink href="/" className="mLinks">Blogs</MLink>
           <div className="hButtonContainer headerContactButton mHeaderBtn">
             <a href="/" className="btn mBtn">
               <Image

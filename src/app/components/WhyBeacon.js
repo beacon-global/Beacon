@@ -45,7 +45,7 @@ function WhyBeacon() {
     <div className="whyBeaconContainer">
       <div className="whyBeaconContentsContainer">
         <div className="whyBeaconLeft">
-          <h1 className="businessHeading">Why Beacon?</h1>
+          <h6 className="businessHeading">Why Beacon?</h6>
         </div>
         <div className="whyBeaconRight">
           <h2 className="whyBeaconHeading">

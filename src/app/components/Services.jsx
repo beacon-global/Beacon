@@ -48,7 +48,7 @@ function Services() {
   return (
     <div className="serviceContainer">
       <div className="businessContentContainer">
-        <h1 className="businessHeading">Services</h1>
+        <h6 className="businessHeading">Services</h6>
         <h2 className="businessDesc">Explore what our experts offer</h2>
         <h2 className="mBusinessDesc">Explore what our experts <br /> offer</h2>
       </div>

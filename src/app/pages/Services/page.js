@@ -1,6 +1,7 @@
 import Contact from "@/app/components/Contact";
 import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
+import MobileHeader from "@/app/components/MobileHeader";
 import Image from "next/image";
 import React from "react";
 
@@ -59,6 +60,7 @@ function Services() {
   return (
     <>
       <Header />
+      <MobileHeader />
       <div className="servicesPageMainContainer">
         <div className="businessContentContainer">
           <h1 className="businessHeading">Business Setup</h1>
@@ -73,7 +75,7 @@ function Services() {
                   src={data.img}
                   width={420}
                   height={400}
-                  layout="responsive"
+                  layout="fill"
                   alt={data.alt}
                 />
               </div>

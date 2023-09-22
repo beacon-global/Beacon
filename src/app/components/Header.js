@@ -7,7 +7,7 @@ function Header() {
   const menuList = [
     { text: "Home", href: "/" },
     { text: "Business Setup", href: "/" },
-    { text: "About Us", href: "/" },
+    { text: "About Us", href: "/pages/About" },
     { text: "Services", href: "/pages/Services" },
     { text: "Blogs", href: "/" },
     { text: "Contact Us", href: "/" },
