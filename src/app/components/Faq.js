@@ -5,35 +5,35 @@ import React, { useState } from "react";
 function Faq() {
   const [faqData, setFaqData] = useState([
     {
-      img: "/Numbers/01.png",
+      img: "/Numbers/01.svg",
       heading: "What is Beacon and what services do you offer?",
       description:
         "Beacon is your global business advisory partner who offers you a range of services that enable your business growth and ultimate business transformation. We provide a plethora of services like Business Incorporation,  Digital Marketing,  Technology Finance and Accounting, Audit and Tax services, and Business Consulting services.",
       isAnswerVisible: true,
     },
     {
-      img: "/Numbers/02.png",
+      img: "/Numbers/02.svg",
       heading:
         "What sets Beacon apart from the other business incorporation and consulting firms?",
       description:
         "Beacon is your global business advisory partner who offers you a range of services that enable your business growth and ultimate business transformation. We provide a plethora of services like Business Incorporation,  Digital Marketing,  Technology Finance and Accounting, Audit and Tax services, and Business Consulting services.",
     },
     {
-      img: "/Numbers/03.png",
+      img: "/Numbers/03.svg",
       heading:
         "How can Beacon help my business with strategic planning and consultation?",
       description:
         "Beacon is your global business advisory partner who offers you a range of services that enable your business growth and ultimate business transformation. We provide a plethora of services like Business Incorporation,  Digital Marketing,  Technology Finance and Accounting, Audit and Tax services, and Business Consulting services.",
     },
     {
-      img: "/Numbers/04.png",
+      img: "/Numbers/04.svg",
       heading:
         "Can Beacon help with financial auditing and reporting requirements?",
       description:
         "Beacon is your global business advisory partner who offers you a range of services that enable your business growth and ultimate business transformation. We provide a plethora of services like Business Incorporation,  Digital Marketing,  Technology Finance and Accounting, Audit and Tax services, and Business Consulting services.",
     },
     {
-      img: "/Numbers/05.png",
+      img: "/Numbers/05.svg",
       heading: "Do you offer website development and maintenance services?",
       description:
         "Beacon is your global business advisory partner who offers you a range of services that enable your business growth and ultimate business transformation. We provide a plethora of services like Business Incorporation,  Digital Marketing,  Technology Finance and Accounting, Audit and Tax services, and Business Consulting services.",
@@ -88,7 +88,7 @@ function Faq() {
                   >
                     <button >
                       <Image
-                        src="/+.png"
+                        src="/+.svg"
                         width={16}
                         height={16}
                         alt="ImageFaq"

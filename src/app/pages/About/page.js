@@ -10,27 +10,27 @@ function About() {
   const servicesData = [
     {
       img: "/AboutUsPage/corev1.svg",
-      heading: "Quality",
+      heading: "Professionalism",
       description:
-        "Lorem Ipsum is simply printiones and futuresion typesetting to industryhas been the industry's the standard dummy text ever and typesetting.",
+        "We perform business with high standards of integrity,ethics and professionalism. Our professionals keep the interactions with the clients fair and lawful.",
     },
     {
-      img: "/AboutUsPage/corev2.svg",
-      heading: "Integrity",
+      img: "/AboutUsPage/corev5.svg",
+      heading: "Innovation",
       description:
-        "Lorem Ipsum is simply printiones and futuresion typesetting to industryhas been the industry's the standard dummy text ever and typesetting.",
-    },
-    {
-      img: "/AboutUsPage/corev3.svg",
-      heading: "Teamwork",
-      description:
-        "Lorem Ipsum is simply printiones and futuresion typesetting to industryhas been the industry's the standard dummy text ever and typesetting.",
+        "Our business initiatives focus on keeping up the standards and expectations of the clients with sustainability, innovative practices and strategic principles.",
     },
     {
       img: "/AboutUsPage/corev3.svg",
-      heading: "Competence",
+      heading: "Synergy",
       description:
-        "Lorem Ipsum is simply printiones and futuresion typesetting to industryhas been the industry's the standard dummy text ever and typesetting.",
+        "Our team maintains collaboration and inclusiveness while creating a strong synergy between the individual talents and what the client demands.",
+    },
+    {
+      img: "/AboutUsPage/corev4.svg",
+      heading: "Passion",
+      description:
+        "Growing beyond a service provider, we provide timely support and resolve concerns through constructive discussions that generate special value outcomes.",
     },
   ];
   return (
@@ -38,7 +38,9 @@ function About() {
       <Header />
       <MobileHeader />
       <div className={styles.aboutUsMainContainer}>
-        <h2 className="businessDesc">dummy typesetting the printiones</h2>
+        <h2 className="businessDesc">
+          Your Partner to Unleash the Odyssey of <br /> Business Success
+        </h2>
         <div className={styles.aboutUsHeroContainer}>
           <Image
             src="/AboutUsPage/AboutUsPage.svg"
@@ -48,17 +50,24 @@ function About() {
             alt="aboutus1"
           />
           <p>
-            Lorem ipsum dolor sit amet consectetur. Id habitant pellentesque
-            feugiat aliquam mattis integer. Sagittis diam bibendum arcu quis dis
-            at risus sodales. Interdum iaculis libero at at. Vitae tristique
-            quis neque eu libero massa. Posuere gravida proin elit nunc dui.
-            Quis sed id tortor volutpat ut egestas senectus pellentesque. Sed et
-            nisi faucibus elit et volutpat phasellus sit. Lectus morbi tortor
-            ullamcorper congue. Enim venenatis tristique ullamcorper diam elit
-            enim sit erat. Malesuada pulvinar vulputate hac fringilla
-            sollicitudin eu facilisis sit. Eu turpis cursus et gravida cursus.
-            Faucibus donec volutpat purus purus sed in. Quis mauris elementum
-            imperdiet elit urna enim nam.
+            Founded in 2022, Beacon Global comprises a team of passionate
+            accountants, auditors, and financial analysts. With a complete
+            understanding of the need for a reliable auditing and accounting
+            firm that offers excellent services to clients, we deliver the
+            leading business consulting services in Saudi Arabia. Right from its
+            inception, our team of consultants has been adept at building a good
+            industry reputation with remarkable services to the clients. With
+            the growth of the goodwill of the firm, we have extended the roots
+            to business consultancy, tax advisory, accounting, audit and
+            regulatory services, and digital marketing, with offices across UAE,
+            India, and KSA. We are committed to offering business incorporation
+            services to clients with an emphasis on the principles of
+            professionalism, integrity, and reliability. We are grateful for the
+            recognition gifted by the clients who helped us navigate the
+            complexities of tax, auditing, and regulatory compliance. Our team
+            is dedicated to delivering unparalleled service and value to
+            businesses with strong support of partners, clients, and other
+            stakeholders through constructive relationships.
           </p>
         </div>
 
@@ -83,8 +92,8 @@ function About() {
 
         <div className={styles.aboutUsContainer2}>
           <h2 className="businessDesc">
-            why go solo? let business link guarantee <br /> business setup
-            success!
+            Let Beacon Lead Your Dream Business Setup <br /> to The Path Of
+            Success!
           </h2>
 
           <div className={styles.cardMainContainer}>
@@ -101,7 +110,7 @@ function About() {
                 </div>
                 <div>
                   <Image
-                    src="/AboutUsPage/aboutPageIcon.svg"
+                    src="/AboutUsPage/aboutusIcon1.svg"
                     width={80}
                     height={80}
                     layout="responsive"
@@ -110,7 +119,7 @@ function About() {
                 </div>
                 <div>
                   <Image
-                    src="/AboutUsPage/aboutPageIcon.svg"
+                    src="/AboutUsPage/aboutusIcon2.svg"
                     width={80}
                     height={80}
                     layout="responsive"
@@ -120,27 +129,30 @@ function About() {
               </div>
               <div className={styles.cardContent}>
                 <div>
-                  <h1>Losing Money Hurts</h1>
+                  <h1>Right in Time</h1>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printiones and
-                    futuresion future typesetting to industryhas been the and
-                    typesetting.
+                    With Beacon, you&quot;ll never have to waste time navigating
+                    the business process to make it right. We make the business
+                    setup in Saudi Arabia and UAE time-efficient and easier than
+                    ever.
                   </p>
                 </div>
                 <div>
-                  <h1>Losing Money Hurts</h1>
+                  <h1>Financially Secure</h1>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printiones and
-                    futuresion future typesetting to industryhas been the and
-                    typesetting.
+                    Setting up a business can prove to be risky if you have no
+                    professional financial assistance. Our consultants let you
+                    minimise the potential financial risks through financial
+                    consultation.
                   </p>
                 </div>
                 <div>
-                  <h1>Losing Money Hurts</h1>
+                  <h1>Reliable Partner</h1>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printiones and
-                    futuresion future typesetting to industryhas been the and
-                    typesetting.
+                    With our support that guides your business right from the
+                    ideation to the final setup, we let our presence lead you
+                    through each stage. As your strategic advisor, Beacon stands
+                    out to solve your business setup concerns in no time.
                   </p>
                 </div>
               </div>

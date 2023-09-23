@@ -20,7 +20,7 @@
 }
 
 .aboutUsHeroContainer p{
-    width: 85%;
+    width: 90%;
     color: #58595B;
     text-align: center;
     font-size: 14px;
@@ -84,8 +84,9 @@
     width: 100%;
     justify-content: space-between;
     position: absolute;
+    left: 54px;
     top: -40px;
-    width: 70%;
+    width: 66%;
     /* width: 100%;
     gap: 24%;
     left: 50px; */

@@ -83,6 +83,53 @@ li{
   cursor: pointer;
 }
 
+.testimonialButtonContainer{
+  display: flex;
+  gap: 10px;
+}
+
+.rightButton{
+  background: transparent;
+	color: rgba(19, 103, 11, 1);
+	line-height: 25px;
+	text-align: center;
+  width: 40px;
+  height: 40px;
+  border: 1.9px solid rgba(19, 103, 11, 1);
+  font-size: 30px;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 20px;
+}
+.leftButton{
+  background: transparent;
+	color: rgba(19, 103, 11, 1);
+	line-height: 25px;
+	text-align: center;
+  width: 40px;
+  height: 40px;
+  border: 1.9px solid rgba(19, 103, 11, 1);
+  font-size: 30px;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease-in-out, color 0.2s ease-in-out ;
+
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 20px;
+}
+
+.rightButton:hover, .leftButton:hover{
+  background-color: #13670B;
+  color: white;
+  border: white;
+}
+
 .activeListItem {
   color: #13670B; 
 }
@@ -132,7 +179,7 @@ li{
 }
 
 .hContainer .headerContactButton{
-  width: 233px;
+  width: 223px;
   height: 55px;
   cursor: pointer;
   display: flex;
@@ -231,7 +278,7 @@ li{
   white-space: nowrap;
 }
 
-.textOverlay p {
+.heroDesc {
   color: rgba(255, 255, 255, 0.60);
   font-size: 14px;
   font-style: normal;
@@ -739,6 +786,7 @@ li{
 .testimonialImageButtonContainer{
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .mTestimonialHeading{
@@ -1342,6 +1390,10 @@ li{
     margin-right: 2px;
   }
 
+  .hButtonContainer{
+    padding: 5px 25px;
+  }
+
   .mHeader{
     display: flex;
     height: 75px;
@@ -1377,7 +1429,13 @@ li{
   }
   
   .imageWithText{
-    height: 600px;
+    /* height: 600px; */
+  }
+
+  .textOverlay{
+    padding: 0 24px;
+    align-items: center;
+    /* height: 600px; */
   }
 
   .heroContainer {
@@ -1391,12 +1449,6 @@ li{
 
   .heroDescContainer{
     width: auto;
-  }
-
-  .textOverlay{
-    padding: 0 24px;
-    align-items: center;
-    height: 105%;
   }
 
   .textOverlay h1{
@@ -1648,9 +1700,20 @@ li{
     text-align: left;
   }
 
-  .testimonialButtonContainer svg{
+  .rightButton, .leftButton{
+    font-size: 25px;
     width: 35px;
     height: 35px;
+    padding: 10px;
+    padding-bottom: 14px;
+  }
+
+  .rightButton{
+    padding-left: 11px;
+  }
+
+  .leftButton{
+    padding-right: 11px;
   }
 
   .blogsContainer{
@@ -1755,14 +1818,15 @@ li{
     background: url("../../public/contactMobile.png");
     width: 90%;
     height: 250px;
-    padding: 46px 20px;
-    gap: 5px;
+    padding: 31px 20px;
+    gap: 15px;
     background-size: auto 100%;
     background-repeat: no-repeat;
   }
 
   .contactHeading{
     font-size: 24px;
+    margin-bottom: -10px;
   }
 
   .contactDesc{

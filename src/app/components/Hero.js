@@ -35,8 +35,8 @@ function Hero({ initialScreenWidth }) {
 
   // const imageSrc = isMobileScreen ? "/MobileHero.png" : "/hero.png";
 
-  console.log("Is Mobile Screen:", isMobileScreen); // Log if it's a mobile screen for debugging
-  console.log("Image Source:", imageSrc); // Log the image source for debugging
+  // console.log("Is Mobile Screen:", isMobileScreen); // Log if it's a mobile screen for debugging
+  // console.log("Image Source:", imageSrc); // Log the image source for debugging
 
   return (
     <div className="heroContainer">

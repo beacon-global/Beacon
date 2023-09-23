@@ -226,50 +226,54 @@ function Services() {
             />
           </div>
         </div>
-
-        <div className="testimonialMainContainer">
+        <div className={styles.marginContainer}>
           <div
-            className={`${styles.testimonialLeftContainer} testimonialLeftContainer`}
+            className={`${styles.testimonialMainContainerServicePage} testimonialMainContainer`}
           >
-            <h2 className="testimonialHeading">
-              What our clients
-              <br />
-              say about us
-            </h2>
-            <h2 className="mTestimonialHeading">
-              What our clients say <br /> about us
-            </h2>
-            <p className="testimonialDesc">
-              Let&quot;s hear from our clients, the core of whatever we commit.
-            </p>
-          </div>
-          <div className="testimonialRightContainer">
-            <div className="testimonialMessage">
-              <h3>&quot;{currentTestimonial.message}&quot;</h3>
+            <div
+              className={`${styles.testimonialLeftContainer} testimonialLeftContainer`}
+            >
+              <h2 className="testimonialHeading">
+                What our clients
+                <br />
+                say about us
+              </h2>
+              <h2 className="mTestimonialHeading">
+                What our clients say <br /> about us
+              </h2>
+              <p className="testimonialDesc">
+                Let&quot;s hear from our clients, the core of whatever we
+                commit.
+              </p>
             </div>
-            <div className="testimonialImageButtonContainer">
-              <div className="testimonialProfile">
-                <Image
-                  src={currentTestimonial.img}
-                  width={67}
-                  height={60}
-                  alt="person"
-                />
-                <div style={{ display: "flex", flexDirection: "column" }}>
-                  {/* Display current testimonial's profile */}
-                  <p className="profileName">{currentTestimonial.name}</p>
-                  <p className="profileDesignation">
-                    {currentTestimonial.designation}
-                  </p>
-                </div>
+            <div className="testimonialRightContainer">
+              <div className="testimonialMessage">
+                <h3>&quot;{currentTestimonial.message}&quot;</h3>
               </div>
-              <div className="testimonialButtonContainer">
-                <button onClick={nextTestimonial}>
-                  <RightArrowSvg />
-                </button>
-                <button onClick={previousTestimonial}>
-                  <LeftArrowSvg />
-                </button>
+              <div className="testimonialImageButtonContainer">
+                <div className="testimonialProfile">
+                  <Image
+                    src={currentTestimonial.img}
+                    width={67}
+                    height={60}
+                    alt="person"
+                  />
+                  <div style={{ display: "flex", flexDirection: "column" }}>
+                    {/* Display current testimonial's profile */}
+                    <p className="profileName">{currentTestimonial.name}</p>
+                    <p className="profileDesignation">
+                      {currentTestimonial.designation}
+                    </p>
+                  </div>
+                </div>
+                <div className="testimonialButtonContainer">
+                  <button className="leftButton" onClick={previousTestimonial}>
+                    {"<"}
+                  </button>
+                  <button className="rightButton" onClick={nextTestimonial}>
+                    {">"}
+                  </button>
+                </div>
               </div>
             </div>
           </div>

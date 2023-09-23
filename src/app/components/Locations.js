@@ -4,26 +4,27 @@ import React from "react";
 function Locations() {
   return (
     <div className="locationContainer">
-      <div className="locationFlexContainer" >
+      <div className="locationFlexContainer">
         <div className="locationContentContainer">
           <div>
             <h2 className="locationHeading">
-            Our Journey that Inspires <br /> Businesses Globally
+              Our Journey that Inspires <br /> Businesses Globally
             </h2>
           </div>
           <div>
             <p className="locationDesc">
-              Lorem ipsum dolor sit amet consectetur. Eu elit vitae bibendum
-              bibendum accumsan facilisis libero. At arcu augue ante varius.
-              Integer tellus donec nunc montes rhoncus adipiscing fringilla.
-              Elit dictumst neque tempus porta lorem egestas tellus convallis.
-              Accumsan ullamcorper nunc sit quis egestas lectus facilisis nulla
-              fringilla. Vestibulum dis mauris nullam tellus interdum.
-              Consectetur felis euismod urna fusce parturient ultrices
-              imperdiet. Pharetra a Morbi amet dolor habitasse odio sed sit
-              viverra. Proin vivamus faucibus eget libero. Sodales mattis sed
-              lectus pulvinar duis eleifend. Et iaculis ultrices cursus
-              tristique eget mattis.
+              Businesses need qualified business consulting and professional
+              advice to win clients from all over the world. Since our
+              inception, we have been dedicated to assisting organizations of
+              all sizes with strategies that contribute to businesses with great
+              performance and success. With true results and a clear focus on
+              the strategic actions tailored to achieve the unique expectations
+              of our clients, we provide a detailed blueprint and picture of how
+              to establish and manage your business in the UAE. Our experts also
+              dive deep into providing expert restructuring advice, business
+              accounting and audit services, and business consulting solutions
+              that help firms improve their business activities and expansion
+              plans.
             </p>
           </div>
           <div className="hButtonContainer locationButton">
@@ -58,15 +59,15 @@ function Locations() {
           </div>
         </div>
 
-        <div className="locationImgContainer" >
-        <div style={{width:"100%"}}>
-          <Image
-            src="/mapCropped.svg"
-            width={606}
-            height={527}
-            alt="ImageLocation"
-            layout="responsive"
-          />
+        <div className="locationImgContainer">
+          <div style={{ width: "100%" }}>
+            <Image
+              src="/mapCropped.svg"
+              width={606}
+              height={527}
+              alt="ImageLocation"
+              layout="responsive"
+            />
           </div>
         </div>
       </div>

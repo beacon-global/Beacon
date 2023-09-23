@@ -39,8 +39,8 @@ function Header() {
             <a href="/" className="btn">
               <Image
                 src="/telephone.svg"
-                width={23}
-                height={23}
+                width={18}
+                height={18}
                 alt="heroContact"
               />
               +971 800 4392
@@ -50,8 +50,8 @@ function Header() {
             <a href="/" className="btn">
               <Image
                 src="/telephone.svg"
-                width={23}
-                height={23}
+                width={18}
+                height={18}
                 alt="heroContact"
               />
               +971 800 4392
