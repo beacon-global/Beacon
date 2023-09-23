@@ -180,7 +180,7 @@ function Services() {
           <h1 className="businessDesc">How Selling Works</h1>
           <div className={styles.container3SellingCard}>
             {sellingCardData.map((data, index) => (
-              <div className={styles.sellingCards}>
+              <div className={styles.sellingCards} key={index}>
                 <div className={styles.sellingImageContainer} key={index}>
                   <Image
                     src={data.img}
