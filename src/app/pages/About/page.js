@@ -38,7 +38,7 @@ function About() {
       <Header />
       <MobileHeader />
       <div className={styles.aboutUsMainContainer}>
-        <h2 className="businessDesc">Explore what our experts offer</h2>
+        <h2 className="businessDesc">dummy typesetting the printiones</h2>
         <div className={styles.aboutUsHeroContainer}>
           <Image
             src="/AboutUsPage/AboutUsPage.svg"

@@ -17,7 +17,7 @@ function Header() {
     <>
     <div className="hContainer bg-white">
       <div className="logoContainer">
-        <Image src="/beacon.png" width={180} height={45} alt="ImageHeader" />
+        <Image src="/beacon.svg" width={180} height={45} alt="ImageHeader" />
       </div>
       <div className="hMenuContainer">
         <div className="hMenu">

@@ -7,7 +7,7 @@ function Footer() {
       <div className="topContainer">
         <div className="footerLogoContainer">
           <Image
-            src="/WhiteLogo.png"
+            src="/footerBeacon.svg"
             width={185}
             height={60}
             alt="ImageFooter1"

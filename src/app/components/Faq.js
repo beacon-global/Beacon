@@ -63,7 +63,7 @@ function Faq() {
         </div>
         <div className="faqContentMainContainer">
           {faqData.map((data, index) => (
-            <div className="faqRight" key={index}>
+            <div className="faqRight" key={index} onClick={() => toggleAnswerVisibility(index)}>
               <div className="faqCountContainer">
                 <Image
                   src={data.img}
@@ -86,7 +86,7 @@ function Faq() {
                       data.isAnswerVisible ? "rotateIcon" : ""
                     }`}
                   >
-                    <button onClick={() => toggleAnswerVisibility(index)}>
+                    <button >
                       <Image
                         src="/+.png"
                         width={16}

@@ -643,7 +643,7 @@ li{
   display: flex;
   gap: 28px;
   flex-wrap: wrap;
-  /* justify-content: center; */
+  justify-content: space-between;
   align-items: center;
   width: 100%;
 }
@@ -745,6 +745,10 @@ li{
   display: none;
 }
 
+.testimonialMessage{
+  height: 180px;
+}
+
 .testimonialHeading{
   color: #02040E;
   font-size: 38px;
@@ -777,6 +781,7 @@ li{
 .testimonialProfile{
   display: flex;
   gap: 10px;
+  align-items: center;
 }
 
 .testimonialProfile img{
@@ -914,6 +919,7 @@ li{
   display: flex;
   gap: 40px;
   margin-top: 60px;
+  cursor: pointer;
 }
 
 .faqRight:first-child {
@@ -959,6 +965,8 @@ li{
 }
 
 .faqAddIcon {
+  width: 20px;
+  height: 20px;
   transition: transform 0.4s ease-in-out; 
   transform: rotate(0deg);
 }
@@ -1123,78 +1131,6 @@ li{
 }
 
 /* Footer End */
-
-/* Services Page Start */
-
-.servicesPageMainContainer{
-  margin-top: 100px;
-  margin-bottom: 130px;
-  display: flex;
-  flex-direction: column;
-  /* align-items: center; */
-  justify-content: center;
-  padding: 0 135px;
-}
-
-.servicesPageColomnContainer{
-  display: flex;
-  flex-direction: column;
-  gap: 100px;
-  margin-top: 70px;
-}
-
-.servicesPageRowContainer{
-  display: flex;
-  gap: 70px;
-  align-items: center;
-  width: 100%;
-}
-
-.servicesPageImageContainer{
-  width: 67%;
-}
-
-.servicesPageNo h1{
-  color: #13670B;
-  font-size: 62px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 120%; /* 76.8px */
-  letter-spacing: 2px;
-  text-transform: capitalize;
-}
-
-.servicesPageContentContainer{
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.servicesPageHeading{
-  color: #02040E;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 140%; /* 42px */
-  text-transform: capitalize;
-  white-space: nowrap;
-}
-
-.servicesDesc{
-  color: #58595B;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%; 
-}
-
-.serviceFooterMargin{
-  margin-top: 110px;
-}
-
-/* Services Page End */
-
 
 
 
@@ -1654,6 +1590,10 @@ li{
     text-align: left;
   }
 
+  .testimonialMessage{
+    height: 96px;
+  }
+
   .testimonialHeading{
     display: none;
   }
@@ -1697,6 +1637,15 @@ li{
   .testimonialProfile img{
     width: 44px;
     height: 40px;
+  }
+
+  .profileName{
+    font-size: 14px;
+  }
+  
+  .profileDesignation{
+    font-size: 12px;
+    text-align: left;
   }
 
   .testimonialButtonContainer svg{

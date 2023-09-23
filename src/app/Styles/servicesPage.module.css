@@ -1,0 +1,129 @@
+.servicePageMainContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 130px;
+}
+
+.servicePageMainContainer h2 {
+    margin-top: 80px;
+}
+
+.servicePageMainContainer .cardMainContainer{
+    padding: 0 135px;
+    margin-top: -65px;
+}
+
+.servicesPageContainer2{
+    padding: 100px 135px;
+    background-color: rgba(247, 247, 248, 1);
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+.servicePageImageContainer2{
+    width: 561px;
+    height: 525px;
+    flex: 1;
+}
+
+.container2Contents{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container2Contents h1{
+    text-align: left;
+}
+
+.container3{
+    padding: 0 135px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.container3SellingCard{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.sellingCards{
+    display: flex;
+    gap: 30px;
+    background: #F7F7F8;
+    padding: 30px 45px 30px 30px;
+    justify-content: space-between;
+    width: 48%;
+}
+
+.sellingImageContainer{
+    width: 120px;
+    height: 80px;
+}
+
+.container3Contents{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.container3Contents p {
+    text-align: left;
+}
+
+.container4 {
+    padding: 70px 135px;
+    display: flex;
+    position: relative;
+    gap: 60px;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.background{
+    width: 63%;
+    height: 100%;
+    position: absolute;
+    background: #F7F7F8;
+    z-index: -1;
+}
+
+.container4ImgContainer{
+    width: 450px;
+    height: 450px;
+    display: flex;
+}
+
+.container4ImgContainer img{
+    object-fit: cover;
+}
+
+.container4Contents{
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    padding-left: 80px;
+}
+
+.container4Contents h1{
+    text-align: left;
+}
+
+.container4Contents p{
+    text-align: left;
+}
+
+.testimonialLeftContainer h2{
+    margin-top: 0;
+}
+
+
+
