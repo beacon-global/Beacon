@@ -75,8 +75,11 @@ body {
 }
 
 p {
-  font-size: 14px ;
-  font-weight: 400 ;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  color: #58595B;
 }
 
 li{
@@ -280,7 +283,7 @@ li{
 
 .heroDesc {
   color: rgba(255, 255, 255, 0.60);
-  font-size: 14px;
+  /* font-size: 15px; */
   font-style: normal;
   font-weight: 400;
   line-height: 140%; 
@@ -333,11 +336,11 @@ li{
 
 .locationDesc{
   color: #58595B;
-  font-size: 14px;
+  /* font-size: 15px; */
   font-style: normal;
   font-weight: 400;
   line-height: 140%; /* 22.4px */
-  width: 476px;
+  /* width: 476px; */
 }
 
 .locationContainer .locationButton{
@@ -377,7 +380,7 @@ li{
 .businessHeading{
   color: #13670B;
   text-align: center;
-  font-size: 14px;
+  /* font-size: 15px; */
   font-style: normal;
   font-weight: 600;
   line-height: 120%; /* 19.2px */
@@ -448,12 +451,12 @@ li{
 .ksaDesc{
   color: #FFF;
   text-align: center;
-  font-size: 14px;
+  /* font-size: 15px; */
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
   margin-bottom: 20px;
-  width: 90%;
+  /* width: 90%; */
 }
 
 .businessCircle{
@@ -541,8 +544,15 @@ li{
   transition: height 0.6s ease;
 }
 
+.cardContainerOverlayContent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .cardContainerOverlayContent h2{
-  margin: 50px 0;
+  margin: 0 !important;
   color: #fff;
   font-size: 22px;
   font-style: normal;
@@ -554,7 +564,7 @@ li{
 
 .cardContainerOverlayContent li {
   color: #fff;
-  font-size: 14px;
+  /* font-size: 15px; */
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
@@ -573,14 +583,15 @@ li{
 }
 
 .servicesDescContainer{
-  width:  258px;
+  /* width:  258px; */
+  width: 107%;
   height: 110px;
   margin-top: -9px;
 }
 
 .servicesDesc{
   color: #58595B;
-  font-size: 14px;
+  /* font-size: 15px; */
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
@@ -666,7 +677,7 @@ li{
 
 .whyBeaconDesc{
   color: #58595B;
-  font-size: 14px;
+  /* font-size: 15px; */
   font-style: normal;
   font-weight: 400;
   line-height: 140%; /* 22.4px */
@@ -720,7 +731,7 @@ li{
 .beaconDesc{
   width: 289px;
   color: #58595B;
-  font-size: 14px;
+  /* font-size: 15px; */
   font-style: normal;
   font-weight: 400;
   line-height: 140%; /* 22.4px */
@@ -810,7 +821,7 @@ li{
 .testimonialDesc{
   color: #58595B;
 
-  font-size: 14px;
+  /* font-size: 15px; */
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
@@ -846,7 +857,7 @@ li{
 
 .profileDesignation{
   color: #58595B;
-  font-size: 14px;
+  /* font-size: 15px; */
   font-style: normal;
   font-weight: 400;
   line-height: 140%; /* 22.4px */
@@ -877,11 +888,12 @@ li{
   background-color: white;
   height: auto;
   padding: 0px;
-  gap: 10px;
+  gap: 20px;
 }
 
 .rectangleContainer .servicesDescContainer {
   width: auto;
+  margin-top: -10px;
 }
 
 .rectangleContainer .servicesDescContainer .servicesDesc{
@@ -996,7 +1008,7 @@ li{
 
 .faqDesc{
   color: #58595B;
-  font-size: 14px;
+  /* font-size: 15px; */
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
@@ -1146,7 +1158,7 @@ li{
 
 .footerContactTextDetails h1{
   color: #FFF;
-  font-size: 14px;
+  /* font-size: 15px; */
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
@@ -1156,7 +1168,7 @@ li{
 .footerContactTextDetails p{
   color: #FFF;
   text-align: left;
-  font-size: 14px;
+  /* font-size: 15px; */
   font-style: normal;
   font-weight: 500;
   line-height: 120%; /* 21.6px */
@@ -1171,7 +1183,7 @@ li{
 
 .footerContainer .footerCopyRight{
   color: #FFF;
-  font-size: 14px;
+  /* font-size: 15px; */
   font-style: normal;
   font-weight: 400;
   line-height: 140%; /* 25.2px */
@@ -1356,7 +1368,7 @@ li{
   }
 
   p{
-    font-size: 12px ;
+    font-size: 12px;
     text-align: center ;
   }
 
@@ -1470,7 +1482,7 @@ li{
     display: flex;
     color: rgba(255, 255, 255, 0.80);
     text-align: center;
-    font-size: 12px;
+    /* font-size: 12px; */
     font-style: normal;
     font-weight: 400;
     line-height: 140%; /* 16.8px */
@@ -1520,6 +1532,10 @@ li{
    .businessVideoContainer{
     flex-direction: column;
     gap: 20px;
+  }
+
+  .ksaDesc{
+    width: 90%;
   }
 
   .businessCardContentContainer{
@@ -1584,6 +1600,10 @@ li{
 
   .whyBeaconHeading{
     margin-bottom: 10px;
+  }
+
+  .whyBeaconDesc{
+    /* font-size: 12px; */
   }
 
   .whyBeaconLeft .businessHeading{
@@ -1675,6 +1695,7 @@ li{
 
   .rectangleContainer .servicesDesc{
     text-align: left !important;
+    /* font-size: 12px; */
   }
 
   .testimonialRightContainer{
@@ -1696,7 +1717,7 @@ li{
   }
   
   .profileDesignation{
-    font-size: 12px;
+    /* font-size: 12px; */
     text-align: left;
   }
 
@@ -1732,6 +1753,7 @@ li{
 
   .rectangleContainer .cardContainer{
     width: auto;
+    gap: 10px;
   }
 
   .blogsContainer > div:nth-child(3){

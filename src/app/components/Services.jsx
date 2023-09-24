@@ -15,7 +15,7 @@ function Services() {
         "Get company incorporation assistance and compliance support right after the registration process. Tell us your requirements and let us drive your investment and growth with business incorporation services",
     },
     {
-      img: "/Services/Services6.png",
+      img: "/Services/Services6.svg",
       heading: "Business Consultation",
       description:
         "Our business consultation services augment your business requirements through essential aspects of businesses like people, processes, technology, and related operations.",

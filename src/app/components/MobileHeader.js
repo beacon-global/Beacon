@@ -116,6 +116,7 @@ function MobileHeader() {
           <MLink href="/pages/About" className="mLinks">About Us</MLink>
           <MLink href="/pages/Services" className="mLinks">Services</MLink>
           <MLink href="/" className="mLinks">Blogs</MLink>
+          <MLink href="/pages/Contact" className="mLinks">Contact Us</MLink>
           <div className="hButtonContainer headerContactButton mHeaderBtn">
             <a href="/" className="btn mBtn">
               <Image

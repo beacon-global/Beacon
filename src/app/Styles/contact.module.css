@@ -1,0 +1,174 @@
+.contactUsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 130px;
+}
+
+.contactUsContainer h2 {
+    margin-top: 80px;
+}
+
+.container1{
+    display: flex;
+    padding: 0 135px;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.loctaionButtonContainer{
+    display: flex;
+    gap: 30px;
+    margin-top: -60px;
+    margin-bottom: 70px;
+    align-self: center;
+}
+
+.loctaionButtonContainer button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #02040E;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 19.2px */
+    text-transform: uppercase;
+    border: 1px solid #02040E;
+
+    width: 240px;
+    height: 55px;
+    border-radius: 76px;
+    background: transparent;
+}
+
+/* .loctaionButtonContainer button:hover{
+    background-color: #13670B;
+    color: #FFF;
+} */
+
+.loctaionButtonContainer .btnActive{
+    background-color:#13670B;
+    color: #FFF;
+}
+
+.contactMainCard{
+    display: flex;
+    gap: 30px;
+    width: 100%;
+}
+
+.contactCard{
+    display: flex;
+    flex-direction: column;
+    background-color: #13670B;
+    align-items: center;
+    padding: 40px 30px 15px 40px;
+}
+
+.contactCardUAE{
+    width: 350px;
+}
+
+.contactImgContainer{
+    margin-bottom: 20px;
+}
+
+.contactCardContents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactCardContents p{
+    color: #fff;
+    text-align: center;
+}
+
+.jeddah{
+    color: #FFF;
+    margin-bottom: 15px;
+}
+
+.cardDesc{
+    margin-bottom: 15px;
+}
+
+.numberContainer{
+    background: rgba(255, 255, 255, 0.10);
+    padding: 15px 0;
+    width: 130%;
+}
+
+.numberContainer p{
+    color: #fff;
+    text-align: center;
+}
+
+.container2{
+    padding: 0 135px;
+}
+
+.formContainer{
+    background: #F7F7F8;
+    padding: 60px 50px 50px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.formContainer div{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+
+.formContainer label{
+    color: #02040E;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+.formContainer input{
+    height: 55px;
+    margin-top: 16px;
+    border: 1px solid #D3D3D3;
+    padding: 25px 0px 25px 30px;
+}
+
+.formContainer .textBox{
+    width: 100% ;
+}
+
+.textBox textarea{
+    margin-top: 16px;
+    border: 1px solid #D3D3D3;
+    padding: 25px 0px 0px 30px;
+    height: 216px;
+}
+
+.formContainer .formSubmit{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.formSubmit button{
+    width: 280px;
+    height: 65px;
+
+    border-radius: 76px;
+    background: #13670B;
+
+
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 19.2px */
+    text-transform: uppercase;
+}

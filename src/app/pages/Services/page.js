@@ -242,7 +242,7 @@ function Services() {
                 What our clients say <br /> about us
               </h2>
               <p className="testimonialDesc">
-                Let&quot;s hear from our clients, the core of whatever we
+                Let&lsquo;;s hear from our clients, the core of whatever we
                 commit.
               </p>
             </div>
