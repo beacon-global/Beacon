@@ -60,15 +60,13 @@ function Locations() {
         </div>
 
         <div className="locationImgContainer">
-          <div style={{ width: "100%" }}>
-            <Image
-              src="/mapCropped.svg"
-              width={606}
-              height={527}
-              alt="ImageLocation"
-              layout="responsive"
-            />
-          </div>
+          <Image
+            src="/mapCropped.svg"
+            width={606}
+            height={527}
+            alt="ImageLocation"
+            layout="responsive"
+          />
         </div>
       </div>
     </div>

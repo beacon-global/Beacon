@@ -74,6 +74,10 @@ body {
     font-family: 'Sora', sans-serif !important;
 }
 
+h2{
+
+}
+
 p {
   font-size: 15px;
   font-style: normal;
@@ -275,7 +279,7 @@ li{
 .textOverlay h1 {
   margin-bottom: 10px;
   color: #FFF;
-  font-size: 60px;
+  font-size: 58px;
   font-style: normal;
   font-weight: 500;
   line-height: 120%; /* 76.8px */
@@ -283,6 +287,7 @@ li{
   text-align: left;
   margin-bottom: -10px;
   white-space: nowrap;
+  margin-top: 57px;
 }
 
 .heroDesc {
@@ -297,7 +302,7 @@ li{
 .mainContainer{
   display: flex;
   flex-direction: column;
-  gap: 130px;
+  gap: 90px;
 }
 /* Hero End */
 
@@ -329,7 +334,7 @@ li{
 
 .locationHeading{
   color: #02040E;
-  font-size: 38px;
+  font-size: 36px;
   font-style: normal;
   font-weight: 600;
   line-height: 140%; /* 56px */
@@ -359,6 +364,7 @@ li{
 
 .locationImgContainer{
   width: 100%;
+   margin-bottom: 50px;
 }
 
 /* Location End */
@@ -399,7 +405,7 @@ li{
 .businessDesc{
   color: #02040E;
   text-align: center;
-  font-size: 38px;
+  font-size: 36px;
   font-style: normal;
   font-weight: 600;
   line-height: 140%; /* 56px */
@@ -670,7 +676,7 @@ li{
 
 .whyBeaconHeading{
   color: #02040E;
-  font-size: 38px;
+  font-size: 36px;
   font-style: normal;
   font-weight: 600;
   line-height: 140%; /* 56px */
@@ -814,7 +820,7 @@ li{
 
 .testimonialHeading{
   color: #02040E;
-  font-size: 38px;
+  font-size: 36px;
   font-style: normal;
   font-weight: 600;
   line-height: 140%; /* 56px */
@@ -1068,7 +1074,7 @@ li{
 .contactHeading{
   color: #FFF;
   text-align: center;
-  font-size: 38px;
+  font-size: 36px;
   font-style: normal;
   font-weight: 600;
   line-height: 140%; /* 56px */
@@ -1457,6 +1463,7 @@ li{
 
   .textOverlay{
     padding: 0 24px;
+    /* margin-top: 74px; */
     align-items: center;
     /* height: 600px; */
   }
@@ -1491,6 +1498,7 @@ li{
     font-weight: 600;
     line-height: 120%; /* 43.2px */
     text-transform: capitalize;
+    margin-top: -90px;
   }
 
   .heroDesc{
@@ -1523,6 +1531,10 @@ li{
 
   .locationDesc{
     width: auto;
+  }
+
+  .locationImgContainer{
+    margin: 0;
   }
 
   .locationContainer .locationButton{
