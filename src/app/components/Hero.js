@@ -8,30 +8,30 @@ function Hero({ initialScreenWidth }) {
   const [isMobileScreen, setIsMobileScreen] = useState(true);
   const [imageSrc, setImageSrc] = useState("");
 
-  useEffect(() => {
-    // Check screen size on the client side
-    const checkScreenSize = () => {
-      const newIsMobileScreen = window.innerWidth < 600;
-      setIsMobileScreen(newIsMobileScreen);
+  // useEffect(() => {
+  //   // Check screen size on the client side
+  //   const checkScreenSize = () => {
+  //     const newIsMobileScreen = window.innerWidth < 600;
+  //     setIsMobileScreen(newIsMobileScreen);
 
-      // Update imageSrc based on screen size
-      if (newIsMobileScreen) {
-        setImageSrc("/MobileHero.png");
-      } else {
-        setImageSrc("/hero.png");
-      }
-    };
+  //     // Update imageSrc based on screen size
+  //     if (newIsMobileScreen) {
+  //       setImageSrc("/MobileHero.png");
+  //     } else {
+  //       setImageSrc("/hero.png");
+  //     }
+  //   };
 
-    // Add event listener for window resize
-    window.addEventListener("resize", checkScreenSize);
+  //   // Add event listener for window resize
+  //   window.addEventListener("resize", checkScreenSize);
 
-    // Initial check on component mount
-    checkScreenSize();
+  //   // Initial check on component mount
+  //   checkScreenSize();
 
-    return () => {
-      window.removeEventListener("resize", checkScreenSize);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("resize", checkScreenSize);
+  //   };
+  // }, []);
 
   // const imageSrc = isMobileScreen ? "/MobileHero.png" : "/hero.png";
 
@@ -43,7 +43,16 @@ function Hero({ initialScreenWidth }) {
       <div className="imageWithText">
         <Image
           className="hImage"
-          src={imageSrc}
+          src="/hero.png"
+          alt="Asian Engineer"
+          width={1366}
+          height={670}
+          layout="responsive"
+          loading="lazy"
+        />
+        <Image
+          className="MobilehImage"
+          src="/MobileHero.png"
           alt="Asian Engineer"
           width={1366}
           height={670}

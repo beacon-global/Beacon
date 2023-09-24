@@ -240,6 +240,10 @@ li{
   object-fit: cover;
 }
 
+.MobilehImage{
+  display: none;
+}
+
 .mHeroDesc{
   display: none;
 }
@@ -1380,6 +1384,13 @@ li{
     margin-bottom: 3px;
   }
 
+  .mHeaderContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
   .mainContainer{
     gap: 50px;
   }
@@ -1451,12 +1462,20 @@ li{
   }
 
   .heroContainer {
-    margin-top: 74px;
+    /* margin-top: 74px; */
   }
 
   .heroContainer .heroButton{
     width: 166px;
     height: 46px;
+  }
+
+  .hImage{
+    display: none;
+  }
+
+  .MobilehImage{
+    display: block;
   }
 
   .heroDescContainer{

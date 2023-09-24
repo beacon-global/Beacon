@@ -73,7 +73,7 @@ function MobileHeader() {
 
   return (
     <HeaderContainer className="mHeader">
-      <Container>
+      <Container className="mHeaderContainer">
         <Logo>
           <Image src="/beacon.svg" width={120} height={30} alt="ImageHeader" />
         </Logo>
