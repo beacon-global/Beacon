@@ -150,10 +150,12 @@ li{
 .hContainer{
   width: 100%;
   height: 94px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 130px;
+  padding: 0 100px;
   background-color: rgba(247, 247, 248, 1);
 }
 
@@ -188,6 +190,8 @@ li{
 .hContainer .headerContactButton{
   width: 223px;
   height: 55px;
+  width: 200px;
+  height: 50px;
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -223,7 +227,7 @@ li{
 /* Hero Start */
 
 .heroContainer{
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .imageWithText{
@@ -302,7 +306,7 @@ li{
 .mainContainer{
   display: flex;
   flex-direction: column;
-  gap: 90px;
+  gap: 118px;
 }
 /* Hero End */
 
@@ -316,6 +320,7 @@ li{
   gap:70px;
   background: #FFF;
   padding: 0 135px;
+  margin-top: -11px;
 }
 
 .locationFlexContainer {
@@ -327,7 +332,7 @@ li{
 .locationContentContainer{
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 28px;
   width: 80%;
   justify-content: center;
 }
@@ -337,7 +342,7 @@ li{
   font-size: 36px;
   font-style: normal;
   font-weight: 600;
-  line-height: 140%; /* 56px */
+  line-height: 135%; /* 56px */
   text-transform: capitalize;
   margin-bottom: -10px;
   white-space: nowrap;
@@ -348,8 +353,9 @@ li{
   /* font-size: 15px; */
   font-style: normal;
   font-weight: 400;
-  line-height: 140%; /* 22.4px */
-  /* width: 476px; */
+  line-height: 135%; /* 22.4px */
+  width: 510px;
+  width: 108%;
 }
 
 .locationContainer .locationButton{
@@ -364,7 +370,7 @@ li{
 
 .locationImgContainer{
   width: 100%;
-   margin-bottom: 50px;
+  margin-bottom: 15px;
 }
 
 /* Location End */
@@ -1111,11 +1117,11 @@ li{
 .footerContainer{
   display: flex;
   flex-direction: column;
-  height: 380px;
+  /* height: 380px; */
   background-color: rgba(2, 24, 1, 1);
   
-  gap: 51px;
-  padding: 70px 135px 50px 135px;
+  /* gap: 51px; */
+  padding: 70px 135px 0px 135px;
 }
 
 .topContainer{
@@ -1126,14 +1132,14 @@ li{
 
 .footercontent{
   display: flex;
-  gap: 50px;
+  gap: 35px;
 }
 
 .footercontent li{
   color: #FFF;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 120%; /* 21.6px */
   text-transform: capitalize;
 }
@@ -1141,6 +1147,7 @@ li{
 .bottomContainer{
   display: flex;
   justify-content: space-between;
+  margin: 39px 0;
 
 }
 
@@ -1168,9 +1175,9 @@ li{
 
 .footerContactTextDetails h1{
   color: #FFF;
-  /* font-size: 15px; */
+  font-size: 14px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 140%;
   margin-bottom: 5px;
 }
@@ -1180,15 +1187,23 @@ li{
   text-align: left;
   /* font-size: 15px; */
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 120%; /* 21.6px */
   text-transform: capitalize;
 }
 
 .socialIcons{
-  width: 55px;
-  height: 55px;
+  /* width: 55px;
+  height: 55px; */
   cursor: pointer;
+}
+
+.footerCopyRightContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+  height: 80px;
 }
 
 .footerContainer .footerCopyRight{
@@ -1498,7 +1513,7 @@ li{
     font-weight: 600;
     line-height: 120%; /* 43.2px */
     text-transform: capitalize;
-    margin-top: -90px;
+    margin-top: -0px;
   }
 
   .heroDesc{
@@ -1509,7 +1524,8 @@ li{
     display: flex;
     color: rgba(255, 255, 255, 0.80);
     text-align: center;
-    /* font-size: 12px; */
+    font-size:  3.150vw;
+    
     font-style: normal;
     font-weight: 400;
     line-height: 140%; /* 16.8px */
@@ -1517,6 +1533,7 @@ li{
 
   .locationContainer{
     padding: 0 24px;
+    margin: 0;
   }
 
   .locationFlexContainer{
@@ -1904,6 +1921,7 @@ li{
 
   .footerContainer{
     padding: 30px 24px;
+    padding-bottom: 20;
     height: auto;
     gap: 30px;
   }
@@ -1919,6 +1937,7 @@ li{
 
   .bottomContainer{
     flex-direction: column;
+    margin: 0;
   }
 
   .footerContactImgContainer{
@@ -1946,6 +1965,11 @@ li{
   .footerSocialContainer img{
     width: 40px;
     height: 40px;
+  }
+
+  .footerCopyRightContainer{
+    height: 40px;
+    padding: 0;
   }
 
   .footerCopyRightContainer{

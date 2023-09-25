@@ -42,13 +42,15 @@ function About() {
           Your Partner to Unleash the Odyssey of <br /> Business Success
         </h2>
         <div className={styles.aboutUsHeroContainer}>
-          <Image
-            src="/AboutUsPage/AboutUsPage.svg"
-            width={1212}
-            height={600}
-            layout="responsive"
-            alt="aboutus1"
-          />
+          <div>
+            <Image
+              src="/AboutUsPage/AboutUsPage.svg"
+              width={1212}
+              height={600}
+              layout="responsive"
+              alt="aboutus1"
+            />
+          </div>
           <p>
             Founded in 2022, Beacon Global comprises a team of passionate
             accountants, auditors, and financial analysts. With a complete

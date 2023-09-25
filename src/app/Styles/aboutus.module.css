@@ -3,11 +3,15 @@
 .aboutUsMainContainer {
     display: flex;
     flex-direction: column;
-    gap: 130px;
+    gap: 118px;
 }
 
 .aboutUsMainContainer h2 {
-    margin-top: 80px;
+    margin-top: 96px;
+}
+
+.aboutUsHeroContainer :nth-child(1){
+    margin-top: 5px;
 }
 
 .aboutUsHeroContainer{

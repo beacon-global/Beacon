@@ -1,7 +1,7 @@
 .servicePageMainContainer {
     display: flex;
     flex-direction: column;
-    gap: 130px;
+    gap: 118px;
 }
 
 .servicePageMainContainer h2 {

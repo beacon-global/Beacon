@@ -64,8 +64,8 @@ function Contact() {
                 <div className={styles.contactImgContainer}>
                   <Image
                     src="/contactPage/contactIcon.svg"
-                    width={80}
-                    height={80}
+                    width={72}
+                    height={72}
                     alt="contactLocactionIcon"
                   />
                 </div>
@@ -91,8 +91,8 @@ function Contact() {
                 <div className={styles.contactImgContainer}>
                   <Image
                     src="/contactPage/contactIcon.svg"
-                    width={80}
-                    height={80}
+                    width={72}
+                    height={72}
                     alt="contactLocactionIcon"
                   />
                 </div>
@@ -116,8 +116,8 @@ function Contact() {
                 <div className={styles.contactImgContainer}>
                   <Image
                     src="/contactPage/contactIcon.svg"
-                    width={80}
-                    height={80}
+                    width={72}
+                    height={72}
                     alt="contactLocactionIcon"
                   />
                 </div>
@@ -141,8 +141,8 @@ function Contact() {
                 <div className={styles.contactImgContainer}>
                   <Image
                     src="/contactPage/contactIcon.svg"
-                    width={80}
-                    height={80}
+                    width={72}
+                    height={72}
                     alt="contactLocactionIcon"
                   />
                 </div>
@@ -168,7 +168,7 @@ function Contact() {
         <div className={styles.container2}>
           <form className={styles.formContainer} onSubmit={handleSubmit}>
             <div>
-              <label htmlFor="name">Name *</label>
+              <label htmlFor="name">Full name *</label>
               <input
                 type="text"
                 id="name"
@@ -180,7 +180,7 @@ function Contact() {
               />
             </div>
             <div>
-              <label htmlFor="email">Email *</label>
+              <label htmlFor="email">Your email *</label>
               <input
                 type="email"
                 id="email"

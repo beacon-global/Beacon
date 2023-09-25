@@ -8,7 +8,7 @@ function Footer() {
         <div className="footerLogoContainer">
           <Image
             src="/footerBeacon.svg"
-            width={185}
+            width={170}
             height={60}
             alt="ImageFooter1"
           />
@@ -28,8 +28,8 @@ function Footer() {
           <div className="footerContactDetails">
             <Image
               src="/Social/footerTelephone.svg"
-              width={50}
-              height={50}
+              width={46}
+              height={46}
               alt="ImageFooter2"
             />
             <div className="footerContactTextDetails">
@@ -40,8 +40,8 @@ function Footer() {
           <div className="footerContactDetails">
             <Image
               src="/Social/footerMessage.svg"
-              width={50}
-              height={50}
+              width={46}
+              height={46}
               alt="ImageFooter2"
             />
             <div className="footerContactTextDetails">
@@ -52,8 +52,8 @@ function Footer() {
           <div className="footerContactDetails">
             <Image
               src="/Social/footerLocation.svg"
-              width={50}
-              height={50}
+              width={46}
+              height={46}
               alt="ImageFooter2"
             />
             <div className="footerContactTextDetails">
@@ -66,29 +66,29 @@ function Footer() {
           <Image
             className="socialIcons"
             src="/Social/footerWhatsapp.svg"
-            width={50}
-            height={50}
+            width={46}
+            height={46}
             alt="ImageFooter3"
           />
           <Image
             className="socialIcons"
             src="/Social/footerInstagram.svg"
-            width={50}
-            height={50}
+            width={46}
+            height={46}
             alt="ImageFooter4"
           />
           <Image
             className="socialIcons"
             src="/Social/footerFacebook.svg"
-            width={50}
-            height={50}
+            width={46}
+            height={46}
             alt="ImageFooter5"
           />
           <Image
             className="socialIcons"
             src="/Social/footerLinkedin.svg"
-            width={50}
-            height={50}
+            width={46}
+            height={46}
             alt="ImageFooter6"
           />
         </div>
