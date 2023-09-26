@@ -239,15 +239,6 @@
     line-height: 140%;
 }
 
-/* .footerContainer p{
-    color: #fff;
-    text-align: left;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 120%;
-} */
-
 @media (max-width: 600px) {
 
     .aboutUsMainContainer p{

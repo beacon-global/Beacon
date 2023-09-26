@@ -1920,10 +1920,9 @@ li{
   }
 
   .footerContainer{
-    padding: 30px 24px;
-    padding-bottom: 20;
     height: auto;
     gap: 30px;
+    padding: 30px 24px;
   }
 
   .footerLogoContainer img{
