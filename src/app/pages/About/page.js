@@ -41,6 +41,9 @@ function About() {
         <h2 className="businessDesc">
           Your Partner to Unleash the Odyssey of <br /> Business Success
         </h2>
+        <h2 className={`${styles.mBusinessDesc1} mBusinessDesc`}>
+          Let Beacon Lead Your Dream Business Setup to The Path Of Success!
+        </h2>
         <div className={styles.aboutUsHeroContainer}>
           <div>
             <Image
@@ -74,19 +77,19 @@ function About() {
         </div>
 
         <div className={styles.greenBannerContiner}>
-          <div className="statContainer">
+          <div className={styles.statContainer}>
             <h1>12K+</h1>
             <p>Project Complete</p>
           </div>
-          <div className="statContainer">
+          <div className={styles.statContainer}>
             <h1>7K+</h1>
             <p>Happy Client</p>
           </div>
-          <div className="statContainer">
+          <div className={styles.statContainer}>
             <h1>10+</h1>
             <p>Years Experience</p>
           </div>
-          <div className="statContainer">
+          <div className={styles.statContainer}>
             <h1>270+</h1>
             <p>Win Awards</p>
           </div>
@@ -97,65 +100,97 @@ function About() {
             Let Beacon Lead Your Dream Business Setup <br /> to The Path Of
             Success!
           </h2>
-
-          <div className={styles.cardMainContainer}>
-            <div className={styles.cardContainer}>
-              <div className={styles.ImageCon}>
-                <div>
-                  <Image
-                    src="/AboutUsPage/aboutPageIcon.svg"
-                    width={80}
-                    height={80}
-                    layout="responsive"
-                    alt="aboutus2"
-                  />
+          <h2 className={`${styles.mBusinessDesc1} mBusinessDesc`}>
+            Let Beacon Lead Your Dream Business Setup to The Path Of Success!
+          </h2>
+          <div className={styles.mobilePaddingCard}>
+            <div className={styles.cardMainContainer}>
+              <div className={styles.cardContainer}>
+                <div className={styles.ImageCon}>
+                  <div>
+                    <Image
+                      src="/AboutUsPage/aboutPageIcon.svg"
+                      width={80}
+                      height={80}
+                      layout="responsive"
+                      alt="aboutus2"
+                      className={styles.cardIcon}
+                    />
+                    <Image
+                      src="/AboutUsPage/aboutPageIcon.svg"
+                      width={60}
+                      height={60}
+                      layout="responsive"
+                      alt="aboutus2"
+                      className={styles.mCardIcon}
+                    />
+                  </div>
+                  <div>
+                    <Image
+                      src="/AboutUsPage/aboutusIcon1.svg"
+                      width={80}
+                      height={80}
+                      layout="responsive"
+                      alt="aboutus2"
+                      className={styles.cardIcon}
+                    />
+                    <Image
+                      src="/AboutUsPage/aboutusIcon1.svg"
+                      width={60}
+                      height={60}
+                      layout="responsive"
+                      alt="aboutus2"
+                      className={styles.mCardIcon}
+                    />
+                  </div>
+                  <div>
+                    <Image
+                      src="/AboutUsPage/aboutusIcon2.svg"
+                      width={80}
+                      height={80}
+                      layout="responsive"
+                      alt="aboutus2"
+                      className={styles.cardIcon}
+                    />
+                    <Image
+                      src="/AboutUsPage/aboutusIcon2.svg"
+                      width={60}
+                      height={60}
+                      layout="responsive"
+                      alt="aboutus2"
+                      className={styles.mCardIcon}
+                    />
+                  </div>
                 </div>
-                <div>
-                  <Image
-                    src="/AboutUsPage/aboutusIcon1.svg"
-                    width={80}
-                    height={80}
-                    layout="responsive"
-                    alt="aboutus2"
-                  />
-                </div>
-                <div>
-                  <Image
-                    src="/AboutUsPage/aboutusIcon2.svg"
-                    width={80}
-                    height={80}
-                    layout="responsive"
-                    alt="aboutus2"
-                  />
-                </div>
-              </div>
-              <div className={styles.cardContent}>
-                <div>
-                  <h1>Right in Time</h1>
-                  <p>
-                    With Beacon, you&quot;ll never have to waste time navigating
-                    the business process to make it right. We make the business
-                    setup in Saudi Arabia and UAE time-efficient and easier than
-                    ever.
-                  </p>
-                </div>
-                <div>
-                  <h1>Financially Secure</h1>
-                  <p>
-                    Setting up a business can prove to be risky if you have no
-                    professional financial assistance. Our consultants let you
-                    minimise the potential financial risks through financial
-                    consultation.
-                  </p>
-                </div>
-                <div>
-                  <h1>Reliable Partner</h1>
-                  <p>
-                    With our support that guides your business right from the
-                    ideation to the final setup, we let our presence lead you
-                    through each stage. As your strategic advisor, Beacon stands
-                    out to solve your business setup concerns in no time.
-                  </p>
+                <div className={styles.cardContent}>
+                  <div>
+                    <h1>Right in Time</h1>
+                    <p>
+                      With Beacon, you&quot;ll never have to waste time
+                      navigating the business process to make it right. We make
+                      the business setup in Saudi Arabia and UAE time-efficient
+                      and easier than ever.
+                    </p>
+                  </div>
+                  <div>
+                    <h1>Financially Secure</h1>
+                    <p>
+                      Setting up a business can prove to be risky if you have no
+                      professional financial assistance. Our consultants let you
+                      minimise the potential financial risks through financial
+                      consultation.
+                    </p>
+                  </div>
+                  <div>
+                    <h1>Reliable Partner</h1>
+                    <p>
+                      With our support that guides your business right from the
+                      ideation to the final setup, we let our presence lead you
+                      through each stage. As your strategic advisor, Beacon
+                      stands out to solve your business setup concerns in no
+                      time.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -189,7 +224,7 @@ function About() {
               </p>
             </div>
           </div>
-          <div className={styles.topContainer}>
+          <div className={`${styles.topContainer} ${styles.mBottomContainer}`}>
             <div className={styles.contentContainer}>
               <h1>Our Vision</h1>
               <p>
@@ -233,7 +268,9 @@ function About() {
             ))}
           </div>
         </div>
-        <Contact />
+        <div className={styles.contactCont}>
+          <Contact />
+        </div>
         <div className={styles.footerContainer}>
           <Footer />
         </div>

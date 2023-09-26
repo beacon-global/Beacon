@@ -19,7 +19,7 @@
 .loctaionButtonContainer{
     display: flex;
     gap: 30px;
-    margin-top: -54px;
+    margin-top: -27px;
     margin-bottom: 70px;
     align-self: center;
 }
@@ -148,6 +148,10 @@
     border: 1px solid #D3D3D3;
     padding: 25px 0px 25px 30px;
     background: #F7F7F8;
+}
+
+.formContainer input::placeholder {
+    font-size: 14px;
 }
 
 .formContainer .textBox{

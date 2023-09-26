@@ -227,7 +227,7 @@ function Contact() {
               ></textarea>
             </div>
             <div className={styles.formSubmit}>
-              <button type="submit">Submit</button>
+              <button type="submit">Send Message</button>
             </div>
           </form>
         </div>
