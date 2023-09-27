@@ -1960,6 +1960,15 @@ li{
   .footerContactDetails img{
     width: 40px;
     height: 40px;
+    margin-bottom: 10px;
+  }
+
+  .footerContactTextDetails h1{
+    font-size: 12px;
+  }
+
+  .footerContactTextDetails p{
+    font-size: 13px;
   }
 
   .footerSocialContainer{

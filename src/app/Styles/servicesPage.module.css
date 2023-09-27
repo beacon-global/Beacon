@@ -141,6 +141,10 @@
     margin-top: 0;
 }
 
+.mTestimonialHeading{
+    display: none;
+}
+
 @media (max-width: 600px) {
 
     .servicePageMainContainer h2{
@@ -310,6 +314,7 @@
     }
 
     .testimonialLeftContainer .mTestimonialHeading{
+        display: flex;
         margin: 0;
         margin-bottom: 5px;
         color: #02040E;

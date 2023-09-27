@@ -24,6 +24,10 @@
     align-self: center;
 }
 
+.loctaionButtonContainer .mUae{
+    display: none;
+}
+
 .loctaionButtonContainer button{
     display: flex;
     justify-content: center;
