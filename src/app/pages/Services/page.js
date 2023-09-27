@@ -114,10 +114,18 @@ function Services() {
       <MobileHeader />
       <div className={styles.servicePageMainContainer}>
         <h2 className="businessDesc">purus interdum euismod feugiat</h2>
-        <div className={`${styles.cardMainContainer} cardMainContainer`}>
+        <h2 className={`${styles.mBusinessDesc1} mBusinessDesc`}>
+          purus interdum euismod feugiat
+        </h2>
+        <div
+          className={`${styles.servicePageMCardMainContainer} cardMainContainer`}
+        >
           {servicePageData.map((data, index) => (
-            <div className="cardContainer" key={index}>
-              <div className="imgContainer">
+            <div
+              className={`${styles.cardContainer} cardContainer`}
+              key={index}
+            >
+              <div className={`${styles.imgContainer} imgContainer`}>
                 <Image
                   src={data.img}
                   width={70}
@@ -128,20 +136,24 @@ function Services() {
               <div className="servicesHeadingContainer">
                 <h1 className="servicesHeading">{data.heading}</h1>
               </div>
-              <div className="servicesDescContainer">
+              <div
+                className={`${styles.servicesDescContainer} servicesDescContainer`}
+              >
                 <p className="servicesDesc">{data.description}</p>
               </div>
-              <div className="cardContainerOverlay">
+              <div
+                className={`${styles.sPagecardContainerOverlay} cardContainerOverlay`}
+              >
                 <div className="cardContainerOverlayContent">
                   <h2>Service Details</h2>
-                  <ul>
-                    <li>Lorem ipsum dolor sit amet consectetur.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                  <ul className={styles.serviceCardOverlayUL}>
+                    <li>Goverment Relations Management</li>
+                    <li>Employee Work Permit & Visa Assistance</li>
+                    <li>Payroll and Employee Benefits</li>
+                    <li>Regulatory Compliance</li>
+                    <li>License Amendment</li>
+                    <li>Company liquidation</li>
+                    <li>Business Transfer - Merging</li>
                   </ul>
                 </div>
               </div>
@@ -164,6 +176,10 @@ function Services() {
               Porttitor the curabitur
               <br /> Adipiscing euismod.
             </h1>
+            <h1 className={`${styles.servicePagecontainer2MobileHeading}`}>
+              Porttitor the curabitur
+              <br /> Adipiscing euismod.
+            </h1>
             <p>
               Lorem ipsum dolor sit amet consectetur. Eu elit vitae bibendum
               bibendum accumsan facilisis libero. At arcu augue ante varius.
@@ -178,6 +194,9 @@ function Services() {
 
         <div className={styles.container3}>
           <h1 className="businessDesc">How Selling Works</h1>
+          <h1 className={`${styles.servicePagecontainer2MobileHeading}`}>
+            How Selling Works
+          </h1>
           <div className={styles.container3SellingCard}>
             {sellingCardData.map((data, index) => (
               <div className={styles.sellingCards} key={index}>
@@ -205,6 +224,9 @@ function Services() {
             <h1 className="businessDesc">
               Solving problems by
               <br /> the services
+            </h1>
+            <h1 className={`${styles.servicePagecontainer2MobileHeading}`}>
+              Solving problems by <br /> the services
             </h1>
             <p className="servicesDesc">
               Lorem ipsum dolor sit amet consectetur. Eu elit vitae bibendum
@@ -238,7 +260,7 @@ function Services() {
                 <br />
                 say about us
               </h2>
-              <h2 className="mTestimonialHeading">
+              <h2 className={`${styles.mTestimonialHeading}`}>
                 What our clients say <br /> about us
               </h2>
               <p className="testimonialDesc">

@@ -42,6 +42,9 @@ function Contact() {
       <MobileHeader />
       <div className={styles.contactUsContainer}>
         <h2 className="businessDesc">Get In Touch With Us!</h2>
+        <h2 className={`${styles.mBusinessDesc1} mBusinessDesc`}>
+          Get In Touch With Us!
+        </h2>
         <div className={styles.container1}>
           <div className={styles.loctaionButtonContainer}>
             <button
@@ -55,6 +58,14 @@ function Contact() {
               onClick={() => toggleUAECard("uae")}
             >
               United Arab Emirates
+            </button>
+            <button
+              className={`${styles.uae} ${styles.mUae} ${
+                showUAECard && styles.btnActive
+              }`}
+              onClick={() => toggleUAECard("uae")}
+            >
+              UAE
             </button>
           </div>
 
@@ -122,10 +133,10 @@ function Contact() {
                   />
                 </div>
                 <div className={styles.contactCardContents}>
-                  <h1 className={`${styles.jeddah} servicesHeading`}>JEDDAH</h1>
+                  <h1 className={`${styles.jeddah} servicesHeading`}>DAMMAM</h1>
                   <p className={styles.cardDesc}>
-                    Building no. 4626, 501, 5th Floor, Hamza Shehatah St.
-                    Al-Baghdadiyah Al-Gharbiyah Jeddah 22235
+                    Building no. 7447, B31, 3rd Floor, Al-Thasih St. Al-Amamrah,
+                    8th street Dammam 32415
                   </p>
                 </div>
                 <div className={styles.numberContainer}>
@@ -149,8 +160,8 @@ function Contact() {
                 <div className={styles.contactCardContents}>
                   <h1 className={`${styles.jeddah} servicesHeading`}>JEDDAH</h1>
                   <p className={styles.cardDesc}>
-                    Building no. 4626, 501, 5th Floor, Hamza Shehatah St.
-                    Al-Baghdadiyah Al-Gharbiyah Jeddah 22235
+                    Le Cygne CommercialCenter 2, 6th FloorAl-Arz, Al-OlayaRiyadh
+                    12611
                   </p>
                 </div>
                 <div className={styles.numberContainer}>
