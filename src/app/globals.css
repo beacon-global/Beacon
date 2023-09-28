@@ -494,7 +494,8 @@ li{
   /* width: 90%; */
 }
 
-.businessCircle{
+.businessCircle {
+  position: relative; /* Add this to make ::before pseudo-element work */
   border: 2px solid white;
   border-radius: 50%;
   width: 40px;
@@ -502,6 +503,38 @@ li{
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden; /* Add this to hide overflow from ::before */
+  transition: transform 0.3s ease-in-out, border 0.3s ease-out;
+}
+
+.businessCircle::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #13670b;
+  z-index: -1; /* Add this to place ::before behind the circle */
+  transform: translateY(100%); /* Start with translateY(100%) to hide it */
+  transition: transform 0.3s ease-in-out; /* Transition the transform property */
+}
+
+.businessCircle img{
+  transition: transform 0.4s ease-in-out;
+}
+
+.businessCircle:hover img {
+  transform: rotate(360deg);
+}
+
+.businessCircle:hover::before {
+  transform: translateY(0%); /* Move ::before from bottom to top */
+}
+
+.businessCircle:hover {
+  transform: scale(1.3);
+  border: none;
 }
 
 
@@ -1645,8 +1678,14 @@ li{
     width: 90%;
   }
 
+  .businessCircle{
+    width: 30px;
+    height: 30px;
+  }
+
   .businessCardContentContainer{
-    padding: 36px 20px;
+    padding: 15px 20px;
+    justify-content: flex-end;
   }
 
   .businessCardContentContainer h1{
@@ -1654,8 +1693,8 @@ li{
   }
 
   .businessCardContentContainer img{
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 15px;
   }
 
   .serviceContainer{
