@@ -15,36 +15,87 @@ function Services() {
       heading: "Business Incorporation",
       description:
         "Get company incorporation assistance and compliance support right after the registration process. Tell us your requirements and let us drive your investment and growth with business incorporation services",
+      details: [
+        "GCC National Country",
+        "Limited Liability Company",
+        "Multi County Business Setup",
+        "Branch of Foreign Company",
+      ],
     },
     {
-      img: "/Services/Services6.png",
+      img: "/Services/Services6.svg",
       heading: "Business Consultation",
       description:
         "Our business consultation services augment your business requirements through essential aspects of businesses like people, processes, technology, and related operations.",
+      details: [
+        "Government Relation Management",
+        "Employee Work Permit & Visa Assistance",
+        "Regulatory Compliance",
+        "Licence Amendment",
+        "Company Liquidation",
+        "Business Transfer - Merging",
+        "Trademark Registration",
+      ],
     },
     {
       img: "/Services/Services8.svg",
       heading: "Financial & Accounting",
       description:
         "Through the regular management of financial reports, accounting, and related activities of the business, we are involved in the analysis and reporting of financial processes.",
+      details: [
+        "Financial Statement Preparation",
+        "Tax Planning & Preparation",
+        "Budgeting & Forecasting",
+        "Financial Planning",
+        "Investment Management",
+        "Business Valuation",
+        "Corporate Finance & Payroll Services",
+      ],
     },
     {
       img: "/Services/Services9.svg",
       heading: "Audit & Taxation",
       description:
         "We engage in the routine monitoring, review, and report of the significant tax matters that impact your business with the panel of our audit and tax experts.",
+      details: [
+        "Internal Audits",
+        "Compliance Audits",
+        "VAT Advisory Services",
+        "Income Tax Advisory Services",
+        "Social Responsibility Audits",
+        "Tax Risk Management Services",
+        "Operational Audits",
+      ],
     },
     {
       img: "/Services/Services10.svg",
-      heading: "technology solutions",
+      heading: "Technology Solutions",
       description:
         "Along with the business experience, we infuse technology into the business processes to address your specific technical needs that reimagine business models.",
+      details: [
+        "Digital Strategy",
+        "UI Designing",
+        "Content Strategy",
+        "Web Development",
+        "Ecommerce Development",
+        "Android App Development",
+        "iOS App Development",
+      ],
     },
     {
       img: "/Services/Services11.svg",
-      heading: "digital marketing",
+      heading: "Digital Marketing",
       description:
         "Hand over all your digital marketing to-do tasks to our experts and watch through the growth plateau with the finest services that scale your brand outreach.",
+      details: [
+        "Search Engine Optimization (SEO)",
+        "Search Engine Marketing (Google Ads)",
+        "Social Media Marketing (Meta Ads)",
+        "Social Media Management",
+        "Lead Generation",
+        "LinkedIn Ads",
+        "Tiktok Ads",
+      ],
     },
   ];
 
@@ -144,17 +195,16 @@ function Services() {
               <div
                 className={`${styles.sPagecardContainerOverlay} cardContainerOverlay`}
               >
-                <div className="cardContainerOverlayContent">
-                  <h2>Service Details</h2>
-                  <ul className={styles.serviceCardOverlayUL}>
-                    <li>Goverment Relations Management</li>
-                    <li>Employee Work Permit & Visa Assistance</li>
-                    <li>Payroll and Employee Benefits</li>
-                    <li>Regulatory Compliance</li>
-                    <li>License Amendment</li>
-                    <li>Company liquidation</li>
-                    <li>Business Transfer - Merging</li>
-                  </ul>
+                <h2>{data.heading}</h2>
+                <div className={styles.overLayDesc}>
+                  <p>{data.details[0]}</p>
+                  <p>{data.details[1]}</p>
+                  <p>{data.details[2]}</p>
+                  <p>{data.details[3]}</p>
+                  <p>{data.details[4]}</p>
+                  <p>{data.details[5]}</p>
+                  <p>{data.details[6]}</p>
+                  <p>{data.details[7]}</p>
                 </div>
               </div>
             </div>
@@ -264,7 +314,7 @@ function Services() {
                 What our clients say <br /> about us
               </h2>
               <p className="testimonialDesc">
-                Let&lsquo;;s hear from our clients, the core of whatever we
+                Let&lsquo;s hear from our clients, the core of whatever we
                 commit.
               </p>
             </div>

@@ -86,7 +86,7 @@ function Hero({ initialScreenWidth }) {
           <div className="hButtonContainer heroButton">
             <div className="visibleWrapperContainer">
               <div className="topVisibleContainer">
-                <a href="/" className="btn">
+                <a href="/pages/Services" className="btn">
                   Our Services
                   <div className="topVisibleArrow">
                     <Image

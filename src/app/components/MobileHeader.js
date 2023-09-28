@@ -44,7 +44,7 @@ const Card = styled.div`
   top: 4rem;
   left: 0;
   width: 100vw;
-  height: 35vh;
+  height: 100vh;
   background-color: #ffffff;
   z-index: 52;
   display: ${({ isMenuOpen }) => (isMenuOpen ? "flex" : "none")};
@@ -74,9 +74,11 @@ function MobileHeader() {
   return (
     <HeaderContainer className="mHeader">
       <Container className="mHeaderContainer">
+      <a href="/">
         <Logo>
           <Image src="/beacon.svg" width={120} height={30} alt="ImageHeader" />
         </Logo>
+        </a>
         <ToggleButton onClick={toggleMenu}>
           {isMenuOpen ? (
             <svg

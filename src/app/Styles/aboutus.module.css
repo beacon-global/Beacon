@@ -143,11 +143,10 @@
 }
 
 .aboutUscontainer3{
-    background: #F7F7F8;
-    padding: 100px 135px;
+    padding: 0px 135px;
     display: flex;
     flex-direction: column;
-    gap: 70px;
+    /* gap: 70px; */
 }
 
 .topContainer{
@@ -187,6 +186,34 @@
     font-weight: 400;
     line-height: 140%;
 }
+
+.vissionMissionMainContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.vissionMissionContent{
+    display: flex;
+    padding: 100px 40px 70px 40px;
+    background: #F7F7F8;
+    gap: 40px;
+}
+
+.mission, .vission {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.vissionMissionContent h1 {
+    color: #02040E;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 42px */
+    text-transform: capitalize;
+}
+
 
 .aboutUscontainer4{
     display: flex;
@@ -305,6 +332,10 @@
         padding: 30px 15px 30px 45px;
     }
 
+    .cardIcon{
+        display: none;
+    }
+
     .ImageCon{
         flex-direction: column;
         left: -38px !important;
@@ -348,7 +379,7 @@
     }
 
     .aboutUscontainer3{
-        padding: 40px 24px 50px 24px;
+        padding: 40px 24px 0px 24px;
         gap: 20px;
     }
 
@@ -366,8 +397,33 @@
         order: -1;
     }
 
+    .vissionMissionContent{
+        flex-direction: column;
+        padding: 20px 15px;
+        gap: 30px;
+    }
+
+    .vission, .mission{
+        gap: 10px;
+    }
+
+    .vissionMissionContent h1 {
+        font-size: 18px;
+    }
+
+    .vissionMissionContent p{
+        text-align: left;
+    }
+
     .aboutUscontainer4{
         padding: 0 24px;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .aboutUscontainer4 .mBusinessDesc1{
+        margin: 0;
+        text-align: center;
     }
 
     .coreValueCard{

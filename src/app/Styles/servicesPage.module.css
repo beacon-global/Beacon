@@ -17,6 +17,40 @@
     margin-top: -65px;
 }
 
+.sPagecardContainerOverlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+.overLayDesc{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .sPagecardContainerOverlay h2{
+    margin: 0 !important;
+    color: #FFF;
+    text-align: center;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 28.8px */
+    text-transform: capitalize;
+  }
+  
+  .sPagecardContainerOverlay p {
+    color: rgba(255, 255, 255, 0.80);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+  }
+
 .servicesPageContainer2{
     padding: 100px 135px;
     background-color: rgba(247, 247, 248, 1);
@@ -197,6 +231,14 @@
 
     .sPagecardContainerOverlay h2{
         display: none;
+    }
+
+    .overLayDesc{
+        gap: 5px;
+    }
+
+    .sPagecardContainerOverlay p{
+        font-size: 12px;
     }
 
     .serviceCardOverlayUL{

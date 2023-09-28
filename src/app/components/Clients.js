@@ -83,10 +83,10 @@ function Clients() {
             </div>
             <div className="testimonialButtonContainer">
               <button className="leftButton" onClick={previousTestimonial}>
-                {"﹤"}
+                {"<"}
               </button>
               <button className="rightButton" onClick={nextTestimonial}>
-                {"﹥"}
+                {">"}
               </button>
             </div>
           </div>

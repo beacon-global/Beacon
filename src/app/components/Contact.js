@@ -21,7 +21,7 @@ function Contact() {
         <div className="hButtonContainer contactImageButton">
           <div className="visibleWrapperContainer">
             <div className="topVisibleContainer">
-              <a href="/" className="btn">
+              <a href="/pages/Contact" className="btn">
                 Contact Us
                 <div className="topVisibleArrow">
                   <Image

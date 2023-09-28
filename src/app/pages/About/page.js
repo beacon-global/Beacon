@@ -42,7 +42,7 @@ function About() {
           Your Partner to Unleash the Odyssey of <br /> Business Success
         </h2>
         <h2 className={`${styles.mBusinessDesc1} mBusinessDesc`}>
-          Let Beacon Lead Your Dream Business Setup to The Path Of Success!
+          Your Partner to Unleash the Odyssey of Business Success
         </h2>
         <div className={styles.aboutUsHeroContainer}>
           <div>
@@ -117,7 +117,7 @@ function About() {
                       className={styles.cardIcon}
                     />
                     <Image
-                      src="/AboutUsPage/aboutPageIcon.svg"
+                      src="/AboutUsPage/mIcon1.svg"
                       width={60}
                       height={60}
                       layout="responsive"
@@ -135,7 +135,7 @@ function About() {
                       className={styles.cardIcon}
                     />
                     <Image
-                      src="/AboutUsPage/aboutusIcon1.svg"
+                      src="/AboutUsPage/mIcon2.svg"
                       width={60}
                       height={60}
                       layout="responsive"
@@ -153,7 +153,7 @@ function About() {
                       className={styles.cardIcon}
                     />
                     <Image
-                      src="/AboutUsPage/aboutusIcon2.svg"
+                      src="/AboutUsPage/mIcon3.svg"
                       width={60}
                       height={60}
                       layout="responsive"
@@ -198,7 +198,7 @@ function About() {
         </div>
 
         <div className={styles.aboutUscontainer3}>
-          <div className={styles.topContainer}>
+          {/* <div className={styles.topContainer}>
             <div className={styles.imgContainer}>
               <Image
                 src="/AboutUsPage/aboutPage2.svg"
@@ -249,11 +249,54 @@ function About() {
                 alt="aboutus2"
               />
             </div>
+          </div> */}
+
+          <div className={styles.vissionMissionMainContainer}>
+            <div className={styles.vissionMissionContent}>
+              <div className={styles.mission}>
+                <h1>Our Mission</h1>
+                <p>
+                  To evolve into the most trusted partner in business
+                  incorporation and consulting services, thereby laying a
+                  benchmark through the reputation from the best-in-market
+                  business results
+                </p>
+              </div>
+              <div className={styles.vission}>
+                <h1>Our Vision</h1>
+                <p>
+                  To future-proof businesses with fruitful collaborations and
+                  partnerships, which help businesses to multiply their growth
+                  through the quality and integrity of the services we offer.
+                </p>
+              </div>
+            </div>
+            <div className={styles.vissionMissionImage}>
+              <Image
+                src="/AboutUsPage/aboutPage.png"
+                width={1212}
+                height={350}
+                layout="responsive"
+                alt="aboutus2"
+                className={styles.cardIcon}
+              />
+              <Image
+                src="/AboutUsPage/maboutPage.svg"
+                width={327}
+                height={150}
+                layout="responsive"
+                alt="aboutus2"
+                className={styles.mCardIcon}
+              />
+            </div>
           </div>
         </div>
 
         <div className={styles.aboutUscontainer4}>
           <h2 className="businessDesc">Core Values</h2>
+          <h2 className={`${styles.mBusinessDesc1} mBusinessDesc`}>
+            Core Values
+          </h2>
           <div className={styles.coreValueCard}>
             {servicesData.map((data, index) => (
               <div className={styles.coreValueCards} key={index}>

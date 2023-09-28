@@ -287,15 +287,21 @@
         height: 52px;
         width: 80vw;
         margin-top: 10px;
+        padding-left: 15px;
     }
 
     .formContainer textarea{
         width: 80vw;
+        padding-left: 15px;
     }
 
     .formSubmit button{
         width: 159px;
         height: 38px;
         font-size: 12px;
+    }
+
+    .footerContainer h1{
+        text-align: left;
     }
 }

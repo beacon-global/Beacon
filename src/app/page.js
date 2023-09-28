@@ -12,6 +12,7 @@ import Faq from "./components/Faq";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import MobileHeader from "./components/MobileHeader";
+import Stats from "./components/Stats";
 
 export default function Home() {
   return (
@@ -26,20 +27,14 @@ export default function Home() {
         />
       </Head>
       <Header />
-      <MobileHeader/>
+      <MobileHeader />
       <div className="mainContainer">
         <Hero />
         <Locations />
         <BusinessSetup />
         <Services />
         <WhyBeacon />
-        <Image
-          src="/Stats.png"
-          width={100}
-          height={100}
-          layout="responsive"
-          alt="ImageStats"
-        />
+        <Stats />
         <Clients />
         <Blogs />
         <Faq />

@@ -2,7 +2,7 @@ import React from "react";
 
 function Stats() {
   return (
-    <div>
+    <div className="greenBannerContiner">
       <div className="statsContiner">
         <div className="statContainer">
           <h1>12K+</h1>
