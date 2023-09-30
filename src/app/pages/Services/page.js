@@ -129,18 +129,19 @@ function Services() {
   const testimonials = [
     {
       message:
-        "Beacon Global has been with us throughout the phase of integrating and adapting business to the dynamic marketplace, with end-to-end business consultation services.",
-      name: "Jenny Wilson",
-      designation: "Vice President",
+        "Beacon has been with us throughout the phase of integrating and adapting business to the dynamic marketplace, with end-to-end business consultation services. ",
+      name: "Omar Abdallah",
+      designation: "Riyadh, KSA",
       img: "/TestimonialDp.png",
     },
     {
-      message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.",
-      name: "John Doe",
-      designation: "CEO",
+      message:
+        "While partnering with Beacon, we never felt them as the business consultants, but as a part of our team with transparency and commitment at its best.",
+      name: "Muhammed",
+      designation: "Jeddah, KSA",
       img: "/TestimonialDp.png",
     },
-    // Add more testimonials here
+    
   ];
 
   const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);

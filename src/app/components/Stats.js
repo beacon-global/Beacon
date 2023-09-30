@@ -5,20 +5,20 @@ function Stats() {
     <div className="greenBannerContiner">
       <div className="statsContiner">
         <div className="statContainer">
-          <h1>12K+</h1>
+          <h1>2000+</h1>
           <p>Project Complete</p>
         </div>
         <div className="statContainer">
-          <h1>7K+</h1>
+          <h1>1000+</h1>
           <p>Happy Client</p>
         </div>
         <div className="statContainer">
-          <h1>10+</h1>
-          <p>Years Experience</p>
+          <h1>3+</h1>
+          <p>Years of Experience</p>
         </div>
         <div className="statContainer">
-          <h1>270+</h1>
-          <p>Win Awards</p>
+          <h1>4+</h1>
+          <p>Countries</p>
         </div>
       </div>
     </div>

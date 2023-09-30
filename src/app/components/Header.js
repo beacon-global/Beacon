@@ -8,7 +8,7 @@ function Header() {
 
   const menuList = [
     { text: "Home", href: "/" },
-    { text: "Business Setup", href: "/" },
+    { text: "Our Presence", href: "/" },
     { text: "About Us", href: "/pages/About" },
     { text: "Services", href: "/pages/Services" },
     { text: "Blogs", href: "/" },
@@ -30,9 +30,16 @@ function Header() {
   return (
     <>
       <div className="hContainer bg-white">
-        <div className="logoContainer">
-          <Image src="/beacon.svg" width={180} height={45} alt="ImageHeader" />
-        </div>
+        <a href="/">
+          <div className="logoContainer">
+            <Image
+              src="/beacon.svg"
+              width={180}
+              height={45}
+              alt="ImageHeader"
+            />
+          </div>
+        </a>
         <div className="hMenuContainer">
           <div className="hMenu">
             <ul className="hUlList">

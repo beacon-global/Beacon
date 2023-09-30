@@ -34,7 +34,7 @@ function Footer() {
             />
             <div className="footerContactTextDetails">
               <h1>Call us on:</h1>
-              <p>+1 800 100 900</p>
+              <p>+ 966 570 807 175</p>
             </div>
           </div>
           <div className="footerContactDetails">
@@ -46,7 +46,7 @@ function Footer() {
             />
             <div className="footerContactTextDetails">
               <h1>Email us:</h1>
-              <p>Beacon@gmail.com</p>
+              <p>info@bmcglobal.co</p>
             </div>
           </div>
           <div className="footerContactDetails">
@@ -58,7 +58,10 @@ function Footer() {
             />
             <div className="footerContactTextDetails">
               <h1>Main office:</h1>
-              <p>195 Devonshire St Boston,<br /> MA 02110</p>
+              <p>
+                Building no. 4626, Hamza Shehatah St.,
+                <br /> Al-Baghdadiyah Al-Gharbiyah, Jeddah 22235
+              </p>
             </div>
           </div>
         </div>
@@ -97,7 +100,10 @@ function Footer() {
       <div className="footerCopyRightContainer">
         <p className="footerCopyRight">
           © 2023 by Beacon Management Consultants CO.LTD | All Right Reserved |
-          Powered by <a href="https://procube.cx/" style={{textDecoration:"underline"}}>procube.cx</a>
+          Powered by{" "}
+          <a href="https://procube.cx/" style={{ textDecoration: "underline" }}>
+            procube.cx
+          </a>
         </p>
       </div>
     </div>

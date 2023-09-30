@@ -116,7 +116,7 @@ function Contact() {
                 </div>
                 <div className={styles.numberContainer}>
                   <p>
-                    + 966 566 416 774
+                    + 966 570 807 175
                     <br /> + 966 539 067 414
                     <br /> + 966 531 170 957
                   </p>
@@ -158,15 +158,15 @@ function Contact() {
                   />
                 </div>
                 <div className={styles.contactCardContents}>
-                  <h1 className={`${styles.jeddah} servicesHeading`}>JEDDAH</h1>
+                  <h1 className={`${styles.jeddah} servicesHeading`}>Riyadh</h1>
                   <p className={styles.cardDesc}>
-                    Le Cygne CommercialCenter 2, 6th FloorAl-Arz, Al-OlayaRiyadh
-                    12611
+                    Le Cygne CommercialCenter 2, 6th FloorAl-Arz,
+                    Al-Olaya,Riyadh 12611
                   </p>
                 </div>
                 <div className={styles.numberContainer}>
                   <p>
-                    + 966 566 416 774
+                    + 966 540 599 655
                     <br /> + 966 539 067 414
                     <br /> + 966 531 170 957
                   </p>
