@@ -142,7 +142,6 @@ function ScrollingLogos() {
         src="/clients/brands/logo1.png"
         width={100}
         height={0}
-        loading="lazy"
         layout="responsive"
         alt="ImageClients"
         className="logoClients"
@@ -151,7 +150,6 @@ function ScrollingLogos() {
         src="/clients/brands/logo2.png"
         width={100}
         height={0}
-        loading="lazy"
         layout="responsive"
         alt="ImageClients"
         className="logoClients"
@@ -160,7 +158,6 @@ function ScrollingLogos() {
         src="/clients/brands/logo3.png"
         width={100}
         height={0}
-        loading="lazy"
         layout="responsive"
         alt="ImageClients"
         className="logoClients"
@@ -169,7 +166,6 @@ function ScrollingLogos() {
         src="/clients/brands/logo4.png"
         width={100}
         height={0}
-        loading="lazy"
         layout="responsive"
         alt="ImageClients"
         className="logoClients"
@@ -178,7 +174,6 @@ function ScrollingLogos() {
         src="/clients/brands/logo5.png"
         width={100}
         height={0}
-        loading="lazy"
         layout="responsive"
         alt="ImageClients"
         className="logoClients"
@@ -187,7 +182,6 @@ function ScrollingLogos() {
         src="/clients/brands/logo6.png"
         width={100}
         height={0}
-        loading="lazy"
         layout="responsive"
         alt="ImageClients"
         className="logoClients"
@@ -196,7 +190,6 @@ function ScrollingLogos() {
         src="/clients/brands/logo7.png"
         width={100}
         height={0}
-        loading="lazy"
         layout="responsive"
         alt="ImageClients"
         className="logoClients"
@@ -205,7 +198,6 @@ function ScrollingLogos() {
         src="/clients/brands/logo8.png"
         width={100}
         height={0}
-        loading="lazy"
         layout="responsive"
         alt="ImageClients"
         className="logoClients"
@@ -214,7 +206,6 @@ function ScrollingLogos() {
         src="/clients/brands/logo9.png"
         width={100}
         height={0}
-        loading="lazy"
         layout="responsive"
         alt="ImageClients"
         className="logoClients"
@@ -223,7 +214,6 @@ function ScrollingLogos() {
         src="/clients/brands/logo10.png"
         width={100}
         height={0}
-        loading="lazy"
         layout="responsive"
         alt="ImageClients"
         className="logoClients"
@@ -232,7 +222,6 @@ function ScrollingLogos() {
         src="/clients/brands/logo11.png"
         width={100}
         height={0}
-        loading="lazy"
         layout="responsive"
         alt="ImageClients"
         className="logoClients"
@@ -241,7 +230,6 @@ function ScrollingLogos() {
         src="/clients/brands/logo12.png"
         width={100}
         height={0}
-        loading="lazy"
         layout="responsive"
         alt="ImageClients"
         className="logoClients"
@@ -250,7 +238,6 @@ function ScrollingLogos() {
         src="/clients/brands/logo13.png"
         width={100}
         height={0}
-        loading="lazy"
         layout="responsive"
         alt="ImageClients"
         className="logoClients"
@@ -259,7 +246,6 @@ function ScrollingLogos() {
         src="/clients/brands/logo14.png"
         width={100}
         height={0}
-        loading="lazy"
         layout="responsive"
         alt="ImageClients"
         className="logoClients"
@@ -268,7 +254,6 @@ function ScrollingLogos() {
         src="/clients/brands/logo15.png"
         width={100}
         height={0}
-        loading="lazy"
         layout="responsive"
         alt="ImageClients"
         className="logoClients"
@@ -277,7 +262,6 @@ function ScrollingLogos() {
         src="/clients/brands/logo16.png"
         width={100}
         height={0}
-        loading="lazy"
         layout="responsive"
         alt="ImageClients"
         className="logoClients"
@@ -286,7 +270,6 @@ function ScrollingLogos() {
         src="/clients/brands/logo17.png"
         width={100}
         height={0}
-        loading="lazy"
         layout="responsive"
         alt="ImageClients"
         className="logoClients"
@@ -295,7 +278,6 @@ function ScrollingLogos() {
         src="/clients/brands/logo18.png"
         width={100}
         height={0}
-        loading="lazy"
         layout="responsive"
         alt="ImageClients"
         className="logoClients"
@@ -304,7 +286,6 @@ function ScrollingLogos() {
         src="/clients/brands/logo19.png"
         width={100}
         height={0}
-        loading="lazy"
         layout="responsive"
         alt="ImageClients"
         className="logoClients"
@@ -313,7 +294,6 @@ function ScrollingLogos() {
         src="/clients/brands/logo20.png"
         width={100}
         height={0}
-        loading="lazy"
         layout="responsive"
         alt="ImageClients"
         className="logoClients"
@@ -322,7 +302,6 @@ function ScrollingLogos() {
         src="/clients/brands/logo22.png"
         width={100}
         height={0}
-        loading="lazy"
         layout="responsive"
         alt="ImageClients"
         className="logoClients"

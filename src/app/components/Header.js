@@ -7,6 +7,7 @@ function Header() {
   const [isActive, setIsActive] = useState("Home");
 
   const menuList = [
+    // "Our Presence ⮟"
     { text: "Home", href: "/" },
     { text: "Our Presence", href: "/" },
     { text: "About Us", href: "/pages/About" },
@@ -37,6 +38,7 @@ function Header() {
               width={180}
               height={45}
               alt="ImageHeader"
+              loading="lazy"
             />
           </div>
         </a>

@@ -53,7 +53,7 @@ function Hero({ initialScreenWidth }) {
         <Image
           className="MobilehImage"
           src="/MobileHero.png"
-          alt="Asian Engineer"
+          alt="Asians Engineer"
           width={0}
           height={600}
           layout="responsive"

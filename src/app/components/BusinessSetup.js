@@ -22,6 +22,7 @@ function BusinessSetup() {
             width={586}
             height={300}
             layout="responsive"
+            loading="lazy"
             alt="ImageBusiness1"
           />
           <div className="businessCardContentContainer">
@@ -47,6 +48,7 @@ function BusinessSetup() {
             width={586}
             height={300}
             layout="responsive"
+            loading="lazy"
             alt="ImageBusiness2"
           />
           <div className="businessCardContentContainer">

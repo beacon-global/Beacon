@@ -47,10 +47,11 @@ function About() {
         <div className={styles.aboutUsHeroContainer}>
           <div>
             <Image
-              src="/AboutUsPage/AboutUsPage.svg"
+              src="/AboutUsPage/AboutUsPage.png"
               width={1212}
               height={600}
               layout="responsive"
+              loading="lazy"
               alt="aboutus1"
             />
           </div>

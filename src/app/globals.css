@@ -37,6 +37,7 @@
   src: url('/Fonts/Sora-Light.ttf') format('truetype');
   font-weight: 300; /* Light font weight */
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -814,12 +815,9 @@ li{
 
 .scrolling-logos{
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   gap: 70px;
 }
-
-
 
 
 /* Why Beacon End */
@@ -938,31 +936,6 @@ li{
   font-style: normal;
   font-weight: 400;
   line-height: 140%; /* 22.4px */
-}
-
-.logoRow {
-  display: flex;
-  overflow: hidden;
-  margin-top: 20px;
-  white-space: nowrap;
-  gap: 70px;
-}
-
-.logoRow>div {
-  display: flex;
-  justify-content: center;
-
-}
-
-.logoRow .images {
-  /* animation: scroll 5s linear infinite; */
-  width: auto;
-  height: 80px;
-  flex-shrink: 0;
-  position: relative;
-  margin-right: 30px;
-  margin-left: 30px; 
-  object-fit: cover; 
 }
 
 /* Clients End  */
@@ -1593,7 +1566,7 @@ li{
   }
   
   .imageWithText{
-    /* height: 600px; */
+    height: 100%;
   }
 
   .textOverlay{
