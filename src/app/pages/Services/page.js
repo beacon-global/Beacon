@@ -101,28 +101,28 @@ function Services() {
 
   const sellingCardData = [
     {
-      img: "/AboutUsPage/aboutPageIcon.svg",
-      heading: "Losing Money Hurts",
+      img: "/Services/Services12.svg",
+      heading: "Expert advice",
       description:
-        "Lorem ipsum dolor sit amet consectetur. Eu elit vitae bibendum bibendum accumsan facilisis libero the arcu augue ante rhoncus adipiscing fringilla.",
+        "A business should follow strict compliance with the local regulations and laws. With expert advice, we guide you through aspects like licensing, tax regulations, business models, etc. to make informed decisions.",
     },
     {
-      img: "/AboutUsPage/aboutPageIcon.svg",
-      heading: "Losing Money Hurts",
+      img: "/Services/Services13.svg",
+      heading: "Ease of Access",
       description:
-        "Lorem ipsum dolor sit amet consectetur. Eu elit vitae bibendum bibendum accumsan facilisis libero the arcu augue ante rhoncus adipiscing fringilla.",
+        "To grow amidst the thriving business community, having a powerful network is the key. We help you grow networks and connections that can contribute greatly to your business and help you establish a strong business presence.",
     },
     {
-      img: "/AboutUsPage/aboutPageIcon.svg",
-      heading: "Losing Money Hurts",
+      img: "/Services/Services14.svg",
+      heading: "Save on Costs",
       description:
-        "Lorem ipsum dolor sit amet consectetur. Eu elit vitae bibendum bibendum accumsan facilisis libero the arcu augue ante rhoncus adipiscing fringilla.",
+        "With our team, you can relieve yourself from the time-consuming processes such as hectic paperwork, research, meetings or legal challenges, while we manage everything for you, thereby saving on costs and time.",
     },
     {
-      img: "/AboutUsPage/aboutPageIcon.svg",
-      heading: "Losing Money Hurts",
+      img: "/Services/Services15.svg",
+      heading: "In-depth Market research",
       description:
-        "Lorem ipsum dolor sit amet consectetur. Eu elit vitae bibendum bibendum accumsan facilisis libero the arcu augue ante rhoncus adipiscing fringilla.",
+        "By leveraging the expertise of business consultants, you can get valuable market insights to back your business decision-making. Our comprehensive market research helps you make the most out of your venture.",
     },
   ];
 
@@ -164,9 +164,9 @@ function Services() {
       <Header />
       <MobileHeader />
       <div className={styles.servicePageMainContainer}>
-        <h2 className="businessDesc">purus interdum euismod feugiat</h2>
+        <h2 className="businessDesc">Everything Your Business Needs to Thrive</h2>
         <h2 className={`${styles.mBusinessDesc1} mBusinessDesc`}>
-          purus interdum euismod feugiat
+          Everything Your Business Needs to Thrive
         </h2>
         <div
           className={`${styles.servicePageMCardMainContainer} cardMainContainer`}
@@ -223,21 +223,21 @@ function Services() {
           </div>
           <div className={styles.container2Contents}>
             <h1 className="businessDesc">
-              Porttitor the curabitur
-              <br /> Adipiscing euismod.
+              Strategic Excellence to <br /> Scale Your Business
             </h1>
             <h1 className={`${styles.servicePagecontainer2MobileHeading}`}>
-              Porttitor the curabitur
-              <br /> Adipiscing euismod.
+              Strategic Excellence to <br /> Scale Your Business
             </h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur. Eu elit vitae bibendum
-              bibendum accumsan facilisis libero. At arcu augue ante varius.
-              Integer tellus donec nunc montes rhoncus adipiscing fringilla.
-              Elit dictumst neque tempus porta lorem egestas tellus convallis.
-              Accumsan ullamcorper nunc sit quis egestas lectus facilisis nulla
-              fringilla. Vestibulum dis mauris nullam tellus interdum.
-              Consectetur felis euismod urna fusce
+              Being your premium partner for all your business requirements, we
+              offer a myriad of professional solutions woven to suit your
+              expectations. Whether you are an entrepreneur searching for
+              assistance to set up a business in the UAE, India, or KSA, or need
+              help with financial, technological, digital transformation, or
+              business consulting solutions, we&lsquo;re here to resolve them.
+              Our experts understand the local and global market, and the
+              regulations to ensure your business can thrive well in the dynamic
+              world through comprehensive services to drive business success.
             </p>
           </div>
         </div>
@@ -272,20 +272,22 @@ function Services() {
           <div className={styles.background}></div>
           <div className={styles.container4Contents}>
             <h1 className="businessDesc">
-              Solving problems by
-              <br /> the services
+              Let&lsquo;s Unlock Your <br /> Business Formula
             </h1>
             <h1 className={`${styles.servicePagecontainer2MobileHeading}`}>
-              Solving problems by <br /> the services
+              Let&lsquo;s Unlock Your <br /> Business Formula
             </h1>
             <p className="servicesDesc">
-              Lorem ipsum dolor sit amet consectetur. Eu elit vitae bibendum
-              bibendum accumsan facilisis libero. At arcu augue ante varius.
-              Integer tellus donec nunc montes rhoncus adipiscing fringilla.
-              Elit dictumst neque tempus porta lorem egestas tellus convallis.
-              Accumsan ullamcorper nunc sit quis egestas lectus facilisis nulla
-              fringilla. Vestibulum dis mauris nullam tellus interdum.
-              Consectetur felis euismod urna fusce
+              A reliable business consulting solutions provider augments your
+              needs to set up your business as you prefer. We help you with
+              everything that ranges from how to start a business to
+              establishing the roots for a firm brand presence. Through
+              end-to-end strategies and consulting solutions, we give businesses
+              the methods to manage any technological, financial, legal,
+              digital, and operational processes to let you scale your business.
+              Our advisory and consulting expertise helps you to quickly adapt
+              to the changes in the dynamic landscape and gain sustainable
+              business advantage.
             </p>
           </div>
           <div className={styles.container4ImgContainer}>

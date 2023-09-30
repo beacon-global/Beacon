@@ -109,7 +109,7 @@
 }
 
 .sellingImageContainer{
-    width: 120px;
+    width: 150px;
     height: 80px;
 }
 
@@ -225,6 +225,10 @@
         height: 60px;
     }
 
+    .cardContainer h1{
+        font-size: 16px;
+    }
+
     .servicesDescContainer{
         height: auto;
     }
@@ -304,10 +308,18 @@
         margin-bottom: 10px;
     }
 
+    .container3Contents h1{
+        font-size: 16px;
+    }
+
     .sellingCards{
         width: auto;
         border-radius: 10px;
         padding: 24px 15px 20px 15px;
+    }
+
+    .sellingImageContainer{
+        width: 120px;
     }
 
     .servicesPageContainer{
