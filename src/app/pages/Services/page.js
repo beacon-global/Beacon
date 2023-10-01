@@ -132,14 +132,14 @@ function Services() {
         "Beacon has been with us throughout the phase of integrating and adapting business to the dynamic marketplace, with end-to-end business consultation services. ",
       name: "Omar Abdallah",
       designation: "Riyadh, KSA",
-      img: "/profilePic2.jpg",
+      img: "/profilePic3.jpg",
     },
     {
       message:
         "While partnering with Beacon, we never felt them as the business consultants, but as a part of our team with transparency and commitment at its best.",
       name: "Muhammed",
       designation: "Jeddah, KSA",
-      img: "/profilePic1.jpg",
+      img: "/profilePic4.jpg",
     },
     
   ];
