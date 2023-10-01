@@ -26,7 +26,7 @@ export default function Home() {
     const timeoutId = setTimeout(() => {
       // Hide the white screen by changing its opacity
       setHideWhiteScreen(true);
-    }, 200); // 1000 milliseconds = 1 second
+    }, 50); // 1000 milliseconds = 1 second
 
     // Cleanup the timeout to avoid memory leaks
     return () => clearTimeout(timeoutId);
