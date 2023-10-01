@@ -132,14 +132,14 @@ function Services() {
         "Beacon has been with us throughout the phase of integrating and adapting business to the dynamic marketplace, with end-to-end business consultation services. ",
       name: "Omar Abdallah",
       designation: "Riyadh, KSA",
-      img: "/TestimonialDp.png",
+      img: "/profilePic2.jpg",
     },
     {
       message:
         "While partnering with Beacon, we never felt them as the business consultants, but as a part of our team with transparency and commitment at its best.",
       name: "Muhammed",
       designation: "Jeddah, KSA",
-      img: "/TestimonialDp.png",
+      img: "/profilePic1.jpg",
     },
     
   ];
@@ -329,8 +329,8 @@ function Services() {
                 <div className="testimonialProfile">
                   <Image
                     src={currentTestimonial.img}
-                    width={67}
-                    height={60}
+                    width={50}
+                    height={50}
                     alt="person"
                   />
                   <div style={{ display: "flex", flexDirection: "column" }}>

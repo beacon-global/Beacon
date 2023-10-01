@@ -813,12 +813,6 @@ li{
   line-height: 140%; /* 22.4px */
 }
 
-.scrolling-logos{
-  display: flex;
-  align-items: center;
-  gap: 70px;
-}
-
 
 /* Why Beacon End */
 
@@ -837,9 +831,15 @@ li{
   overflow: hidden;
 }
 
+.scrolling-logos{
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+
 .logoClients{
   height: 85px !important;
-  /* width: 100% !important; */
+  width: 100% !important;
   object-fit: contain;
 }
 
