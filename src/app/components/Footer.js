@@ -27,7 +27,7 @@ function Footer() {
         <div className="footerContactImgContainer">
           <div className="footerContactDetails">
             <Image
-              src="/Social/footerTelephone.svg"
+              src="/callIcon.svg"
               width={46}
               height={46}
               alt="ImageFooter2"
