@@ -9,25 +9,25 @@ import Footer from "@/app/components/Footer";
 function About() {
   const servicesData = [
     {
-      img: "/AboutUsPage/corev1.svg",
+      img: "/NewSvgs/SVG5/MaskGroup.svg",
       heading: "Professionalism",
       description:
         "We perform business with high standards of integrity,ethics and professionalism. Our professionals keep the interactions with the clients fair and lawful.",
     },
     {
-      img: "/AboutUsPage/corev5.svg",
+      img: "/NewSvgs/SVG5/MaskGroup1.svg",
       heading: "Innovation",
       description:
         "Our business initiatives focus on keeping up the standards and expectations of the clients with sustainability, innovative practices and strategic principles.",
     },
     {
-      img: "/AboutUsPage/corev3.svg",
+      img: "/NewSvgs/SVG5/MaskGroup2.svg",
       heading: "Synergy",
       description:
         "Our team maintains collaboration and inclusiveness while creating a strong synergy between the individual talents and what the client demands.",
     },
     {
-      img: "/AboutUsPage/corev4.svg",
+      img: "/NewSvgs/SVG5/MaskGroup3.svg",
       heading: "Passion",
       description:
         "Growing beyond a service provider, we provide timely support and resolve concerns through constructive discussions that generate special value outcomes.",
@@ -110,7 +110,7 @@ function About() {
                 <div className={styles.ImageCon}>
                   <div>
                     <Image
-                      src="/AboutUsPage/aboutPageIcon.svg"
+                      src="/NewSvgs/SVG4/Group1.svg"
                       width={80}
                       height={80}
                       layout="responsive"
@@ -118,7 +118,7 @@ function About() {
                       className={styles.cardIcon}
                     />
                     <Image
-                      src="/AboutUsPage/mIcon1.svg"
+                      src="/NewSvgs/SVG4/Group1.svg"
                       width={60}
                       height={60}
                       layout="responsive"
@@ -128,7 +128,7 @@ function About() {
                   </div>
                   <div>
                     <Image
-                      src="/AboutUsPage/aboutusIcon1.svg"
+                      src="/NewSvgs/SVG4/Group2.svg"
                       width={80}
                       height={80}
                       layout="responsive"
@@ -136,7 +136,7 @@ function About() {
                       className={styles.cardIcon}
                     />
                     <Image
-                      src="/AboutUsPage/mIcon2.svg"
+                      src="/NewSvgs/SVG4/Group2.svg"
                       width={60}
                       height={60}
                       layout="responsive"
@@ -146,7 +146,7 @@ function About() {
                   </div>
                   <div>
                     <Image
-                      src="/AboutUsPage/aboutusIcon2.svg"
+                      src="/NewSvgs/SVG4/Group3.svg"
                       width={80}
                       height={80}
                       layout="responsive"
@@ -154,7 +154,7 @@ function About() {
                       className={styles.cardIcon}
                     />
                     <Image
-                      src="/AboutUsPage/mIcon3.svg"
+                      src="/NewSvgs/SVG4/Group3.svg"
                       width={60}
                       height={60}
                       layout="responsive"

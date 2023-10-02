@@ -71,6 +71,7 @@
     background-color: #13670B;
     align-items: center;
     padding: 35px 30px 15px 30px;
+    width: 35%;
 }
 
 .contactCardUAE{
@@ -249,6 +250,7 @@
 
     .contactCard{
         padding: 20px;
+        width: 100%;
     }
 
     .contactImgContainer{

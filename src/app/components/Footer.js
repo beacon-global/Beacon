@@ -27,19 +27,19 @@ function Footer() {
         <div className="footerContactImgContainer">
           <div className="footerContactDetails">
             <Image
-              src="/callIcon.svg"
+              src="/NewSvgs/SVG3/Icon.svg"
               width={46}
               height={46}
               alt="ImageFooter2"
             />
-            <div className="footerContactTextDetails">
+            <div className="footerContactTextDetails" style={{whiteSpace:"nowrap"}}>
               <h1>Call us on:</h1>
               <p>+ 966 570 807 175</p>
             </div>
           </div>
           <div className="footerContactDetails">
             <Image
-              src="/Social/footerMessage.svg"
+              src="/NewSvgs/SVG3/Icon-1.svg"
               width={46}
               height={46}
               alt="ImageFooter2"
@@ -51,7 +51,7 @@ function Footer() {
           </div>
           <div className="footerContactDetails">
             <Image
-              src="/Social/footerLocation.svg"
+              src="/NewSvgs/SVG3/Icon-2.svg"
               width={46}
               height={46}
               alt="ImageFooter2"
@@ -59,7 +59,7 @@ function Footer() {
             <div className="footerContactTextDetails">
               <h1>Main office:</h1>
               <p>
-                Building no. 4626, Hamza Shehatah St.,
+                Building no. 4626, Hamza Shehatah St,
                 <br /> Al-Baghdadiyah Al-Gharbiyah, Jeddah 22235
               </p>
             </div>
@@ -68,28 +68,28 @@ function Footer() {
         <div className="footerSocialContainer">
           <Image
             className="socialIcons"
-            src="/Social/footerWhatsapp.svg"
+            src="/NewSvgs/SVG3/Icon-3.svg"
             width={46}
             height={46}
             alt="ImageFooter3"
           />
           <Image
             className="socialIcons"
-            src="/Social/footerInstagram.svg"
+            src="/NewSvgs/SVG3/Icon-4.svg"
             width={46}
             height={46}
             alt="ImageFooter4"
           />
           <Image
             className="socialIcons"
-            src="/Social/footerFacebook.svg"
+            src="/NewSvgs/SVG3/Icon-5.svg"
             width={46}
             height={46}
             alt="ImageFooter5"
           />
           <Image
             className="socialIcons"
-            src="/Social/footerLinkedin.svg"
+            src="/NewSvgs/SVG3/Icon-6.svg"
             width={46}
             height={46}
             alt="ImageFooter6"

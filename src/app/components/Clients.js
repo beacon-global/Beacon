@@ -21,7 +21,6 @@ function Clients() {
       designation: "Jeddah, KSA",
       img: "/profilePic4.jpg",
     },
-    
   ];
 
   const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
@@ -47,8 +46,8 @@ function Clients() {
         <h2 className="businessDesc">Our core partners</h2>
       </div>
       <div className="clientsImgContainer">
-      <ScrollingLogos />
-      {/* <ScrollableRow /> */}
+        <ScrollingLogos />
+        {/* <ScrollableRow /> */}
       </div>
       <div className="testimonialMainContainer">
         <div className="testimonialLeftContainer">
@@ -100,45 +99,71 @@ function Clients() {
 }
 
 function ScrollingLogos() {
-  const [allImagesLoaded, setAllImagesLoaded] = useState(false);
+  // const [allImagesLoaded, setAllImagesLoaded] = useState(false);
 
-  useEffect(() => {
-    const images = document.querySelectorAll(".logoClients img");
-    const totalImages = images.length;
-    let imagesLoaded = 0;
+  // useEffect(() => {
+  //   const images = document.querySelectorAll(".logoClients img");
+  //   const totalImages = images.length;
+  //   let imagesLoaded = 0;
 
-    const handleImageLoad = () => {
-      console.log(totalImages, "jdkslfj");
-      imagesLoaded++;
-      if (imagesLoaded === totalImages) {
-        setAllImagesLoaded(true);
-      }
-    };
+  //   const handleImageLoad = () => {
+  //     console.log(totalImages, "jdkslfj");
+  //     imagesLoaded++;
+  //     if (imagesLoaded === totalImages) {
+  //       setAllImagesLoaded(true);
+  //     }
+  //   };
 
-    images.forEach((img) => {
-      if (img.complete) {
-        handleImageLoad();
-      } else {
-        img.addEventListener("load", handleImageLoad);
-      }
-    });
+  //   images.forEach((img) => {
+  //     if (img.complete) {
+  //       handleImageLoad();
+  //     } else {
+  //       img.addEventListener("load", handleImageLoad);
+  //     }
+  //   });
 
-    return () => {
-      // Clean up event listeners if the component unmounts
-      images.forEach((img) => {
-        img.removeEventListener("load", handleImageLoad);
-      });
-    };
-  }, []);
+  //   return () => {
+  //     // Clean up event listeners if the component unmounts
+  //     images.forEach((img) => {
+  //       img.removeEventListener("load", handleImageLoad);
+  //     });
+  //   };
+  // }, []);
 
   return (
     <motion.div
-      className={`scrolling-logos ${allImagesLoaded ? "loaded" : ""}`}
-      initial={{ x: "0%" }}
-      animate={{ x: "-300%" }}
-      transition={{ repeat: Infinity, duration: 50, ease: "linear" }}
+      className="scrolling-logos"
+      initial={{ x: "40%" }}
+      animate={{ x: "-100%" }}
+      transition={{ repeat: Infinity, duration: 140, ease: "linear" }}
     >
-      <Image
+      <div className="logosContainer">
+        <Image
+          src="/clientLogos.svg"
+          width={100}
+          height={60}
+          layout="responsive"
+          alt="ImageClients"
+          className="logoClients"
+        />
+        <Image
+          src="/clientLogos.svg"
+          width={100}
+          height={60}
+          layout="responsive"
+          alt="ImageClients"
+          className="logoClients"
+        />
+        <Image
+          src="/clientLogos.svg"
+          width={100}
+          height={60}
+          layout="responsive"
+          alt="ImageClients"
+          className="logoClients"
+        />
+      </div>
+      {/* <Image
         src="/clients/brands/logo1.png"
         width={100}
         height={0}
@@ -241,7 +266,7 @@ function ScrollingLogos() {
         layout="responsive"
         alt="ImageClients"
         className="logoClients"
-      />
+      /> */}
       {/* <Image
         src="/clients/brands/logo14.png"
         width={100}
@@ -250,7 +275,7 @@ function ScrollingLogos() {
         alt="ImageClients"
         className="logoClients"
       /> */}
-      <Image
+      {/* <Image
         src="/clients/brands/logo15.png"
         width={100}
         height={0}
@@ -305,7 +330,7 @@ function ScrollingLogos() {
         layout="responsive"
         alt="ImageClients"
         className="logoClients"
-      />
+      /> */}
     </motion.div>
   );
 }
