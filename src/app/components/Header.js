@@ -34,7 +34,7 @@ function Header() {
         <a href="/">
           <div className="logoContainer">
             <Image
-              src="/beacon.svg"
+              src="/logo.svg"
               width={180}
               height={45}
               alt="ImageHeader"
