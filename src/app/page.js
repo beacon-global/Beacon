@@ -22,32 +22,43 @@ export default function Home() {
   const [hideWhiteScreen, setHideWhiteScreen] = useState(false);
   const [loaded, setLoaded] = useState(false);
 
-// useEffect(() => {
-//   const timer = setTimeout(() => {
-//     setLoaded(true);
-//   }, 1000); // 1000 milliseconds = 1 second
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setLoaded(true);
+  //   }, 1000); // 1000 milliseconds = 1 second
 
-//   // Clear the timer when the component unmounts
-//   return () => clearTimeout(timer);
-// }, []);
+  //   // Clear the timer when the component unmounts
+  //   return () => clearTimeout(timer);
+  // }, []);
 
   useEffect(() => {
-    // Delay for 1 second (1000 milliseconds)
-    const timeoutId = setTimeout(() => {
-      // Hide the white screen by changing its opacity
-      setHideWhiteScreen(true);
-    }, 2500); // 1000 milliseconds = 1 second
+  // Delay for 1 second (1000 milliseconds)
+  const timeoutId = setTimeout(() => {
+    // Hide the white screen by changing its opacity
+    const whiteScreen = document.getElementById('white-screen');
+    // console.log(whiteScreen,"dsjkfh");
+    if (whiteScreen) {
+      // whiteScreen.style.opacity = '0';
+      whiteScreen.classList.add('hidden');
+    }
+  }, 2500); // 1000 milliseconds = 1 second
 
-    // Cleanup the timeout to avoid memory leaks
-    return () => clearTimeout(timeoutId);
-  }, []);
+  // Cleanup the timeout to avoid memory leaks
+  return () => clearTimeout(timeoutId);
+}, []);
 
   return (
     <>
       <Header />
       <MobileHeader />
       {!hideWhiteScreen && (
-        <div id="white-screen">
+        <div
+          id="white-screen"
+          // style={{
+          //   opacity: hideWhiteScreen ? 0 : 1,
+          //   transition: "opacity 0.8s cubic-bezier(0.25, 0.1, 0.25, 1)",
+          // }}
+        >
           <div class="loader">
             <div class="loader__bar"></div>
             <div class="loader__bar"></div>
@@ -59,7 +70,7 @@ export default function Home() {
         </div>
       )}
       <div className="mainContainer">
-      {/* <motion.div
+        {/* <motion.div
         initial={{ opacity: 0, y: "100%" }} // Initial state (hidden and below)
         animate={loaded ? { opacity: 1, y: 0 } : {}} // Animate to visible position when loaded
         transition={{ duration: 0.5 }} // Animation duration (adjust as needed)
@@ -76,7 +87,7 @@ export default function Home() {
         <Faq />
         <Contact />
         <Footer />
-      {/* </motion.div> */}
+        {/* </motion.div> */}
       </div>
     </>
   );

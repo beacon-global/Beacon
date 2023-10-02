@@ -2172,9 +2172,16 @@ li{
   background-color: white;
   z-index: 9999; /* Make sure it's on top of other content */
   /* You can also add transitions for a smoother effect */
-  transition: opacity 1s ease-in-out;
+  transition: height 1s cubic-bezier(0.25, 0.1, 0.25, 1);
   opacity: 1; /* Initially visible */
   overflow: hidden;
+}
+
+#white-screen.hidden {
+  background-color: white;
+  /* opacity: 0; */
+  height: 0;
+  /* transition: opacity 2s cubic-bezier(0.25, 0.1, 0.25, 1), height 0.8s cubic-bezier(0.25, 0.1, 0.25, 1); */
 }
 
 .loadingHeading{
