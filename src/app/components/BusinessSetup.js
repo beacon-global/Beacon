@@ -24,6 +24,7 @@ function BusinessSetup() {
             layout="responsive"
             loading="lazy"
             alt="ImageBusiness1"
+            className="ImageBusiness"
           />
           <div className="businessCardContentContainer">
             <h1 className="ksaHeading">KSA</h1>
@@ -50,6 +51,7 @@ function BusinessSetup() {
             layout="responsive"
             loading="lazy"
             alt="ImageBusiness2"
+            className="ImageBusiness"
           />
           <div className="businessCardContentContainer">
             <h1 className="ksaHeading">UAE</h1>

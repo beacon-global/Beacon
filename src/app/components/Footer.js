@@ -44,7 +44,7 @@ function Footer() {
               height={46}
               alt="ImageFooter2"
             />
-            <div className="footerContactTextDetails">
+            <div className="footerContactTextDetails footerContactTextDetailsEmail">
               <h1>Email us:</h1>
               <p>info@bmcglobal.co</p>
             </div>

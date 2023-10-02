@@ -34,7 +34,7 @@ function Contact() {
               </a>
             </div>
             <div className="bottomVisibleContainer">
-              <a href="/" className="btn">
+              <a href="/pages/Contact" className="btn">
                 Contact Us
                 <div className="bottomVisibleArrow">
                   <Image

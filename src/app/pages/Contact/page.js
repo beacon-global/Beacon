@@ -81,16 +81,16 @@ function Contact() {
                   />
                 </div>
                 <div className={styles.contactCardContents}>
-                  <h1 className={`${styles.jeddah} servicesHeading`}>UAE</h1>
+                  <h1 className={`${styles.jeddah} servicesHeading`}>DUBAI</h1>
                   <p className={styles.cardDesc}>
-                    Building no. 4626, 501, 5th Floor, Hamza Shehatah St.
-                    Al-Baghdadiyah Al-Gharbiyah Jeddah 22235
+                    Office #39, 7th Floor, Dubai National Insurance Building.
+                    Port Saeed Deira, Dubai, UAE
                   </p>
                 </div>
                 <div className={styles.numberContainer}>
                   <p>
-                    + 966 566 416 774
-                    <br /> + 966 539 067 414
+                    + 971 502 574 396
+                    <br /> + 971 488 324 58
                     <br /> + 966 531 170 957
                   </p>
                 </div>
