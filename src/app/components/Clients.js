@@ -145,6 +145,7 @@ function ScrollingLogos() {
           layout="responsive"
           alt="ImageClients"
           className="logoClients"
+          loading="lazy"
         />
         <Image
           src="/clientLogos.svg"
@@ -153,6 +154,7 @@ function ScrollingLogos() {
           layout="responsive"
           alt="ImageClients"
           className="logoClients"
+          loading="lazy"
         />
         <Image
           src="/clientLogos.svg"
@@ -161,6 +163,7 @@ function ScrollingLogos() {
           layout="responsive"
           alt="ImageClients"
           className="logoClients"
+          loading="lazy"
         />
       </div>
       {/* <Image

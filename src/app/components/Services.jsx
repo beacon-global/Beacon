@@ -111,7 +111,7 @@ function Services() {
         {servicesData.map((data, index) => (
           <div className="cardContainer" key={index}>
             <div className="imgContainer">
-              <Image src={data.img} width={70} height={70} alt="ImageService" />
+              <Image src={data.img} width={70} height={70} alt="ImageService" unoptimized />
             </div>
             <div className="servicesHeadingContainer">
               <h1 className="servicesHeading">{data.heading}</h1>
