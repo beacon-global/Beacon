@@ -76,7 +76,9 @@ function MobileHeader() {
       <Container className="mHeaderContainer">
       <a href="/">
         <Logo>
-          <Image src="/NewSvgs/Logos/Beacon.svg" width={120} height={30} alt="ImageHeader" />
+          {/* <Image src="/NewSvgs/Logos/Beacon.svg" width={120} height={30} alt="ImageHeader" /> */}
+          <Image src="/logo.svg" width={120} height={30} alt="ImageHeader" />
+          
         </Logo>
         </a>
         <ToggleButton onClick={toggleMenu}>
