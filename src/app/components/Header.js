@@ -35,7 +35,7 @@ function Header() {
           <div className="logoContainer">
             <Image
               // src="/logo.svg"
-              src="/NewSvgs/Logos/beacon.png"
+              src="/NewSvgs/Logos/Beacon.svg"
               width={180}
               height={60}
               alt="ImageHeader"
