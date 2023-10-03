@@ -52,7 +52,7 @@ function WhyBeacon() {
             Redefining Business With Endless Transformation Possibilities
           </h2>
           <p className="whyBeaconDesc">
-            At Beacon Global, we&quot;re passionate about creating measurable
+            At Beacon Global, we&lsquo;re passionate about creating measurable
             impact in everything we do for you. Our DNA is the spirit that lets
             businesses grow and thrive. Established and specialized in providing
             Business consulting services across the Middle East, we work towards

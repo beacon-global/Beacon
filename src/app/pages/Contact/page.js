@@ -160,7 +160,7 @@ function Contact() {
                 <div className={styles.contactCardContents}>
                   <h1 className={`${styles.jeddah} servicesHeading`}>Riyadh</h1>
                   <p className={styles.cardDesc}>
-                    Le Cygne CommercialCenter 2, 6th FloorAl-Arz,
+                    Le Cygne Commercial Center 2, 6th FloorAl-Arz,
                     Al-Olaya,Riyadh 12611
                   </p>
                 </div>

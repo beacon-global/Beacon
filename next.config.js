@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    // images: {
-    //     domains: ['www.shutterstock.com'],
-    // },
+    images: {
+        formats: ['image/jpeg', 'image/png', 'image/svg'], // Add any other desired formats
+        quality: 100, // Adjust the quality value as needed (0-100)
+      },
 }
 
 module.exports = nextConfig
