@@ -333,7 +333,7 @@
     }
 
     .container4ImgContainer{
-        width: auto;
+        width: 100%;
         height: auto;
         order: -1;
     }

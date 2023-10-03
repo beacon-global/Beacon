@@ -294,7 +294,7 @@ function Services() {
           </div>
           <div className={styles.container4ImgContainer}>
             <Image
-              src="/AboutUsPage/aboutPage2.svg"
+              src="/NewSvgs/Backgrounds/abBg4.png"
               width={500}
               height={500}
               layout="responsive"

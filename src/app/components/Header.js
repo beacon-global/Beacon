@@ -34,10 +34,12 @@ function Header() {
         <a href="/">
           <div className="logoContainer">
             <Image
-              src="/logo.svg"
+              // src="/logo.svg"
+              src="/NewSvgs/Logos/Beacon.svg"
               width={180}
-              height={45}
+              height={60}
               alt="ImageHeader"
+              // layout="responsive"
               loading="lazy"
             />
           </div>

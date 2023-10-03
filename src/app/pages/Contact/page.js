@@ -74,7 +74,7 @@ function Contact() {
               <div className={`${styles.contactCard} ${styles.contactCardUAE}`}>
                 <div className={styles.contactImgContainer}>
                   <Image
-                    src="/contactPage/contactIcon.svg"
+                    src="/NewSvgs/SVG2/Group7.svg"
                     width={72}
                     height={72}
                     alt="contactLocactionIcon"
@@ -101,7 +101,7 @@ function Contact() {
               <div className={styles.contactCard}>
                 <div className={styles.contactImgContainer}>
                   <Image
-                    src="/contactPage/contactIcon.svg"
+                    src="/NewSvgs/SVG2/Group7.svg"
                     width={72}
                     height={72}
                     alt="contactLocactionIcon"
@@ -126,7 +126,7 @@ function Contact() {
               <div className={styles.contactCard}>
                 <div className={styles.contactImgContainer}>
                   <Image
-                    src="/contactPage/contactIcon.svg"
+                    src="/NewSvgs/SVG2/Group7.svg"
                     width={72}
                     height={72}
                     alt="contactLocactionIcon"
@@ -151,7 +151,7 @@ function Contact() {
               <div className={styles.contactCard}>
                 <div className={styles.contactImgContainer}>
                   <Image
-                    src="/contactPage/contactIcon.svg"
+                    src="/NewSvgs/SVG2/Group7.svg"
                     width={72}
                     height={72}
                     alt="contactLocactionIcon"

@@ -47,7 +47,7 @@ function About() {
         <div className={styles.aboutUsHeroContainer}>
           <div>
             <Image
-              src="/AboutUsPage/AboutUsPage.png"
+              src="/NewSvgs/Backgrounds/abBg2.png"
               width={1212}
               height={600}
               layout="responsive"

@@ -63,8 +63,16 @@ function WhyBeacon() {
 
       <div className="whyBeaconImgContainer">
         <Image
-          className="whyBeaconImg"
-          src="/WhyBeacon.png"
+          className="desktop"
+          src="/NewSvgs/Backgrounds/bg6.png"
+          layout="responsive"
+          width={1049}
+          height={434}
+          alt="ImageWhyBeacon"
+        />
+        <Image
+          className="mobile"
+          src="/NewSvgs/Backgrounds/bg3.png"
           layout="responsive"
           width={1049}
           height={434}
