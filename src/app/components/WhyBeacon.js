@@ -90,6 +90,9 @@ function WhyBeacon() {
                 width={60}
                 height={40}
                 alt="whyBeaconIcon"
+                quality={100} 
+                priority={true} 
+                unoptimized 
               />
             </div>
             <div className="beaconContentContainer">

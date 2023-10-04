@@ -40,7 +40,9 @@ function Header() {
               height={60}
               alt="ImageHeader"
               // layout="responsive"
-              loading="lazy"
+              quality={100}
+              priority={true}
+              unoptimized
             />
           </div>
         </a>
@@ -67,7 +69,7 @@ function Header() {
         <div className="hButtonContainer headerContactButton">
           <div className="visibleWrapperContainer">
             <div className="topVisibleContainer">
-              <a href="/" className="btn">
+              <a href="tel:971 800 4392" className="btn">
                 <Image
                   src="/telephone.svg"
                   width={18}
@@ -78,7 +80,7 @@ function Header() {
               </a>
             </div>
             <div className="bottomVisibleContainer">
-              <a href="/" className="btn">
+              <a href="tel:971 800 4392" className="btn">
                 <Image
                   src="/telephone.svg"
                   width={18}

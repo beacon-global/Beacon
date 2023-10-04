@@ -101,25 +101,25 @@ function Services() {
 
   const sellingCardData = [
     {
-      img: "/Services/Services12.svg",
+      img: "/NewSvgs/SVG6/Mask group.svg",
       heading: "Expert advice",
       description:
         "A business should follow strict compliance with the local regulations and laws. With expert advice, we guide you through aspects like licensing, tax regulations, business models, etc. to make informed decisions.",
     },
     {
-      img: "/Services/Services13.svg",
+      img: "/NewSvgs/SVG6/Mask group-1.svg",
       heading: "Ease of Access",
       description:
         "To grow amidst the thriving business community, having a powerful network is the key. We help you grow networks and connections that can contribute greatly to your business and help you establish a strong business presence.",
     },
     {
-      img: "/Services/Services14.svg",
+      img: "/NewSvgs/SVG6/Mask group-2.svg",
       heading: "Save on Costs",
       description:
         "With our team, you can relieve yourself from the time-consuming processes such as hectic paperwork, research, meetings or legal challenges, while we manage everything for you, thereby saving on costs and time.",
     },
     {
-      img: "/Services/Services15.svg",
+      img: "/NewSvgs/SVG6/Mask group-3.svg",
       heading: "In-depth Market research",
       description:
         "By leveraging the expertise of business consultants, you can get valuable market insights to back your business decision-making. Our comprehensive market research helps you make the most out of your venture.",

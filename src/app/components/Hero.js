@@ -48,7 +48,9 @@ function Hero({ initialScreenWidth }) {
           width={1366}
           height={670}
           layout="responsive"
-          loading="lazy"
+          quality={100}
+          priority={true}
+          unoptimized
         />
         <Image
           className="MobilehImage"
@@ -57,7 +59,9 @@ function Hero({ initialScreenWidth }) {
           width={0}
           height={600}
           layout="responsive"
-          loading="lazy"
+          quality={100}
+          priority={true}
+          unoptimized
         />
         <div className="textOverlay">
           <div>

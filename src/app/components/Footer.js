@@ -7,6 +7,9 @@ function Footer() {
       <div className="topContainer">
         <div className="footerLogoContainer">
           <Image
+            quality={100}
+            priority={true}
+            unoptimized
             src="/NewSvgs/Logos/beaconWhite.svg"
             width={170}
             height={60}
@@ -15,11 +18,21 @@ function Footer() {
         </div>
         <div className="footerContentContainer">
           <ul className="footercontent">
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Services</li>
-            <li>Blogs</li>
-            <li>Contact</li>
+            <a href="/">
+              <li>Home</li>
+            </a>
+            <a href="/pages/About">
+              <li>About Us</li>
+            </a>
+            <a href="/pages/Services">
+              <li>Services</li>
+            </a>
+            <a>
+              <li>Blogs</li>
+            </a>
+            <a href="/pages/Contact">
+              <li>Contact</li>
+            </a>
           </ul>
         </div>
       </div>
@@ -27,18 +40,27 @@ function Footer() {
         <div className="footerContactImgContainer">
           <div className="footerContactDetails">
             <Image
+              quality={100}
+              priority={true}
+              unoptimized
               src="/NewSvgs/SVG3/Icon.svg"
               width={46}
               height={46}
               alt="ImageFooter2"
             />
-            <div className="footerContactTextDetails" style={{whiteSpace:"nowrap"}}>
+            <div
+              className="footerContactTextDetails"
+              style={{ whiteSpace: "nowrap" }}
+            >
               <h1>Call us on:</h1>
-              <p>+ 966 570 807 175</p>
+              <a href="tel:966 570 807 175">+ 966 570 807 175</a>
             </div>
           </div>
           <div className="footerContactDetails">
             <Image
+              quality={100}
+              priority={true}
+              unoptimized
               src="/NewSvgs/SVG3/Icon-1.svg"
               width={46}
               height={46}
@@ -46,11 +68,14 @@ function Footer() {
             />
             <div className="footerContactTextDetails footerContactTextDetailsEmail">
               <h1>Email us:</h1>
-              <p>info@bmcglobal.co</p>
+              <a href="mailto:someone@example.com">info@bmcglobal.co</a>
             </div>
           </div>
           <div className="footerContactDetails">
             <Image
+              quality={100}
+              priority={true}
+              unoptimized
               src="/NewSvgs/SVG3/Icon-2.svg"
               width={46}
               height={46}
@@ -66,34 +91,54 @@ function Footer() {
           </div>
         </div>
         <div className="footerSocialContainer">
-          <Image
-            className="socialIcons"
-            src="/NewSvgs/SVG3/Icon-3.svg"
-            width={46}
-            height={46}
-            alt="ImageFooter3"
-          />
-          <Image
-            className="socialIcons"
-            src="/NewSvgs/SVG3/Icon-4.svg"
-            width={46}
-            height={46}
-            alt="ImageFooter4"
-          />
-          <Image
-            className="socialIcons"
-            src="/NewSvgs/SVG3/Icon-5.svg"
-            width={46}
-            height={46}
-            alt="ImageFooter5"
-          />
-          <Image
-            className="socialIcons"
-            src="/NewSvgs/SVG3/Icon-6.svg"
-            width={46}
-            height={46}
-            alt="ImageFooter6"
-          />
+          <a href="">
+            <Image
+              quality={100}
+              priority={true}
+              unoptimized
+              className="socialIcons"
+              src="/NewSvgs/SVG3/Icon-3.svg"
+              width={46}
+              height={46}
+              alt="ImageFooter3"
+            />
+          </a>
+          <a href="https://instagram.com/beaconglobal.co?igshid=OGQ5ZDc2ODk2ZA==">
+            <Image
+              quality={100}
+              priority={true}
+              unoptimized
+              className="socialIcons"
+              src="/NewSvgs/SVG3/Icon-4.svg"
+              width={46}
+              height={46}
+              alt="ImageFooter4"
+            />
+          </a>
+          <a href="">
+            <Image
+              quality={100}
+              priority={true}
+              unoptimized
+              className="socialIcons"
+              src="/NewSvgs/SVG3/Icon-5.svg"
+              width={46}
+              height={46}
+              alt="ImageFooter5"
+            />
+          </a>
+          <a href="https://www.linkedin.com/company/beacon-management-consultants/">
+            <Image
+              quality={100}
+              priority={true}
+              unoptimized
+              className="socialIcons"
+              src="/NewSvgs/SVG3/Icon-6.svg"
+              width={46}
+              height={46}
+              alt="ImageFooter6"
+            />
+          </a>
         </div>
       </div>
       <hr />

@@ -22,9 +22,11 @@ function BusinessSetup() {
             width={586}
             height={300}
             layout="responsive"
-            loading="lazy"
             alt="ImageBusiness1"
             className="ImageBusiness"
+            quality={100}
+            priority={true}
+            unoptimized
           />
           <div className="businessCardContentContainer">
             <h1 className="ksaHeading">KSA</h1>
@@ -38,6 +40,9 @@ function BusinessSetup() {
                 width={20}
                 height={19}
                 alt="ImageBusinessIcon"
+                quality={100}
+                priority={true}
+                unoptimized
               />
             </div>
           </div>

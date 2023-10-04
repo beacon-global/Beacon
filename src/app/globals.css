@@ -1226,6 +1226,7 @@ li{
 .footerSocialContainer{
   display: flex;
   gap: 20px;
+  align-items: center;
 } 
 
 .footerContainer hr{
@@ -1263,6 +1264,17 @@ li{
   line-height: 120%; /* 21.6px */
   text-transform: capitalize;
 }
+
+.footerContactTextDetails a{
+  color: #FFF;
+  text-align: left;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 21.6px */
+  text-transform: capitalize;
+}
+
 
 .footerContactTextDetailsEmail p{
   text-transform: none;

@@ -47,11 +47,13 @@ function About() {
         <div className={styles.aboutUsHeroContainer}>
           <div>
             <Image
+              quality={100}
+              priority={true}
+              unoptimized
               src="/NewSvgs/Backgrounds/abBg2.png"
               width={1212}
               height={600}
               layout="responsive"
-              loading="lazy"
               alt="aboutus1"
             />
           </div>
@@ -110,6 +112,9 @@ function About() {
                 <div className={styles.ImageCon}>
                   <div>
                     <Image
+                      quality={100}
+                      priority={true}
+                      unoptimized
                       src="/NewSvgs/SVG4/Group1.svg"
                       width={80}
                       height={80}
@@ -118,6 +123,9 @@ function About() {
                       className={styles.cardIcon}
                     />
                     <Image
+                      quality={100}
+                      priority={true}
+                      unoptimized
                       src="/NewSvgs/SVG4/Group1.svg"
                       width={60}
                       height={60}
@@ -128,6 +136,9 @@ function About() {
                   </div>
                   <div>
                     <Image
+                      quality={100}
+                      priority={true}
+                      unoptimized
                       src="/NewSvgs/SVG4/Group2.svg"
                       width={80}
                       height={80}
@@ -136,6 +147,9 @@ function About() {
                       className={styles.cardIcon}
                     />
                     <Image
+                      quality={100}
+                      priority={true}
+                      unoptimized
                       src="/NewSvgs/SVG4/Group2.svg"
                       width={60}
                       height={60}
@@ -146,6 +160,9 @@ function About() {
                   </div>
                   <div>
                     <Image
+                      quality={100}
+                      priority={true}
+                      unoptimized
                       src="/NewSvgs/SVG4/Group3.svg"
                       width={80}
                       height={80}
@@ -154,6 +171,9 @@ function About() {
                       className={styles.cardIcon}
                     />
                     <Image
+                      quality={100}
+                      priority={true}
+                      unoptimized
                       src="/NewSvgs/SVG4/Group3.svg"
                       width={60}
                       height={60}
@@ -202,6 +222,7 @@ function About() {
           {/* <div className={styles.topContainer}>
             <div className={styles.imgContainer}>
               <Image
+              quality={100} priority={true} unoptimized 
                 src="/AboutUsPage/aboutPage2.svg"
                 width={576}
                 height={500}
@@ -243,6 +264,7 @@ function About() {
             </div>
             <div className={styles.imgContainer}>
               <Image
+              quality={100} priority={true} unoptimized 
                 src="/AboutUsPage/aboutPage1.svg"
                 width={576}
                 height={500}
@@ -274,6 +296,9 @@ function About() {
             </div>
             <div className={styles.vissionMissionImage}>
               <Image
+                quality={100}
+                priority={true}
+                unoptimized
                 src="/AboutUsPage/aboutPage.png"
                 width={1212}
                 height={350}
@@ -282,6 +307,9 @@ function About() {
                 className={styles.cardIcon}
               />
               <Image
+                quality={100}
+                priority={true}
+                unoptimized
                 src="/AboutUsPage/maboutPage.svg"
                 width={327}
                 height={150}
@@ -302,7 +330,15 @@ function About() {
             {servicesData.map((data, index) => (
               <div className={styles.coreValueCards} key={index}>
                 <div className={styles.cvImgContainer}>
-                  <Image src={data.img} width={50} height={50} alt="abouts4" />
+                  <Image
+                    quality={100}
+                    priority={true}
+                    unoptimized
+                    src={data.img}
+                    width={50}
+                    height={50}
+                    alt="abouts4"
+                  />
                 </div>
                 <div className={styles.cvContent}>
                   <h1>{data.heading}</h1>

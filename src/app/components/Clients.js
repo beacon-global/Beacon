@@ -145,7 +145,9 @@ function ScrollingLogos() {
           layout="responsive"
           alt="ImageClients"
           className="logoClients"
-          loading="lazy"
+          quality={100}
+          priority={true}
+          unoptimized
         />
         <Image
           src="/clientLogos.svg"
@@ -154,7 +156,9 @@ function ScrollingLogos() {
           layout="responsive"
           alt="ImageClients"
           className="logoClients"
-          loading="lazy"
+          quality={100}
+          priority={true}
+          unoptimized
         />
         <Image
           src="/clientLogos.svg"
@@ -163,7 +167,9 @@ function ScrollingLogos() {
           layout="responsive"
           alt="ImageClients"
           className="logoClients"
-          loading="lazy"
+          quality={100}
+          priority={true}
+          unoptimized
         />
       </div>
       {/* <Image

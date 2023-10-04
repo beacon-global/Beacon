@@ -122,7 +122,7 @@ function MobileHeader() {
           <MLink href="/" className="mLinks">Blogs</MLink>
           <MLink href="/pages/Contact" className="mLinks">Contact Us</MLink>
           <div className="hButtonContainer headerContactButton mHeaderBtn">
-            <a href="/" className="btn mBtn">
+            <a href="tel:971 800 4392" className="btn mBtn">
               <Image
                 src="/telephone.svg"
                 width={15}
