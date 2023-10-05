@@ -99,36 +99,19 @@ function Clients() {
 }
 
 function ScrollingLogos() {
-  // const [allImagesLoaded, setAllImagesLoaded] = useState(false);
+  const [allImagesLoaded, setAllImagesLoaded] = useState(0);
 
-  // useEffect(() => {
-  //   const images = document.querySelectorAll(".logoClients img");
-  //   const totalImages = images.length;
-  //   let imagesLoaded = 0;
-
-  //   const handleImageLoad = () => {
-  //     console.log(totalImages, "jdkslfj");
-  //     imagesLoaded++;
-  //     if (imagesLoaded === totalImages) {
-  //       setAllImagesLoaded(true);
-  //     }
-  //   };
-
-  //   images.forEach((img) => {
-  //     if (img.complete) {
-  //       handleImageLoad();
-  //     } else {
-  //       img.addEventListener("load", handleImageLoad);
-  //     }
-  //   });
-
-  //   return () => {
-  //     // Clean up event listeners if the component unmounts
-  //     images.forEach((img) => {
-  //       img.removeEventListener("load", handleImageLoad);
-  //     });
-  //   };
-  // }, []);
+  useEffect(() => {
+    const loaders = document.getElementsByClassName("loader1");
+    console.log(allImagesLoaded, "nfafdsfjlkds");
+    Array.from(loaders).forEach((loader) => {
+      if (allImagesLoaded === 3) {
+        loader.style.display = "none";
+      } else {
+        loader.style.display = "flex"; // Use assignment, not comparison
+      }
+    });
+  }, [allImagesLoaded]);
 
   return (
     <motion.div
@@ -138,6 +121,14 @@ function ScrollingLogos() {
       transition={{ repeat: Infinity, duration: 140, ease: "linear" }}
     >
       <div className="logosContainer">
+        <div class="loader loader1">
+          <div class="loader__bar"></div>
+          <div class="loader__bar"></div>
+          <div class="loader__bar"></div>
+          <div class="loader__bar"></div>
+          <div class="loader__bar"></div>
+          <div class="loader__ball"></div>
+        </div>
         <Image
           src="/clientLogos.svg"
           width={100}
@@ -148,6 +139,7 @@ function ScrollingLogos() {
           quality={100}
           priority={true}
           unoptimized
+          onLoadingComplete={(img) => setAllImagesLoaded((prev) => prev + 1)}
         />
         <Image
           src="/clientLogos.svg"
@@ -159,6 +151,7 @@ function ScrollingLogos() {
           quality={100}
           priority={true}
           unoptimized
+          onLoadingComplete={(img) => setAllImagesLoaded((prev) => prev + 1)}
         />
         <Image
           src="/clientLogos.svg"
@@ -170,6 +163,7 @@ function ScrollingLogos() {
           quality={100}
           priority={true}
           unoptimized
+          onLoadingComplete={(img) => setAllImagesLoaded((prev) => prev + 1)}
         />
       </div>
       {/* <Image

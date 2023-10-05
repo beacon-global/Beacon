@@ -9,7 +9,7 @@ function Services() {
 
   const servicesData = [
     {
-      img: "/NewSvgs/SVG2/Group1.svg",
+      img: "/NewSvgs/SVG2/hh/Group1.svg",
       heading: "Business Incorporation",
       description:
         "Get company incorporation assistance and compliance support right after the registration process. Tell us your requirements and let us drive your investment and growth with business incorporation services",
@@ -21,7 +21,7 @@ function Services() {
       ],
     },
     {
-      img: "/NewSvgs/SVG2/Group6.svg",
+      img: "/NewSvgs/SVG2/hh/Group6.svg",
       heading: "Business Consultation",
       description:
         "Our business consultation services augment your business requirements through essential aspects of businesses like people, processes, technology, and related operations.",
@@ -36,7 +36,7 @@ function Services() {
       ],
     },
     {
-      img: "/NewSvgs/SVG2/Group2.svg",
+      img: "/NewSvgs/SVG2/hh/Group2.svg",
       heading: "Financial & Accounting",
       description:
         "Through the regular management of financial reports, accounting, and related activities of the business, we are involved in the analysis and reporting of financial processes.",
@@ -51,7 +51,7 @@ function Services() {
       ],
     },
     {
-      img: "/NewSvgs/SVG2/Group4.svg",
+      img: "/NewSvgs/SVG2/hh/Group4.svg",
       heading: "Audit & Taxation",
       description:
         "We engage in the routine monitoring, review, and report of the significant tax matters that impact your business with the panel of our audit and tax experts.",
@@ -66,7 +66,7 @@ function Services() {
       ],
     },
     {
-      img: "/NewSvgs/SVG2/Group3.svg",
+      img: "/NewSvgs/SVG2/hh/Group3.svg",
       heading: "Technology Solutions",
       description:
         "Along with the business experience, we infuse technology into the business processes to address your specific technical needs that reimagine business models.",
@@ -81,7 +81,7 @@ function Services() {
       ],
     },
     {
-      img: "/NewSvgs/SVG2/Group5.svg",
+      img: "/NewSvgs/SVG2/hh/Group5.svg",
       heading: "Digital Marketing",
       description:
         "Hand over all your digital marketing to-do tasks to our experts and watch through the growth plateau with the finest services that scale your brand outreach.",
