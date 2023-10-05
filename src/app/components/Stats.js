@@ -59,7 +59,7 @@ function Stats({ useBackgroundImage, isMainPage }) {
           if (entry.isIntersecting) {
             // Start counting up when the component is in view
             const options = {
-              duration: 2000, // Animation duration in milliseconds
+              duration: 1000, // Animation duration in milliseconds
               step: 1, // Increment step
             };
 
