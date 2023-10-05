@@ -1,7 +1,8 @@
+"use client";
 import Header from "@/app/components/Header";
 import MobileHeader from "@/app/components/MobileHeader";
 import styles from "../../Styles/aboutus.module.css";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Contact from "@/app/components/Contact";
 import Footer from "@/app/components/Footer";
@@ -33,6 +34,12 @@ function About() {
         "Growing beyond a service provider, we provide timely support and resolve concerns through constructive discussions that generate special value outcomes.",
     },
   ];
+  const [loaded, setLoaded] = useState(false);
+
+  const handleImageLoad = () => {
+    setLoaded(true);
+  };
+
   return (
     <>
       <Header />
@@ -46,6 +53,16 @@ function About() {
         </h2>
         <div className={styles.aboutUsHeroContainer}>
           <div>
+            {!loaded && (
+              <div className="loader">
+                <div className="loader__bar"></div>
+                <div className="loader__bar"></div>
+                <div className="loader__bar"></div>
+                <div className="loader__bar"></div>
+                <div className="loader__bar"></div>
+                <div className="loader__ball"></div>
+              </div>
+            )}
             <Image
               quality={100}
               priority={true}
@@ -55,6 +72,8 @@ function About() {
               height={600}
               layout="responsive"
               alt="aboutus1"
+              style={{ display: loaded ? "block" : "none" }}
+              onLoad={handleImageLoad}
             />
           </div>
           <p>

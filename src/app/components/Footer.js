@@ -43,7 +43,7 @@ function Footer() {
               quality={100}
               priority={true}
               unoptimized
-              src="/NewSvgs/SVG3/Icon.svg"
+              src="/NewSvgs/SVG3/hh/Icon.svg"
               width={46}
               height={46}
               alt="ImageFooter2"
@@ -61,14 +61,14 @@ function Footer() {
               quality={100}
               priority={true}
               unoptimized
-              src="/NewSvgs/SVG3/Icon-1.svg"
+              src="/NewSvgs/SVG3/hh/Icon-1.svg"
               width={46}
               height={46}
               alt="ImageFooter2"
             />
             <div className="footerContactTextDetails footerContactTextDetailsEmail">
               <h1>Email us:</h1>
-              <a href="mailto:someone@example.com">info@bmcglobal.co</a>
+              <a href="mailto:someone@example.com" style={{textTransform:"none"}}>info@bmcglobal.co</a>
             </div>
           </div>
           <div className="footerContactDetails">
@@ -76,7 +76,7 @@ function Footer() {
               quality={100}
               priority={true}
               unoptimized
-              src="/NewSvgs/SVG3/Icon-2.svg"
+              src="/NewSvgs/SVG3/hh/Icon-2.svg"
               width={46}
               height={46}
               alt="ImageFooter2"
@@ -97,7 +97,7 @@ function Footer() {
               priority={true}
               unoptimized
               className="socialIcons"
-              src="/NewSvgs/SVG3/Icon-3.svg"
+              src="/NewSvgs/SVG3/hh/Icon-3.svg"
               width={46}
               height={46}
               alt="ImageFooter3"
@@ -109,7 +109,7 @@ function Footer() {
               priority={true}
               unoptimized
               className="socialIcons"
-              src="/NewSvgs/SVG3/Icon-4.svg"
+              src="/NewSvgs/SVG3/hh/Icon-4.svg"
               width={46}
               height={46}
               alt="ImageFooter4"
@@ -121,7 +121,7 @@ function Footer() {
               priority={true}
               unoptimized
               className="socialIcons"
-              src="/NewSvgs/SVG3/Icon-5.svg"
+              src="/NewSvgs/SVG3/hh/Icon-5.svg"
               width={46}
               height={46}
               alt="ImageFooter5"
@@ -133,7 +133,7 @@ function Footer() {
               priority={true}
               unoptimized
               className="socialIcons"
-              src="/NewSvgs/SVG3/Icon-6.svg"
+              src="/NewSvgs/SVG3/hh/Icon-6.svg"
               width={46}
               height={46}
               alt="ImageFooter6"
