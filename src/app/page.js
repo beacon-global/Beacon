@@ -32,20 +32,22 @@ export default function Home() {
   // }, []);
 
   useEffect(() => {
-  // Delay for 1 second (1000 milliseconds)
-  const timeoutId = setTimeout(() => {
-    // Hide the white screen by changing its opacity
-    const whiteScreen = document.getElementById('white-screen');
-    // console.log(whiteScreen,"dsjkfh");
-    if (whiteScreen) {
-      // whiteScreen.style.opacity = '0';
-      whiteScreen.classList.add('hidden');
-    }
-  }, 2500); // 1000 milliseconds = 1 second
+    // Delay for 1 second (1000 milliseconds)
+    const timeoutId = setTimeout(() => {
+      // Hide the white screen by changing its opacity
+      const whiteScreen = document.getElementById("white-screen");
+      // console.log(whiteScreen,"dsjkfh");
+      if (whiteScreen) {
+        // whiteScreen.style.opacity = '0';
+        whiteScreen.classList.add("hidden");
+      }
+    }, 2500); // 1000 milliseconds = 1 second
 
-  // Cleanup the timeout to avoid memory leaks
-  return () => clearTimeout(timeoutId);
-}, []);
+    // Cleanup the timeout to avoid memory leaks
+    return () => clearTimeout(timeoutId);
+  }, []);
+
+  const useBackgroundImage = true;
 
   return (
     <>
@@ -81,7 +83,7 @@ export default function Home() {
         <BusinessSetup />
         <Services />
         <WhyBeacon />
-        <Stats />
+        <Stats useBackgroundImage={useBackgroundImage} isMainPage={true}/>
         <Clients />
         <Blogs />
         <Faq />

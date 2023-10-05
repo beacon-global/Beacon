@@ -145,6 +145,7 @@
     width: 450px;
     height: 450px;
     display: flex;
+    justify-content: center;
 }
 
 .container4ImgContainer img{

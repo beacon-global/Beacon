@@ -6,6 +6,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Contact from "@/app/components/Contact";
 import Footer from "@/app/components/Footer";
+import Stats from "@/app/components/Stats";
 
 function About() {
   const servicesData = [
@@ -39,6 +40,8 @@ function About() {
   const handleImageLoad = () => {
     setLoaded(true);
   };
+
+  const useBackgroundImage = false;
 
   return (
     <>
@@ -98,7 +101,7 @@ function About() {
           </p>
         </div>
 
-        <div className={styles.greenBannerContiner}>
+        {/* <div className={styles.greenBannerContiner}>
           <div className={styles.statContainer}>
             <h1>12K+</h1>
             <p>Project Complete</p>
@@ -115,7 +118,10 @@ function About() {
             <h1>270+</h1>
             <p>Win Awards</p>
           </div>
-        </div>
+        </div> */}
+        {/* <div className={styles.greenBannerContiner}> */}
+        <Stats useBackgroundImage={useBackgroundImage} isMainPage={false} />
+        {/* </div> */}
 
         <div className={styles.aboutUsContainer2}>
           <h2 className="businessDesc">
@@ -318,7 +324,7 @@ function About() {
                 quality={100}
                 priority={true}
                 unoptimized
-                src="/AboutUsPage/aboutPage.png"
+                src="/AboutUsPage/aboutPage.svg"
                 width={1212}
                 height={350}
                 layout="responsive"

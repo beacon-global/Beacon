@@ -159,6 +159,12 @@ function Services() {
 
   const currentTestimonial = testimonials[currentTestimonialIndex];
 
+  const [loaded, setLoaded] = useState(false);
+
+  const handleImageLoad = () => {
+    setLoaded(true);
+  };
+
   return (
     <>
       <Header />
@@ -215,12 +221,27 @@ function Services() {
 
         <div className={styles.servicesPageContainer2}>
           <div className={styles.servicePageImageContainer2}>
+            {!loaded && (
+              <div className="loader">
+                <div className="loader__bar"></div>
+                <div className="loader__bar"></div>
+                <div className="loader__bar"></div>
+                <div className="loader__bar"></div>
+                <div className="loader__bar"></div>
+                <div className="loader__ball"></div>
+              </div>
+            )}
             <Image
               src="/ServicesPage/servicesPage7.svg"
               width={576}
               height={540}
               layout="responsive"
               alt="serviceImg1"
+              quality={100}
+              priority={true}
+              unoptimized
+              style={{ display: loaded ? "block" : "none" }}
+              onLoad={handleImageLoad}
             />
           </div>
           <div className={styles.container2Contents}>
@@ -293,12 +314,27 @@ function Services() {
             </p>
           </div>
           <div className={styles.container4ImgContainer}>
+            {!loaded && (
+              <div className="loader">
+                <div className="loader__bar"></div>
+                <div className="loader__bar"></div>
+                <div className="loader__bar"></div>
+                <div className="loader__bar"></div>
+                <div className="loader__bar"></div>
+                <div className="loader__ball"></div>
+              </div>
+            )}
             <Image
-              src="/NewSvgs/Backgrounds/abBg4.png"
+              src="/NewSvgs/Backgrounds/abBg5.svg"
               width={500}
               height={500}
               layout="responsive"
               alt="aboutus2"
+              quality={100}
+              priority={true}
+              unoptimized
+              style={{ display: loaded ? "block" : "none" }}
+              onLoad={handleImageLoad}
             />
           </div>
         </div>
