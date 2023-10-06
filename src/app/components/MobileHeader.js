@@ -116,10 +116,10 @@ function MobileHeader() {
         </ToggleButton>
         <Card $isMenuOpen={isMenuOpen} style={{ display: isMenuOpen ? "flex" : "none" }}>
           <MLink href="/" className="mLinks">Home</MLink>
-          <MLink href="/" className="mLinks">Our Presence</MLink>
+          {/* <MLink href="/" className="mLinks">Our Presence</MLink> */}
           <MLink href="/pages/About" className="mLinks">About Us</MLink>
           <MLink href="/pages/Services" className="mLinks">Services</MLink>
-          <MLink href="/" className="mLinks">Blogs</MLink>
+          {/* <MLink href="/" className="mLinks">Blogs</MLink> */}
           <MLink href="/pages/Contact" className="mLinks">Contact Us</MLink>
           <div className="hButtonContainer headerContactButton mHeaderBtn">
             <a href="tel:971 800 4392" className="btn mBtn">
