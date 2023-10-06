@@ -69,6 +69,9 @@ function WhyBeacon() {
           width={1049}
           height={434}
           alt="ImageWhyBeacon"
+          quality={100}
+          priority={true}
+          unoptimized
         />
         <Image
           className="mobile"
@@ -77,6 +80,9 @@ function WhyBeacon() {
           width={1049}
           height={434}
           alt="ImageWhyBeacon"
+          quality={100}
+          priority={true}
+          unoptimized
         />
       </div>
 
@@ -90,9 +96,9 @@ function WhyBeacon() {
                 width={60}
                 height={40}
                 alt="whyBeaconIcon"
-                quality={100} 
-                priority={true} 
-                unoptimized 
+                quality={100}
+                priority={true}
+                unoptimized
               />
             </div>
             <div className="beaconContentContainer">

@@ -16,9 +16,9 @@ function Services() {
       description:
         "Get company incorporation assistance and compliance support right after the registration process. Tell us your requirements and let us drive your investment and growth with business incorporation services",
       details: [
-        "GCC National Country",
+        "GCC National Company",
         "Limited Liability Company",
-        "Multi County Business Setup",
+        "Multi Country Business Setup",
         "Branch of Foreign Company",
       ],
     },
@@ -30,7 +30,7 @@ function Services() {
       details: [
         "Government Relation Management",
         "Employee Work Permit & Visa Assistance",
-        "Regulatory Compliance",
+        "ISO Certifications",
         "Licence Amendment",
         "Company Liquidation",
         "Business Transfer - Merging",
@@ -64,7 +64,7 @@ function Services() {
         "Income Tax Advisory Services",
         "Social Responsibility Audits",
         "Tax Risk Management Services",
-        "Operational Audits",
+        "Operational and System Audits",
       ],
     },
     {
@@ -93,7 +93,7 @@ function Services() {
       ],
     },
   ];
-
+  
   const sellingCardData = [
     {
       img: "/NewSvgs/SVG7/G1.svg",
