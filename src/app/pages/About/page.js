@@ -321,7 +321,7 @@ function About() {
             </div>
             <div className={styles.vissionMissionImage}>
               {!loaded && (
-                <div className="loader">
+                <div className={`${styles.loader} loader`}>
                   <div className="loader__bar"></div>
                   <div className="loader__bar"></div>
                   <div className="loader__bar"></div>

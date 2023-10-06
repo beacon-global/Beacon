@@ -270,6 +270,10 @@
     display: none;
 }
 
+.vissionMissionImage .loader{
+    margin: auto;
+}
+
 @media (max-width: 600px) {
 
     .aboutUsMainContainer p{
