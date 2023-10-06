@@ -320,6 +320,16 @@ function About() {
               </div>
             </div>
             <div className={styles.vissionMissionImage}>
+              {!loaded && (
+                <div className="loader">
+                  <div className="loader__bar"></div>
+                  <div className="loader__bar"></div>
+                  <div className="loader__bar"></div>
+                  <div className="loader__bar"></div>
+                  <div className="loader__bar"></div>
+                  <div className="loader__ball"></div>
+                </div>
+              )}
               <Image
                 quality={100}
                 priority={true}
@@ -329,7 +339,8 @@ function About() {
                 height={350}
                 layout="responsive"
                 alt="aboutus2"
-                className={styles.cardIcon}
+                className={loaded ? styles.cardIcon : styles.hidden}
+                onLoad={handleImageLoad}
               />
               <Image
                 quality={100}
@@ -340,7 +351,8 @@ function About() {
                 height={150}
                 layout="responsive"
                 alt="aboutus2"
-                className={styles.mCardIcon}
+                className={loaded ? styles.mCardIcon : styles.hidden}
+                onLoad={handleImageLoad}
               />
             </div>
           </div>

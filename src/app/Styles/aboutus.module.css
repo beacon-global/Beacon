@@ -266,6 +266,10 @@
     line-height: 140%;
 }
 
+.hidden{
+    display: none;
+}
+
 @media (max-width: 600px) {
 
     .aboutUsMainContainer p{
