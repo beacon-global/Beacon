@@ -99,25 +99,52 @@ function Clients() {
 }
 
 function ScrollingLogos() {
-  const [allImagesLoaded, setAllImagesLoaded] = useState(0);
+  // const [allImagesLoaded, setAllImagesLoaded] = useState(0);
+
+  // useEffect(() => {
+  //   const loaders = document.getElementsByClassName("loader1");
+  //   console.log(allImagesLoaded, "nfafdsfjlkds");
+  //   Array.from(loaders).forEach((loader) => {
+  //     if (allImagesLoaded === 3) {
+  //       loader.style.display = "none";
+  //     } else {
+  //       loader.style.display = "flex"; // Use assignment, not comparison
+  //     }
+  //   });
+  // }, [allImagesLoaded]);
+
+  const [animateValue, setAnimateValue] = useState("-200%");
 
   useEffect(() => {
-    const loaders = document.getElementsByClassName("loader1");
-    console.log(allImagesLoaded, "nfafdsfjlkds");
-    Array.from(loaders).forEach((loader) => {
-      if (allImagesLoaded === 3) {
-        loader.style.display = "none";
-      } else {
-        loader.style.display = "flex"; // Use assignment, not comparison
+    const handleResize = () => {
+      const screenWidth = window.innerWidth;
+
+      // Set the animate value based on screen width
+      const newAnimateValue = screenWidth < 600 ? "-310%" : "-200%";
+
+      // Update the animate value only if it has changed
+      if (newAnimateValue !== animateValue) {
+        setAnimateValue(newAnimateValue);
       }
-    });
-  }, [allImagesLoaded]);
+    };
+
+    // Attach the resize event listener
+    window.addEventListener("resize", handleResize);
+
+    // Call handleResize once to set the initial animate value
+    handleResize();
+
+    // Remove the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [animateValue]);
 
   return (
     <motion.div
       className="scrolling-logos"
-      initial={{ x: "40%" }}
-      animate={{ x: "-100%" }}
+      initial={{ x: "0%" }}
+      animate={{ x: animateValue }}
       transition={{ repeat: Infinity, duration: 140, ease: "linear" }}
     >
       {/* <div className="logosContainer">
@@ -167,6 +194,9 @@ function ScrollingLogos() {
         />
       </div> */}
       <Image
+        quality={100}
+        priority={true}
+        unoptimized
         src="/clients/brands/logo1.png"
         width={100}
         height={0}
@@ -175,6 +205,9 @@ function ScrollingLogos() {
         className="logoClients"
       />
       <Image
+        quality={100}
+        priority={true}
+        unoptimized
         src="/clients/brands/logo2.png"
         width={100}
         height={0}
@@ -183,6 +216,9 @@ function ScrollingLogos() {
         className="logoClients"
       />
       <Image
+        quality={100}
+        priority={true}
+        unoptimized
         src="/clients/brands/logo3.png"
         width={100}
         height={0}
@@ -191,6 +227,9 @@ function ScrollingLogos() {
         className="logoClients"
       />
       <Image
+        quality={100}
+        priority={true}
+        unoptimized
         src="/clients/brands/logo4.png"
         width={100}
         height={0}
@@ -199,6 +238,9 @@ function ScrollingLogos() {
         className="logoClients"
       />
       <Image
+        quality={100}
+        priority={true}
+        unoptimized
         src="/clients/brands/logo5.png"
         width={100}
         height={0}
@@ -207,6 +249,9 @@ function ScrollingLogos() {
         className="logoClients"
       />
       <Image
+        quality={100}
+        priority={true}
+        unoptimized
         src="/clients/brands/logo6.png"
         width={100}
         height={0}
@@ -215,6 +260,9 @@ function ScrollingLogos() {
         className="logoClients"
       />
       <Image
+        quality={100}
+        priority={true}
+        unoptimized
         src="/clients/brands/logo7.png"
         width={100}
         height={0}
@@ -223,6 +271,9 @@ function ScrollingLogos() {
         className="logoClients"
       />
       <Image
+        quality={100}
+        priority={true}
+        unoptimized
         src="/clients/brands/logo8.png"
         width={100}
         height={0}
@@ -231,6 +282,9 @@ function ScrollingLogos() {
         className="logoClients"
       />
       <Image
+        quality={100}
+        priority={true}
+        unoptimized
         src="/clients/brands/logo9.png"
         width={100}
         height={0}
@@ -239,6 +293,9 @@ function ScrollingLogos() {
         className="logoClients"
       />
       <Image
+        quality={100}
+        priority={true}
+        unoptimized
         src="/clients/brands/logo10.png"
         width={100}
         height={0}
@@ -247,6 +304,9 @@ function ScrollingLogos() {
         className="logoClients"
       />
       <Image
+        quality={100}
+        priority={true}
+        unoptimized
         src="/clients/brands/logo11.png"
         width={100}
         height={0}
@@ -255,6 +315,9 @@ function ScrollingLogos() {
         className="logoClients"
       />
       <Image
+        quality={100}
+        priority={true}
+        unoptimized
         src="/clients/brands/logo12.png"
         width={100}
         height={0}
@@ -263,6 +326,9 @@ function ScrollingLogos() {
         className="logoClients"
       />
       <Image
+        quality={100}
+        priority={true}
+        unoptimized
         src="/clients/brands/logo13.png"
         width={100}
         height={0}
@@ -271,6 +337,9 @@ function ScrollingLogos() {
         className="logoClients"
       />
       <Image
+        quality={100}
+        priority={true}
+        unoptimized
         src="/clients/brands/logo15.png"
         width={100}
         height={0}
@@ -279,6 +348,9 @@ function ScrollingLogos() {
         className="logoClients"
       />
       <Image
+        quality={100}
+        priority={true}
+        unoptimized
         src="/clients/brands/logo16.png"
         width={100}
         height={0}
@@ -287,6 +359,9 @@ function ScrollingLogos() {
         className="logoClients"
       />
       <Image
+        quality={100}
+        priority={true}
+        unoptimized
         src="/clients/brands/logo17.png"
         width={100}
         height={0}
@@ -295,6 +370,9 @@ function ScrollingLogos() {
         className="logoClients"
       />
       <Image
+        quality={100}
+        priority={true}
+        unoptimized
         src="/clients/brands/logo18.png"
         width={100}
         height={0}
@@ -303,6 +381,9 @@ function ScrollingLogos() {
         className="logoClients"
       />
       <Image
+        quality={100}
+        priority={true}
+        unoptimized
         src="/clients/brands/logo19.png"
         width={100}
         height={0}
@@ -311,6 +392,9 @@ function ScrollingLogos() {
         className="logoClients"
       />
       <Image
+        quality={100}
+        priority={true}
+        unoptimized
         src="/clients/brands/logo20.png"
         width={100}
         height={0}
@@ -319,6 +403,9 @@ function ScrollingLogos() {
         className="logoClients"
       />
       <Image
+        quality={100}
+        priority={true}
+        unoptimized
         src="/clients/brands/logo22.png"
         width={100}
         height={0}
