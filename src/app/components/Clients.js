@@ -120,7 +120,7 @@ function ScrollingLogos() {
       animate={{ x: "-100%" }}
       transition={{ repeat: Infinity, duration: 140, ease: "linear" }}
     >
-      <div className="logosContainer">
+      {/* <div className="logosContainer">
         <div class="loader loader1">
           <div class="loader__bar"></div>
           <div class="loader__bar"></div>
@@ -165,8 +165,8 @@ function ScrollingLogos() {
           unoptimized
           onLoadingComplete={(img) => setAllImagesLoaded((prev) => prev + 1)}
         />
-      </div>
-      {/* <Image
+      </div> */}
+      <Image
         src="/clients/brands/logo1.png"
         width={100}
         height={0}
@@ -269,16 +269,8 @@ function ScrollingLogos() {
         layout="responsive"
         alt="ImageClients"
         className="logoClients"
-      /> */}
-      {/* <Image
-        src="/clients/brands/logo14.png"
-        width={100}
-        height={0}
-        layout="responsive"
-        alt="ImageClients"
-        className="logoClients"
-      /> */}
-      {/* <Image
+      />
+      <Image
         src="/clients/brands/logo15.png"
         width={100}
         height={0}
@@ -333,7 +325,7 @@ function ScrollingLogos() {
         layout="responsive"
         alt="ImageClients"
         className="logoClients"
-      /> */}
+      />
     </motion.div>
   );
 }

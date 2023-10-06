@@ -844,7 +844,12 @@ li{
   display: flex;
   align-items: center;
   position: relative;
+  gap: 60px;
+}
 
+.logoClients{
+  height: 60px !important;
+  
 }
 
 .logosContainer{
