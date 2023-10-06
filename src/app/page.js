@@ -80,12 +80,12 @@ export default function Home() {
         {/* Your content goes here */}
         <Hero />
         <Locations />
-        <BusinessSetup />
+        {/* <BusinessSetup /> */}
         <Services />
         <WhyBeacon />
-        <Stats useBackgroundImage={useBackgroundImage} isMainPage={true}/>
+        <Stats useBackgroundImage={useBackgroundImage} isMainPage={true} />
         <Clients />
-        <Blogs />
+        {/* <Blogs /> */}
         <Faq />
         <Contact />
         <Footer />

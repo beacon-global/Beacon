@@ -1547,6 +1547,14 @@ li{
     height: 14px;
     margin-right: 2px;
   }
+  
+  .btn{
+    font-size: 12px;
+  }
+  
+  .servicesButton .btn{
+    font-size: 12px;
+  }
 
   .topVisibleContainer img{
     margin-left: 1px;

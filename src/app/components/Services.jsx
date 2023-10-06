@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 
 function Services() {
@@ -72,12 +73,10 @@ function Services() {
         "Along with the business experience, we infuse technology into the business processes to address your specific technical needs that reimagine business models.",
       details: [
         "Digital Strategy",
-        "UI Designing",
-        "Content Strategy",
+        "Designing",
         "Web Development",
         "Ecommerce Development",
-        "Android App Development",
-        "iOS App Development",
+        "App Development",
       ],
     },
     {
@@ -90,9 +89,6 @@ function Services() {
         "Search Engine Marketing (Google Ads)",
         "Social Media Marketing (Meta Ads)",
         "Social Media Management",
-        "Lead Generation",
-        "LinkedIn Ads",
-        "Tiktok Ads",
       ],
     },
   ];
@@ -111,7 +107,15 @@ function Services() {
         {servicesData.map((data, index) => (
           <div className="cardContainer" key={index}>
             <div className="imgContainer">
-              <Image src={data.img} width={70} height={70} alt="ImageService" quality={100} priority={true} unoptimized />
+              <Image
+                src={data.img}
+                width={70}
+                height={70}
+                alt="ImageService"
+                quality={100}
+                priority={true}
+                unoptimized
+              />
             </div>
             <div className="servicesHeadingContainer">
               <h1 className="servicesHeading">{data.heading}</h1>
@@ -138,14 +142,14 @@ function Services() {
         ))}
       </div>
 
-      <div
-        className="hButtonContainer servicesButton"
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-      >
-        <div className="visibleWrapperContainer">
-          <div className="topVisibleContainer">
-            <a href="/pages/Services" className="btn">
+      <a href="/pages/Services">
+        <div
+          className="hButtonContainer servicesButton"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
+          <div className="visibleWrapperContainer">
+            <div className="topVisibleContainer btn" >
               Our Services
               <div className="topVisibleArrow">
                 <Image
@@ -153,15 +157,16 @@ function Services() {
                   width={23}
                   height={23}
                   alt="heroContact"
-                  quality={100} 
-                  priority={true} 
-                  unoptimized 
+                  quality={100}
+                  priority={true}
+                  unoptimized
                 />
               </div>
-            </a>
-          </div>
-          <div className="bottomVisibleContainer">
-            <a href="/pages/Services" className="btn">
+            </div>
+            <div
+              className="bottomVisibleContainer btn"
+              
+            >
               Our Services
               <div className="bottomVisibleArrow">
                 <Image
@@ -169,15 +174,15 @@ function Services() {
                   width={23}
                   height={23}
                   alt="heroContact"
-                  quality={100} 
-                  priority={true} 
-                  unoptimized 
+                  quality={100}
+                  priority={true}
+                  unoptimized
                 />
               </div>
-            </a>
+            </div>
           </div>
         </div>
-      </div>
+      </a>
     </div>
   );
 }

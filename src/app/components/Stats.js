@@ -30,8 +30,8 @@ function Stats({ useBackgroundImage, isMainPage }) {
           : !isMainPage && width >= 600
           ? aboutPagePadding
           : !isMainPage && width < 600
-          ? "30px 84px"
-          : "30px 84px";
+          ? "30px 45px"
+          : "30px 45px";
 
       // Update the background image URL only if it has changed
       if (newBackgroundImageUrl !== backgroundImageUrl) {

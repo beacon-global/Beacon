@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 function Hero({ initialScreenWidth }) {
@@ -87,10 +88,10 @@ function Hero({ initialScreenWidth }) {
               strategies that adhere the best to global business standards.
             </p>
           </div>
-          <div className="hButtonContainer heroButton">
-            <div className="visibleWrapperContainer">
-              <div className="topVisibleContainer">
-                <a href="/pages/Services" className="btn">
+          <a href="/pages/Services">
+            <div className="hButtonContainer heroButton">
+              <div className="visibleWrapperContainer">
+                <div className="topVisibleContainer btn">
                   Our Services
                   <div className="topVisibleArrow">
                     <Image
@@ -100,10 +101,8 @@ function Hero({ initialScreenWidth }) {
                       alt="heroContact"
                     />
                   </div>
-                </a>
-              </div>
-              <div className="bottomVisibleContainer">
-                <a href="/" className="btn">
+                </div>
+                <div className="bottomVisibleContainer btn">
                   Our Services
                   <div className="bottomVisibleArrow">
                     <Image
@@ -113,10 +112,10 @@ function Hero({ initialScreenWidth }) {
                       alt="heroContact"
                     />
                   </div>
-                </a>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>

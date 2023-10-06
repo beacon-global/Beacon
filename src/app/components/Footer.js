@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 function Footer() {
@@ -81,6 +82,7 @@ function Footer() {
               height={46}
               alt="ImageFooter2"
             />
+            <a href="https://maps.app.goo.gl/UzvX5K7o9c3Cepmx9">
             <div className="footerContactTextDetails">
               <h1>Main office:</h1>
               <p>
@@ -88,6 +90,7 @@ function Footer() {
                 <br /> Al-Baghdadiyah Al-Gharbiyah, Jeddah 22235
               </p>
             </div>
+            </a>
           </div>
         </div>
         <div className="footerSocialContainer">

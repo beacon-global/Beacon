@@ -74,6 +74,12 @@
     width: 35%;
 }
 
+.contactCard a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .contactCardUAE{
     width: 350px;
 }
@@ -112,7 +118,7 @@
     width: 130%;
 }
 
-.numberContainer p{
+.numberContainer a{
     color: #fff;
     text-align: center;
     font-size: 14px;

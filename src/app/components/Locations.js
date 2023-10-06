@@ -27,10 +27,10 @@ function Locations() {
               plans.
             </p>
           </div>
-          <div className="hButtonContainer locationButton">
-            <div className="visibleWrapperContainer">
-              <div className="topVisibleContainer">
-                <a href="/" className="btn">
+          <a href="/">
+            <div className="hButtonContainer locationButton">
+              <div className="visibleWrapperContainer">
+                <div className="topVisibleContainer btn">
                   Explore More
                   <div className="topVisibleArrow">
                     <Image
@@ -40,10 +40,8 @@ function Locations() {
                       alt="heroContact"
                     />
                   </div>
-                </a>
-              </div>
-              <div className="bottomVisibleContainer">
-                <a href="/" className="btn">
+                </div>
+                <div className="bottomVisibleContainer btn">
                   Explore More
                   <div className="bottomVisibleArrow">
                     <Image
@@ -53,10 +51,10 @@ function Locations() {
                       alt="heroContact"
                     />
                   </div>
-                </a>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
 
         <div className="locationImgContainer">

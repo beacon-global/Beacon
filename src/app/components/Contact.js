@@ -18,10 +18,10 @@ function Contact() {
             message/call us for anyservices anywhere in UAE.
           </p>
         </div>
-        <div className="hButtonContainer contactImageButton">
-          <div className="visibleWrapperContainer">
-            <div className="topVisibleContainer">
-              <a href="/pages/Contact" className="btn">
+        <a href="/pages/Contact">
+          <div className="hButtonContainer contactImageButton">
+            <div className="visibleWrapperContainer">
+              <div className="topVisibleContainer btn">
                 Contact Us
                 <div className="topVisibleArrow">
                   <Image
@@ -31,10 +31,8 @@ function Contact() {
                     alt="heroContact"
                   />
                 </div>
-              </a>
-            </div>
-            <div className="bottomVisibleContainer">
-              <a href="/pages/Contact" className="btn">
+              </div>
+              <div className="bottomVisibleContainer btn">
                 Contact Us
                 <div className="bottomVisibleArrow">
                   <Image
@@ -44,10 +42,10 @@ function Contact() {
                     alt="heroContact"
                   />
                 </div>
-              </a>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   );

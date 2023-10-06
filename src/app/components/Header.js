@@ -9,10 +9,10 @@ function Header() {
   const menuList = [
     // "Our Presence ⮟"
     { text: "Home", href: "/" },
-    { text: "Our Presence", href: "/" },
+    // { text: "Our Presence", href: "/" },
     { text: "About Us", href: "/pages/About" },
     { text: "Services", href: "/pages/Services" },
-    { text: "Blogs", href: "/" },
+    // { text: "Blogs", href: "/" },
     { text: "Contact Us", href: "/pages/Contact" },
   ];
 
@@ -34,8 +34,8 @@ function Header() {
         <a href="/">
           <div className="logoContainer">
             <Image
-              src="/logo.svg"
-              // src="/NewSvgs/Logos/Beacon.svg"
+              // src="/logo.svg"
+              src="/NewSvgs/Logos/Beacon1.svg"
               width={180}
               height={60}
               alt="ImageHeader"
@@ -66,10 +66,10 @@ function Header() {
             </ul>
           </div>
         </div>
-        <div className="hButtonContainer headerContactButton">
-          <div className="visibleWrapperContainer">
-            <div className="topVisibleContainer">
-              <a href="tel:971 800 4392" className="btn">
+        <a href="tel:971 800 4392">
+          <div className="hButtonContainer headerContactButton">
+            <div className="visibleWrapperContainer">
+              <div className="topVisibleContainer btn">
                 <Image
                   src="/telephone.svg"
                   width={18}
@@ -77,10 +77,8 @@ function Header() {
                   alt="heroContact"
                 />
                 +971 800 4392
-              </a>
-            </div>
-            <div className="bottomVisibleContainer">
-              <a href="tel:971 800 4392" className="btn">
+              </div>
+              <div className="bottomVisibleContainer btn">
                 <Image
                   src="/telephone.svg"
                   width={18}
@@ -88,10 +86,10 @@ function Header() {
                   alt="heroContact"
                 />
                 +971 800 4392
-              </a>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
     </>
   );

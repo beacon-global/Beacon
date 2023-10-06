@@ -11,25 +11,25 @@ import Stats from "@/app/components/Stats";
 function About() {
   const servicesData = [
     {
-      img: "/NewSvgs/SVG5/MaskGroup.svg",
+      img: "/NewSvgs/SVG7/Group1.svg",
       heading: "Professionalism",
       description:
         "We perform business with high standards of integrity,ethics and professionalism. Our professionals keep the interactions with the clients fair and lawful.",
     },
     {
-      img: "/NewSvgs/SVG5/MaskGroup1.svg",
+      img: "/NewSvgs/SVG7/Group2.svg",
       heading: "Innovation",
       description:
         "Our business initiatives focus on keeping up the standards and expectations of the clients with sustainability, innovative practices and strategic principles.",
     },
     {
-      img: "/NewSvgs/SVG5/MaskGroup2.svg",
+      img: "/NewSvgs/SVG7/Group3.svg",
       heading: "Synergy",
       description:
         "Our team maintains collaboration and inclusiveness while creating a strong synergy between the individual talents and what the client demands.",
     },
     {
-      img: "/NewSvgs/SVG5/MaskGroup3.svg",
+      img: "/NewSvgs/SVG7/Group4.svg",
       heading: "Passion",
       description:
         "Growing beyond a service provider, we provide timely support and resolve concerns through constructive discussions that generate special value outcomes.",
@@ -140,7 +140,7 @@ function About() {
                       quality={100}
                       priority={true}
                       unoptimized
-                      src="/NewSvgs/SVG4/Group1.svg"
+                      src="/NewSvgs/SVG4/Ggroup1.svg"
                       width={80}
                       height={80}
                       layout="responsive"
@@ -151,7 +151,7 @@ function About() {
                       quality={100}
                       priority={true}
                       unoptimized
-                      src="/NewSvgs/SVG4/Group1.svg"
+                      src="/NewSvgs/SVG4/Ggroup1.svg"
                       width={60}
                       height={60}
                       layout="responsive"
@@ -164,7 +164,7 @@ function About() {
                       quality={100}
                       priority={true}
                       unoptimized
-                      src="/NewSvgs/SVG4/Group2.svg"
+                      src="/NewSvgs/SVG4/Ggroup2.svg"
                       width={80}
                       height={80}
                       layout="responsive"
@@ -175,7 +175,7 @@ function About() {
                       quality={100}
                       priority={true}
                       unoptimized
-                      src="/NewSvgs/SVG4/Group2.svg"
+                      src="/NewSvgs/SVG4/Ggroup2.svg"
                       width={60}
                       height={60}
                       layout="responsive"
@@ -188,7 +188,7 @@ function About() {
                       quality={100}
                       priority={true}
                       unoptimized
-                      src="/NewSvgs/SVG4/Group3.svg"
+                      src="/NewSvgs/SVG4/Ggroup3.svg"
                       width={80}
                       height={80}
                       layout="responsive"
@@ -199,7 +199,7 @@ function About() {
                       quality={100}
                       priority={true}
                       unoptimized
-                      src="/NewSvgs/SVG4/Group3.svg"
+                      src="/NewSvgs/SVG4/Ggroup3.svg"
                       width={60}
                       height={60}
                       layout="responsive"

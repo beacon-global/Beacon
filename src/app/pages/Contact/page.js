@@ -88,88 +88,100 @@ function Contact() {
                   </p>
                 </div>
                 <div className={styles.numberContainer}>
-                  <p>
+                  <a href="tel:971 502 574 396">
                     + 971 502 574 396
                     <br /> + 971 488 324 58
                     <br /> + 971 568 352 250
-                  </p>
+                  </a>
                 </div>
               </div>
             </div>
           ) : (
             <div className={styles.contactMainCard}>
               <div className={styles.contactCard}>
-                <div className={styles.contactImgContainer}>
-                  <Image
-                    src="/NewSvgs/SVG2/Group7.svg"
-                    width={72}
-                    height={72}
-                    alt="contactLocactionIcon"
-                  />
-                </div>
-                <div className={styles.contactCardContents}>
-                  <h1 className={`${styles.jeddah} servicesHeading`}>JEDDAH</h1>
-                  <p className={styles.cardDesc}>
-                    Building no. 4626, 501, 5th Floor, Hamza Shehatah St.
-                    Al-Baghdadiyah Al-Gharbiyah Jeddah 22235
-                  </p>
-                </div>
+                <a href="https://maps.app.goo.gl/UzvX5K7o9c3Cepmx9">
+                  <div className={styles.contactImgContainer}>
+                    <Image
+                      src="/NewSvgs/SVG2/Group7.svg"
+                      width={72}
+                      height={72}
+                      alt="contactLocactionIcon"
+                    />
+                  </div>
+                  <div className={styles.contactCardContents}>
+                    <h1 className={`${styles.jeddah} servicesHeading`}>
+                      JEDDAH
+                    </h1>
+                    <p className={styles.cardDesc}>
+                      Building no. 4626, 501, 5th Floor, Hamza Shehatah St.
+                      Al-Baghdadiyah Al-Gharbiyah Jeddah 22235
+                    </p>
+                  </div>
+                </a>
                 <div className={styles.numberContainer}>
-                  <p>
+                  <a href="tel:966 570 807 175">
                     + 966 570 807 175
                     <br /> + 966 539 067 414
                     <br /> + 966 531 170 957
-                  </p>
+                  </a>
                 </div>
               </div>
 
               <div className={styles.contactCard}>
-                <div className={styles.contactImgContainer}>
-                  <Image
-                    src="/NewSvgs/SVG2/Group7.svg"
-                    width={72}
-                    height={72}
-                    alt="contactLocactionIcon"
-                  />
-                </div>
-                <div className={styles.contactCardContents}>
-                  <h1 className={`${styles.jeddah} servicesHeading`}>DAMMAM</h1>
-                  <p className={styles.cardDesc}>
-                    Building no. 7447, B31, 3rd Floor, Al-Thasih St. Al-Amamrah,
-                    8th street Dammam 32415
-                  </p>
-                </div>
+                <a href="https://maps.app.goo.gl/Vk3noguNHKx7GrMD8">
+                  <div className={styles.contactImgContainer}>
+                    <Image
+                      src="/NewSvgs/SVG2/Group7.svg"
+                      width={72}
+                      height={72}
+                      alt="contactLocactionIcon"
+                    />
+                  </div>
+                  <div className={styles.contactCardContents}>
+                    <h1 className={`${styles.jeddah} servicesHeading`}>
+                      DAMMAM
+                    </h1>
+                    <p className={styles.cardDesc}>
+                      Building no. 7447, B31, 3rd Floor, Al-Thasih St.
+                      Al-Amamrah, 8th street Dammam 32415
+                    </p>
+                  </div>
+                </a>
                 <div className={styles.numberContainer}>
-                  <p>
+                  <a href="tel:966 566 416 774">
                     + 966 566 416 774
                     <br /> + 966 539 067 414
                     <br /> + 966 531 170 957
-                  </p>
+                  </a>
                 </div>
               </div>
 
               <div className={styles.contactCard}>
-                <div className={styles.contactImgContainer}>
-                  <Image
-                    src="/NewSvgs/SVG2/Group7.svg"
-                    width={72}
-                    height={72}
-                    alt="contactLocactionIcon"
-                  />
-                </div>
-                <div className={styles.contactCardContents}>
-                  <h1 className={`${styles.jeddah} servicesHeading`}>Riyadh</h1>
-                  <p className={styles.cardDesc}>
-                    Le Cygne Commercial Center 2, 6th FloorAl-Arz,
-                    Al-Olaya,Riyadh 12611
-                  </p>
-                </div>
+                <a href="https://maps.app.goo.gl/vWfGvAjAcHxV9AUT9">
+                  <div className={styles.contactImgContainer}>
+                    <Image
+                      src="/NewSvgs/SVG2/Group7.svg"
+                      width={72}
+                      height={72}
+                      alt="contactLocactionIcon"
+                    />
+                  </div>
+                  <div className={styles.contactCardContents}>
+                    <h1 className={`${styles.jeddah} servicesHeading`}>
+                      Riyadh
+                    </h1>
+                    <p className={styles.cardDesc}>
+                      Le Cygne Commercial Center 2, 6th FloorAl-Arz,
+                      Al-Olaya,Riyadh <br/> 12611
+                    </p>
+                  </div>
+                </a>
                 <div className={styles.numberContainer}>
-                  <p>
+                  <a href="tel:966 540 599 655">
                     + 966 540 599 655
                     <br /> + 966 539 067 414
                     <br /> + 966 531 170 957
-                  </p>
+                  </a>
                 </div>
               </div>
             </div>
