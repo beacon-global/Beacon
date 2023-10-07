@@ -15,7 +15,7 @@ import Stats from "./components/Stats";
 import { useEffect, useState } from "react";
 
 export default function Home() {
-  const [hideWhiteScreen, setHideWhiteScreen] = useState(false);
+  const [hideWhiteScreen, setHideWhiteScreen] = useState(true);
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {

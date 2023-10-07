@@ -848,23 +848,18 @@ li{
   position: relative;  
   white-space: nowrap;
   gap: 60px;
-  animation-timing-function: linear;
-  transition: transform 0.8s ease;
+  /* animation-timing-function: linear;
+  transition: transform 0.8s ease; */
 }
 
 .logoClients{
   height: 60px !important;
   display: inline-block;
 }
-.scrolling-logos:hover {
+
+/* .scrolling-logos:hover {
   transition: transform 2s ease !important ;
-}
-
-
-.scrolling-logos:hover .logoClients {
-  /* transform: translateX(10%);  */
-  /* transition: transform 0.1s ease ; */
-}
+} */
 
 .logosContainer{
   display: flex;

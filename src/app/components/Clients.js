@@ -1,5 +1,5 @@
 "use client";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { LeftArrowSvg, RightArrowSvg } from "./ButtonSvg";
@@ -136,20 +136,48 @@ function ScrollingLogos() {
   // const handleMouseLeave = () => {
   //   setIsHovered(false);
   // };
-  
+
   // const animationDuration = isHovered ? originalDuration * 200 : originalDuration;
   // console.log(animationDuration);
+  const controls = useAnimation();
+
+
+  const handleHoverStart = () => {
+    setIsHovered(true);
+    controls.start({
+      x: animateValue,
+      transition: {
+        repeat:Infinity,
+        duration: 180, // Adjust the duration when hovering
+        ease: "linear",
+      },
+    });
+  };
+
+  const handleHoverEnd = () => {
+    setIsHovered(false);
+    controls.start({
+      x: animateValue,
+      transition: {
+        repeat:Infinity,
+        duration: 60, // Original duration
+        ease: "linear",
+      },
+    });
+  };
+
+   useEffect(() => {
+    handleHoverEnd();
+    console.log("use")
+  }, []);
 
   return (
     <motion.div
       className="scrolling-logos"
-      initial={{ x: "50%" }}
-      animate={{ x: animateValue }}
-      transition={{
-        repeat: Infinity,
-        duration: 160,
-        ease: "linear",
-      }}
+      initial={{ x: "0%" }}
+      animate={controls}
+      onMouseEnter={handleHoverStart}
+      onMouseLeave={handleHoverEnd}
     >
       <Image
         quality={100}
