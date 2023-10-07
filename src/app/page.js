@@ -17,7 +17,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 export default function Home() {
-  const [hideWhiteScreen, setHideWhiteScreen] = useState(true);
+  const [hideWhiteScreen, setHideWhiteScreen] = useState(false);
   const [loaded, setLoaded] = useState(false);
 
   // useEffect(() => {
