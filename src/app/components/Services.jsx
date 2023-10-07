@@ -150,7 +150,7 @@ function Services() {
         >
           <div className="visibleWrapperContainer">
             <div className="topVisibleContainer">
-              <a href="/" className="btn">
+              <a className="btn">
                 Explore More
                 <div className="topVisibleArrow">
                   <Image
@@ -166,7 +166,7 @@ function Services() {
               </a>
             </div>
             <div className="bottomVisibleContainer">
-              <a href="/" className="btn">
+              <a className="btn">
                 Explore More
                 <div className="bottomVisibleArrow">
                   <Image

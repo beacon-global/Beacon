@@ -8,7 +8,7 @@ function Faq() {
       img: "/Numbers/01.svg",
       heading: "What is Beacon and what services do you offer?",
       description:
-        "Beacon is your global business advisory partner who offers you a range of services that enable your business growth and ultimate business transformation. We provide a plethora of services like Business Incorporation,Digital Marketing,Technology,Finance and Accounting,Audit and Taxation services,and Business Consulting services.",
+        "Beacon is your global business advisory partner who offers you a range of services that enable your business growth and ultimate business transformation. We provide a plethora of services like Business Incorporation, Digital Marketing, Technology, Finance and Accounting, Audit & Taxation, and Business Consulting services.",
       isAnswerVisible: true,
     },
     {

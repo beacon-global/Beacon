@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Locations from "./components/Locations";
@@ -7,7 +6,6 @@ import BusinessSetup from "./components/BusinessSetup";
 import Services from "./components/Services";
 import WhyBeacon from "./components/WhyBeacon";
 import Clients from "./components/Clients";
-import Head from "next/head";
 import Blogs from "./components/Blogs";
 import Faq from "./components/Faq";
 import Contact from "./components/Contact";
@@ -19,7 +17,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 export default function Home() {
-  const [hideWhiteScreen, setHideWhiteScreen] = useState(false);
+  const [hideWhiteScreen, setHideWhiteScreen] = useState(true);
   const [loaded, setLoaded] = useState(false);
 
   // useEffect(() => {

@@ -99,8 +99,8 @@ function Clients() {
 }
 
 function ScrollingLogos() {
-  const originalDuration = 10;
-  const [isHovered, setIsHovered] = useState(false);
+
+
   const [animateValue, setAnimateValue] = useState("-200%");
 
   useEffect(() => {
@@ -128,29 +128,59 @@ function ScrollingLogos() {
     };
   }, [animateValue]);
 
-  // const handleMouseEnter = () => {
-  //   setIsHovered(true);
-  //   console.log("hello");
-  // };
-
-  // const handleMouseLeave = () => {
-  //   setIsHovered(false);
-  // };
-  
-  // const animationDuration = isHovered ? originalDuration * 200 : originalDuration;
-  // console.log(animationDuration);
-
   return (
     <motion.div
       className="scrolling-logos"
-      initial={{ x: "50%" }}
+      initial={{ x: "20%" }}
       animate={{ x: animateValue }}
-      transition={{
-        repeat: Infinity,
-        duration: 160,
-        ease: "linear",
-      }}
+      transition={{ repeat: Infinity, duration: 210, ease: "linear" }}
     >
+      {/* <div className="logosContainer">
+        <div class="loader loader1">
+          <div class="loader__bar"></div>
+          <div class="loader__bar"></div>
+          <div class="loader__bar"></div>
+          <div class="loader__bar"></div>
+          <div class="loader__bar"></div>
+          <div class="loader__ball"></div>
+        </div>
+        <Image
+          src="/clientLogos.svg"
+          width={100}
+          height={60}
+          layout="responsive"
+          alt="ImageClients"
+          className="logoClients"
+          quality={100}
+          priority={true}
+          unoptimized
+          onLoadingComplete={(img) => setAllImagesLoaded((prev) => prev + 1)}
+        />
+        <Image
+          src="/clientLogos.svg"
+          width={100}
+          height={60}
+          layout="responsive"
+          alt="ImageClients"
+          className="logoClients"
+          quality={100}
+          priority={true}
+          unoptimized
+          onLoadingComplete={(img) => setAllImagesLoaded((prev) => prev + 1)}
+        />
+        <Image
+          src="/clientLogos.svg"
+          width={100}
+          height={60}
+          layout="responsive"
+          alt="ImageClients"
+          className="logoClients"
+          quality={100}
+          priority={true}
+          unoptimized
+          onLoadingComplete={(img) => setAllImagesLoaded((prev) => prev + 1)}
+        />
+      </div> */}
       <Image
         quality={100}
         priority={true}
