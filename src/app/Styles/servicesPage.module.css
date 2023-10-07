@@ -218,6 +218,15 @@
         height: 179px;
     }
 
+    .servicePageMCardMainContainer .cardContainer:hover::before{
+        transition: none !important;
+    }
+
+    .cardContainer:hover .sPagecardContainerOverlay {
+        height: 179px !important;
+        transition: none !important;
+      }
+
     .servicePageMCardMainContainer .cardContainer{
         gap: 15px;
     }
