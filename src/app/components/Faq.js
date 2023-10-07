@@ -35,7 +35,8 @@ function Faq() {
     {
       img: "/Numbers/05.svg",
       heading: "Do you offer website development and maintenance services?",
-      description: "Yes, we can offer website development and maintenance services for your company. Through website development, we focus on delivering websites and website applications, considering the UI/UX, design, QA testing, consulting, eCommerce solutions, CMS and other related web development services. To ensure that the website is up-to-date and works well based on the optimal standards, we offer website maintenance services, making sure all links on the site work, content gets regularly updated, and broken links get fixed.",
+      description:
+        "Beacon can assist you with digital marketing and help you take your online presence to the next level. With digital marketing, we let you connect with the prospective and existing client base which is essential to improve the brand awareness and your business.",
     },
   ]);
 
