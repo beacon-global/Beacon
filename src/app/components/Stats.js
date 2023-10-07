@@ -130,11 +130,11 @@ function Stats({ useBackgroundImage, isMainPage }) {
       <div className="statsContiner">
         <div className="statContainer">
           <h1>{count1}+</h1>
-          <p>Project Complete</p>
+          <p>Projects Completed</p>
         </div>
         <div className="statContainer">
           <h1>{count2}+</h1>
-          <p>Happy Client</p>
+          <p>Happy Clients</p>
         </div>
         <div className="statContainer">
           <h1>{count3}+</h1>

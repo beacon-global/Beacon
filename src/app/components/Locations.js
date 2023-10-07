@@ -27,7 +27,7 @@ function Locations() {
               plans.
             </p>
           </div>
-          <a href="/">
+          <a href="/pages/About">
             <div className="hButtonContainer locationButton">
               <div className="visibleWrapperContainer">
                 <div className="topVisibleContainer btn">

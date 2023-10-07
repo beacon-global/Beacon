@@ -89,9 +89,9 @@ function Contact() {
                 </div>
                 <div className={styles.numberContainer}>
                   <a href="tel:971 502 574 396">
-                    + 971 502 574 396
+                    + 971 568 352 250
+                    <br />+ 971 502 574 396
                     <br /> + 971 488 324 58
-                    <br /> + 971 568 352 250
                   </a>
                 </div>
               </div>
@@ -143,7 +143,8 @@ function Contact() {
                     </h1>
                     <p className={styles.cardDesc}>
                       Building no. 7447, B31, 3rd Floor, Al-Thasih St.
-                      Al-Amamrah, 8th street Dammam 32415
+                      Al-Amamrah, 8th street Dammam <br />
+                      32415
                     </p>
                   </div>
                 </a>
@@ -172,7 +173,7 @@ function Contact() {
                     </h1>
                     <p className={styles.cardDesc}>
                       Le Cygne Commercial Center 2, 6th FloorAl-Arz,
-                      Al-Olaya,Riyadh <br/> 12611
+                      Al-Olaya,Riyadh <br /> 12611
                     </p>
                   </div>
                 </a>
@@ -235,7 +236,7 @@ function Contact() {
                 value={formData.subject}
                 onChange={handleChange}
                 required
-                placeholder="How can we Help"
+                placeholder="How May We Assist You?"
               />
             </div>
             <div className={styles.textBox}>

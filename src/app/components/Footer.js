@@ -84,7 +84,7 @@ function Footer() {
             />
             <a href="https://maps.app.goo.gl/UzvX5K7o9c3Cepmx9">
             <div className="footerContactTextDetails">
-              <h1>Main office:</h1>
+              <h1>Head Office:</h1>
               <p>
                 Building no. 4626, Hamza Shehatah St,
                 <br /> Al-Baghdadiyah Al-Gharbiyah, Jeddah 22235

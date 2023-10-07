@@ -93,7 +93,7 @@ function Services() {
       ],
     },
   ];
-  
+
   const sellingCardData = [
     {
       img: "/NewSvgs/SVG7/G1.svg",
@@ -124,7 +124,7 @@ function Services() {
   const testimonials = [
     {
       message:
-        "Beacon has been with us throughout the phase of integrating and adapting business to the dynamic marketplace, with end-to-end business consultation services. ",
+        "Beacon has been with us throughout the phase of integrating and adapting business to the dynamic marketplace, with end-to-end business consultation services.",
       name: "Omar Abdallah",
       designation: "Riyadh, KSA",
       img: "/profilePic3.jpg",

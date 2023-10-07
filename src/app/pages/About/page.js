@@ -212,7 +212,7 @@ function About() {
                   <div>
                     <h1>Right in Time</h1>
                     <p>
-                      With Beacon, you&quot;ll never have to waste time
+                      With Beacon, you&lsquo;ll never have to waste time
                       navigating the business process to make it right. We make
                       the business setup in Saudi Arabia and UAE time-efficient
                       and easier than ever.
@@ -223,7 +223,7 @@ function About() {
                     <p>
                       Setting up a business can prove to be risky if you have no
                       professional financial assistance. Our consultants let you
-                      minimise the potential financial risks through financial
+                      minimise potential financial risks through financial
                       consultation.
                     </p>
                   </div>

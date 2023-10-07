@@ -40,7 +40,7 @@ function Services() {
       img: "/NewSvgs/SVG2/hh/Group2.svg",
       heading: "Financial & Accounting",
       description:
-        "Through the regular management of financial reports, accounting, and related activities of the business, we are involved in the analysis and reporting of financial processes.",
+        "Through the regular management of financial reports, accounting, and related business activities, we are involved in the analysis and reporting of financial processes.",
       details: [
         "Financial Statement Preparation",
         "Tax Planning & Preparation",
@@ -123,7 +123,7 @@ function Services() {
             <div className="servicesDescContainer">
               <p className="servicesDesc">{data.description}</p>
             </div>
-            <div className="cardContainerOverlay">
+            {/* <div className="cardContainerOverlay">
               <div className="cardContainerOverlayContent">
                 <h2>{data.heading}</h2>
                 <div className="overLayDesc">
@@ -137,7 +137,7 @@ function Services() {
                   <p>{data.details[7]}</p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         ))}
       </div>
@@ -149,36 +149,37 @@ function Services() {
           onMouseLeave={() => setIsHovered(false)}
         >
           <div className="visibleWrapperContainer">
-            <div className="topVisibleContainer btn" >
-              Our Services
-              <div className="topVisibleArrow">
-                <Image
-                  src={imageSrc}
-                  width={23}
-                  height={23}
-                  alt="heroContact"
-                  quality={100}
-                  priority={true}
-                  unoptimized
-                />
-              </div>
+            <div className="topVisibleContainer">
+              <a href="/" className="btn">
+                Explore More
+                <div className="topVisibleArrow">
+                  <Image
+                    src={imageSrc}
+                    width={23}
+                    height={23}
+                    alt="heroContact"
+                    quality={100}
+                    priority={true}
+                    unoptimized
+                  />
+                </div>
+              </a>
             </div>
-            <div
-              className="bottomVisibleContainer btn"
-              
-            >
-              Our Services
-              <div className="bottomVisibleArrow">
-                <Image
-                  src={imageSrc}
-                  width={23}
-                  height={23}
-                  alt="heroContact"
-                  quality={100}
-                  priority={true}
-                  unoptimized
-                />
-              </div>
+            <div className="bottomVisibleContainer">
+              <a href="/" className="btn">
+                Explore More
+                <div className="bottomVisibleArrow">
+                  <Image
+                    src={imageSrc}
+                    width={23}
+                    height={23}
+                    alt="heroContact"
+                    quality={100}
+                    priority={true}
+                    unoptimized
+                  />
+                </div>
+              </a>
             </div>
           </div>
         </div>

@@ -11,11 +11,11 @@ function Contact() {
         <div className="contactDescContainer">
           <p className="contactDesc">
             If you think we can do the job for you, do not hesitate. Drop <br />{" "}
-            us a message/call us for anyservices anywhere in UAE.
+            us a message/call us for any services anywhere in UAE.
           </p>
           <p className="mContactDesc">
             If you think we can do the job for you, do not hesitate. Drop us a
-            message/call us for anyservices anywhere in UAE.
+            message/call us for any services anywhere in UAE.
           </p>
         </div>
         <a href="/pages/Contact">
