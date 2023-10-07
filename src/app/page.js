@@ -85,7 +85,7 @@ export default function Home() {
         <WhyBeacon />
         <Stats useBackgroundImage={useBackgroundImage} isMainPage={true} />
         <Clients />
-        <Blogs />
+        {/* <Blogs /> */}
         <Faq />
         <Contact />
         <Footer />
