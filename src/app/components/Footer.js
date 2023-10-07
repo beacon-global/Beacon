@@ -44,6 +44,26 @@ function Footer() {
               quality={100}
               priority={true}
               unoptimized
+              src="/NewSvgs/SVG3/hh/Icon-1.svg"
+              width={46}
+              height={46}
+              alt="ImageFooter2"
+            />
+            <div className="footerContactTextDetails footerContactTextDetailsEmail">
+              <h1>Email us:</h1>
+              <a
+                href="mailto:info@bmcglobal.com"
+                style={{ textTransform: "none" }}
+              >
+                info@bmcglobal.com
+              </a>
+            </div>
+          </div>
+          <div className="footerContactDetails">
+            <Image
+              quality={100}
+              priority={true}
+              unoptimized
               src="/NewSvgs/SVG3/hh/Icon.svg"
               width={46}
               height={46}
@@ -54,22 +74,11 @@ function Footer() {
               style={{ whiteSpace: "nowrap" }}
             >
               <h1>Call us on:</h1>
-              <a href="tel:966 570 807 175">+ 966 570 807 175</a>
-            </div>
-          </div>
-          <div className="footerContactDetails">
-            <Image
-              quality={100}
-              priority={true}
-              unoptimized
-              src="/NewSvgs/SVG3/hh/Icon-1.svg"
-              width={46}
-              height={46}
-              alt="ImageFooter2"
-            />
-            <div className="footerContactTextDetails footerContactTextDetailsEmail">
-              <h1>Email us:</h1>
-              <a href="mailto:someone@example.com" style={{textTransform:"none"}}>info@bmcglobal.co</a>
+              <a href="tel:966 570 807 175">
+                + 966 570 807 175
+                <br />
+                +971 56 299 1722
+              </a>
             </div>
           </div>
           <div className="footerContactDetails">
@@ -83,13 +92,13 @@ function Footer() {
               alt="ImageFooter2"
             />
             <a href="https://maps.app.goo.gl/UzvX5K7o9c3Cepmx9">
-            <div className="footerContactTextDetails">
-              <h1>Head Office:</h1>
-              <p>
-                Building no. 4626, Hamza Shehatah St,
-                <br /> Al-Baghdadiyah Al-Gharbiyah, Jeddah 22235
-              </p>
-            </div>
+              <div className="footerContactTextDetails">
+                <h1>Head Office:</h1>
+                <p>
+                  Building no. 4626, Hamza Shehatah St,
+                  <br /> Al-Baghdadiyah Al-Gharbiyah, Jeddah 22235
+                </p>
+              </div>
             </a>
           </div>
         </div>

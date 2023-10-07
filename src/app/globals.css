@@ -1265,6 +1265,10 @@ li{
   gap: 15px;
 }
 
+.footerContactTextDetails{
+  height: 40px;
+}
+
 .footerContactTextDetails h1{
   color: #FFF;
   font-size: 13px;
@@ -2155,6 +2159,10 @@ li{
   
   .footerContactDetails{
     justify-content: flex-start;
+  }
+
+  .footerContactTextDetails{
+    height: auto;
   }
 
   .footerContactTextDetails p{

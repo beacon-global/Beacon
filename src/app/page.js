@@ -14,27 +14,13 @@ import MobileHeader from "./components/MobileHeader";
 import Stats from "./components/Stats";
 import { useEffect, useState } from "react";
 
-import { motion } from "framer-motion";
-
 export default function Home() {
   const [hideWhiteScreen, setHideWhiteScreen] = useState(false);
   const [loaded, setLoaded] = useState(false);
 
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     setLoaded(true);
-  //   }, 1000); // 1000 milliseconds = 1 second
-
-  //   // Clear the timer when the component unmounts
-  //   return () => clearTimeout(timer);
-  // }, []);
-
   useEffect(() => {
-    // Delay for 1 second (1000 milliseconds)
     const timeoutId = setTimeout(() => {
-      // Hide the white screen by changing its opacity
       const whiteScreen = document.getElementById("white-screen");
-      // console.log(whiteScreen,"dsjkfh");
       if (whiteScreen) {
         // whiteScreen.style.opacity = '0';
         whiteScreen.classList.add("hidden");
@@ -70,12 +56,6 @@ export default function Home() {
         </div>
       )}
       <div className="mainContainer">
-        {/* <motion.div
-        initial={{ opacity: 0, y: "100%" }} // Initial state (hidden and below)
-        animate={loaded ? { opacity: 1, y: 0 } : {}} // Animate to visible position when loaded
-        transition={{ duration: 0.5 }} // Animation duration (adjust as needed)
-      > */}
-        {/* Your content goes here */}
         <Hero />
         <Locations />
         {/* <BusinessSetup /> */}
@@ -87,7 +67,6 @@ export default function Home() {
         <Faq />
         <Contact />
         <Footer />
-        {/* </motion.div> */}
       </div>
     </>
   );
