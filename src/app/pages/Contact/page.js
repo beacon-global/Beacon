@@ -5,6 +5,8 @@ import Header from "@/app/components/Header";
 import MobileHeader from "@/app/components/MobileHeader";
 import Image from "next/image";
 import Footer from "@/app/components/Footer";
+import emailjs from "@emailjs/browser";
+import emailjsConfig from "../../../../emailjs.config";
 
 function Contact() {
   const [showUAECard, setShowUAECard] = useState(false);
@@ -27,6 +29,8 @@ function Contact() {
     message: "",
   });
 
+  
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -34,8 +38,30 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
+  
+    emailjs
+      .sendForm(
+        emailjsConfig.serviceId,
+        emailjsConfig.templateId,
+        e.target,
+        emailjsConfig.userId
+      )
+      .then((response) => {
+        console.log("Email sent successfully!", response);
+        // Optionally, you can reset the form fields here
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          subject: "",
+          message: "",
+        });
+      })
+      .catch((error) => {
+        console.error("Email could not be sent:", error);
+      });
   };
+  
   return (
     <>
       <Header />
@@ -236,11 +262,11 @@ function Contact() {
                 value={formData.subject}
                 onChange={handleChange}
                 required
-                placeholder="How May We Assist You?"
+                placeholder="How can we help"
               />
             </div>
             <div className={styles.textBox}>
-              <label htmlFor="message">We can help you?</label>
+              <label htmlFor="message">How May We Assist You?</label>
               <textarea
                 id="message"
                 name="message"
