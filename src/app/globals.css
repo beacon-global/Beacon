@@ -221,6 +221,7 @@ li{
   flex-direction: column;
   position: relative;
   overflow: hidden;
+  padding: 15px 5px;
 }
 
 .heroContainer .heroButton{
