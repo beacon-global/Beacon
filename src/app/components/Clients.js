@@ -74,6 +74,9 @@ function Clients() {
                 width={67}
                 height={60}
                 alt="person"
+                quality={100}
+                priority={true}
+                unoptimized
               />
               <div style={{ display: "flex", flexDirection: "column" }}>
                 {/* Display current testimonial's profile */}
@@ -141,13 +144,12 @@ function ScrollingLogos() {
   // console.log(animationDuration);
   const controls = useAnimation();
 
-
   const handleHoverStart = () => {
     setIsHovered(true);
     controls.start({
       x: animateValue,
       transition: {
-        repeat:Infinity,
+        repeat: Infinity,
         duration: 180, // Adjust the duration when hovering
         ease: "linear",
       },
@@ -159,16 +161,16 @@ function ScrollingLogos() {
     controls.start({
       x: animateValue,
       transition: {
-        repeat:Infinity,
+        repeat: Infinity,
         duration: 60, // Original duration
         ease: "linear",
       },
     });
   };
 
-   useEffect(() => {
+  useEffect(() => {
     handleHoverEnd();
-    console.log("use")
+    console.log("use");
   }, []);
 
   return (
