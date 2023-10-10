@@ -71,3 +71,15 @@ export default function Home() {
     </>
   );
 }
+
+
+export async function getStaticProps() {
+  // Fetch data here (e.g., from an API)
+  const data = "Some data fetched at build time";
+
+  return {
+    props: {
+      data,
+    },
+  };
+}

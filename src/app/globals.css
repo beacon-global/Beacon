@@ -1884,6 +1884,10 @@ li{
     font-size: 14px;
   }
 
+  .beaconDescContainer{
+    height: 100px;
+  }
+
   .beaconDescContainer p{
     text-align: left !important;
   }

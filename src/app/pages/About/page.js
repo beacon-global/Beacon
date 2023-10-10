@@ -80,7 +80,7 @@ function About() {
             />
           </div>
           <p>
-            Founded in 2022, Beacon Global comprises a team of passionate
+            Founded in 2021, Beacon Global comprises a team of passionate
             accountants, auditors, and financial analysts. With a complete
             understanding of the need for a reliable auditing and accounting
             firm that offers excellent services to clients, we deliver the

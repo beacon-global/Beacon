@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    // images: {
-    //     formats: ['image/jpg', 'image/png', 'image/svg'], // Add any other desired formats
-    //     quality: 100, // Adjust the quality value as needed (0-100)
-    //   },
-}
+  reactStrictMode: true,
+  output: "export",
+  images: { unoptimized: true },
+  trailingSlash: true,
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
