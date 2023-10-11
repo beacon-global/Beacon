@@ -14,6 +14,8 @@ import MobileHeader from "./components/MobileHeader";
 import Stats from "./components/Stats";
 import { useEffect, useState } from "react";
 import Head from "next/head";
+import linkImage from "../../public /linkImage.png";
+import { useRouter } from "next/router";
 
 export default function Home() {
   const [hideWhiteScreen, setHideWhiteScreen] = useState(false);
@@ -34,10 +36,14 @@ export default function Home() {
 
   const useBackgroundImage = true;
 
+  const router = useRouter();
+  const baseUrl = "https://bmcglobal.co" || "https://beacon-alpha.vercel.app";
+  const imageUrl = `${baseUrl}${router.asPath}${linkImage}`;
+
   return (
     <>
       <Head>
-        <meta property="og:image" content="/linkImage.png" />
+        <meta property="og:image" content={imageUrl} />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1024" />
         <meta property="og:image:height" content="1024" />
@@ -78,14 +84,3 @@ export default function Home() {
     </>
   );
 }
-
-// export async function getStaticProps() {
-//   // Fetch data here (e.g., from an API)
-//   const data = "Some data fetched at build time";
-
-//   return {
-//     props: {
-//       data,
-//     },
-//   };
-// }

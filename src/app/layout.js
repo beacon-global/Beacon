@@ -1,7 +1,6 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
-import linkImage from "../../public/linkImage.png"
-import { useRouter } from "next/router";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,9 +11,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  const router = useRouter();
-  const baseUrl =  "https://bmcglobal.co"  || "https://beacon-alpha.vercel.app";
-  const imageUrl = `${baseUrl}${router.asPath}${linkImage}`;
+
 
   return (
     <html lang="en">
