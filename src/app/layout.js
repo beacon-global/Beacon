@@ -1,5 +1,7 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
+import linkImage from "../../public/linkImage.png"
+import { useRouter } from "next/router";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -10,6 +12,10 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const router = useRouter();
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://bmcglobal.co";
+  const imageUrl = `${baseUrl}${router.asPath}${linkImage}`;
+
   return (
     <html lang="en">
       <head>
@@ -19,7 +25,7 @@ export default function RootLayout({ children }) {
           type="image/svg+xml"
           sizes="16x16 32x32 48x48"
         />
-        <meta property="og:image" content="/linkImage.png" />
+        <meta property="og:image" content={imageUrl} />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1024" />
         <meta property="og:image:height" content="1024" />
