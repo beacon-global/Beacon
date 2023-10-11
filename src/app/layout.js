@@ -13,7 +13,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   const router = useRouter();
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://bmcglobal.co";
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://bmcglobal.co"  || "https://beacon-alpha.vercel.app";
   const imageUrl = `${baseUrl}${router.asPath}${linkImage}`;
 
   return (
