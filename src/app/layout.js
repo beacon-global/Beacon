@@ -19,6 +19,7 @@ export default function RootLayout({ children }) {
           type="image/svg+xml"
           sizes="16x16 32x32 48x48"
         />
+        <meta property="og:image" content="/linkImage.png" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
