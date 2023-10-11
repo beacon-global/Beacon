@@ -37,10 +37,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <meta
-          property="og:image"
-          content="/linkImage.png"
-        />
+        <meta property="og:image" content="/linkImage.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="1024" />
+        <meta property="og:image:height" content="1024" />
       </Head>
       <Header />
       <MobileHeader />

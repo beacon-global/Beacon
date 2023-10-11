@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import Head from "next/head";
 
 function Header() {
   const [isActive, setIsActive] = useState("Home");
@@ -30,6 +31,12 @@ function Header() {
 
   return (
     <>
+      <Head>
+        <meta property="og:image" content="/linkImage.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="1024" />
+        <meta property="og:image:height" content="1024" />
+      </Head>
       <div className="hContainer bg-white">
         <a href="/">
           <div className="logoContainer">
