@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
       <head>
         <link
           rel="icon"
-          href="/GREEN.svg"
+          href="/GREEN.png"
           type="image/svg+xml"
           sizes="16x16 32x32 48x48"
         />
