@@ -13,6 +13,7 @@ import Footer from "./components/Footer";
 import MobileHeader from "./components/MobileHeader";
 import Stats from "./components/Stats";
 import { useEffect, useState } from "react";
+import Head from "next/head";
 
 export default function Home() {
   const [hideWhiteScreen, setHideWhiteScreen] = useState(false);
@@ -35,6 +36,12 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <meta
+          property="og:image"
+          content="/linkImage.png"
+        />
+      </Head>
       <Header />
       <MobileHeader />
       {!hideWhiteScreen && (
@@ -72,14 +79,13 @@ export default function Home() {
   );
 }
 
+export async function getStaticProps() {
+  // Fetch data here (e.g., from an API)
+  const data = "Some data fetched at build time";
 
-// export async function getStaticProps() {
-//   // Fetch data here (e.g., from an API)
-//   const data = "Some data fetched at build time";
-
-//   return {
-//     props: {
-//       data,
-//     },
-//   };
-// }
+  return {
+    props: {
+      data,
+    },
+  };
+}
