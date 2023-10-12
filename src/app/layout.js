@@ -42,7 +42,8 @@ export default function RootLayout({ children }) {
           type="image/svg+xml"
           sizes="16x16 32x32 48x48"
         />
-        <meta property="og:image" content="/linkImage.png" />
+        {/* <meta property="og:image" content="/linkImage.png" /> */}
+        <meta property="og:image" content="https://beacon-alpha.vercel.app/linkImage.png" />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1024" />
         <meta property="og:image:height" content="1024" />
