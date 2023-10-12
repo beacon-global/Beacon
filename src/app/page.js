@@ -36,12 +36,12 @@ export default function Home() {
 
   return (
     <>
-      <Head>
+      {/* <Head>
         <meta property="og:image" content="/linkImage.png" />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1024" />
         <meta property="og:image:height" content="1024" />
-      </Head>
+      </Head> */}
       <Header />
       <MobileHeader />
       {!hideWhiteScreen && (
@@ -79,13 +79,4 @@ export default function Home() {
   );
 }
 
-// export async function getStaticProps() {
-//   // Fetch data here (e.g., from an API)
-//   const data = "Some data fetched at build time";
 
-//   return {
-//     props: {
-//       data,
-//     },
-//   };
-// }

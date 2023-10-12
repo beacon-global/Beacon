@@ -25,7 +25,7 @@ function Contact() {
                 Contact Us
                 <div className="topVisibleArrow">
                   <Image
-                    src="/whiteArrow.png"
+                    src="/whiteArrow.svg"
                     width={23}
                     height={23}
                     alt="heroContact"
@@ -36,7 +36,7 @@ function Contact() {
                 Contact Us
                 <div className="bottomVisibleArrow">
                   <Image
-                    src="/whiteArrow.png"
+                    src="/whiteArrow.svg"
                     width={23}
                     height={23}
                     alt="heroContact"

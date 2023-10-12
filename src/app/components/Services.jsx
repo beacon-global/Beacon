@@ -149,8 +149,8 @@ function Services() {
           onMouseLeave={() => setIsHovered(false)}
         >
           <div className="visibleWrapperContainer">
-            <div className="topVisibleContainer">
-              <a className="btn">
+            <div className="topVisibleContainer btn">
+              
                 Explore More
                 <div className="topVisibleArrow">
                   <Image
@@ -163,10 +163,8 @@ function Services() {
                     unoptimized
                   />
                 </div>
-              </a>
             </div>
-            <div className="bottomVisibleContainer">
-              <a className="btn">
+            <div className="bottomVisibleContainer btn">
                 Explore More
                 <div className="bottomVisibleArrow">
                   <Image
@@ -179,7 +177,6 @@ function Services() {
                     unoptimized
                   />
                 </div>
-              </a>
             </div>
           </div>
         </div>
