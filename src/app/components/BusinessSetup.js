@@ -18,7 +18,7 @@ function BusinessSetup() {
       <div className="businessVideoContainer">
         <div className="ksa">
           <Image
-            src="/Backgrounds/KSA.png"
+            src="/KSA.png"
             width={586}
             height={300}
             layout="responsive"
