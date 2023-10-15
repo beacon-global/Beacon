@@ -33,6 +33,9 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const baseUrl =
+    "https://bmcglobal.co/linkImageWhatsApp.png" ||
+    "https://beacon-alpha.vercel.app/linkImageWhatsApp.png";
   return (
     <html lang="en">
       <Head>
@@ -42,7 +45,7 @@ export default function RootLayout({ children }) {
           type="image/svg+xml"
           sizes="16x16 32x32 48x48"
         />
-        <meta property="og:image" content="/linkImageWhatsApp.png" />
+        <meta property="og:image" content={baseUrl} />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1024" />
         <meta property="og:image:height" content="1024" />
