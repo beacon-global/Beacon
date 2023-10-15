@@ -38,6 +38,14 @@ export default function RootLayout({ children }) {
     "https://beacon-alpha.vercel.app/linkImageWhatsApp.png";
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="icon"
+          href="/GREEN.svg"
+          type="image/svg+xml"
+          sizes="16x16 32x32 48x48"
+        />
+      </head>
       <Head>
         <link
           rel="icon"
