@@ -1373,7 +1373,7 @@ li{
   top: 50%;
   left: 50%;
   transform: translate(-55%, -50%);
-  transition: transform 0.5s ease;
+  transition: transform 0.5s ease !important;
 }
 
 .topVisibleContainer {
@@ -1428,7 +1428,7 @@ li{
 }
 
 
-.serviceContainer .topVisibleArrow{
+/* .serviceContainer .topVisibleArrow{
   transform: translate(304%, -60%);
 }
 
@@ -1443,7 +1443,7 @@ li{
 
 .serviceContainer .hButtonContainer:hover .topVisibleArrow{
   transform: translate(395.5%, -100%);
-}
+} */
 /* ButtonArrow Anim or Transi Start */
 
 
