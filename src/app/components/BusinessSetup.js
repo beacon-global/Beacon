@@ -17,6 +17,7 @@ function BusinessSetup() {
       </div>
       <div className="businessVideoContainer">
         <div className="ksa">
+      <a href="https://ksa.bmcglobal.co">
           <Image
             src="/KSA.png"
             width={586}
@@ -46,9 +47,11 @@ function BusinessSetup() {
               />
             </div>
           </div>
+        </a>
         </div>
 
         <div className="uae">
+        <a href="https://uae.bmcglobal.co">
           <Image
             src="/UAE.png"
             width={586}
@@ -73,6 +76,7 @@ function BusinessSetup() {
               />
             </div>
           </div>
+          </a>
         </div>
       </div>
     </div>

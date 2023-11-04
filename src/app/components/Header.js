@@ -1,24 +1,29 @@
 "use client";
-import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 function Header() {
   const [isActive, setIsActive] = useState("Home");
+  const [isPresenceOpen, setIsPresenceOpen] = useState(false);
 
   const menuList = [
-    // "Our Presence ⮟"
     { text: "Home", href: "/" },
-    // { text: "Our Presence", href: "/" },
+    { text: "Our Presence ▼", href: "#", hasDropdown: true },
     { text: "About Us", href: "/pages/About" },
     { text: "Services", href: "/pages/Services" },
-    // { text: "Blogs", href: "/" },
     { text: "Contact Us", href: "/pages/Contact" },
   ];
 
   const handleClick = (text) => {
-    setIsActive(text);
-    localStorage.setItem("activeMenuItem", text);
+    if (text === "Our Presence ▼") {
+      // Toggle the dropdown visibility
+      setIsPresenceOpen(!isPresenceOpen);
+    } else {
+      setIsPresenceOpen(false);
+      setIsActive(text);
+      localStorage.setItem("activeMenuItem", text);
+    }
   };
 
   useEffect(() => {
@@ -54,13 +59,19 @@ function Header() {
                   key={index}
                   className={`huListTransitionWrapper ${
                     item.text === isActive ? "active" : ""
-                  }`}
+                  } ${item.hasDropdown ? "hasDropdown" : ""}`}
                   onClick={() => handleClick(item.text)}
                 >
                   <a href={item.href}>
                     <div className="listHoverTop">{item.text}</div>
                     <div className="listHoverBottom">{item.text}</div>
                   </a>
+                  {item.hasDropdown && isPresenceOpen && (
+                    <div className="dropdownContent">
+                      <p><a href="https://ksa.bmcglobal.co">Saudi Arabia</a></p>
+                      <p><a href="https://uae.bmcglobal.co">United Arab Emirates</a></p>
+                    </div>
+                  )}
                 </li>
               ))}
             </ul>

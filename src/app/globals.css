@@ -179,9 +179,54 @@ li{
   background-color: rgba(247, 247, 248, 1);
 }
 
+/* .hMenuContainer{
+  height: 100%;
+}
+
+.hMenu{
+  height: 100%;
+} */
+
 /* .logoContainer img{
   height: 70px !important;
 } */
+
+li.huListTransitionWrapper.hasDropdown{
+  overflow: visible;
+}
+
+li.huListTransitionWrapper.hasDropdown:hover .listHoverTop{
+  transform: translate(0%, -0%);
+}
+li.huListTransitionWrapper.hasDropdown .listHoverBottom{
+  transform: translate(0%, -0%);
+  visibility: hidden;
+}
+
+.dropdownContent{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  z-index: 1;
+  background-color: rgba(247, 247, 248, 1);
+
+  width: 195px;
+  height: 65px;
+  padding: 10px;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dropdownContent p{
+  padding: 0px 5px;
+}
+
+.dropdownContent p:hover{
+  background-color: #13670B;
+  color: white;
+}
 
 .hUlList{
   color: #02040E;

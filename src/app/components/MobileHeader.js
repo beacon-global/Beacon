@@ -64,22 +64,47 @@ const MLink = styled.a`
   }
 `;
 
+const Dropdown = styled.div`
+  display: ${({ isDropdownOpen }) => (isDropdownOpen ? "flex" : "none")};
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+`;
+
+const DropdownLink = styled.a`
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  &:hover {
+    color: #555;
+  }
+`;
+
 function MobileHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
   return (
     <HeaderContainer className="mHeader">
       <Container className="mHeaderContainer">
-      <a href="/">
-        <Logo>
-          {/* <Image src="/NewSvgs/Logos/Beacon.svg" width={120} height={30} alt="ImageHeader" /> */}
-          <Image src="/NewSvgs/Logos/Beacon11.svg" width={120} height={30} alt="ImageHeader" />
-          
-        </Logo>
+        <a href="/">
+          <Logo>
+            {/* <Image src="/NewSvgs/Logos/Beacon.svg" width={120} height={30} alt="ImageHeader" /> */}
+            <Image
+              src="/NewSvgs/Logos/Beacon11.svg"
+              width={120}
+              height={30}
+              alt="ImageHeader"
+            />
+          </Logo>
         </a>
         <ToggleButton onClick={toggleMenu}>
           {isMenuOpen ? (
@@ -114,13 +139,31 @@ function MobileHeader() {
             </svg>
           )}
         </ToggleButton>
-        <Card $isMenuOpen={isMenuOpen} style={{ display: isMenuOpen ? "flex" : "none" }}>
-          <MLink href="/" className="mLinks">Home</MLink>
-          {/* <MLink href="/" className="mLinks">Our Presence</MLink> */}
-          <MLink href="/pages/About" className="mLinks">About Us</MLink>
-          <MLink href="/pages/Services" className="mLinks">Services</MLink>
+        <Card
+          $isMenuOpen={isMenuOpen}
+          style={{ display: isMenuOpen ? "flex" : "none" }}
+        >
+          <MLink href="/" className="mLinks">
+            Home
+          </MLink>
+          <div className="mLinks" onClick={toggleDropdown}>
+            Our Presence ▼
+            <Dropdown isDropdownOpen={isDropdownOpen}>
+              <DropdownLink href="https://ksa.bmcglobal.co">Saudi Arabia</DropdownLink>
+              <DropdownLink href="https://uae.bmcglobal.co">United Arab Emirates</DropdownLink>
+              {/* Add more location links as needed */}
+            </Dropdown>
+          </div>
+          <MLink href="/pages/About" className="mLinks">
+            About Us
+          </MLink>
+          <MLink href="/pages/Services" className="mLinks">
+            Services
+          </MLink>
           {/* <MLink href="/" className="mLinks">Blogs</MLink> */}
-          <MLink href="/pages/Contact" className="mLinks">Contact Us</MLink>
+          <MLink href="/pages/Contact" className="mLinks">
+            Contact Us
+          </MLink>
           <div className="hButtonContainer headerContactButton mHeaderBtn">
             <a href="tel:971 800 4392" className="btn mBtn">
               <Image
