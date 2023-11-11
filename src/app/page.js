@@ -26,7 +26,7 @@ export default function Home() {
         // whiteScreen.style.opacity = '0';
         whiteScreen.classList.add("hidden");
       }
-    }, 2500); // 1000 milliseconds = 1 second
+    }, 1000); // 1000 milliseconds = 1 second
 
     // Cleanup the timeout to avoid memory leaks
     return () => clearTimeout(timeoutId);
@@ -36,30 +36,15 @@ export default function Home() {
 
   return (
     <>
-      {/* <Head>
-        <meta property="og:image" content="/linkImage.png" />
-        <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="1024" />
-        <meta property="og:image:height" content="1024" />
-      </Head> */}
       <Header />
       <MobileHeader />
       {!hideWhiteScreen && (
-        <div
-          id="white-screen"
-          // style={{
-          //   opacity: hideWhiteScreen ? 0 : 1,
-          //   transition: "opacity 0.8s cubic-bezier(0.25, 0.1, 0.25, 1)",
-          // }}
-        >
-          <div class="loader">
-            <div class="loader__bar"></div>
-            <div class="loader__bar"></div>
-            <div class="loader__bar"></div>
-            <div class="loader__bar"></div>
-            <div class="loader__bar"></div>
-            <div class="loader__ball"></div>
+        <div id="white-screen">
+          <div class="loading">
+            <div class="outer"></div>
+            <div class="inner"></div>
           </div>
+          <h1>Your Global Advisory Partner For Business Success</h1>
         </div>
       )}
       <div className="mainContainer">
@@ -79,13 +64,13 @@ export default function Home() {
   );
 }
 
-// export async function getStaticProps() {
-//   // Fetch data here (e.g., from an API)
-//   const data = "Some data fetched at build time";
+export async function getStaticProps() {
+  // Fetch data here (e.g., from an API)
+  const data = "Some data fetched at build time";
 
-//   return {
-//     props: {
-//       data,
-//     },
-//   };
-// }
+  return {
+    props: {
+      data,
+    },
+  };
+}

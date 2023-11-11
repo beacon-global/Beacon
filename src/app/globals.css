@@ -1133,6 +1133,15 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   margin: 0px;
 }
 
+.faqNumber{
+  color: #13670B;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 28.8px */
+  text-transform: capitalize;
+}
+
 .faqContentContainer{
   display: flex;
   flex-direction: column;
@@ -1196,7 +1205,7 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
 }
 
 .contactContainer {
-  background: url("../../public/NewSvgs/Backgrounds/bg5.png");
+  background: url("../../public/NewSvgs/Backgrounds/bg7.png");
   width: 100%;
   height: 500px;
   object-fit: cover;
@@ -2135,6 +2144,11 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
     margin-top: 1px;
   }
 
+  .faqNumber{
+    font-size: 18px;
+    font-weight: 600;
+  }
+
   .faqContentMainContainer{
     width: 100%;
     display: flex;
@@ -2330,6 +2344,7 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
 
   background: #fff; /* Use the background color directly */
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -2526,4 +2541,51 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
 100% {
   transform: scale(1, 1);
 }
+}
+
+.loading {
+  margin: 100px auto;
+  width: 100px;
+  position: relative;
+}
+
+.outer, 
+.inner {  
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  animation: spin 1.5s infinite;
+  animation-timing-function: cubic-bezier(.26,.66,.36,.34);
+  transform: perspective(200px);
+}
+
+.outer {
+  border: 10px solid #13670B ;
+  border-radius: 50%;
+  animation-delay: 0.4s;
+}
+
+.inner {
+  content: "";
+  width: 82px;
+  height: 82px;
+  display: block;
+  top: 9px;
+  left: 9px;
+  position: relative;
+  border-radius: 50%;
+  border: 10px solid #45a63c;
+  animation-delay: 1.5s;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateY(0);
+  }
+  40% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
 }

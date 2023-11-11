@@ -68,8 +68,12 @@ function Header() {
                   </a>
                   {item.hasDropdown && isPresenceOpen && (
                     <div className="dropdownContent">
-                      <p><a href="https://ksa.bmcglobal.co">Saudi Arabia</a></p>
-                      <p><a href="https://uae.bmcglobal.co">United Arab Emirates</a></p>
+                      <a href="https://ksa.bmcglobal.co" target="_blank">
+                        <p>Saudi Arabia</p>
+                      </a>
+                      <a href="https://uae.bmcglobal.co" target="_blank">
+                        <p>United Arab Emirates</p>
+                      </a>
                     </div>
                   )}
                 </li>

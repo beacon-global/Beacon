@@ -70,7 +70,7 @@ function About() {
               quality={100}
               priority={true}
               unoptimized
-              src="/NewSvgs/Backgrounds/abBg2.png"
+              src="/NewSvgs/Backgrounds/abBg1.png"
               width={1212}
               height={600}
               layout="responsive"
@@ -244,61 +244,6 @@ function About() {
         </div>
 
         <div className={styles.aboutUscontainer3}>
-          {/* <div className={styles.topContainer}>
-            <div className={styles.imgContainer}>
-              <Image
-              quality={100} priority={true} unoptimized 
-                src="/AboutUsPage/aboutPage2.svg"
-                width={576}
-                height={500}
-                layout="responsive"
-                alt="aboutus2"
-              />
-            </div>
-            <div className={styles.contentContainer}>
-              <h1>Our Mission</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur. Eu elit vitae bibendum
-                bibendum accumsan facilisis libero. At arcu augue ante varius.
-                Integer tellus donec nunc montes rhoncus adipiscing fringilla.
-                Elit dictumst neque tempus porta lorem egestas tellus convallis.
-                Accumsan ullamcorper nunc sit quis egestas thre lectus facilisis
-                nulla fringilla. Vestibulum dis mauris nullam tellus interdum.
-                Consectetur felis euismod future imperdiet. Lorem ipsum dolor
-                sit amet consectetur. Integer tellus donec nunc montes rhoncus
-                adipiscing fringilla. Elit dictumst neque tempus porta lorem
-                egestas tellu
-              </p>
-            </div>
-          </div>
-          <div className={`${styles.topContainer} ${styles.mBottomContainer}`}>
-            <div className={styles.contentContainer}>
-              <h1>Our Vision</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur. Eu elit vitae bibendum
-                bibendum accumsan facilisis libero. At arcu augue ante varius.
-                Integer tellus donec nunc montes rhoncus adipiscing fringilla.
-                Elit dictumst neque tempus porta lorem egestas tellus convallis.
-                Accumsan ullamcorper nunc sit quis egestas thre lectus facilisis
-                nulla fringilla. Vestibulum dis mauris nullam tellus interdum.
-                Consectetur felis euismod future imperdiet. Lorem ipsum dolor
-                sit amet consectetur. Integer tellus donec nunc montes rhoncus
-                adipiscing fringilla. Elit dictumst neque tempus porta lorem
-                egestas tellu
-              </p>
-            </div>
-            <div className={styles.imgContainer}>
-              <Image
-              quality={100} priority={true} unoptimized 
-                src="/AboutUsPage/aboutPage1.svg"
-                width={576}
-                height={500}
-                layout="responsive"
-                alt="aboutus2"
-              />
-            </div>
-          </div> */}
-
           <div className={styles.vissionMissionMainContainer}>
             <div className={styles.vissionMissionContent}>
               <div className={styles.mission}>
@@ -334,7 +279,7 @@ function About() {
                 quality={100}
                 priority={true}
                 unoptimized
-                src="/AboutUsPage/aboutPage.svg"
+                src="/AboutUsPage/aboutPage.png"
                 width={1212}
                 height={350}
                 layout="responsive"
@@ -346,7 +291,7 @@ function About() {
                 quality={100}
                 priority={true}
                 unoptimized
-                src="/AboutUsPage/maboutPage.svg"
+                src="/AboutUsPage/maboutPage.jpg"
                 width={327}
                 height={150}
                 layout="responsive"

@@ -65,7 +65,7 @@ const MLink = styled.a`
 `;
 
 const Dropdown = styled.div`
-  display: ${({ isDropdownOpen }) => (isDropdownOpen ? "flex" : "none")};
+  display: ${({ isDropdownOpenAttr }) => (isDropdownOpenAttr ? "flex" : "none")};
   flex-direction: column;
   gap: 10px;
   margin-top: 10px;
@@ -148,9 +148,9 @@ function MobileHeader() {
           </MLink>
           <div className="mLinks" onClick={toggleDropdown}>
             Our Presence ▼
-            <Dropdown isDropdownOpen={isDropdownOpen}>
-              <DropdownLink href="https://ksa.bmcglobal.co">Saudi Arabia</DropdownLink>
-              <DropdownLink href="https://uae.bmcglobal.co">United Arab Emirates</DropdownLink>
+            <Dropdown isDropdownOpenAttr={isDropdownOpen}>
+              <DropdownLink href="https://ksa.bmcglobal.co" target="_blank">Saudi Arabia</DropdownLink>
+              <DropdownLink href="https://uae.bmcglobal.co" target="_blank">United Arab Emirates</DropdownLink>
               {/* Add more location links as needed */}
             </Dropdown>
           </div>
