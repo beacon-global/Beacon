@@ -40,11 +40,13 @@ export default function Home() {
       <MobileHeader />
       {!hideWhiteScreen && (
         <div id="white-screen">
-          <div class="loading">
-            <div class="outer"></div>
-            <div class="inner"></div>
+          <div class="pulse">
+            <div></div>
+            <div></div>
           </div>
-          <h1>Your Global Advisory Partner For Business Success</h1>
+          {/* <div>
+            <h1>Your Global Advisory Partner For Business Success</h1>
+          </div> */}
         </div>
       )}
       <div className="mainContainer">
