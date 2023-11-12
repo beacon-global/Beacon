@@ -13,23 +13,30 @@ import Footer from "./components/Footer";
 import MobileHeader from "./components/MobileHeader";
 import Stats from "./components/Stats";
 import { useEffect, useState } from "react";
-import Head from "next/head";
 
 export default function Home() {
   const [hideWhiteScreen, setHideWhiteScreen] = useState(false);
-  const [loaded, setLoaded] = useState(false);
+  const [textIndex, setTextIndex] = useState(0);
+  const textOptions = ["Incorporation", "Accounting","Auditing","Digital Strategy","Digital Marketing"];
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       const whiteScreen = document.getElementById("white-screen");
       if (whiteScreen) {
-        // whiteScreen.style.opacity = '0';
         whiteScreen.classList.add("hidden");
       }
-    }, 1000); // 1000 milliseconds = 1 second
+    }, 2500); // 1000 milliseconds = 1 second
 
     // Cleanup the timeout to avoid memory leaks
     return () => clearTimeout(timeoutId);
+  }, []);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTextIndex((prevIndex) => (prevIndex + 1) % textOptions.length);
+    }, 450); 
+
+    return () => clearInterval(interval);
   }, []);
 
   const useBackgroundImage = true;
@@ -40,13 +47,15 @@ export default function Home() {
       <MobileHeader />
       {!hideWhiteScreen && (
         <div id="white-screen">
-          <div class="pulse">
-            <div></div>
-            <div></div>
+          <div className="outer-circle">
+            <div className="inner-circle"></div>
           </div>
-          {/* <div>
-            <h1>Your Global Advisory Partner For Business Success</h1>
-          </div> */}
+          <div className="changeTextContainer">
+            <h1 className="spinnerText">
+              Your Global Advisory Partner For
+            </h1>
+            <h1 className="changeText">{textOptions[textIndex]}</h1>
+          </div>
         </div>
       )}
       <div className="mainContainer">
