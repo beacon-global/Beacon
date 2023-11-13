@@ -25,7 +25,7 @@ export default function Home() {
       if (whiteScreen) {
         whiteScreen.classList.add("hidden");
       }
-    }, 2500); // 1000 milliseconds = 1 second
+    }, 250000000); // 1000 milliseconds = 1 second
 
     // Cleanup the timeout to avoid memory leaks
     return () => clearTimeout(timeoutId);
