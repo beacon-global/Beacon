@@ -611,7 +611,7 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
 
 .cardMainContainer{
   display: flex;
-  gap: 30px;
+  gap: 28px;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
@@ -622,12 +622,12 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   gap: 30px;
   padding-top: 60px;
   padding-bottom: 60px;
-  padding: 60px 30px;
+  padding: 60px 26px;
 }
 
 .cardContainer {
-  width: 328px;
-  width: 31.4%;
+  /* width: 328px; */
+  width: 31%;
   /* height: 304px; */
   /* flex-shrink: 0; */
   background-color: rgba(247, 247, 248, 1);
@@ -840,8 +840,7 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
 }
 
 .beaconContainer{
-  width: 330px;
-  /* height: 143px; */
+  width: 31%;
   display: flex;
   gap: 15px;
 }
@@ -862,9 +861,7 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
 }
 
 .beaconDesc{
-  width: 289px;
   color: #58595B;
-  /* font-size: 15px; */
   font-style: normal;
   font-weight: 400;
   line-height: 140%; /* 22.4px */
@@ -2332,10 +2329,10 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   width: 100%;
   height: 100vh;
   background-color: white;
-  z-index: 9999; /* Make sure it's on top of other content */
-  /* transition: height 2s cubic-bezier(0.25, 0.1, 0.25, 1); */
-  transition: height 1.4s ease-out;
-  opacity: 1; /* Initially visible */
+  z-index: 9999; 
+  transition: height 1s ease-out;
+  transition-delay: 2s;
+  opacity: 1; 
   overflow: hidden;
 }
 
