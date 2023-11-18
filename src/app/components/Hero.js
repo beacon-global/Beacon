@@ -44,7 +44,7 @@ function Hero({ initialScreenWidth }) {
       <div className="imageWithText">
         <Image
           className="hImage"
-          src="/hero.png"
+          src="/hero.webp"
           alt="Asian Engineer"
           width={1366}
           height={670}
@@ -55,7 +55,7 @@ function Hero({ initialScreenWidth }) {
         />
         <Image
           className="MobilehImage"
-          src="/MobileHero.png"
+          src="/MobileHero.webp"
           alt="Asians Engineer"
           width={0}
           height={600}

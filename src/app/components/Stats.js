@@ -2,8 +2,8 @@
 import React, { useEffect, useState, useRef } from "react";
 
 function Stats({ useBackgroundImage, isMainPage }) {
-  const largeBackgroundImageUrl = "/NewSvgs/Backgrounds/bg4.png";
-  const smallBackgroundImageUrl = "/NewSvgs/Backgrounds/bg4.png";
+  const largeBackgroundImageUrl = "/NewSvgs/Backgrounds/bg4.webp";
+  const smallBackgroundImageUrl = "/NewSvgs/Backgrounds/bg4.webp";
   const mainPagePadding = "192px 135px";
   const aboutPagePadding = "0px 135px";
   const [count1, setCount1] = useState(0);

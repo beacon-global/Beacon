@@ -5,16 +5,18 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export":"next build && next export",
+    "export": "next build && next export",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
+    "@lottiefiles/react-lottie-player": "^3.5.3",
     "autoprefixer": "10.4.15",
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",
     "framer-motion": "^10.16.4",
+    "lottie-react": "^2.4.0",
     "next": "13.4.19",
     "postcss": "8.4.29",
     "react": "18.2.0",

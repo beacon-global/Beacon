@@ -13,6 +13,7 @@ import Footer from "./components/Footer";
 import MobileHeader from "./components/MobileHeader";
 import Stats from "./components/Stats";
 import { useEffect, useState } from "react";
+import LoadingCircle from "./components/LoadingCircle";
 
 export default function Home() {
   const [hideWhiteScreen, setHideWhiteScreen] = useState(false);
@@ -47,9 +48,7 @@ export default function Home() {
       <MobileHeader />
       {!hideWhiteScreen && (
         <div id="white-screen">
-          <div className="outer-circle">
-            <div className="inner-circle"></div>
-          </div>
+          <LoadingCircle/>
           <div className="changeTextContainer">
             <h1 className="spinnerText">
               Your Global Advisory Partner For

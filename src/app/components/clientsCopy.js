@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { LeftArrowSvg, RightArrowSvg } from "./ButtonSvg";
-import ScrollableRow from "./ScrollableRow";
 
 function Clients() {
   const testimonials = [
@@ -47,7 +46,6 @@ function Clients() {
       </div>
       <div className="clientsImgContainer">
         <ScrollingLogos />
-        {/* <ScrollableRow /> */}
       </div>
       <div className="testimonialMainContainer">
         <div className="testimonialLeftContainer">

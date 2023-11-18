@@ -70,7 +70,7 @@ function About() {
               quality={100}
               priority={true}
               unoptimized
-              src="/NewSvgs/Backgrounds/abBg1.png"
+              src="/NewSvgs/Backgrounds/abBg1.webp"
               width={1212}
               height={600}
               layout="responsive"
@@ -279,7 +279,7 @@ function About() {
                 quality={100}
                 priority={true}
                 unoptimized
-                src="/AboutUsPage/aboutPage.png"
+                src="/AboutUsPage/aboutPage.webp"
                 width={1212}
                 height={350}
                 layout="responsive"
@@ -291,7 +291,7 @@ function About() {
                 quality={100}
                 priority={true}
                 unoptimized
-                src="/AboutUsPage/maboutPage.jpg"
+                src="/AboutUsPage/maboutPage.webp"
                 width={327}
                 height={150}
                 layout="responsive"
