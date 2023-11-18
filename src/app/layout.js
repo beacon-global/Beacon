@@ -57,6 +57,28 @@ export default function RootLayout({ children }) {
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1024" />
         <meta property="og:image:height" content="1024" />
+
+        <link
+          rel="preload"
+          href="/Fonts/Sora-Medium.ttf"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/Fonts/Sora-Light.ttf"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/Fonts/Sora-Regular.ttf"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
       </Head>
       <body className={inter.className}>{children}</body>
     </html>
