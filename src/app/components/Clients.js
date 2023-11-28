@@ -166,7 +166,7 @@ function ScrollingLogos() {
       >
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo1.webp"
           width={100}
@@ -177,7 +177,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo2.webp"
           width={100}
@@ -188,7 +188,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo3.webp"
           width={100}
@@ -199,7 +199,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo4.webp"
           width={100}
@@ -210,7 +210,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo5.webp"
           width={100}
@@ -221,7 +221,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo6.webp"
           width={100}
@@ -232,7 +232,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo9.webp"
           width={100}
@@ -243,7 +243,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo10.webp"
           width={100}
@@ -254,7 +254,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo11.webp"
           width={100}
@@ -265,7 +265,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo12.webp"
           width={100}
@@ -276,7 +276,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo13.webp"
           width={100}
@@ -287,7 +287,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo15.webp"
           width={100}
@@ -298,7 +298,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo17.webp"
           width={100}
@@ -309,7 +309,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo18.webp"
           width={100}
@@ -320,7 +320,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo20.webp"
           width={100}
@@ -331,7 +331,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo22.webp"
           width={100}
@@ -342,7 +342,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo1.webp"
           width={100}
@@ -353,7 +353,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo2.webp"
           width={100}
@@ -364,7 +364,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo3.webp"
           width={100}
@@ -375,7 +375,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo4.webp"
           width={100}
@@ -386,7 +386,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo5.webp"
           width={100}
@@ -397,7 +397,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo6.webp"
           width={100}
@@ -408,7 +408,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo9.webp"
           width={100}
@@ -419,7 +419,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo10.webp"
           width={100}
@@ -430,7 +430,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo11.webp"
           width={100}
@@ -441,7 +441,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo12.webp"
           width={100}
@@ -452,7 +452,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo13.webp"
           width={100}
@@ -463,7 +463,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo15.webp"
           width={100}
@@ -474,7 +474,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo17.webp"
           width={100}
@@ -485,7 +485,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo18.webp"
           width={100}
@@ -496,7 +496,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo20.webp"
           width={100}
@@ -507,7 +507,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo22.webp"
           width={100}
@@ -518,7 +518,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo1.webp"
           width={100}
@@ -529,7 +529,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo2.webp"
           width={100}
@@ -540,7 +540,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo3.webp"
           width={100}
@@ -551,7 +551,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo4.webp"
           width={100}
@@ -562,7 +562,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo5.webp"
           width={100}
@@ -573,7 +573,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo6.webp"
           width={100}
@@ -584,7 +584,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo9.webp"
           width={100}
@@ -595,7 +595,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo10.webp"
           width={100}
@@ -606,7 +606,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo11.webp"
           width={100}
@@ -617,7 +617,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo12.webp"
           width={100}
@@ -628,7 +628,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo13.webp"
           width={100}
@@ -639,7 +639,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo15.webp"
           width={100}
@@ -650,7 +650,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo17.webp"
           width={100}
@@ -661,7 +661,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo18.webp"
           width={100}
@@ -672,7 +672,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo20.webp"
           width={100}
@@ -683,7 +683,7 @@ function ScrollingLogos() {
         />
         <Image
           quality={100}
-          priority={true}
+          loading="lazy"
           unoptimized
           src="/clients/brands/webp/logo22.webp"
           width={100}
