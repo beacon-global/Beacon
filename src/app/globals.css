@@ -66,6 +66,10 @@ li{
   cursor: pointer;
 }
 
+.MobileLottieContainer{
+  display: none;
+}
+
 .testimonialButtonContainer{
   display: flex;
   gap: 10px;
@@ -1233,7 +1237,7 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   gap: 35px;
 }
 
-.footercontent li{
+.footercontent p{
   color: #FFF;
   font-size: 16px;
   font-style: normal;
@@ -1573,6 +1577,14 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
     font-size: 12px !important;
   }
 
+  .DesktopLottieContainer{
+    display: none;
+  }
+
+  .MobileLottieContainer{
+    display: block;
+  }
+
   .businessHeading{
     margin-bottom: 3px;
   }
@@ -1662,21 +1674,21 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   }
 
   #white-screen .changeTextContainer{
-    margin-left: -40px;
+    margin-left: 0px;
+    flex-direction: column;
     gap: 5px;
   }
 
   .changeTextContainer .spinnerText{
     text-align: center;
-    font-size: 3.5vw;
+    font-size: 5vw;
     white-space: nowrap;
   }
 
   .changeTextContainer .changeText{
-    text-align: left;
-    font-size: 3.5vw;
+    text-align: center;
+    font-size: 5vw;
     white-space: nowrap;
-    width: 75px;
   }
 
   .hContainer{
@@ -2301,6 +2313,7 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   height: 0;
 }
 
+
 #white-screen {
   height: 100%;
 
@@ -2310,6 +2323,35 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   align-items: center;
   justify-content: center;
   gap: 20px;
+}
+
+/* Cortana Animation outer-circle Start */
+
+
+.changeTextContainer{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 110px;
+  margin-bottom: 0px;
+}
+
+.spinnerText{
+  color: #02040E;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 28.8px */
+  text-transform: capitalize;
+}
+
+.changeText {
+  font-size: 24px;
+  font-weight: 600;
+  width: 270px;
+  color: #13670B;
 }
 
 .loader {
@@ -2546,22 +2588,6 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   }
 }
 
-.changeTextContainer{
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
-  margin-left: 110px;
-  margin-bottom: 120px;
-}
 
-.spinnerText{
-  font-size: 15px;
-}
 
-.changeText {
-  font-size: 15px;
-  font-weight: 600;
-  width: 270px;
-  color: #13670B;
-}
+

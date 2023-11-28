@@ -1,12 +1,14 @@
 "use client";
 import React, { useState } from "react";
 import styles from "../../Styles/contact.module.css";
-import Header from "@/app/components/Header";
-import MobileHeader from "@/app/components/MobileHeader";
 import Image from "next/image";
-import Footer from "@/app/components/Footer";
 import emailjs from "@emailjs/browser";
 import emailjsConfig from "../../../../emailjs.config";
+import dynamic from "next/dynamic";
+
+const Header = dynamic(() => import("@/app/components/Header"));
+const MobileHeader = dynamic(() => import("@/app/components/MobileHeader"));
+const Footer = dynamic(() => import("@/app/components/Footer"));
 
 function Contact() {
   const [showUAECard, setShowUAECard] = useState(false);

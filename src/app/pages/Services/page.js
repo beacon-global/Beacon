@@ -2,11 +2,13 @@
 import React, { useState } from "react";
 import styles from "../../Styles/servicesPage.module.css";
 import Image from "next/image";
-import Header from "@/app/components/Header";
-import MobileHeader from "@/app/components/MobileHeader";
-import { LeftArrowSvg, RightArrowSvg } from "../../components/ButtonSvg";
-import Faq from "@/app/components/Faq";
-import Footer from "@/app/components/Footer";
+import dynamic from "next/dynamic";
+
+const LoadingCircle = dynamic(() => import("@/app/components/LoadingCircle"));
+const Header = dynamic(() => import("@/app/components/Header"));
+const MobileHeader = dynamic(() => import("@/app/components/MobileHeader"));
+const Faq = dynamic(() => import("@/app/components/Faq"));
+const Footer = dynamic(() => import("@/app/components/Footer"));
 
 function Services() {
   const servicePageData = [

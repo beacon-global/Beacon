@@ -1,9 +1,7 @@
 import Head from "next/head";
 import "./globals.css";
-import { Inter } from "next/font/google";
 import localFont from 'next/font/local'
 
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Beacon - Your Global Advisory Partner For Business Success",
@@ -76,42 +74,15 @@ export default function RootLayout({ children }) {
           type="image/svg+xml"
           sizes="16x16 32x32 48x48"
         />
-      </head>
-      <Head>
-        <link
-          rel="icon"
-          href="/GREEN.svg"
-          type="image/svg+xml"
-          sizes="16x16 32x32 48x48"
+
+        <meta
+          property="og:image"
+          content="https://bmcglobal.co/linkImageWhatsApp.png"
         />
-        <meta property="og:image" content="https://uae.bmcglobal.co/linkImageWhatsApp.png" />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1024" />
         <meta property="og:image:height" content="1024" />
-
-        {/* <link
-          rel="preload"
-          href="/Fonts/Sora-Medium.ttf"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
-          href="/Fonts/Sora-Light.ttf"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
-          href="/Fonts/Sora-Regular.ttf"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        /> */}
-      </Head>
-      
+      </head>
       <body className={Sora.className}>{children}</body>
     </html>
   );

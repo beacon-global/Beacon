@@ -1,28 +1,29 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 function Header() {
   const [isActive, setIsActive] = useState("Home");
   const [isPresenceOpen, setIsPresenceOpen] = useState(false);
 
+  const pathname = usePathname();
+
+
   const menuList = [
     { text: "Home", href: "/" },
     { text: "Our Presence ▼", href: "#", hasDropdown: true },
-    { text: "About Us", href: "/pages/About" },
-    { text: "Services", href: "/pages/Services" },
-    { text: "Contact Us", href: "/pages/Contact" },
+    { text: "About Us", href: "/pages/About/" },
+    { text: "Services", href: "/pages/Services/" },
+    { text: "Contact Us", href: "/pages/Contact/" },
   ];
 
   const handleClick = (text) => {
     if (text === "Our Presence ▼") {
-      // Toggle the dropdown visibility
       setIsPresenceOpen(!isPresenceOpen);
     } else {
       setIsPresenceOpen(false);
-      setIsActive(text);
-      localStorage.setItem("activeMenuItem", text);
+
     }
   };
 
@@ -39,12 +40,10 @@ function Header() {
         <a href="/">
           <div className="logoContainer">
             <Image
-              // src="/logo.svg"
               src="/NewSvgs/Logos/Beacon11.svg"
               width={180}
               height={60}
               alt="ImageHeader"
-              // layout="responsive"
               quality={100}
               priority={true}
               unoptimized
@@ -58,8 +57,12 @@ function Header() {
                 <li
                   key={index}
                   className={`huListTransitionWrapper ${
-                    item.text === isActive ? "active" : ""
+                    pathname !== undefined &&
+                    pathname !== null &&
+                    pathname !== "" &&
+                    pathname === item.href ? "active" : ""
                   } ${item.hasDropdown ? "hasDropdown" : ""}`}
+                  
                   onClick={() => handleClick(item.text)}
                 >
                   <a href={item.href}>

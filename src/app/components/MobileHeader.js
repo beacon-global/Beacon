@@ -1,84 +1,6 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import styled from "styled-components";
-
-const HeaderContainer = styled.div`
-  background-color: #ffffff;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 50;
-`;
-
-const Container = styled.div`
-  width: 100%;
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-`;
-
-const Logo = styled.div`
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #333;
-`;
-
-const ToggleButton = styled.button`
-  font-size: 1rem;
-  color: #02040e;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-
-  &:focus {
-    outline: none;
-  }
-`;
-
-const Card = styled.div`
-  position: fixed;
-  top: 4rem;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #ffffff;
-  z-index: 52;
-  display: ${({ isMenuOpen }) => (isMenuOpen ? "flex" : "none")};
-  transition: display 0.3s ease-in-out;
-  flex-direction: column;
-  align-items: flex-end;
-  padding: 24px;
-  gap: 15px;
-`;
-
-const MLink = styled.a`
-  text-decoration: none;
-  color: #333;
-  font-size: 1rem;
-  &:hover {
-    color: #555;
-  }
-`;
-
-const Dropdown = styled.div`
-  display: ${({ isDropdownOpenAttr }) => (isDropdownOpenAttr ? "flex" : "none")};
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 10px;
-`;
-
-const DropdownLink = styled.a`
-  text-decoration: none;
-  color: #333;
-  font-size: 1rem;
-  &:hover {
-    color: #555;
-  }
-`;
 
 function MobileHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -93,10 +15,30 @@ function MobileHeader() {
   };
 
   return (
-    <HeaderContainer className="mHeader">
-      <Container className="mHeaderContainer">
+    <div
+      style={{
+        backgroundColor: "#ffffff",
+        position: "fixed",
+        top: 0,
+        left: 0,
+        right: 0,
+        zIndex: 50,
+      }}
+      className="mHeader"
+    >
+      <div
+        style={{
+          width: "100%",
+          margin: 0,
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          height: "100%",
+        }}
+        className="mHeaderContainer"
+      >
         <a href="/">
-          <Logo>
+          <div style={{ fontSize: "1.25rem", fontWeight: 600, color: "#333" }}>
             {/* <Image src="/NewSvgs/Logos/Beacon.svg" width={120} height={30} alt="ImageHeader" /> */}
             <Image
               src="/NewSvgs/Logos/Beacon11.svg"
@@ -104,9 +46,19 @@ function MobileHeader() {
               height={30}
               alt="ImageHeader"
             />
-          </Logo>
+          </div>
         </a>
-        <ToggleButton onClick={toggleMenu}>
+        <button
+          onClick={toggleMenu}
+          style={{
+            fontSize: "1rem",
+            color: "#02040e",
+            backgroundColor: "transparent",
+            border: "none",
+            cursor: "pointer",
+            outline: "none",
+          }}
+        >
           {isMenuOpen ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -138,33 +90,53 @@ function MobileHeader() {
               />
             </svg>
           )}
-        </ToggleButton>
-        <Card
-          $isMenuOpen={isMenuOpen}
-          style={{ display: isMenuOpen ? "flex" : "none" }}
+        </button>
+        <div
+          style={{
+            position: "fixed",
+            top: "4rem",
+            left: 0,
+            width: "100vw",
+            height: "100vh",
+            backgroundColor: "#ffffff",
+            zIndex: 52,
+            display: isMenuOpen ? "flex" : "none",
+            flexDirection: "column",
+            alignItems: "flex-end",
+            padding: "24px",
+            gap: "15px",
+          }}
         >
-          <MLink href="/" className="mLinks">
+          <a href="/" style={{ textDecoration: "none", color: "#333", fontSize: "1rem" }} className="mLinks">
             Home
-          </MLink>
-          <div className="mLinks" onClick={toggleDropdown}>
+          </a>
+          <div
+            style={{ textDecoration: "none", color: "#333", fontSize: "1rem", cursor: "pointer" }}
+            className="mLinks"
+            onClick={toggleDropdown}
+          >
             Our Presence ▼
-            <Dropdown isDropdownOpenAttr={isDropdownOpen}>
-              <DropdownLink href="https://ksa.bmcglobal.co" target="_blank">Saudi Arabia</DropdownLink>
-              <DropdownLink href="https://uae.bmcglobal.co" target="_blank">United Arab Emirates</DropdownLink>
+            <div
+              style={{ display: isDropdownOpen ? "flex" : "none", flexDirection: "column", gap: "10px", marginTop: "10px" }}
+            >
+              <a href="https://ksa.bmcglobal.co" target="_blank" style={{ textDecoration: "none", color: "#333", fontSize: "1rem" }}>Saudi Arabia</a>
+              <a href="https://uae.bmcglobal.co" target="_blank" style={{ textDecoration: "none", color: "#333", fontSize: "1rem" }}>United Arab Emirates</a>
               {/* Add more location links as needed */}
-            </Dropdown>
+            </div>
           </div>
-          <MLink href="/pages/About" className="mLinks">
+          <a href="/pages/About" style={{ textDecoration: "none", color: "#333", fontSize: "1rem" }} className="mLinks">
             About Us
-          </MLink>
-          <MLink href="/pages/Services" className="mLinks">
+          </a>
+          <a href="/pages/Services" style={{ textDecoration: "none", color: "#333", fontSize: "1rem" }} className="mLinks">
             Services
-          </MLink>
-          {/* <MLink href="/" className="mLinks">Blogs</MLink> */}
-          <MLink href="/pages/Contact" className="mLinks">
+          </a>
+          <a href="/pages/Contact" style={{ textDecoration: "none", color: "#333", fontSize: "1rem" }} className="mLinks">
             Contact Us
-          </MLink>
-          <div className="hButtonContainer headerContactButton mHeaderBtn">
+          </a>
+          <div
+            style={{ backgroundColor: "#11215B" }}
+            className="hButtonContainer headerContactButton mHeaderBtn"
+          >
             <a href="tel:971 800 4392" className="btn mBtn">
               <Image
                 src="/telephone.svg"
@@ -175,9 +147,9 @@ function MobileHeader() {
               +971 800 4392
             </a>
           </div>
-        </Card>
-      </Container>
-    </HeaderContainer>
+        </div>
+      </div>
+    </div>
   );
 }
 

@@ -1,12 +1,15 @@
 "use client";
-import Header from "@/app/components/Header";
-import MobileHeader from "@/app/components/MobileHeader";
 import styles from "../../Styles/aboutus.module.css";
 import React, { useState } from "react";
 import Image from "next/image";
-import Contact from "@/app/components/Contact";
-import Footer from "@/app/components/Footer";
-import Stats from "@/app/components/Stats";
+import dynamic from "next/dynamic";
+
+
+const Header = dynamic(() => import("@/app/components/Header"));
+const MobileHeader = dynamic(() => import("@/app/components/MobileHeader"));
+const Stats = dynamic(() => import('@/app/components/Stats'));
+const Contact = dynamic(() => import('@/app/components/Contact'));
+const Footer = dynamic(() => import('@/app/components/Footer'));
 
 function About() {
   const servicesData = [
@@ -279,7 +282,7 @@ function About() {
                 quality={100}
                 priority={true}
                 unoptimized
-                src="/AboutUsPage/aboutPage.webp"
+                src="/AboutUsPage/aboutpage.webp"
                 width={1212}
                 height={350}
                 layout="responsive"
@@ -291,7 +294,7 @@ function About() {
                 quality={100}
                 priority={true}
                 unoptimized
-                src="/AboutUsPage/maboutPage.webp"
+                src="/AboutUsPage/maboutpage.webp"
                 width={327}
                 height={150}
                 layout="responsive"

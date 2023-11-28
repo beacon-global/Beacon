@@ -1,44 +1,44 @@
 "use client";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Locations from "./components/Locations";
-import BusinessSetup from "./components/BusinessSetup";
-import Services from "./components/Services";
-import WhyBeacon from "./components/WhyBeacon";
-import Clients from "./components/Clients";
-import Blogs from "./components/Blogs";
-import Faq from "./components/Faq";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import MobileHeader from "./components/MobileHeader";
-import Stats from "./components/Stats";
 import { useEffect, useState } from "react";
 import LoadingCircle from "./components/LoadingCircle";
+import dynamic from "next/dynamic";
+
+const Header = dynamic(() => import("@/app/components/Header"));
+const MobileHeader = dynamic(() => import("@/app/components/MobileHeader"));
+const Hero = dynamic(() => import("@/app/components/Hero"));
+const Locations = dynamic(() => import("@/app/components/Locations"));
+const Services = dynamic(() => import("@/app/components/Services"));
+const BusinessSetup = dynamic(() => import("@/app/components/BusinessSetup"));
+const Clients = dynamic(() => import("@/app/components/Clients"));
+const Stats = dynamic(() => import("@/app/components/Stats"));
+const WhyBeacon = dynamic(() => import("@/app/components/WhyBeacon"));
+const Faq = dynamic(() => import("@/app/components/Faq"));
+const Contact = dynamic(() => import("@/app/components/Contact"));
+const Footer = dynamic(() => import("@/app/components/Footer"));
 
 export default function Home() {
-  const [hideWhiteScreen, setHideWhiteScreen] = useState(false);
   const [textIndex, setTextIndex] = useState(0);
-  const textOptions = ["Incorporation", "Accounting","Auditing","Digital Strategy","Digital Marketing"];
+  const textOptions = ["Growth", "Success", "Strategy", "Expansion"];
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       const whiteScreen = document.getElementById("white-screen");
       if (whiteScreen) {
+        // whiteScreen.style.opacity = '0';
         whiteScreen.classList.add("hidden");
       }
-    }, 2000); // 1000 milliseconds = 1 second
+    }, 600);
 
-    // Cleanup the timeout to avoid memory leaks
     return () => clearTimeout(timeoutId);
   }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setTextIndex((prevIndex) => (prevIndex + 1) % textOptions.length);
-    }, 450); 
+    }, 450);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [textOptions.length]);
 
   const useBackgroundImage = true;
 
@@ -46,17 +46,16 @@ export default function Home() {
     <>
       <Header />
       <MobileHeader />
-      {!hideWhiteScreen && (
-        <div id="white-screen">
-          <LoadingCircle/>
-          <div className="changeTextContainer">
-            <h1 className="spinnerText">
-              Your Global Advisory Partner For
-            </h1>
-            <h1 className="changeText">{textOptions[textIndex]}</h1>
-          </div>
+      <div id="white-screen">
+        <LoadingCircle />
+        <div className="changeTextContainer">
+          <h1 className="spinnerText">Your Global Advisory Partner For</h1>
+          <h1 className="changeText">
+            <span className="spinnerText"> Business </span>{" "}
+            {textOptions[textIndex]}
+          </h1>
         </div>
-      )}
+      </div>
       <div className="mainContainer">
         <Hero />
         <Locations />
@@ -74,13 +73,13 @@ export default function Home() {
   );
 }
 
-export async function getStaticProps() {
-  // Fetch data here (e.g., from an API)
-  const data = "Some data fetched at build time";
+// export async function getStaticProps() {
+//   // Fetch data here (e.g., from an API)
+//   const data = "Some data fetched at build time";
 
-  return {
-    props: {
-      data,
-    },
-  };
-}
+//   return {
+//     props: {
+//       data,
+//     },
+//   };
+// }

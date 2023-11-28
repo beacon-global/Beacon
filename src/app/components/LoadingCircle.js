@@ -1,37 +1,41 @@
-"use client"
-import React, { useEffect, useState } from "react";
+"use client";
+import React from "react";
 import Lottie from "lottie-react";
-import groovyWalkAnimation from "../../../public/circleGlobal.json";
+import loaderAnimation from "../../../public/circleGlobal.json";
 
-const LoadingCircle = () => {
-    const DesktopSize = {
-    width: "100px", // Adjust the width as needed
-    height: "100px", // Adjust the height as needed
-  };
+const LoadingCircle = ({onLoadedImages}) => {
+  
 
-    const MobileSize = {
+  const DesktopAnimationStyle = {
     width: "50px", // Adjust the width as needed
-    height: "50px", // Adjust the height as needed
+    height: "50px",
   };
 
-  const [isMobileScreen, setIsMobileScreen] = useState(false);
+  const MobileAnimationStyle ={
+    width: "25px", // Adjust the width as needed
+    height: "25px",
+  }
 
-  useEffect(() => {
-    const checkScreenSize = () => {
-      setIsMobileScreen(window.innerWidth < 600);
-    };
-
-    window.addEventListener("resize", checkScreenSize);
-
-    checkScreenSize();
-
-    return () => {
-      window.removeEventListener("resize", checkScreenSize);
-    };
-  }, []);
-
-
-  return <Lottie animationData={groovyWalkAnimation} loop={true} style={isMobileScreen ? MobileSize : DesktopSize}/>;
+  return (
+    <>
+    <div className='DesktopLottieContainer'>
+      <Lottie
+      onLoadedImages={onLoadedImages}
+        animationData={loaderAnimation}
+        loop={true}
+        style={DesktopAnimationStyle}
+      />
+    </div>
+    <div className='MobileLottieContainer'>
+      <Lottie
+        onLoadedImages={onLoadedImages}
+        animationData={loaderAnimation}
+        loop={true}
+        style={MobileAnimationStyle}
+      />
+    </div>
+    </>
+  );
 };
 
 export default LoadingCircle;
