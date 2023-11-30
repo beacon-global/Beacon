@@ -49,6 +49,7 @@ function MobileHeader() {
           </div>
         </a>
         <button
+          aria-label="HamBurgerMenu"
           onClick={toggleMenu}
           style={{
             fontSize: "1rem",
@@ -107,30 +108,76 @@ function MobileHeader() {
             gap: "15px",
           }}
         >
-          <a href="/" style={{ textDecoration: "none", color: "#333", fontSize: "1rem" }} className="mLinks">
+          <a
+            href="/"
+            style={{ textDecoration: "none", color: "#333", fontSize: "1rem" }}
+            className="mLinks"
+          >
             Home
           </a>
           <div
-            style={{ textDecoration: "none", color: "#333", fontSize: "1rem", cursor: "pointer" }}
+            style={{
+              textDecoration: "none",
+              color: "#333",
+              fontSize: "1rem",
+              cursor: "pointer",
+            }}
             className="mLinks"
             onClick={toggleDropdown}
           >
             Our Presence ▼
             <div
-              style={{ display: isDropdownOpen ? "flex" : "none", flexDirection: "column", gap: "10px", marginTop: "10px" }}
+              style={{
+                display: isDropdownOpen ? "flex" : "none",
+                flexDirection: "column",
+                gap: "10px",
+                marginTop: "10px",
+              }}
             >
-              <a href="https://ksa.bmcglobal.co" target="_blank" style={{ textDecoration: "none", color: "#333", fontSize: "1rem" }}>Saudi Arabia</a>
-              <a href="https://uae.bmcglobal.co" target="_blank" style={{ textDecoration: "none", color: "#333", fontSize: "1rem" }}>United Arab Emirates</a>
+              <a
+                href="https://ksa.bmcglobal.co"
+                target="_blank"
+                style={{
+                  textDecoration: "none",
+                  color: "#333",
+                  fontSize: "1rem",
+                }}
+              >
+                Saudi Arabia
+              </a>
+              <a
+                href="https://uae.bmcglobal.co"
+                target="_blank"
+                style={{
+                  textDecoration: "none",
+                  color: "#333",
+                  fontSize: "1rem",
+                }}
+              >
+                United Arab Emirates
+              </a>
               {/* Add more location links as needed */}
             </div>
           </div>
-          <a href="/pages/About" style={{ textDecoration: "none", color: "#333", fontSize: "1rem" }} className="mLinks">
+          <a
+            href="/pages/About"
+            style={{ textDecoration: "none", color: "#333", fontSize: "1rem" }}
+            className="mLinks"
+          >
             About Us
           </a>
-          <a href="/pages/Services" style={{ textDecoration: "none", color: "#333", fontSize: "1rem" }} className="mLinks">
+          <a
+            href="/pages/Services"
+            style={{ textDecoration: "none", color: "#333", fontSize: "1rem" }}
+            className="mLinks"
+          >
             Services
           </a>
-          <a href="/pages/Contact" style={{ textDecoration: "none", color: "#333", fontSize: "1rem" }} className="mLinks">
+          <a
+            href="/pages/Contact"
+            style={{ textDecoration: "none", color: "#333", fontSize: "1rem" }}
+            className="mLinks"
+          >
             Contact Us
           </a>
           <div
