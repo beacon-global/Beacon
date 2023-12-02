@@ -116,7 +116,7 @@ function Contact() {
                   </p>
                 </div>
                 <div className={styles.numberContainer}>
-                  <a href="tel:971 502 574 396">
+                  <a href="tel:971 568 352 250">
                     + 971 568 352 250
                     <br />+ 971 502 574 396
                     <br /> + 971 488 324 58

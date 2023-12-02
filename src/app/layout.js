@@ -1,7 +1,5 @@
-import Head from "next/head";
 import "./globals.css";
-import localFont from 'next/font/local'
-
+import localFont from "next/font/local";
 
 export const metadata = {
   title: "Beacon - Your Global Advisory Partner For Business Success",
@@ -34,37 +32,33 @@ export const metadata = {
 const Sora = localFont({
   src: [
     {
-      path: './fonts/Sora-SemiBold.woff2',
-      weight: '600',
-      style: 'normal',
-      variable: '--font-Sora',
+      path: "./fonts/Sora-SemiBold.woff2",
+      weight: "600",
+      style: "normal",
+      variable: "--font-Sora",
     },
     {
-      path: './fonts/Sora-Medium.woff2',
-      weight: '500',
-      style: 'normal',
-      variable: '--font-Sora',
+      path: "./fonts/Sora-Medium.woff2",
+      weight: "500",
+      style: "normal",
+      variable: "--font-Sora",
     },
     {
-      path: './fonts/Sora-Regular.woff2',
-      weight: '400',
-      style: 'normal',
-      variable: '--font-Sora',
+      path: "./fonts/Sora-Regular.woff2",
+      weight: "400",
+      style: "normal",
+      variable: "--font-Sora",
     },
     {
-      path: './fonts/Sora-Light.woff2',
-      weight: '300',
-      style: 'normal',
-      variable: '--font-Sora',
+      path: "./fonts/Sora-Light.woff2",
+      weight: "300",
+      style: "normal",
+      variable: "--font-Sora",
     },
   ],
 });
 
-
 export default function RootLayout({ children }) {
-  const baseUrl =
-    "https://bmcglobal.co/linkImageWhatsApp.png" ||
-    "https://beacon-alpha.vercel.app/linkImageWhatsApp.png";
   return (
     <html lang="en">
       <head>
