@@ -4,12 +4,11 @@ import React, { useState } from "react";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 
-
 const Header = dynamic(() => import("@/app/components/Header"));
 const MobileHeader = dynamic(() => import("@/app/components/MobileHeader"));
-const Stats = dynamic(() => import('@/app/components/Stats'));
-const Contact = dynamic(() => import('@/app/components/Contact'));
-const Footer = dynamic(() => import('@/app/components/Footer'));
+const Stats = dynamic(() => import("@/app/components/Stats"));
+const Contact = dynamic(() => import("@/app/components/Contact"));
+const Footer = dynamic(() => import("@/app/components/Footer"));
 
 function About() {
   const servicesData = [
@@ -73,12 +72,12 @@ function About() {
               quality={100}
               priority={true}
               unoptimized
-              src="/NewSvgs/Backgrounds/abBg1.webp"
+              src="/AboutUsPage/aboutpage1.webp"
               width={1212}
-              height={600}
+              height={350}
               layout="responsive"
-              alt="aboutUs1"
-              style={{ display: loaded ? "block" : "none" }}
+              alt="aboutus2"
+              className={loaded ? styles.cardIcon : styles.hidden}
               onLoad={handleImageLoad}
             />
           </div>
@@ -103,28 +102,7 @@ function About() {
             stakeholders through constructive relationships.
           </p>
         </div>
-
-        {/* <div className={styles.greenBannerContiner}>
-          <div className={styles.statContainer}>
-            <h1>12K+</h1>
-            <p>Project Complete</p>
-          </div>
-          <div className={styles.statContainer}>
-            <h1>7K+</h1>
-            <p>Happy Client</p>
-          </div>
-          <div className={styles.statContainer}>
-            <h1>10+</h1>
-            <p>Years Experience</p>
-          </div>
-          <div className={styles.statContainer}>
-            <h1>270+</h1>
-            <p>Win Awards</p>
-          </div>
-        </div> */}
-        {/* <div className={styles.greenBannerContiner}> */}
         <Stats useBackgroundImage={useBackgroundImage} isMainPage={false} />
-        {/* </div> */}
 
         <div className={styles.aboutUsContainer2}>
           <h2 className="businessDesc">
