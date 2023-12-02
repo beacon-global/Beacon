@@ -77,7 +77,7 @@ function About() {
               width={1212}
               height={600}
               layout="responsive"
-              alt="aboutus1"
+              alt="aboutUs1"
               style={{ display: loaded ? "block" : "none" }}
               onLoad={handleImageLoad}
             />
