@@ -181,6 +181,36 @@
     display: none;
 }
 
+@media (max-width: 1280px) {
+    .servicePageMainContainer .servicePageMCardMainContainer{
+        padding: 0 60px;
+    }
+
+    .servicesPageContainer2{
+        padding: 70px 60px;
+    }
+
+    .container3{
+        padding: 0 60px;
+    }
+
+    .container4{
+        padding: 70px 60px;
+    }
+
+    .background{
+        left: -10px;
+    }
+
+    .container4Contents{
+        padding-left: 0;
+    }
+
+    .sellingCards{
+        width: 47%;
+    }
+}
+
 @media (max-width: 600px) {
 
     .servicePageMainContainer h2{

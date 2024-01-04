@@ -1,7 +1,8 @@
 "use client";
-import React from "react";
-import Lottie from "lottie-react";
-import loaderAnimation from "../../../public/circleGlobal.json";
+import groovyWalkAnimation from "../../../public/circleGlobal.json";
+
+import dynamic from 'next/dynamic';
+const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
 
 const LoadingCircle = ({onLoadedImages}) => {
   
@@ -21,7 +22,7 @@ const LoadingCircle = ({onLoadedImages}) => {
     <div className='DesktopLottieContainer'>
       <Lottie
       onLoadedImages={onLoadedImages}
-        animationData={loaderAnimation}
+        animationData={groovyWalkAnimation}
         loop={true}
         style={DesktopAnimationStyle}
       />
@@ -29,7 +30,7 @@ const LoadingCircle = ({onLoadedImages}) => {
     <div className='MobileLottieContainer'>
       <Lottie
         onLoadedImages={onLoadedImages}
-        animationData={loaderAnimation}
+        animationData={groovyWalkAnimation}
         loop={true}
         style={MobileAnimationStyle}
       />
