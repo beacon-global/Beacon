@@ -178,6 +178,7 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
 }
 
 .dropdownContent p{
+  font-size: 0.78125vw;
   padding: 0px 5px;
 }
 
