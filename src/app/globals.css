@@ -350,8 +350,7 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   background: #FFF;
   padding: 0 135px;
   margin-top: -11px;
-  margin-left: auto;
-  margin-right: auto;
+
 }
 
 .locationFlexContainer {
@@ -359,6 +358,7 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   align-items: center;
   width:100%;
   gap:3.90625vw;
+  justify-content: center;
 }
 
 .locationContentContainer{
@@ -419,8 +419,6 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   align-items: center;
   gap: 70px;
   padding: 0px 135px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .bussinessContainer .mBusinessDesc{
@@ -453,19 +451,20 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
 
 .businessVideoContainer{
   display: flex;
-  gap: 2.604166666666667vw;
+  gap: 2%;
   width: 100%;
+  justify-content: center;
 }
 
 .ksa{
-  width: 38.15104166666667vw;
+  width: 49%;
   height: 19.53125vw;
   position: relative;
   background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
 .uae{
-  width: 38.15104166666667vw;
+  width: 49%;
   height: 19.53125vw;
   position: relative;
   background-color: rgba(0, 0, 0, 0.5);
