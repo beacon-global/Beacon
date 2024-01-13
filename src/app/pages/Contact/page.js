@@ -31,8 +31,6 @@ function Contact() {
     message: "",
   });
 
-  
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -40,7 +38,7 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-  
+
     emailjs
       .sendForm(
         emailjsConfig.serviceId,
@@ -63,7 +61,7 @@ function Contact() {
         console.error("Email could not be sent:", error);
       });
   };
-  
+
   return (
     <>
       <Header />
@@ -208,6 +206,36 @@ function Contact() {
                 <div className={styles.numberContainer}>
                   <a href="tel:966 540 599 655">
                     + 966 540 599 655
+                    <br /> + 966 539 067 414
+                    <br /> + 966 531 170 957
+                  </a>
+                </div>
+              </div>
+
+              <div className={styles.contactCard}>
+                <a href="https://maps.app.goo.gl/UzvX5K7o9c3Cepmx9">
+                  <div className={styles.contactImgContainer}>
+                    <Image
+                      src="/NewSvgs/SVG2/Group7.svg"
+                      width={72}
+                      height={72}
+                      alt="contactLocactionIcon"
+                    />
+                  </div>
+                  <div className={styles.contactCardContents}>
+                    <h1 className={`${styles.jeddah} servicesHeading`}>
+                      Jazan
+                    </h1>
+                    <p className={styles.cardDesc}>
+                      Room No: 05, 4th Floor Makhtha 6, Prince Muhammed bin
+                      Abdulaziz St. Ash Shati District. Jazan 82812
+                    </p>
+                  </div>
+                </a>
+
+                <div className={styles.numberContainer}>
+                  <a href="tel:966 570 807 175">
+                    + 966 563144588
                     <br /> + 966 539 067 414
                     <br /> + 966 531 170 957
                   </a>

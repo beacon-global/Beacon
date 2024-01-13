@@ -63,6 +63,7 @@
     display: flex;
     gap: 30px;
     width: 100%;
+    justify-content: space-between;
 }
 
 .contactCard{
@@ -71,7 +72,7 @@
     background-color: #13670B;
     align-items: center;
     padding: 35px 30px 15px 30px;
-    width: 35%;
+    width: 16.927083333333336vw;
 }
 
 .contactCard a{
@@ -239,7 +240,7 @@
     }
 
     .container1{
-        padding: 0 24px;
+        padding: 0 6.4vw;
     }
 
     .loctaionButtonContainer{
@@ -270,12 +271,14 @@
     }
 
     .contactMainCard{
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 4vw;
     }
 
     .contactCard{
         padding: 20px;
-        width: 100%;
+        width: 41.6vw;
     }
 
     .contactImgContainer{
@@ -285,7 +288,8 @@
 
     .contactCardContents p{
         font-size: 12px;
-        width: 80%;
+        width: 36.266666666666666vw;
+        height: 27.200000000000003vw;
     }
 
     .jeddah{
