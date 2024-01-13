@@ -39,6 +39,27 @@ function About() {
   ];
   const [loaded, setLoaded] = useState(false);
 
+  const container2Data = [
+    {
+      img: "/NewSvgs/SVG4/Ggroup1.svg",
+      heading: "Right in Time",
+      description:
+        "With Beacon, you’ll never have to waste time navigating the business process to make it right. We make the business setup in Saudi Arabia and UAE time-efficient and easier than ever.",
+    },
+    {
+      img: "/NewSvgs/SVG4/Ggroup2.svg",
+      heading: "Financially Secure",
+      description:
+        "Setting up a business can prove to be risky if you have no professional financial assistance. Our consultants let you minimise the potential financial risks through financial consultation.",
+    },
+    {
+      img: "/NewSvgs/SVG4/Ggroup3.svg",
+      heading: "Reliable Partner",
+      description:
+        "With our support that guides your business right from the ideation to the final setup, we let our presence lead you through each stage. As your strategic advisor, Beacon stands out to solve your business setup concerns in no time.",
+    },
+  ];
+
   const handleImageLoad = () => {
     setLoaded(true);
   };
@@ -58,16 +79,6 @@ function About() {
         </h2>
         <div className={styles.aboutUsHeroContainer}>
           <div>
-            {!loaded && (
-              <div className="loader">
-                <div className="loader__bar"></div>
-                <div className="loader__bar"></div>
-                <div className="loader__bar"></div>
-                <div className="loader__bar"></div>
-                <div className="loader__bar"></div>
-                <div className="loader__ball"></div>
-              </div>
-            )}
             <Image
               quality={100}
               priority={true}
@@ -77,12 +88,12 @@ function About() {
               height={350}
               layout="responsive"
               alt="aboutus2"
-              className={loaded ? styles.cardIcon : styles.hidden}
+              className={loaded ? styles.aboutHeroImage : styles.hidden}
               onLoad={handleImageLoad}
             />
           </div>
           <p>
-            Founded in 2021, Beacon Global comprises a team of passionate
+            Founded in 2022, Beacon Global comprises a team of passionate
             accountants, auditors, and financial analysts. With a complete
             understanding of the need for a reliable auditing and accounting
             firm that offers excellent services to clients, we deliver the
@@ -112,115 +123,28 @@ function About() {
           <h2 className={`${styles.mBusinessDesc1} mBusinessDesc`}>
             Let Beacon Lead Your Dream Business Setup to The Path Of Success!
           </h2>
-          <div className={styles.mobilePaddingCard}>
-            <div className={styles.cardMainContainer}>
-              <div className={styles.cardContainer}>
-                <div className={styles.ImageCon}>
-                  <div>
-                    <Image
-                      quality={100}
-                      priority={true}
-                      unoptimized
-                      src="/NewSvgs/SVG4/Ggroup1.svg"
-                      width={80}
-                      height={80}
-                      layout="responsive"
-                      alt="aboutus2"
-                      className={styles.cardIcon}
-                    />
-                    <Image
-                      quality={100}
-                      priority={true}
-                      unoptimized
-                      src="/NewSvgs/SVG4/Ggroup1.svg"
-                      width={60}
-                      height={60}
-                      layout="responsive"
-                      alt="aboutus2"
-                      className={styles.mCardIcon}
-                    />
-                  </div>
-                  <div>
-                    <Image
-                      quality={100}
-                      priority={true}
-                      unoptimized
-                      src="/NewSvgs/SVG4/Ggroup2.svg"
-                      width={80}
-                      height={80}
-                      layout="responsive"
-                      alt="aboutus2"
-                      className={styles.cardIcon}
-                    />
-                    <Image
-                      quality={100}
-                      priority={true}
-                      unoptimized
-                      src="/NewSvgs/SVG4/Ggroup2.svg"
-                      width={60}
-                      height={60}
-                      layout="responsive"
-                      alt="aboutus2"
-                      className={styles.mCardIcon}
-                    />
-                  </div>
-                  <div>
-                    <Image
-                      quality={100}
-                      priority={true}
-                      unoptimized
-                      src="/NewSvgs/SVG4/Ggroup3.svg"
-                      width={80}
-                      height={80}
-                      layout="responsive"
-                      alt="aboutus2"
-                      className={styles.cardIcon}
-                    />
-                    <Image
-                      quality={100}
-                      priority={true}
-                      unoptimized
-                      src="/NewSvgs/SVG4/Ggroup3.svg"
-                      width={60}
-                      height={60}
-                      layout="responsive"
-                      alt="aboutus2"
-                      className={styles.mCardIcon}
-                    />
-                  </div>
+          <div className={`${styles.aboutCardMainContainer} cardMainContainer`}>
+            {container2Data.map((data, index) => (
+              <div className={`${styles.aboutCardContainer} cardContainer`} key={index}>
+                <div className={`${styles.imgContainerAbout} imgContainer`}>
+                  <Image
+                    src={data.img}
+                    width={70}
+                    height={70}
+                    alt="ImageService"
+                    quality={100}
+                    priority={true}
+                    unoptimized
+                  />
                 </div>
-                <div className={styles.cardContent}>
-                  <div>
-                    <h1>Right in Time</h1>
-                    <p>
-                      With Beacon, you&lsquo;ll never have to waste time
-                      navigating the business process to make it right. We make
-                      the business setup in Saudi Arabia and UAE time-efficient
-                      and easier than ever.
-                    </p>
-                  </div>
-                  <div>
-                    <h1>Financially Secure</h1>
-                    <p>
-                      Setting up a business can prove to be risky if you have no
-                      professional financial assistance. Our consultants let you
-                      minimise potential financial risks through financial
-                      consultation.
-                    </p>
-                  </div>
-                  <div>
-                    <h1>Reliable Partner</h1>
-                    <p>
-                      With our support that guides your business right from the
-                      ideation to the final setup, we let our presence lead you
-                      through each stage. As your strategic advisor, Beacon
-                      stands out to solve your business setup concerns in no
-                      time.
-                    </p>
-                  </div>
+                <div className="servicesHeadingContainer">
+                  <h1 className="servicesHeading">{data.heading}</h1>
+                </div>
+                <div className={`${styles.servicesDescContainer}`}>
+                  <p className="servicesDesc">{data.description}</p>
                 </div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
 
@@ -244,42 +168,6 @@ function About() {
                   through the quality and integrity of the services we offer.
                 </p>
               </div>
-            </div>
-            <div className={styles.vissionMissionImage}>
-              {!loaded && (
-                <div className={`${styles.loader} loader`}>
-                  <div className="loader__bar"></div>
-                  <div className="loader__bar"></div>
-                  <div className="loader__bar"></div>
-                  <div className="loader__bar"></div>
-                  <div className="loader__bar"></div>
-                  <div className="loader__ball"></div>
-                </div>
-              )}
-              <Image
-                quality={100}
-                priority={true}
-                unoptimized
-                src="/AboutUsPage/aboutpage.webp"
-                width={1212}
-                height={350}
-                layout="responsive"
-                alt="aboutus2"
-                className={loaded ? styles.cardIcon : styles.hidden}
-                onLoad={handleImageLoad}
-              />
-              <Image
-                quality={100}
-                priority={true}
-                unoptimized
-                src="/AboutUsPage/maboutpage.webp"
-                width={327}
-                height={150}
-                layout="responsive"
-                alt="aboutus2"
-                className={loaded ? styles.mCardIcon : styles.hidden}
-                onLoad={handleImageLoad}
-              />
             </div>
           </div>
         </div>

@@ -49,7 +49,7 @@ h2{
 }
 
 p {
-  font-size: 15px;
+  font-size: 1.0416666666666665vw;
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
@@ -334,7 +334,7 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
 .mainContainer{
   display: flex;
   flex-direction: column;
-  gap: 118px;
+  gap: 8.463541666666668vw;
 }
 /* Hero End */
 
@@ -349,25 +349,29 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   background: #FFF;
   padding: 0 135px;
   margin-top: -11px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .locationFlexContainer {
   display: flex;
+  align-items: center;
   width:100%;
-  gap:60px;
+  gap:3.90625vw;
 }
 
 .locationContentContainer{
   display: flex;
   flex-direction: column;
-  gap: 28px;
-  width: 80%;
+  gap: 1.3020833333333335vw;
+  width: 35.546875vw;
+  height: 26.236979166666668vw;
   justify-content: center;
 }
 
 .locationHeading{
   color: #02040E;
-  font-size: 36px;
+  font-size: 2.604166666666667vw;
   font-style: normal;
   font-weight: 600;
   line-height: 135%; /* 56px */
@@ -378,12 +382,9 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
 
 .locationDesc{
   color: #58595B;
-  /* font-size: 15px; */
   font-style: normal;
   font-weight: 400;
-  line-height: 135%; /* 22.4px */
-  width: 510px;
-  width: 108%;
+  line-height: 135%;
   text-align: justify;
 }
 
@@ -398,7 +399,8 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
 }
 
 .locationImgContainer{
-  width: 100%;
+  width: 39.453125vw;
+  height: 34.32421875vw;
   margin-bottom: 15px;
 }
 
@@ -416,6 +418,8 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   align-items: center;
   gap: 70px;
   padding: 0px 135px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .bussinessContainer .mBusinessDesc{
@@ -425,7 +429,6 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
 .businessHeading{
   color: #13670B;
   text-align: center;
-  /* font-size: 15px; */
   font-style: normal;
   font-weight: 600;
   line-height: 120%; /* 19.2px */
@@ -449,18 +452,20 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
 
 .businessVideoContainer{
   display: flex;
-  gap: 40px;
+  gap: 2.604166666666667vw;
   width: 100%;
 }
 
 .ksa{
-  width: 100%;
+  width: 38.15104166666667vw;
+  height: 19.53125vw;
   position: relative;
   background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
 .uae{
-  width: 100%;
+  width: 38.15104166666667vw;
+  height: 19.53125vw;
   position: relative;
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -496,12 +501,11 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
 .ksaDesc{
   color: #FFF;
   text-align: center;
-  /* font-size: 15px; */
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
   margin-bottom: 20px;
-  /* width: 90%; */
+  width: 24.8046875vw;
 }
 
 .businessCircle {
@@ -644,7 +648,7 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   font-size: 22px;
   font-style: normal;
   font-weight: 600;
-  line-height: 120%; /* 28.8px */
+  line-height: 120%;
   text-transform: capitalize;
 }
 
@@ -1540,7 +1544,7 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   100% {transform: translatex(-1000%)}
 } */
 
-@media (max-width: 1280px) {
+@media (min-width: 601px) and (max-width: 1280px) {
 
   #white-screen .changeTextContainer{
     margin-left: 0px;
@@ -1655,6 +1659,7 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
 
   .locationImgContainer{
     width: 100%;
+    height: auto;
   }
 
   .locationContentContainer{
@@ -1674,6 +1679,10 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
 
   .locationButton{
     margin: auto;
+  }
+
+  .bussinessContainer{
+    height: 33.26822916666667vw;
   }
 
   .jurisdictionContainer{
@@ -2011,7 +2020,7 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   }
 
   .mainContainer{
-    gap: 50px;
+    gap: 13.333333333333334vw;
   }
 
 
@@ -2181,6 +2190,12 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   .locationContentContainer{
     align-items: center;
     width: auto;
+    height: auto;
+    gap: 2.666666666666667vw;
+  }
+  
+  .locationHeading{
+    margin-bottom: 0;
   }
 
   .locationDesc{
@@ -2190,6 +2205,8 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
 
   .locationImgContainer{
     margin: 0;
+    width: auto;
+    height: auto;
   }
 
   .locationContainer .locationButton{
@@ -2221,7 +2238,8 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   }
 
   .ksa {
-    height: 188px;
+    height: 53.333333333333336vw;
+    width: auto;
   }
 
   .ksa .ImageBusiness{
@@ -2230,7 +2248,8 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   }
 
   .uae {
-    height: 188px;
+    height: 53.333333333333336vw;
+    width: auto;
   }
 
   .uae .ImageBusiness{

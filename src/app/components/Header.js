@@ -12,14 +12,14 @@ function Header() {
 
   const menuList = [
     { text: "Home", href: "/" },
-    { text: "Our Presence ▼", href: "#", hasDropdown: true },
+    { text: "Our Presence ▽", href: "#", hasDropdown: true },
     { text: "About Us", href: "/pages/About/" },
     { text: "Services", href: "/pages/Services/" },
     { text: "Contact Us", href: "/pages/Contact/" },
   ];
 
   const handleClick = (text) => {
-    if (text === "Our Presence ▼") {
+    if (text === "Our Presence ▽") {
       setIsPresenceOpen(!isPresenceOpen);
     } else {
       setIsPresenceOpen(false);

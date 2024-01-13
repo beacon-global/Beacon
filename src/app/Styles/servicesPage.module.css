@@ -118,6 +118,7 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+    width: 67.2vw;
 }
 
 .container3Contents p {
@@ -181,7 +182,7 @@
     display: none;
 }
 
-@media (max-width: 1280px) {
+@media (min-width: 601px) and (max-width: 1280px) {
     .servicePageMainContainer .servicePageMCardMainContainer{
         padding: 0 60px;
     }
@@ -359,7 +360,8 @@
     }
 
     .sellingImageContainer{
-        width: 120px;
+        width: 8vw;
+        height: 8vw;
     }
 
     .servicesPageContainer{

@@ -20,11 +20,7 @@ function Locations() {
               performance and success. With true results and a clear focus on
               the strategic actions tailored to achieve the unique expectations
               of our clients, we provide a detailed blueprint and picture of how
-              to establish and manage your business in the UAE. Our experts also
-              dive deep into providing expert restructuring advice, business
-              accounting and audit services, and business consulting solutions
-              that help firms improve their business activities and expansion
-              plans.
+              to establish and manage your business in the UAE.
             </p>
           </div>
           <a href="/pages/About">
@@ -59,7 +55,7 @@ function Locations() {
 
         <div className="locationImgContainer">
           <Image
-            src="/mapCropped.svg"
+            src="/location.png"
             width={606}
             height={527}
             alt="ImageLocation"
