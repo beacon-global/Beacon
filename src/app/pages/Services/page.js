@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import styles from "../../Styles/servicesPage.module.css";
 import Image from "next/image";
 import dynamic from "next/dynamic";
-import aboutImage2 from "../../../../public/ServicesPage/servicesPage8.webp"
+import {aboutImage2} from "../../../../public/ServicesPage/servicesPage8.webp"
 
 const Header = dynamic(() => import("@/app/components/Header"));
 const MobileHeader = dynamic(() => import("@/app/components/MobileHeader"));
