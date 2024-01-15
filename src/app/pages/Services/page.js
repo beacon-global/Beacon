@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import styles from "../../Styles/servicesPage.module.css";
 import Image from "next/image";
 import dynamic from "next/dynamic";
+import aboutImage2 from "../../../../public/ServicesPage/servicesPage8.webp"
 
-const LoadingCircle = dynamic(() => import("@/app/components/LoadingCircle"));
 const Header = dynamic(() => import("@/app/components/Header"));
 const MobileHeader = dynamic(() => import("@/app/components/MobileHeader"));
 const Faq = dynamic(() => import("@/app/components/Faq"));
@@ -229,7 +229,7 @@ function Services() {
               </div>
             )}
             <Image
-              src="/NewSvgs/Backgrounds/abBg5.svg"
+              src={aboutImage2}
               width={576}
               height={540}
               layout="responsive"
