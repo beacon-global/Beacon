@@ -149,7 +149,6 @@ function About() {
         </div>
 
         <div className={styles.aboutUscontainer3}>
-          <div className={styles.vissionMissionMainContainer}>
             <div className={styles.vissionMissionContent}>
               <div className={styles.mission}>
                 <h1>Our Mission</h1>
@@ -169,7 +168,6 @@ function About() {
                 </p>
               </div>
             </div>
-          </div>
         </div>
 
         <div className={styles.aboutUscontainer4}>
