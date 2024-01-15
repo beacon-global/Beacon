@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import styles from "../../Styles/servicesPage.module.css";
 import Image from "next/image";
 import dynamic from "next/dynamic";
-import {aboutImage2} from "../../../../public/ServicesPage/aboutImage.png"
 
 const Header = dynamic(() => import("@/app/components/Header"));
 const MobileHeader = dynamic(() => import("@/app/components/MobileHeader"));
@@ -229,7 +228,7 @@ function Services() {
               </div>
             )}
             <Image
-              src={aboutImage2}
+              src="/ServicesPage/aboutImage.png"
               width={576}
               height={540}
               layout="responsive"
