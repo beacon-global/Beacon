@@ -229,7 +229,7 @@ function Services() {
               </div>
             )}
             <Image
-              src="/ServicesPage/servicesPage8.webp"
+              src="/NewSvgs/Backgrounds/abBg5.svg"
               width={576}
               height={540}
               layout="responsive"
