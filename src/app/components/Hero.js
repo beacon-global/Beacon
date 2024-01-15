@@ -52,11 +52,11 @@ function Hero({ initialScreenWidth }) {
               strategies that adhere the best to global business standards.
             </p>
           </div>
-          <a href="/pages/Services">
+          <a href="/pages/Contact">
             <div className="hButtonContainer heroButton">
               <div className="visibleWrapperContainer">
                 <div className="topVisibleContainer btn">
-                  Our Services
+                  Let&apos; Talk
                   <div className="topVisibleArrow">
                     <Image
                       src="/whiteArrow.svg"
@@ -67,7 +67,7 @@ function Hero({ initialScreenWidth }) {
                   </div>
                 </div>
                 <div className="bottomVisibleContainer btn">
-                  Our Services
+                  Let&apos; Talk
                   <div className="bottomVisibleArrow">
                     <Image
                       src="/whiteArrow.svg"
