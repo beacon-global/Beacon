@@ -67,7 +67,7 @@ function Hero({ initialScreenWidth }) {
                   </div>
                 </div>
                 <div className="bottomVisibleContainer btn">
-                  Let&apos; Talk
+                  Contact Us
                   <div className="bottomVisibleArrow">
                     <Image
                       src="/whiteArrow.svg"
