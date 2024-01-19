@@ -9,21 +9,19 @@ function Header() {
 
   const pathname = usePathname();
 
-
   const menuList = [
     { text: "Home", href: "/" },
-    { text: "Our Presence ▼", href: "#", hasDropdown: true },
+    { text: "Our Presence", href: "#", hasDropdown: true },
     { text: "About Us", href: "/pages/About/" },
     { text: "Services", href: "/pages/Services/" },
     { text: "Contact Us", href: "/pages/Contact/" },
   ];
 
   const handleClick = (text) => {
-    if (text === "Our Presence ▼") {
+    if (text === "Our Presence") {
       setIsPresenceOpen(!isPresenceOpen);
     } else {
       setIsPresenceOpen(false);
-
     }
   };
 
@@ -60,13 +58,23 @@ function Header() {
                     pathname !== undefined &&
                     pathname !== null &&
                     pathname !== "" &&
-                    pathname === item.href ? "active" : ""
+                    pathname === item.href
+                      ? "active"
+                      : ""
                   } ${item.hasDropdown ? "hasDropdown" : ""}`}
-                  
                   onClick={() => handleClick(item.text)}
                 >
                   <a href={item.href}>
-                    <div className="listHoverTop">{item.text}</div>
+                    <div className="listHoverTop">
+                      {item.text === "Our Presence" ? (
+                        <div className="dropDown">
+                          {item.text}
+                          <img src="/dropDown.png" alt="Our Presence Arrow" />
+                        </div>
+                      ) : (
+                        item.text
+                      )}
+                    </div>
                     <div className="listHoverBottom">{item.text}</div>
                   </a>
                   {item.hasDropdown && isPresenceOpen && (

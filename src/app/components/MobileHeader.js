@@ -121,44 +121,58 @@ function MobileHeader() {
               color: "#333",
               fontSize: "1rem",
               cursor: "pointer",
+              display: "flex",
+              gap: "1.6vw",
+              // alignItems: "center",
             }}
             className="mLinks"
             onClick={toggleDropdown}
           >
-            Our Presence ▼
-            <div
+            Our Presence{" "}
+            <img
               style={{
-                display: isDropdownOpen ? "flex" : "none",
-                flexDirection: "column",
-                gap: "10px",
-                marginTop: "10px",
+                height: "4.8vw",
+                width: "3.5vw",
+              }}
+              src="/dropDown.png"
+              alt="Our Presence Arrow"
+            />
+          </div>
+          <div
+            style={{
+              display: isDropdownOpen ? "flex" : "none",
+              flexDirection: "column",
+              gap: "10px",
+              marginTop: "10px",
+            }}
+          >
+            <a
+              href="https://ksa.bmcglobal.co"
+              target="_blank"
+              style={{
+                textDecoration: "none",
+                color: "#333",
+                fontSize: "1rem",
+                textAlign:"right",
               }}
             >
-              <a
-                href="https://ksa.bmcglobal.co"
-                target="_blank"
-                style={{
-                  textDecoration: "none",
-                  color: "#333",
-                  fontSize: "1rem",
-                }}
-              >
-                Saudi Arabia
-              </a>
-              <a
-                href="https://uae.bmcglobal.co"
-                target="_blank"
-                style={{
-                  textDecoration: "none",
-                  color: "#333",
-                  fontSize: "1rem",
-                }}
-              >
-                United Arab Emirates
-              </a>
-              {/* Add more location links as needed */}
-            </div>
+              Saudi Arabia
+            </a>
+            <a
+              href="https://uae.bmcglobal.co"
+              target="_blank"
+              style={{
+                textDecoration: "none",
+                color: "#333",
+                fontSize: "1rem",
+                textAlign:"right",
+              }}
+            >
+              United Arab Emirates
+            </a>
+            {/* Add more location links as needed */}
           </div>
+
           <a
             href="/pages/About"
             style={{ textDecoration: "none", color: "#333", fontSize: "1rem" }}

@@ -69,13 +69,6 @@ function Faq() {
               onClick={() => toggleAnswerVisibility(index)}
             >
               <div className="faqCountContainer">
-                {/* <Image
-                  src={data.img}
-                  width={24}
-                  height={24}
-                  layout="responsive"
-                  alt={`faqImageNumber ${index}`}
-                /> */}
                 <h1 className="faqNumber">{data.img}</h1>
               </div>
               <div className="faqContentContainer">
@@ -101,7 +94,6 @@ function Faq() {
                     </button>
                   </div>
                 </div>
-                {/* Always render the answer, but apply CSS class conditionally */}
                 <div
                   className={`faqDesc ${data.isAnswerVisible ? "open" : ""}`}
                 >

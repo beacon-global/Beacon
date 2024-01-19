@@ -8,15 +8,33 @@ const WhatsAppChat = () => {
   const offices = [
     {
       img: "/office.png",
-      name: "Office 1",
-      number: "918921076209",
+      name: "",
+      number: "966570807175",
       location: "Jeddah",
     },
     {
       img: "/office.png",
-      name: "Office 2",
-      number: "918921076209",
+      name: "",
+      number: "966539067414",
+      location: "Riyadh",
+    },
+    {
+      img: "/office.png",
+      name: "",
+      number: "966566416774",
+      location: "Dammam",
+    },
+    {
+      img: "/office.png",
+      name: "",
+      number: "966563144588",
       location: "Jazan",
+    },
+    {
+      img: "/office.png",
+      name: "",
+      number: "971568352250",
+      location: "Dubai",
     },
     // Add more offices as needed
   ];
@@ -50,7 +68,7 @@ const WhatsAppChat = () => {
         <div
           className="office-card"
           style={{
-            maxHeight: isCardVisible ? "400px" : "0",
+            maxHeight: isCardVisible ? "100vh" : "0",
             transition: "max-height 0.4s ease",
           }}
         >
