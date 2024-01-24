@@ -39,7 +39,7 @@ function Hero({ initialScreenWidth }) {
               Establishing a business in Saudi Arabia or anywhere in the UAE
               needs broader and deeper know-how along with a firm foundation to
               remain ahead of the curve. Having a perfect business model helps
-              you accommodate the customers’ expectations. At Beacon Global, we
+              you accommodate the customers expectations. At Beacon Global, we
               offer expert business consulting services with practical
               strategies that adhere the best to global business standards.
             </p>
@@ -47,7 +47,7 @@ function Hero({ initialScreenWidth }) {
               Establishing a business in Saudi Arabia or anywhere in the UAE
               needs broader and deeper know-how along with a firm foundation to
               remain ahead of the curve. Having a perfect business model helps
-              you accommodate the customers’ expectations. At Beacon Global, we
+              you accommodate the customers expectations. At Beacon Global, we
               offer expert business consulting services with practical
               strategies that adhere the best to global business standards.
             </p>
@@ -56,7 +56,7 @@ function Hero({ initialScreenWidth }) {
             <div className="hButtonContainer heroButton">
               <div className="visibleWrapperContainer">
                 <div className="topVisibleContainer btn">
-                  Let&apos; Talk
+                  Contact Us
                   <div className="topVisibleArrow">
                     <Image
                       src="/whiteArrow.svg"

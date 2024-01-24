@@ -48,7 +48,6 @@ function Contact() {
       )
       .then((response) => {
         console.log("Email sent successfully!", response);
-        // Optionally, you can reset the form fields here
         setFormData({
           name: "",
           email: "",
