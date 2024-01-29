@@ -47,7 +47,7 @@ function Blogs({ blogPage }) {
 
         <div className="rectangleContainer">
           {blogData.map((data, index) => (
-            <div className="cardlinkeWrapper">
+            <div className="cardlinkeWrapper" key={index}>
               <Link
                 href={{
                   pathname: "/blog",
@@ -56,7 +56,7 @@ function Blogs({ blogPage }) {
                 target={blogPage ? "" : "_blank"}
               >
                 {/* <Link href={`/blog/${data.currentSlug}`} passHref target="_blank"> */}
-                <div className="cardContainer" key={index}>
+                <div className="cardContainer">
                   <div className="imgContainer">
                     <Image
                       src={urlFor(data.titleImage).url()}
