@@ -24,7 +24,6 @@ function Blogs({ blogPage }) {
     fetchData();
   }, []);
 
-  const firstObject = blogData;
 
   const imageSrc = isHovered ? "/whiteArrow.svg" : "/blackArrow.svg";
 

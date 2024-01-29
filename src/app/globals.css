@@ -726,8 +726,10 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   text-transform: uppercase;
   white-space: nowrap;
   transition: height 0.6s ease;
-  z-index: 1; /* Ensure the text is above the pseudo-element */
+  z-index: 1; 
 }
+
+
 
 
 

@@ -8,6 +8,7 @@ import { urlFor } from "../../../../test";
 import Blogs from "@/app/components/Blogs";
 import Contact from "../../components/Contact";
 import Footer from "../../components/Footer";
+import PersonalBlog from "@/app/components/PersonalBlog";
 
 const Page = () => {
   const [dataArray, setDataArray] = useState([]);
@@ -64,7 +65,7 @@ const Page = () => {
           </div>
         </div>
         <div className="forContactFromBlog">
-          <Blogs blogPage={true} />
+          <PersonalBlog blogPage={true} />
         </div>
         <div className="forContactFromBlog">
           <Contact />

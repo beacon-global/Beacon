@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import WhatsAppChat from "./components/WhatsAppChat";
 import Blogs from "./components/Blogs";
 import { blogsData } from "./Contents/blogDatas";
+import PersonalBlog from "./components/PersonalBlog";
 const Header = dynamic(() => import("@/app/components/Header"));
 const MobileHeader = dynamic(() => import("@/app/components/MobileHeader"));
 const Hero = dynamic(() => import("@/app/components/Hero"));
@@ -72,7 +73,7 @@ export default function Home() {
         <WhyBeacon />
         <Stats useBackgroundImage={useBackgroundImage} isMainPage={true} />
         <Clients />
-        <Blogs blogDatas={blogsData}/>
+        <PersonalBlog />
         <Faq />
         <Contact />
         <Footer />
