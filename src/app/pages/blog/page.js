@@ -1,14 +1,14 @@
 "use client";
 import React from "react";
-import styles from "../Styles/blogs.module.css";
+import styles from "../../Styles/blogs.module.css";
 import Image from "next/image";
 import Header from "@/app/components/Header";
 import MobileHeader from "@/app/components/MobileHeader";
-import { urlFor } from "../../../test";
+import { urlFor } from "../../../../test";
 import Blogs from "@/app/components/Blogs";
 import { useSearchParams } from "next/navigation";
-import Contact from "../components/Contact";
-import Footer from "../components/Footer";
+import Contact from "../../components/Contact";
+import Footer from "../../components/Footer";
 
 // Define the page component
 const Page = () => {

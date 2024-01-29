@@ -50,7 +50,7 @@ function Blogs({ blogPage }) {
             <div className="cardlinkeWrapper" key={index}>
               <Link
                 href={{
-                  pathname: "/blog",
+                  pathname: "/pages/blog",
                   search: `?search=${JSON.stringify(data)}`,
                 }}
                 target={blogPage ? "" : "_blank"}
