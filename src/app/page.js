@@ -3,7 +3,8 @@ import { useEffect, useState } from "react";
 import LoadingCircle from "./components/LoadingCircle";
 import dynamic from "next/dynamic";
 import WhatsAppChat from "./components/WhatsAppChat";
-
+import Blogs from "./components/Blogs";
+import { blogsData } from "./Contents/blogDatas";
 const Header = dynamic(() => import("@/app/components/Header"));
 const MobileHeader = dynamic(() => import("@/app/components/MobileHeader"));
 const Hero = dynamic(() => import("@/app/components/Hero"));
@@ -20,6 +21,11 @@ const Footer = dynamic(() => import("@/app/components/Footer"));
 export default function Home() {
   const [textIndex, setTextIndex] = useState(0);
   const textOptions = ["Growth", "Success", "Strategy", "Expansion"];
+
+
+
+
+
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
@@ -48,7 +54,7 @@ export default function Home() {
       <WhatsAppChat />
       <Header />
       <MobileHeader />
-      <div id="white-screen">
+      {/* <div id="white-screen">
         <LoadingCircle />
         <div className="changeTextContainer">
           <h1 className="spinnerText">Your Global Advisory Partner For</h1>
@@ -57,7 +63,7 @@ export default function Home() {
             {textOptions[textIndex]}
           </h1>
         </div>
-      </div>
+      </div> */}
       <div className="mainContainer">
         <Hero />
         <Locations />
@@ -66,7 +72,7 @@ export default function Home() {
         <WhyBeacon />
         <Stats useBackgroundImage={useBackgroundImage} isMainPage={true} />
         <Clients />
-        {/* <Blogs /> */}
+        <Blogs blogDatas={blogsData}/>
         <Faq />
         <Contact />
         <Footer />

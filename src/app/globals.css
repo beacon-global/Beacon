@@ -664,7 +664,7 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
 
 .servicesHeading{
   color: #02040E;
-  font-size: 22px;
+  font-size: 1.455026455026455vw;
   /* font-size: 5vw; */
   font-style: normal;
   font-weight: 600;
@@ -990,31 +990,59 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   width: 100%;
 }
 
+.cardlinkeWrapper{
+  height: 30.5vw;
+  overflow: hidden;
+}
+
 .rectangleContainer .cardContainer{
   background-color: white;
   height: auto;
   padding: 0px;
   gap: 20px;
+  width: 25.396825396825395vw;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.rectangleContainer .cardContainer .imgContainer img{
+  width: 25.396825396825395vw;
+  height: 16.534391534391535vw;
+  object-fit: cover;
 }
 
 .rectangleContainer .servicesDescContainer {
   width: auto;
   margin-top: -10px;
+  max-height: 5.291005291005291vw;
 }
 
 .rectangleContainer .servicesDescContainer .servicesDesc{
   text-align: left;
+  max-height: 5.291005291005291vw;
 }
 
 .blogBtnMainContainer{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  width: 25.396825396825395vw;
+  /* justify-content: space-between; */
+  gap: 8.367724867724867vw;
+  position: relative;
+}
+
+.blogarrowButton{
+  width: 1.5211640211640212vw;
+  height: 1.5211640211640212vw;
+}
+
+.blogarrowButton img{
   width: 100%;
+  height: 100%;
 }
 
 .blogsContainer > div:nth-child(3) {
-  margin-top: -50px;
+  margin-top: -0px;
 }
 
 .blogsContainer .servicesButton{
@@ -1029,15 +1057,29 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
 }
 
 .blogButtonContainer{
-  width: 224px;
+  width: 14.814814814814813vw;
   height: 38px;
-  /* flex-shrink: 0; */
   border-radius: 82px;
   background: #13670B;
   display: flex;
-  /* justify-content: center; */
+  gap: 0.4629629629629629vw;
   align-items: center;
-  padding-left: 15px;
+  justify-content: center;
+  font-size: 1.0582010582010581vw;
+  color: #fff;
+}
+
+.blogBtnMainContainer .arrowButton{
+  position: absolute;
+  right: 0.13227513227513227vw;
+  top: 0.6613756613756614vw;
+}
+
+.blogButtonContainer .blogDot{
+  background-color: #fff;
+  width: 0.3306878306878307vw;
+  height: 0.3306878306878307vw;
+  border-radius: 0.3306878306878307vw;
 }
 
 .blogBtn{
@@ -1048,6 +1090,13 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   line-height: 140%; /* 22.4px */
 }
 
+.forContactFromBlog{
+  margin-top: 7.2751322751322745vw;
+}
+
+.forFooterFromBlog{
+  margin-top: 7.2751322751322745vw;
+}
 /* Blogs End */
 
 /* FAQ Starts */
@@ -1544,7 +1593,7 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   100% {transform: translatex(-1000%)}
 } */
 
-@media (min-width: 601px) and (max-width: 1280px) {
+@media (min-width: 601px) and (max-width: 1180px) {
 
   #white-screen .changeTextContainer{
     margin-left: 0px;
@@ -2603,11 +2652,31 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   }
 
   .rectangleContainer{
-    justify-content: unset;
+    gap: 4vw;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .rectangleContainer .cardContainer .imgContainer img{
+    width: auto;
+    height: 27.083466666666666vw;
+  }
+
+  .cardlinkeWrapper{
+    height: 62vw;
+  }
+
+  .cardlinkeWrapper .servicesHeading{
+    max-height: 9.333333333333334vw;
+    overflow: hidden;
+  }
+
+  .rectangleContainer .servicesDescContainer{
+    max-height: 16vw;
   }
 
   .rectangleContainer .cardContainer{
-    width: auto;
+    width: 41vw;
     gap: 10px;
   }
 
@@ -2615,15 +2684,26 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
     margin-top: 0px;
   }
 
-  .blogButtonContainer{
-    width: 82px;
-    height: 24px;
+  .blogBtnMainContainer{
+    width: 100%;
+    justify-content: space-between;
   }
 
-  .arrowButton img{
+  .blogButtonContainer{
+    width: 21.866666666666667vw;
+    height: 6.4vw;
+    font-size: 1.666666666666667vw;
+  }
+
+  .blogarrowButton{
+    width: 3.733333333333334vw;
+    height: 3.733333333333334vw;
+  }
+
+  /* .arrowButton img{
     width: 14px;
     height: 14px;
-  }
+  } */
 
   .blogBtn{
     font-size: 10px;
