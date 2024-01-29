@@ -38,7 +38,7 @@ function Blogs({ blogPage }) {
           >
             Blogs
           </h6>
-          <h2 className="businessDesc">
+          <h2 className="blogBusinessDesc">
             {blogPage
               ? "Related Blogs"
               : "Read Through Our Perspectives & Latest Updates"}
@@ -53,9 +53,9 @@ function Blogs({ blogPage }) {
                   pathname: "/pages/blog",
                   search: `?search=${JSON.stringify(data)}`,
                 }}
-                target={blogPage ? "" : "_blank"}
+                target="_blank"
+                 onClick={() => console.log("Link clicked:")}
               >
-                {/* <Link href={`/blog/${data.currentSlug}`} passHref target="_blank"> */}
                 <div className="cardContainer">
                   <div className="imgContainer">
                     <Image
@@ -96,6 +96,7 @@ function Blogs({ blogPage }) {
           className="hButtonContainer servicesButton blogButton"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
+          style={{marginTop: blogPage ? "-30px" : ""}}
         >
           <div className="visibleWrapperContainer">
             <div className="topVisibleContainer">

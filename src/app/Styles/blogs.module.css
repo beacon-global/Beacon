@@ -48,3 +48,28 @@
     text-align: center;
     margin: 0 auto;
 }
+
+@media (max-width: 600px) {
+    .mainContainer {
+        margin-top: 125px;
+        padding: 0 6.4vw;
+    }
+
+    .mainContainer .blog{
+        width: auto;
+    }
+
+    .locationDateContainer{
+        font-size: 3.2vw;
+    }
+
+    .content img{
+        width: 87.2vw !important;
+        height: 50.971199999999996vw !important;
+        margin-bottom: 5.333333333333334vw;
+    }
+
+    .description{
+        width: auto;
+    }
+}

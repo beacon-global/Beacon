@@ -421,6 +421,8 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   padding: 0px 135px;
 }
 
+
+
 .bussinessContainer .mBusinessDesc{
   display: none;
 }
@@ -439,7 +441,7 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   display: none;
 }
 
-.businessDesc{
+.businessDesc .blogBusinessDesc{
   color: #02040E;
   text-align: center;
   font-size: 36px;
@@ -1605,7 +1607,7 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
     text-align: center;
   }
 
-  .businessDesc{
+  .businessDesc , .blogBusinessDesc{
     font-size: 4vw;
   }
   
