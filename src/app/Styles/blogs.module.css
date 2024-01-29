@@ -1,6 +1,7 @@
 
 .mainContainer{
     padding: 6.613756613756613vw 9.920634920634921vw;
+    padding-bottom: 0;
 }
 
 .mainContainer h2{
@@ -57,6 +58,7 @@
 
     .mainContainer .blog{
         width: auto;
+        color: #02040E;
     }
 
     .locationDateContainer{

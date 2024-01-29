@@ -38,7 +38,7 @@ function Blogs({ blogPage }) {
           >
             Blogs
           </h6>
-          <h2 className="blogBusinessDesc">
+          <h2 className="blogBusinessDesc blogBusinessDesc">
             {blogPage
               ? "Related Blogs"
               : "Read Through Our Perspectives & Latest Updates"}

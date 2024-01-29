@@ -441,7 +441,17 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   display: none;
 }
 
-.businessDesc .blogBusinessDesc{
+.businessDesc {
+  color: #02040E;
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 56px */
+  text-transform: capitalize;
+}
+
+.blogBusinessDesc {
   color: #02040E;
   text-align: center;
   font-size: 36px;
@@ -2452,7 +2462,6 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
     font-weight: 600;
     line-height: 140%; /* 56px */
     text-transform: capitalize;
-
   }
 
   .cardMainContainer{
@@ -2647,6 +2656,12 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
     padding: 0 24px;
     gap: 30px;
   }
+
+  .blogBusinessDesc{
+    color: #02040E;
+  }
+
+  .blogsContainer
 
   .blogsContainer .servicesHeading{
     font-size: 14px;

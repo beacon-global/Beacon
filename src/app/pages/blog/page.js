@@ -35,7 +35,7 @@ const Page = () => {
         <MobileHeader />
         <div className={styles.mainContainer}>
           <h2
-            className={`${styles.blog} businessDesc`}
+            className={`${styles.blog} blogBusinessDesc`}
             style={{ display: "block" }}
           >
             {dataArray.title}
