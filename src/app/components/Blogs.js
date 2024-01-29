@@ -81,7 +81,7 @@ function Blogs({ blogPage }) {
                     </div>
                   </div>
                   <div className="servicesHeadingContainer">
-                    <h1 className="servicesHeading">{data.title}</h1>
+                    <h1 className="servicesHeading beaconHeading">{data.title}</h1>
                   </div>
                   <div className="servicesDescContainer">
                     <p className="servicesDesc">{data.description}</p>

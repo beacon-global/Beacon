@@ -2684,12 +2684,14 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   }
 
   .cardlinkeWrapper .servicesHeading{
+    min-height: 9.333333333333334vw;
     max-height: 9.333333333333334vw;
     overflow: hidden;
   }
 
   .rectangleContainer .servicesDescContainer{
     max-height: 16vw;
+    margin-top: 0px;
   }
 
   .rectangleContainer .cardContainer{

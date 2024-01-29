@@ -54,7 +54,7 @@ export default function Home() {
       <WhatsAppChat />
       <Header />
       <MobileHeader />
-      <div id="white-screen">
+      {/* <div id="white-screen">
         <LoadingCircle />
         <div className="changeTextContainer">
           <h1 className="spinnerText">Your Global Advisory Partner For</h1>
@@ -63,7 +63,7 @@ export default function Home() {
             {textOptions[textIndex]}
           </h1>
         </div>
-      </div>
+      </div> */}
       <div className="mainContainer">
         <Hero />
         <Locations />
