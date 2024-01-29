@@ -1,4 +1,3 @@
-// fetchData.js
 import imageUrlBuilder from "@sanity/image-url";
 const { client } = require('./sanity');
 
