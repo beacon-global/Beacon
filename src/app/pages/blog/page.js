@@ -13,6 +13,7 @@ import Footer from "../../components/Footer";
 const Page = () => {
   // Use state to manage the query parameters
   const [dataArray, setDataArray] = useState([]);
+  const [dfor, setDfor] = useState(false);
 
   // Use useEffect to fetch and update data on the client side
   useEffect(() => {
@@ -21,11 +22,12 @@ const Page = () => {
     const parsedData = searchData ? JSON.parse(searchData) : [];
     console.log(parsedData, "DataArray");
     setDataArray(parsedData);
+    setDfor(true)
   }, []);
 
-  const firstObject = dataArray.length > 0 ? dataArray[0] : null;
+  const firstObject = dataArray;
 
-  if (firstObject) {
+  if (dfor) {
     return (
       <>
         <Header />
