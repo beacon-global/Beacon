@@ -215,7 +215,7 @@
   }
 
   .text6{
-    font-size: 3.2vw;
+    font-size: 3.2vw !important;
     line-height: 4.4799999999999995vw;
     max-height: 13.600000000000001vw;
     margin-bottom: 8vw;
