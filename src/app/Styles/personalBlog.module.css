@@ -4,7 +4,7 @@
 }
 
 .text1 {
-  font-size: 1.0582010582010581vw;
+  font-size: 1.0582010582010581vw !important;
   line-height: 1.2698412698412698vw;
   margin-bottom: 0.6613756613756614vw;
   color: #13670b;
@@ -12,7 +12,7 @@
 }
 
 .text2 {
-  font-size: 2.6455026455026456vw;
+  font-size: 2.6455026455026456vw !important;
   font-weight: 600;
   color: #02040e;
   line-height: 3.7037037037037033vw;
@@ -54,7 +54,7 @@
   justify-content: center;
   gap: 0.4629629629629629vw;
 
-  font-size: 1.0582010582010581vw;
+  font-size: 1.0582010582010581vw !important;
   color: #fff;
 }
 
@@ -73,7 +73,7 @@
 
 .text5 {
   color: #02040e;
-  font-size: 1.5873015873015872vw;
+  font-size: 1.5873015873015872vw !important;
   line-height: 1.9047619047619049vw;
   font-style: normal;
   font-weight: 500;
@@ -89,7 +89,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 1.4814814814814814vw;
-  margin-bottom: 3.3068783068783065vw;
+  
   max-height: 4.365079365079365vw;
   overflow: hidden;
 }
@@ -107,6 +107,7 @@
   position: relative;
   overflow: hidden;
   margin: 0 auto;
+  margin-top: 3.3068783068783065vw;
 }
 
 .blogButton .blogButtonText {
@@ -189,7 +190,7 @@
     justify-content: center;
     gap: 0.4629629629629629vw;
   
-    font-size: 1.0582010582010581vw;
+    font-size: 1.0582010582010581vw !important;
     color: #fff;
     font-size: 2.666666666666667vw !important;
   }
@@ -208,7 +209,7 @@
   }
 
   .text5{
-    font-size: 3.733333333333334vw;
+    font-size: 3.733333333333334vw !important;
     line-height: 4.4799999999999995vw;
     max-height: 9.333333333333334vw;
     margin-bottom: 1.3333333333333335vw;
@@ -218,7 +219,7 @@
     font-size: 3.2vw !important;
     line-height: 4.4799999999999995vw;
     max-height: 13.600000000000001vw;
-    margin-bottom: 8vw;
+    
   }
 
   .companyBlog .blogButton {
@@ -234,6 +235,7 @@
     position: relative;
     overflow: hidden;
     margin: 0 auto;
+    margin-top: 8vw;
   }
   
   .blogButton .blogButtonText {
