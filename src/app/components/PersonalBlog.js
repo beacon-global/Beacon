@@ -84,7 +84,7 @@ const PersonalBlog = ({ blogPage }) => {
         className={`${styles.blogButton} hButtonContainer servicesButton`}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        style={{ marginTop: blogPage ? "-30px" : "" }}
+        // style={{ marginTop: blogPage ? "-30px" : "" }}
       >
         <div className="visibleWrapperContainer">
           <div className="topVisibleContainer">

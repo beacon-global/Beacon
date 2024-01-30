@@ -1,14 +1,13 @@
-
-.mainContainer{
-    padding: 6.613756613756613vw 9.920634920634921vw;
-    padding-bottom: 0;
+.mainContainer {
+  padding: 6.613756613756613vw 9.920634920634921vw;
+  padding-bottom: 0;
 }
 
-.mainContainer h2{
-    width: 52.910052910052904vw;
-    margin: 0 auto 1.3227513227513228vw auto;
+.mainContainer h2 {
+  width: 52.910052910052904vw;
+  margin: 0 auto 1.3227513227513228vw auto;
+  font-size: 2.6455026455026456vw;
 }
-
 
 .locationDateContainer {
   font-size: 1.0582010582010581vw;
@@ -19,59 +18,62 @@
   align-items: center;
   gap: 0.4629629629629629vw;
   margin-bottom: 1.984126984126984vw;
-  
 }
 
-.dot{
-    background-color: #13670b;
-    width: 0.3306878306878307vw;
-    height: 0.3306878306878307vw;
-    border-radius: 0.3306878306878307vw;
+.dot {
+  background-color: #13670b;
+  width: 0.3306878306878307vw;
+  height: 0.3306878306878307vw;
+  border-radius: 0.3306878306878307vw;
 }
 
-.content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.content img{
-    width: 73.54497354497354vw !important;
-    height: 33.06878306878307vw !important;
-    object-fit: cover;
-    object-position: top;
-    margin-bottom: 1.984126984126984vw;
-} 
+.content img {
+  width: 73.54497354497354vw !important;
+  height: 33.06878306878307vw !important;
+  object-fit: cover;
+  object-position: top;
+  margin-bottom: 1.984126984126984vw;
+}
 
-.description{
-    width: 66.93121693121694vw;
-    text-align: center;
-    margin: 0 auto;
+.description {
+  width: 66.93121693121694vw;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.description p {
+  font-size: 1.0582010582010581vw;
 }
 
 @media (max-width: 600px) {
-    .mainContainer {
-        margin-top: 125px;
-        padding: 0 6.4vw;
-    }
+  .mainContainer {
+    margin-top: 125px;
+    padding: 0 6.4vw;
+  }
 
-    .mainContainer .blog{
-        width: auto;
-        color: #02040E;
-    }
+  .mainContainer .blog {
+    width: auto;
+    color: #02040e;
+  }
 
-    .locationDateContainer{
-        font-size: 3.2vw;
-    }
+  .locationDateContainer {
+    font-size: 3.2vw;
+  }
 
-    .content img{
-        width: 87.2vw !important;
-        height: 50.971199999999996vw !important;
-        margin-bottom: 5.333333333333334vw;
-    }
+  .content img {
+    width: 87.2vw !important;
+    height: 50.971199999999996vw !important;
+    margin-bottom: 5.333333333333334vw;
+  }
 
-    .description{
-        width: auto;
-    }
+  .description {
+    width: auto;
+  }
 }
