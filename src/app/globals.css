@@ -2731,10 +2731,10 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
     white-space: nowrap;
   }
 
-  .blogsContainer .servicesButton{
+  /* .blogsContainer .servicesButton{
     width: 170px;
     height: 44px;
-  }
+  } */
 
   .faqMainContainer{
     padding: 0 24px;

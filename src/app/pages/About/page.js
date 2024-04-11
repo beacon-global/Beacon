@@ -38,6 +38,7 @@ function About() {
     },
   ];
   const [loaded, setLoaded] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   const container2Data = [
     {
@@ -65,6 +66,8 @@ function About() {
   };
 
   const useBackgroundImage = false;
+  const imageSrc = isHovered ? "/whiteArrow.svg" : "/blackArrow.svg";
+
 
   return (
     <>
@@ -93,25 +96,59 @@ function About() {
             />
           </div>
           <p>
-            Founded in 2022, Beacon Global comprises a team of passionate
-            accountants, auditors, and financial analysts. With a complete
-            understanding of the need for a reliable auditing and accounting
-            firm that offers excellent services to clients, we deliver the
-            leading business consulting services in Saudi Arabia. Right from its
-            inception, our team of consultants has been adept at building a good
-            industry reputation with remarkable services to the clients. With
-            the growth of the goodwill of the firm, we have extended the roots
-            to business consultancy, tax advisory, accounting, audit and
-            regulatory services, and digital marketing, with offices across UAE,
-            India, and KSA. We are committed to offering business incorporation
-            services to clients with an emphasis on the principles of
-            professionalism, integrity, and reliability. We are grateful for the
-            recognition gifted by the clients who helped us navigate the
-            complexities of tax, auditing, and regulatory compliance. Our team
-            is dedicated to delivering unparalleled service and value to
-            businesses with strong support of partners, clients, and other
-            stakeholders through constructive relationships.
+            Established in 2022, Beacon Global consists of dedicated accountants,
+            auditors, and financial analysts. Acknowledging the demand for reliable
+            auditing and accounting services, we deliver exceptional business consulting
+            services in Saudi Arabia. With a solid industry reputation from the outset,
+            our consultants expand services to include business consultancy, tax advisory,
+            accounting, audit, regulatory services, and digital marketing, with offices in
+            the UAE, Qatar, and KSA. Committed to professionalism, integrity, and reliability,
+            we specialize in business incorporation services. Clients trust us to navigate tax,
+            auditing, and regulatory compliance challenges. Our team is devoted to delivering
+            unparalleled service and value, reinforced by robust partnerships and positive relationships
+            with clients and stakeholders.
           </p>
+          <div className="blogsContainer">
+            <a href="/pages/Services">
+              <div
+                className="hButtonContainer servicesButton"
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
+              >
+                <div className="visibleWrapperContainer">
+                  <div className="topVisibleContainer btn">
+
+                    Our services&nbsp;&nbsp;
+                    <div className="topVisibleArrow">
+                      <Image
+                        src={imageSrc}
+                        width={23}
+                        height={23}
+                        alt="heroContact"
+                        quality={100}
+                        priority={true}
+                        unoptimized
+                      />
+                    </div>
+                  </div>
+                  <div className="bottomVisibleContainer btn">
+                    Our services
+                    <div className="bottomVisibleArrow">
+                      <Image
+                        src={imageSrc}
+                        width={23}
+                        height={23}
+                        alt="heroContact"
+                        quality={100}
+                        priority={true}
+                        unoptimized
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
         <Stats useBackgroundImage={useBackgroundImage} isMainPage={false} />
 
@@ -149,25 +186,25 @@ function About() {
         </div>
 
         <div className={styles.aboutUscontainer3}>
-            <div className={styles.vissionMissionContent}>
-              <div className={styles.mission}>
-                <h1>Our Mission</h1>
-                <p>
-                  To evolve into the most trusted partner in business
-                  incorporation and consulting services, thereby laying a
-                  benchmark through the reputation from the best-in-market
-                  business results
-                </p>
-              </div>
-              <div className={styles.vission}>
-                <h1>Our Vision</h1>
-                <p>
-                  To future-proof businesses with fruitful collaborations and
-                  partnerships, which help businesses to multiply their growth
-                  through the quality and integrity of the services we offer.
-                </p>
-              </div>
+          <div className={styles.vissionMissionContent}>
+            <div className={styles.mission}>
+              <h1>Our Mission</h1>
+              <p>
+                To evolve into the most trusted partner in business
+                incorporation and consulting services, thereby laying a
+                benchmark through the reputation from the best-in-market
+                business results
+              </p>
             </div>
+            <div className={styles.vission}>
+              <h1>Our Vision</h1>
+              <p>
+                To future-proof businesses with fruitful collaborations and
+                partnerships, which help businesses to multiply their growth
+                through the quality and integrity of the services we offer.
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className={styles.aboutUscontainer4}>
@@ -203,7 +240,7 @@ function About() {
         <div className={styles.footerContainer}>
           <Footer />
         </div>
-      </div>
+      </div >
     </>
   );
 }

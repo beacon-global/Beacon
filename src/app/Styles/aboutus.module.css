@@ -14,7 +14,7 @@
     display: none;
 }
 
-.aboutUsHeroContainer :nth-child(1){
+.aboutUsHeroContainer :nth-child(0){
     margin-top: 5px;
     width: 82.35677083333334vw;
     height: 42.31770833333333vw;

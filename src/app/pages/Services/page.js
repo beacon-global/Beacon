@@ -258,6 +258,34 @@ function Services() {
               regulations to ensure your business can thrive well in the dynamic
               world through comprehensive services to drive business success.
             </p>
+            <a href="/pages/About">
+              <div className={`hButtonContainer ${styles.cont2Button}`}>
+                <div className="visibleWrapperContainer">
+                  <div className="topVisibleContainer btn">
+                    Get in Touch
+                    <div className="topVisibleArrow">
+                      <Image
+                        src="/whiteArrow.svg"
+                        width={23}
+                        height={23}
+                        alt="heroContact"
+                      />
+                    </div>
+                  </div>
+                  <div className="bottomVisibleContainer btn">
+                    Get in Touch
+                    <div className="bottomVisibleArrow">
+                      <Image
+                        src="/whiteArrow.svg"
+                        width={23}
+                        height={23}
+                        alt="heroContact"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
 

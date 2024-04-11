@@ -15,12 +15,12 @@ function Locations() {
             <p className="locationDesc">
               Businesses need qualified business consulting and professional
               advice to win clients from all over the world. Since our
-              inception, we have been dedicated to assisting organizations of
-              all sizes with strategies that contribute to businesses with great
-              performance and success. With true results and a clear focus on
-              the strategic actions tailored to achieve the unique expectations
-              of our clients, we provide a detailed blueprint and picture of how
-              to establish and manage your business in the UAE.
+              inception, we have been dedicated to assisting organizations of 
+              all sizes with strategies that contribute to businesses with great 
+              performance and success. With true results and a clear focus on 
+              the strategic actions tailored to achieve the unique expectations 
+              of our clients, we provide a detailed blueprint and picture of how 
+              to establish and manage your business in Saudi Arabia, Qatar, and the UAE.
             </p>
           </div>
           <a href="/pages/About">
