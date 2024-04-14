@@ -59,9 +59,9 @@ const PersonalBlog = ({ blogPage }) => {
               />
               <div className={styles.dateAndLocationContainer}>
                 <div className={styles.dateTextContainer}>
-                  <h6 className={styles.text3}>{data.location}</h6>
+                  <h6 className={styles.text4}>{data.location}</h6>
                   <div className={styles.blogDot}></div>
-                  <h6 className={styles.text4}>{data.date}</h6>
+                  <h6 className={styles.text3}>{data.date}</h6>
                 </div>
                 <Image
                   src="/blackArrow.svg"

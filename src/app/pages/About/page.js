@@ -95,7 +95,7 @@ function About() {
               onLoad={handleImageLoad}
             />
           </div>
-          <p>
+          <p className={styles.hidetext}>
             Established in 2022, Beacon Global consists of dedicated accountants,
             auditors, and financial analysts. Acknowledging the demand for reliable
             auditing and accounting services, we deliver exceptional business consulting
@@ -108,15 +108,21 @@ function About() {
             unparalleled service and value, reinforced by robust partnerships and positive relationships
             with clients and stakeholders.
           </p>
-          <div className="blogsContainer">
+          <p className={styles.visibletext}>Established in 2022, Beacon Global consists of dedicated accountants,
+            auditors, and financial analysts. Acknowledging the demand for reliable
+            auditing and accounting services, we deliver exceptional business consulting
+            services in Saudi Arabia. With a solid industry reputation from the outset,
+            our consultants expand services to include business consultancy, tax advisory,
+            accounting, audit, regulatory services, and digital marketing, with offices in
+            the UAE, Qatar, and KSA.</p>
             <a href="/pages/Services">
               <div
-                className="hButtonContainer servicesButton"
+                className={`hButtonContainer ${styles.servicesButton}`}
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
               >
                 <div className="visibleWrapperContainer">
-                  <div className="topVisibleContainer btn">
+                  <div className={`topVisibleContainer ${styles.btn}`}>
 
                     Our services&nbsp;&nbsp;
                     <div className="topVisibleArrow">
@@ -131,7 +137,7 @@ function About() {
                       />
                     </div>
                   </div>
-                  <div className="bottomVisibleContainer btn">
+                  <div className={`bottomVisibleContainer ${styles.btn}`}>
                     Our services
                     <div className="bottomVisibleArrow">
                       <Image
@@ -148,7 +154,6 @@ function About() {
                 </div>
               </div>
             </a>
-          </div>
         </div>
         <Stats useBackgroundImage={useBackgroundImage} isMainPage={false} />
 

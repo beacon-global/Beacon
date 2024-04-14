@@ -331,6 +331,61 @@
     margin: auto;
 }
 
+.hidetext {
+    display: block;
+  }
+  
+  .visibletext {
+    display: none; 
+  }
+
+.servicesButton{
+    background-color: transparent;
+    border: 1px solid #02040E;
+    width: 233px;
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.servicesButton::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #13670b;
+    overflow: hidden;
+    z-index: 0; 
+    transition: height 0.6s ease;
+  }
+  
+  .servicesButton:hover::before {
+    height: 100%; 
+    transition: height 0.6s ease;
+  } 
+  
+  .servicesButton:hover .btn{
+    color: #fff;
+  }
+
+.btn{
+    color: #02040E;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 19.2px */
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: height 0.6s ease;
+    z-index: 1; 
+  }
+
+
 @media (min-width: 601px) and (max-width: 1280px) {
     .aboutUsHeroContainer{
         padding: 0 60px;
@@ -374,6 +429,13 @@
     .coreValueCards{
         width: 47%;
     }
+    .hidetext {
+        display: none;
+    }
+      
+    .visibletext {
+        display: block; 
+    }
 }
 
 @media (max-width: 600px) {
@@ -399,7 +461,7 @@
         margin-bottom: 30px;
     }
 
-    .aboutUsHeroContainer :nth-child(1){
+    .aboutUsHeroContainer :nth-child(0){
         width: auto;
         height: auto;
         margin-top: 0;
@@ -598,7 +660,7 @@
 
     .coreValueCards{
         padding: 20px 10px;
-        width: 45%;
+        width: 100%;
     }
 
     .cvImgContainer {
@@ -614,5 +676,21 @@
 
     .contactCont h2 {
         margin-top: 0;
+    }
+
+    .hidetext {
+        display: none;
+    }
+      
+    .visibletext {
+        display: block; 
+    }
+
+    .servicesButton{
+        width: 150px;
+        height: 40px;
+    }
+    .btn{
+        font-size: 12px;
     }
 }

@@ -20,6 +20,32 @@ function Clients() {
       designation: "Google - Jeddah, KSA",
       img: "/profilePic4.webp",
     },
+    {
+      message:
+      "Working with Beacon made setting up our business in Saudi Arabia hassle-free. Their comprehensive services covered everything from paperwork to logistics, ensuring a smooth and successful expansion.",
+      name: "Mohammed Al-Saud",
+      designation: "Google - Jeddah, KSA",
+      img: "/profilePic3.webp",
+    },
+    {
+      message:
+      "Working with Beacon felt like having an extended team member. Their transparency and unwavering commitment made the partnership seamless and productive.",
+      name: " Ahmed Al-Sayed",
+      designation: "Google - Dubai , UAE",
+      img: "/profilePic4.webp",
+    },
+    {
+      message:"Beacon's guidance and expertise have been instrumental in our business's growth and success. Their tailored solutions and dedicated support have exceeded our expectations.",
+      name: "Abdul Rasheed",
+      designation: "Google - Dammam, KSA",
+      img: "/profilePic3.webp",
+    },
+    {
+      message: "Choosing Beacon was one of the best decisions we made for our business. Their strategic insights and proactive approach have been pivotal in our journey towards success.",
+      name: "Reem Abdullah",
+      designation: "Google - Riyadh, KSA",
+      img: "/profilePic4.webp",
+    }
   ];
 
   const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
