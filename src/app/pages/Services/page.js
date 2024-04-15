@@ -251,7 +251,7 @@ function Services() {
               Being your premium partner for all your business requirements, we
               offer a myriad of professional solutions woven to suit your
               expectations. Whether you are an entrepreneur searching for
-              assistance to set up a business in the UAE, India, or KSA, or need
+              assistance to set up a business in the KSA, UAE, QATAR or India, or need
               help with financial, technological, digital transformation, or
               business consulting solutions, we&lsquo;re here to resolve them.
               Our experts understand the local and global market, and the
@@ -336,6 +336,35 @@ function Services() {
               to the changes in the dynamic landscape and gain sustainable
               business advantage.
             </p>
+            <a href="/pages/About">
+              <div className={`hButtonContainer ${styles.cont3Button}`}>
+                <div className="visibleWrapperContainer">
+                  <div className="topVisibleContainer btn">
+                    Resource
+                    <div className="topVisibleArrow">
+                      <Image
+                        src="/whiteArrow.svg"
+                        width={23}
+                        height={23}
+                        alt="heroContact"
+                      />
+                    </div>
+                  </div>
+                  <div className="bottomVisibleContainer btn">
+                    Resource
+                    <div className="bottomVisibleArrow">
+                      <Image
+                        src="/whiteArrow.svg"
+                        width={23}
+                        height={23}
+                        alt="heroContact"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
           </div>
           <div className={styles.container4ImgContainer}>
             {!loaded && (

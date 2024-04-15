@@ -434,6 +434,7 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   line-height: 120%; /* 19.2px */
   text-transform: uppercase;
   margin-bottom: 10px;
+  font-size: 1.33333vw;
 }
 
 .mBusinessDesc{
