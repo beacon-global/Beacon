@@ -2035,10 +2035,11 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
 /* styles/WhatsAppChat.css */
 .whatsapp-chat {
   position: fixed;
-  bottom: 0;
-  right: 0;
+  bottom: 7vw;
+  right: 1.2vw;
   z-index: 1000;
   background-color: #fff;
+  border-radius: 10px;
 }
 
 .chat-icon{
@@ -2074,6 +2075,7 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
 
 .office-card{
   width: 24.869791666666664vw;
+  border-radius: 10px 10px 0 0;
 }
 
 .topCard{
@@ -2081,6 +2083,8 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   background-color: #25d366;
   padding: 1.3020833333333335vw;
   position: relative;
+  border-radius: 10px 10px 0 0;
+
 }
 
 .topCard h3 {
@@ -2945,6 +2949,7 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
     z-index: 1000;
     width: 12vw;
     height: 12vw;
+    animation: whatssAppIcon 5s infinite;
   }
 
   .office-card{

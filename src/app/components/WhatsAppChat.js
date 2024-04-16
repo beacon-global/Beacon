@@ -54,15 +54,29 @@ const WhatsAppChat = () => {
         className={`chat-icon ${isCardVisible ? "active" : ""}`}
         onClick={handleChatIconClick}
       >
-        <Image
-          src="/whatsapp.png"
-          width={70}
-          height={70}
-          alt="ImageService"
-          quality={100}
-          priority={true}
-          unoptimized
-        />
+        {
+          isCardVisible ? (
+            <Image
+              src="/close.svg"
+              width={70}
+              height={70}
+              alt="ImageService"
+              quality={100}
+              priority={true}
+              unoptimized
+            />
+          ) : (
+            <Image
+              src="/whatsapp1.png"
+              width={70}
+              height={70}
+              alt="ImageService"
+              quality={100}
+              priority={true}
+              unoptimized
+            />
+          )
+        }
       </div>
       <div className="whatsapp-chat">
         <div
@@ -74,12 +88,12 @@ const WhatsAppChat = () => {
         >
           {isCardVisible && (
             <div className="topCard">
-              <button
+              {/* <button
                 className="closeButton"
                 onClick={() => setIsCardVisible(false)}
               >
                 &times;
-              </button>
+              </button> */}
               <h3>Hello...</h3>
               <p>
                 Chat with us! Simply choose an office contact from the list
