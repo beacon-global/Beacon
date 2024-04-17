@@ -2151,6 +2151,7 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   width: 5vw;
   height: 5vw;
   animation: whatssAppIcon 5s infinite;
+  cursor: pointer;
 }
 
 @keyframes whatssAppIcon {
@@ -3051,6 +3052,7 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
     width: 12vw;
     height: 12vw;
     animation: whatssAppIcon 5s infinite;
+    cursor: pointer;
   }
 
   .office-card{
