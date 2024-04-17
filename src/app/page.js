@@ -10,6 +10,7 @@ const Header = dynamic(() => import("@/app/components/Header"));
 const MobileHeader = dynamic(() => import("@/app/components/MobileHeader"));
 const Hero = dynamic(() => import("@/app/components/Hero"));
 const Locations = dynamic(() => import("@/app/components/Locations"));
+const Popup = dynamic(() => import("@/app/components/Popup"));
 const Services = dynamic(() => import("@/app/components/Services"));
 const BusinessSetup = dynamic(() => import("@/app/components/BusinessSetup"));
 const Clients = dynamic(() => import("@/app/components/Clients"));
@@ -22,6 +23,14 @@ const Footer = dynamic(() => import("@/app/components/Footer"));
 export default function Home() {
   const [textIndex, setTextIndex] = useState(0);
   const textOptions = ["Growth", "Success", "Strategy", "Expansion"];
+  const [showPopup, setShowPopup] = useState(false);
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setShowPopup(true);
+    }, 5000); 
+    return () => clearTimeout(timeoutId);
+  }, []);
 
 
 
@@ -55,6 +64,7 @@ export default function Home() {
       <WhatsAppChat />
       <Header />
       <MobileHeader />
+      {showPopup && <Popup setShowPopup={setShowPopup}/>}
       {/* <div id="white-screen">
         <LoadingCircle />
         <div className="changeTextContainer">

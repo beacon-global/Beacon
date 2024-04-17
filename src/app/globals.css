@@ -1607,6 +1607,103 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   100% {transform: translatex(-1000%)}
 } */
 
+.backgrounddim {
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0;
+  width: 100%;
+  height: 100vh; /* Equivalent to h-screen in Tailwind CSS */
+}
+.popup{
+  position: fixed;
+  z-index: 20;
+  background-color: #FFF;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+}
+
+.popupForm{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.popupheading{
+  color: #13670B;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.inputBoxF{
+  display: flex;
+  flex-direction: column;
+  width: 414px;
+  background: #F8F8F8;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.inputBoxF ::placeholder {
+  color: black;
+  font-size: 10px;
+}
+
+.closeButton{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.subButton {
+  background-color: #13670B;
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  padding: 16px 32px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 100px;
+  margin: 32px auto 0 auto;
+  max-width: fit-content;
+}
+
+.subButton:hover {
+  background-color: lighten(#13670B , 10%);
+}
+
+.imageForm{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+}
+
+.popupImage{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
 @media (min-width: 601px) and (max-width: 1180px) {
 
   #white-screen .changeTextContainer{
@@ -2028,6 +2125,10 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
 
   .beaconContainer{
     width: 47%;
+  }
+
+  .popupImage{
+    display: none;
   }
 
 }
@@ -3008,6 +3109,59 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
     height: 8vw;
   }
 
+  .backgrounddim {
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .popup{
+    z-index: 100;
+    border: #02040E;
+    padding: 0px;
+    width: 90vw;
+  }
+
+  .popupForm{
+    width: 100%;
+    gap: 10px;
+  }
+  
+  .popupheading{
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .inputBoxF{
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  
+  .inputBoxF ::placeholder {
+    color: black;
+    font-size: 10px;
+  }
+  
+  .closeButton{
+    top: 10px;
+    right: 10px;
+  }
+  
+  .subButton {
+    font-size: 12px;
+    padding: 10px 24px;
+    margin: 16px auto 0 auto;
+  }
+  
+  .subButton:hover {
+    background-color: lighten(#13670B , 10%);
+  }
+  
+  .imageForm{
+    display: none;
+  }
+  
 }
 
 #white-screen {
