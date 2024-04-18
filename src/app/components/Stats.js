@@ -125,7 +125,7 @@ function Stats({ useBackgroundImage, isMainPage }) {
         backgroundImage: useBackgroundImage
           ? `url(${backgroundImageUrl})`
           : "none",
-        backgroundColor: useBackgroundImage ? "transparent" : "#13670b",
+        backgroundColor: useBackgroundImage ? "transparent" : "#024a04",
         height: useBackgroundImage ? "auto" : "194px",
         padding: ppadding,
       }}
