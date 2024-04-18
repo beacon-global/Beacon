@@ -35,7 +35,7 @@ function Blogs({ blogPage }) {
             className="businessHeading"
             style={{ display: blogPage ? "none" : "block" }}
           >
-            Blogs
+            Resources
           </h6>
           <h2 className="blogBusinessDesc blogBusinessDesc">
             {blogPage

@@ -3042,6 +3042,7 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
     right: 0;
     z-index: 1000;
     background-color: #fff;
+    cursor: pointer;
   }
 
   .chat-icon{
