@@ -41,42 +41,46 @@ const PersonalBlog = ({ blogPage }) => {
       </h6>
       <div className={styles.companyBlogCards}>
         {blogData.map((data, index) => (
-          <div className={styles.companyBlogCard} key={index}>
-            <Link
-              href={{
-                pathname: "/pages/blog",
-                search: `?search=${JSON.stringify(data)}`,
-              }}
-              target="_blank"
-              onClick={() => console.log("Link clicked:")}
-            >
-              <Image
-                src={urlFor(data.titleImage).url()}
-                width={350}
-                height={250}
-                alt="Image"
-                className={styles.blogImage}
-              />
-              <div className={styles.dateAndLocationContainer}>
-                <div className={styles.dateTextContainer}>
-                  <h6 className={styles.text4}>{data.location}</h6>
-                  <div className={styles.blogDot}></div>
-                  <h6 className={styles.text3}>{data.date}</h6>
-                </div>
-                <Image
-                  src="/blackArrow.svg"
-                  width={23}
-                  height={23}
-                  alt="Image"
-                  className={styles.blogArrow}
-                />
+          <>
+            {blogPage || (index < 4 && index > 0) && (
+              <div className={styles.companyBlogCard} key={index}>
+                <Link
+                  href={{
+                    pathname: "/pages/blog",
+                    search: `?search=${JSON.stringify(data)}`,
+                  }}
+                  target="_blank"
+                  onClick={() => console.log("Link clicked:")}
+                >
+                  <Image
+                    src={urlFor(data.titleImage).url()}
+                    width={350}
+                    height={250}
+                    alt="Image"
+                    className={styles.blogImage}
+                  />
+                  <div className={styles.dateAndLocationContainer}>
+                    <div className={styles.dateTextContainer}>
+                      <h6 className={styles.text4}>{data.location}</h6>
+                      <div className={styles.blogDot}></div>
+                      <h6 className={styles.text3}>{data.date}</h6>
+                    </div>
+                    <Image
+                      src="/blackArrow.svg"
+                      width={23}
+                      height={23}
+                      alt="Image"
+                      className={styles.blogArrow}
+                    />
+                  </div>
+                  <div className={styles.companyBlogContent}>
+                    <h6 className={styles.text5}>{data.title}</h6>
+                    <h6 className={styles.text6}>{data.description}</h6>
+                  </div>
+                </Link>
               </div>
-              <div className={styles.companyBlogContent}>
-                <h6 className={styles.text5}>{data.title}</h6>
-                <h6 className={styles.text6}>{data.description}</h6>
-              </div>
-            </Link>
-          </div>
+            )}
+          </>
         ))}
       </div>
 
@@ -84,7 +88,7 @@ const PersonalBlog = ({ blogPage }) => {
         className={`${styles.blogButton} hButtonContainer servicesButton`}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        // style={{ marginTop: blogPage ? "-30px" : "" }}
+      // style={{ marginTop: blogPage ? "-30px" : "" }}
       >
         <div className="visibleWrapperContainer">
           <div className="topVisibleContainer">
