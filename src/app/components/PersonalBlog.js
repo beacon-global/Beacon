@@ -25,6 +25,7 @@ const PersonalBlog = ({ blogPage }) => {
   }, []);
 
   const imageSrc = isHovered ? "/whiteArrow.svg" : "/blackArrow.svg";
+  const ismobile = typeof window !== "undefined" && window.innerWidth < 768;
 
   return (
     <div className={styles.companyBlog}>
@@ -42,7 +43,7 @@ const PersonalBlog = ({ blogPage }) => {
       <div className={styles.companyBlogCards}>
         {blogData.map((data, index) => (
           <>
-            {blogPage || (index < 4 && index > 0) && (
+            {( blogPage || ismobile || (index < 4 && index > 0) )&& (
               <div className={styles.companyBlogCard} key={index}>
                 <Link
                   href={{
