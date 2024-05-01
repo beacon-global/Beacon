@@ -190,8 +190,8 @@ function Careers() {
                     <div className={styles.faqdesc2}>
                       {
                         data.desc.map((item, index) => (
-                          <div className={styles.button}>
-                            <p key={index}>{item}</p>
+                          <div key={index} className={styles.button}>
+                            <p>{item}</p>
                           </div>
                         ))
                       }
