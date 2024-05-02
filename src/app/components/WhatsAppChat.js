@@ -95,7 +95,7 @@ const WhatsAppChat = () => {
           {isCardVisible && (
             <div className="topCard">
               <button
-                className="closeButton"
+                className="closeButtonw"
                 onClick={() => setIsCardVisible(false)}
               >
                 &times;
