@@ -6,36 +6,42 @@ const WhatsAppChat = () => {
   const [isCardVisible, setIsCardVisible] = useState(false);
 
   const offices = [
+    // {
+    //   img: "/office.png",
+    //   name: "",
+    //   number: "966570807175",
+    //   location: "Jeddah",
+    // },
+    // {
+    //   img: "/office.png",
+    //   name: "",
+    //   number: "966539067414",
+    //   location: "Riyadh",
+    // },
+    // {
+    //   img: "/office.png",
+    //   name: "",
+    //   number: "966566416774",
+    //   location: "Dammam",
+    // },
+    // {
+    //   img: "/office.png",
+    //   name: "",
+    //   number: "966563144588",
+    //   location: "Jazan",
+    // },
     {
       img: "/office.png",
       name: "",
-      number: "966570807175",
-      location: "Jeddah",
+      number: "+971568352250",
+      location: "UAE",
     },
     {
       img: "/office.png",
       name: "",
-      number: "966539067414",
-      location: "Riyadh",
-    },
-    {
-      img: "/office.png",
-      name: "",
-      number: "966566416774",
-      location: "Dammam",
-    },
-    {
-      img: "/office.png",
-      name: "",
-      number: "966563144588",
-      location: "Jazan",
-    },
-    {
-      img: "/office.png",
-      name: "",
-      number: "971568352250",
-      location: "Dubai",
-    },
+      number: "+966540599655",
+      location: "KSA",
+    }
     // Add more offices as needed
   ];
 
@@ -88,12 +94,12 @@ const WhatsAppChat = () => {
         >
           {isCardVisible && (
             <div className="topCard">
-              {/* <button
+              <button
                 className="closeButton"
                 onClick={() => setIsCardVisible(false)}
               >
                 &times;
-              </button> */}
+              </button>
               <h3>Hello...</h3>
               <p>
                 Chat with us! Simply choose an office contact from the list
