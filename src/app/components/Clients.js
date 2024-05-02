@@ -122,7 +122,7 @@ function Clients() {
           </div>
           <div className="testimonialImageButtonContainer">
             <div className="testimonialProfile">
-              <Image
+              {/* <Image
                 src={currentTestimonial.img}
                 width={67}
                 height={60}
@@ -130,7 +130,7 @@ function Clients() {
                 quality={100}
                 priority={true}
                 unoptimized
-              />
+              /> */}
               <div style={{ display: "flex", flexDirection: "column" , alignItems:'flex-start'}}>
                 {/* Display current testimonial's profile */}
                 <p className="profileName">{currentTestimonial.name}</p>
