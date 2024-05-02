@@ -227,6 +227,8 @@
   .faqDesc{
     color: #58595B;
     /* font-size: 15px; */
+    display: flex;
+    flex-direction: column;
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
@@ -236,6 +238,11 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease-in-out;
+  }
+
+  .icon{
+    width: 50px;
+    height: 50px;
   }
 
   /* .faqDesc :first-child {
@@ -298,7 +305,27 @@
     margin-top: 20px;
   }
 
+  .faqButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #13670B;
+    cursor: pointer;
+    padding: 12px 20px;
+    border-radius: 90px;
+    margin-top: 30px;
+    margin-right: auto;
+    text-transform: capitalize;
+  }
+
 @media (max-width: 600px) {
+
+    .businessDesc {
+        font-size: 24px;
+    }
 
     .contactUsContainer h1 {
         text-align: center;
@@ -316,11 +343,21 @@
         color: #02040E;
     }
 
+    .Imagecontainer{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+
     .subHeading {
         font-size: 12px;
         font-weight: 400;
         color: #58595B;
-        padding-top: 20px;
+        padding-top: 10px;
         text-align: center;
         margin: 0px auto;
         width: 80vw;
@@ -338,41 +375,57 @@
     }
 
     .aboutHeroImage{
-        margin-top: 30px;
+        margin-top: 20px;
     }
 
 
     .container2{
-        padding: 0 0px;
         display: flex;
         flex-direction: column;
-        margin-top: 20px;
+        margin-top: 0px;
+        gap:15px;
     }
 
     .container2Card{
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 0px;
     }
 
     .container2Card .desc{
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .CareersCard .desc{
-        font-size: 14px;
+        font-size: 12px;
     } 
 
+    .CareersCard{
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+    }
+
     .CareersContainer{
-        gap: 70px;
-        padding: 40px 24px;
+        gap: 20px;
+        padding: 0px 24px;
     }
 
     .CardContainer{
         display: grid;
         grid-template-columns: 1fr;
         width: 100%;
-        column-gap: 20px;
+        gap: 20px;
+    }
+
+    .title{
+        text-align: left;
+        font-size: 16px !important;
+    }
+
+    .icon{
+        width: 25px !important;
+        height: 25px !important;
     }
 
     .footerContainer h1 {
@@ -401,4 +454,55 @@
         text-transform: capitalize;
         margin-bottom: 10px;
     }
+
+    .faqMainContainer{
+      padding: 0 24px;
+      gap: 20px;
+    }
+
+    .faqRight{
+      gap: 15px;
+      padding: 15px 0px;
+    }
+
+    .faqContentContainer{
+      width: auto;
+    }
+
+    .faqQuestion{
+      width: 90%;
+    }
+
+    .faqQuestion h1{
+      font-size: 16px;
+      text-align: left;
+    }
+
+    .faqHeading{
+      font-size: 16px !important;
+      text-align: left;
+      margin-top: 10px;
+    }
+
+    .faqDesc p{
+      font-size: 12px;
+      text-align: left;
+    }
+
+    .faqButton{
+      font-size: 14px;
+      padding: 10px 15px;
+      margin-top: 15px;
+    }
+
+    /* .faqQuestionContainer{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    } */
+
+    .faqdesc2{
+      display: none;
+    }
+
 }

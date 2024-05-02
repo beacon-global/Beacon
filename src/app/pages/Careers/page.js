@@ -172,17 +172,18 @@ function Careers() {
         </div>
         <div className={styles.faqMainContainer}>
           <h2 className="businessDesc">our current open positions</h2>
+          <h2 className={styles.mbusinessDesc}>our current open positions</h2>
           <div className={styles.faqContentMainContainer}>
             {faqData.map((data, index) => (
               <div
                 className={styles.faqRight}
                 key={index}
-                onClick={() => toggleAnswerVisibility(index)}
               >
                 <div className={styles.faqContentContainer}>
                   <div
                     style={{ display: "flex", justifyContent: "space-between" }}
                     className={styles.faqQuestionContainer}
+                    onClick={() => toggleAnswerVisibility(index)}
                   >
                     <div className={styles.faqQuestion}>
                       <h1>{data.heading}</h1>
@@ -227,6 +228,9 @@ function Careers() {
                     <p className={styles.faqHeading}>Holidays/Vacation</p>
                     <p className={styles.faqHeading}>Salary</p>
                     <p className={styles.faqHeading}>Selection process</p>
+                    <div className={styles.faqButton}>
+                      <button>Apply</button>
+                    </div>
 
                   </div>
                 </div>
@@ -279,16 +283,18 @@ function Careers() {
         </div>
         <div className={styles.CareersContainer}>
           <h2 className="businessDesc">easier life with Beacon</h2>
+          <h2 className={styles.mbusinessDesc}>easier life with Beacon</h2>
           <div className={styles.CardContainer}>
             {data2.map((item, index) => (
               <div key={index} className={styles.CareersCard}>
                 <div className={styles.iconContainer}>
                   <Image
                     src={item.icon}
-                    width={50}
-                    height={50}
+                    width={40}
+                    height={40}
                     layout="responsive"
                     alt="icon"
+                    className={styles.icon}
                   />
                 </div>
                 <h2 className={styles.title}>{item.title}</h2>
