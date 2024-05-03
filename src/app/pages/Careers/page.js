@@ -70,7 +70,7 @@ function Careers() {
           "1. Upstream processes such as requirements hearing, requirements definition, and basic design during communication with clients",
           "2. Management of a series of phases in software development projects from requirements definition, basic design, detailed design, development, testing, and release",
           "3. Project Progress reporting, resource management4. Communication with engineering team"],
-      isAnswerVisible: true,
+      isAnswerVisible: false,
     },
     {
       img: "02",

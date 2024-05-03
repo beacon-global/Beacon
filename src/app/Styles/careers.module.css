@@ -270,6 +270,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-top: 1.5px solid #ECECF1;
   }
 
   .faqdesc2{
@@ -376,6 +377,8 @@
 
     .aboutHeroImage{
         margin-top: 20px;
+        height: 350px !important;
+        width: 100%;
     }
 
 
@@ -407,13 +410,13 @@
     }
 
     .CareersContainer{
-        gap: 20px;
+        gap: 30px;
         padding: 0px 24px;
     }
 
     .CardContainer{
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         width: 100%;
         gap: 20px;
     }
@@ -491,7 +494,7 @@
 
     .faqButton{
       font-size: 14px;
-      padding: 10px 15px;
+      padding: 10px 20px;
       margin-top: 15px;
     }
 

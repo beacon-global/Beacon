@@ -57,6 +57,7 @@ function Popup({ setShowPopup }) {
                     <input type="text" name="name" placeholder="Full name" className="inputBoxF" onChange={handleChange} />
                     <input type="tel" name="phone" placeholder="Phone Number" className="inputBoxF" onChange={handleChange} />
                     <input type="email" name="email" placeholder="Email Address" className="inputBoxF" onChange={handleChange} />
+                    <div className="select-wrapper">
                     <select name="country" className="inputBoxF" onChange={handleChange}>
                         <option value="" disabled selected hidden>Business Location</option>
                         <option value="KSA">KSA</option>
@@ -64,6 +65,7 @@ function Popup({ setShowPopup }) {
                         <option value="QATAR">QATAR</option>
                         <option value="INDIA">INDIA</option>
                     </select>
+                    </div>
                     <div className="subButton" onClick={handleSubmit}>Book your free consultation </div>
                 </div>
             </div>

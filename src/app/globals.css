@@ -593,10 +593,14 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
 }
 
 .cardMainContainer .cardContainer{
-  gap: 30px;
+  gap: 15px;
   padding-top: 60px;
   padding-bottom: 60px;
   padding: 60px 26px;
+}
+
+.imgContainer{
+  margin-bottom: 15px;
 }
 
 .cardContainer {
@@ -1664,6 +1668,22 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   font-size: 10px;
 }
 
+.inputBoxF option{
+  font-size: 16px;
+  padding: 16px 20px !important;
+  padding-left: 100px !important;
+  background: #F8F8F8;
+}
+
+option {
+  font-size: 16px;
+  padding: 16px 20px !important;
+  padding-left: 100px !important;
+  background: #F8F8F8;
+  white-space: normal !important;
+
+}
+
 .closeButton{
   position: absolute;
   top: 20px;
@@ -1709,6 +1729,21 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.select-wrapper select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url('/dropdown.svg'); 
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 60px 25px;
 }
 
 
@@ -2589,6 +2624,11 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   .cardMainContainer .cardContainer{
     width: 100%;
     padding: 20px 15px 25px 15px;
+    gap: 10px;
+  }
+
+  .imgContainer{
+    margin-bottom: 5px;
   }
 
   .serviceContainer .servicesHeading{
@@ -2722,6 +2762,7 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
 
   .servicesDescContainer{
     width: auto;
+    height: auto;
   }
 
   .rectangleContainer .servicesDesc{
@@ -3143,10 +3184,16 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   
   .inputBoxF{
     width: 100%;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .inputBoxF option{
+    font-size: 12px;
+    padding: 12px 20px;
+    background-color: #F8F8F8;
   }
   
   .inputBoxF ::placeholder {
@@ -3156,8 +3203,8 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   
   .closeButton{
     display: flex;
-    top: 10px;
-    right: 10px;
+    top: 20px;
+    right: 20px;
   }
 
   .closeButtonw{
@@ -3168,8 +3215,9 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   
   .subButton {
     font-size: 12px;
-    padding: 10px 24px;
-    margin: 16px auto 0 auto;
+    font-weight: 500;
+    padding: 12px 25px;
+    margin: 20px auto 0 auto;
   }
   
   .subButton:hover {
