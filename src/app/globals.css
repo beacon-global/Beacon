@@ -117,6 +117,7 @@ li{
 
 .active {
   color: #13670B; 
+  font-weight: 600 !important;
 }
 
 /* Header Start */
@@ -193,7 +194,7 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   gap: 30px;
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 140%; 
   position: relative;
   white-space: nowrap;
