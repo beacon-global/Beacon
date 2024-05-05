@@ -34,7 +34,7 @@ const Page = () => {
       <>
         <Header />
         <MobileHeader />
-        {dataArray &&
+        {dataArray.length > 0 &&
           <div className={styles.mainContainer}>
             <h2
               className={`${styles.blog} blogBusinessDesc`}
