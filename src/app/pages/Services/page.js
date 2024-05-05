@@ -258,11 +258,11 @@ function Services() {
               regulations to ensure your business can thrive well in the dynamic
               world through comprehensive services to drive business success.
             </p>
-            <a href="/pages/Contact">
+            <a href="/pages/About">
               <div className={`hButtonContainer ${styles.cont2Button}`}>
                 <div className="visibleWrapperContainer">
                   <div className="topVisibleContainer btn">
-                    Get in Touch
+                    Learn More
                     <div className="topVisibleArrow">
                       <Image
                         src="/whiteArrow.svg"
@@ -273,7 +273,7 @@ function Services() {
                     </div>
                   </div>
                   <div className="bottomVisibleContainer btn">
-                    Get in Touch
+                    Learn More
                     <div className="bottomVisibleArrow">
                       <Image
                         src="/whiteArrow.svg"
@@ -336,11 +336,11 @@ function Services() {
               to the changes in the dynamic landscape and gain sustainable
               business advantage.
             </p>
-            <a href="/pages/About">
+            <a href="/pages/Contact">
               <div className={`hButtonContainer ${styles.cont3Button}`}>
                 <div className="visibleWrapperContainer">
                   <div className="topVisibleContainer btn">
-                    Learn more
+                    Get in Touch
                     <div className="topVisibleArrow">
                       <Image
                         src="/whiteArrow.svg"
@@ -351,7 +351,7 @@ function Services() {
                     </div>
                   </div>
                   <div className="bottomVisibleContainer btn">
-                    Learn more
+                    Get in Touch
                     <div className="bottomVisibleArrow">
                       <Image
                         src="/whiteArrow.svg"

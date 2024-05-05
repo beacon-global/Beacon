@@ -93,8 +93,8 @@ const PersonalBlog = ({ blogPage }) => {
       >
         <div className="visibleWrapperContainer">
           <div className="topVisibleContainer">
-            <a href="/" className={`${styles.blogButtonText} btn`}>
-              Explore More
+            <a href="/pages/blog" className={`${styles.blogButtonText} btn`}>
+              Learn More
               <div className={`${styles.topBlogArrow} topVisibleArrow`}>
                 <Image
                   src={imageSrc}
@@ -106,8 +106,8 @@ const PersonalBlog = ({ blogPage }) => {
             </a>
           </div>
           <div className="bottomVisibleContainer">
-            <a href="/" className={`${styles.blogButtonText} btn`}>
-              Explore More
+            <a href="/pages/blog" className={`${styles.blogButtonText} btn`}>
+              Learn More
               <div className={`${styles.bottomBlogArrow} bottomVisibleArrow`}>
                 <Image
                   src={imageSrc}
