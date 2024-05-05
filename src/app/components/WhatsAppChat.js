@@ -41,6 +41,12 @@ const WhatsAppChat = () => {
       name: "",
       number: "+966540599655",
       location: "KSA",
+    },
+    {
+      img: "/office.png",
+      name: "",
+      number: "+97431134224",
+      location:"QATAR"
     }
     // Add more offices as needed
   ];

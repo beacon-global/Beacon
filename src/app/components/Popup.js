@@ -31,6 +31,7 @@ function Popup({ setShowPopup }) {
                     console.log('SUCCESS!');
                     setSuccess(true);
                     setError('');
+                    setShowPopup(false);
                 },
                 (error) => {
                     console.log('FAILED...', error.text);
@@ -53,7 +54,7 @@ function Popup({ setShowPopup }) {
                     <img src="/Form.png" alt="popup image" className="popupImage" />
                 </div>
                 <div className="popupForm">
-                    <p className="popupheading">Book your free consultation </p>
+                    <p className="popupheading">Get your free consultation </p>
                     <input type="text" name="name" placeholder="Full name" className="inputBoxF" onChange={handleChange} />
                     <input type="tel" name="phone" placeholder="Phone Number" className="inputBoxF" onChange={handleChange} />
                     <input type="email" name="email" placeholder="Email Address" className="inputBoxF" onChange={handleChange} />
@@ -63,10 +64,12 @@ function Popup({ setShowPopup }) {
                         <option value="KSA">KSA</option>
                         <option value="UAE">UAE</option>
                         <option value="QATAR">QATAR</option>
-                        <option value="INDIA">INDIA</option>
+                        <option value="BAHRAIN">BAHRAIN</option>
+                        <option value="KUWAIT">KUWAIT</option>
+                        <option value="OMAN">OMAN</option>
                     </select>
                     </div>
-                    <div className="subButton" onClick={handleSubmit}>Book your free consultation </div>
+                    <div className="subButton" onClick={handleSubmit}>Book Now</div>
                 </div>
             </div>
         </>

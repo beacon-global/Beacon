@@ -251,14 +251,14 @@ function Services() {
               Being your premium partner for all your business requirements, we
               offer a myriad of professional solutions woven to suit your
               expectations. Whether you are an entrepreneur searching for
-              assistance to set up a business in the KSA, UAE, QATAR or India, or need
+              assistance to set up a business in GCC, or need
               help with financial, technological, digital transformation, or
               business consulting solutions, we&lsquo;re here to resolve them.
               Our experts understand the local and global market, and the
               regulations to ensure your business can thrive well in the dynamic
               world through comprehensive services to drive business success.
             </p>
-            <a href="/pages/About">
+            <a href="/pages/Contact">
               <div className={`hButtonContainer ${styles.cont2Button}`}>
                 <div className="visibleWrapperContainer">
                   <div className="topVisibleContainer btn">
@@ -340,7 +340,7 @@ function Services() {
               <div className={`hButtonContainer ${styles.cont3Button}`}>
                 <div className="visibleWrapperContainer">
                   <div className="topVisibleContainer btn">
-                    Resource
+                    Learn more
                     <div className="topVisibleArrow">
                       <Image
                         src="/whiteArrow.svg"
@@ -351,7 +351,7 @@ function Services() {
                     </div>
                   </div>
                   <div className="bottomVisibleContainer btn">
-                    Resource
+                    Learn more
                     <div className="bottomVisibleArrow">
                       <Image
                         src="/whiteArrow.svg"
@@ -417,12 +417,12 @@ function Services() {
               </div>
               <div className="testimonialImageButtonContainer">
                 <div className="testimonialProfile">
-                  <Image
+                  {/* <Image
                     src={currentTestimonial.img}
                     width={50}
                     height={50}
                     alt="person"
-                  />
+                  /> */}
                   <div style={{ display: "flex", flexDirection: "column" }}>
                     {/* Display current testimonial's profile */}
                     <p className="profileName">{currentTestimonial.name}</p>
