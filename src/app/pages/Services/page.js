@@ -127,14 +127,14 @@ function Services() {
       message:
         "Beacon has been with us throughout the phase of integrating and adapting business to the dynamic marketplace, with end-to-end business consultation services.",
       name: "Usman Tariq",
-      designation: "Google - Riyadh, KSA",
+      designation: " Riyadh, KSA",
       img: "/profilePic3.webp",
     },
     {
       message:
         "While partnering with Beacon, we never felt them as the business consultants, but as a part of our team with transparency and commitment at its best.",
       name: "Hassan",
-      designation: "Google - Jeddah, KSA",
+      designation: " Jeddah, KSA",
       img: "/profilePic4.webp",
     },
   ];
