@@ -20,7 +20,7 @@ function Locations() {
               performance and success. With true results and a clear focus on 
               the strategic actions tailored to achieve the unique expectations 
               of our clients, we provide a detailed blueprint and picture of how 
-              to establish and manage your business in Saudi Arabia, Qatar, and the UAE.
+              to establish and manage your business in GCC.
             </p>
           </div>
           <a href="/pages/About">

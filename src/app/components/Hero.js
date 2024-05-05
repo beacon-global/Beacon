@@ -35,14 +35,14 @@ function Hero({ initialScreenWidth }) {
           </div>
           <div className="heroDescContainer">
             <p className="heroDesc">
-              Establishing a business anywhere in Saudi Arabia, Qatar, or the UAE
+              Establishing a business anywhere in GCC
               requires extensive expertise and a solid foundation to stay ahead of
               the competition. A flawless business model enables you to meet customer
               expectations effectively. At Beacon Global, we provide top-notch business
               consulting services, offering practical strategies that align with global business standards.
             </p>
             <p className="mHeroDesc">
-              Establishing a business anywhere in Saudi Arabia, Qatar, or the UAE
+              Establishing a business anywhere in GCC
               requires extensive expertise and a solid foundation to stay ahead of
               the competition. A flawless business model enables you to meet customer
               expectations effectively. At Beacon Global, we provide top-notch business

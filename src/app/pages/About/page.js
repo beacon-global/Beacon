@@ -102,7 +102,7 @@ function About() {
             services in Saudi Arabia. With a solid industry reputation from the outset,
             our consultants expand services to include business consultancy, tax advisory,
             accounting, audit, regulatory services, and digital marketing, with offices in
-            the UAE, Qatar, and KSA. Committed to professionalism, integrity, and reliability,
+            the GCC. Committed to professionalism, integrity, and reliability,
             we specialize in business incorporation services. Clients trust us to navigate tax,
             auditing, and regulatory compliance challenges. Our team is devoted to delivering
             unparalleled service and value, reinforced by robust partnerships and positive relationships
@@ -114,7 +114,7 @@ function About() {
             services in Saudi Arabia. With a solid industry reputation from the outset,
             our consultants expand services to include business consultancy, tax advisory,
             accounting, audit, regulatory services, and digital marketing, with offices in
-            the UAE, Qatar, and KSA.</p>
+            the GCC.</p>
             <a href="/pages/Services">
               <div
                 className={`hButtonContainer ${styles.servicesButton}`}
