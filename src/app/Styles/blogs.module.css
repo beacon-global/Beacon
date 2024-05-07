@@ -76,4 +76,12 @@
   .description {
     width: auto;
   }
+
+  .description p {
+    font-size: 2.8582010582010581vw;
+  }
+
+  .blogtopmargin{
+    margin-top: 25.333333333333334vw;
+  }
 }

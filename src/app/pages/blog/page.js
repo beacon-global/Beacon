@@ -34,40 +34,43 @@ const Page = () => {
       <>
         <Header />
         <MobileHeader />
-        <div className={styles.mainContainer}>
-          <h2
-            className={`${styles.blog} blogBusinessDesc`}
-            style={{ display: "block" }}
-          >
-            {dataArray.title}
-          </h2>
-          <div className={styles.locationDateContainer}>
-            {dataArray.location}
-            <div className={styles.dot}></div>
-            {dataArray.date}
-          </div>
-          <div className={styles.content}>
-            {
-              dataArray.titleImage &&
-              <Image
-                className=""
-                src={dataArray.titleImage && urlFor(dataArray.titleImage).url()}
-                alt={dataArray.title}
-                width={0}
-                height={600}
-                layout="responsive"
-                quality={100}
-                priority={true}
-                unoptimized
-              />
-            }
+        {
+          (dataArray !== undefined && dataArray !== null && dataArray.length !== 0) &&
+          <div className={styles.mainContainer}>
+            <h2
+              className={`${styles.blog} blogBusinessDesc`}
+              style={{ display: "block" }}
+            >
+              {dataArray.title}
+            </h2>
+            <div className={styles.locationDateContainer}>
+              {dataArray.location}
+              <div className={styles.dot}></div>
+              {dataArray.date}
+            </div>
+            <div className={styles.content}>
+              {
+                dataArray.titleImage &&
+                <Image
+                  className=""
+                  src={dataArray.titleImage && urlFor(dataArray.titleImage).url()}
+                  alt={dataArray.title}
+                  width={0}
+                  height={600}
+                  layout="responsive"
+                  quality={100}
+                  priority={true}
+                  unoptimized
+                />
+              }
 
-            <div className={styles.description}>
-              <p>{dataArray.description}</p>
+              <div className={styles.description}>
+                <p>{dataArray.description}</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="forContactFromBlog">
+        }
+        <div className={`forContactFromBlog ${dataArray.length === 0 && styles.blogtopmargin}`}>
           <PersonalBlog blogPage={dataArray?.titleImage ? true : false} />
         </div>
         <div className="forContactFromBlog">
