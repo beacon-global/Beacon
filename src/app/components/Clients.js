@@ -22,20 +22,20 @@ function Clients() {
     },
     {
       message:
-      "Working with Beacon made setting up our business in Saudi Arabia hassle-free. Their comprehensive services covered everything from paperwork to logistics, ensuring a smooth and successful expansion.",
+        "Working with Beacon made setting up our business in Saudi Arabia hassle-free. Their comprehensive services covered everything from paperwork to logistics, ensuring a smooth and successful expansion.",
       name: "Mohammed Al-Saud",
       designation: " Jeddah, KSA",
       img: "/profilePic3.webp",
     },
     {
       message:
-      "Working with Beacon felt like having an extended team member. Their transparency and unwavering commitment made the partnership seamless and productive.",
+        "Working with Beacon felt like having an extended team member. Their transparency and unwavering commitment made the partnership seamless and productive.",
       name: " Ahmed Al-Sayed",
       designation: " Dubai , UAE",
       img: "/profilePic4.webp",
     },
     {
-      message:"Beacon's guidance and expertise have been instrumental in our business's growth and success. Their tailored solutions and dedicated support have exceeded our expectations.",
+      message: "Beacon's guidance and expertise have been instrumental in our business's growth and success. Their tailored solutions and dedicated support have exceeded our expectations.",
       name: "Abdul Rasheed",
       designation: " Dammam, KSA",
       img: "/profilePic3.webp",
@@ -88,6 +88,31 @@ function Clients() {
     ...imageSources,
   ]).flat();
 
+  useEffect(() => {
+    const scrollers = document.querySelectorAll('.scroller');
+
+    const addAnimation = () => {
+      scrollers.forEach((scroller) => {
+        scroller.setAttribute('data-animated', true);
+
+        const scrollerInner = scroller.querySelector('.scroller__inner');
+        const scrollerContent = Array.from(scrollerInner.children);
+        scrollerContent.forEach((item) => {
+          const duplicatedItem = item.cloneNode(true);
+          duplicatedItem.setAttribute('aria-hidden', true);
+          scrollerInner.appendChild(duplicatedItem);
+        });
+      });
+    };
+
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      addAnimation();
+    }
+
+    return () => {
+    };
+  }, []);
+
   return (
     <div className="clientsContainer">
       <div className="businessContentContainer">
@@ -95,12 +120,19 @@ function Clients() {
         <h2 className="businessDesc">Our core partners</h2>
       </div>
       <div className="clientsImgContainer">
-        <Brands
+        {/* <Brands
           imageSources={repeatedImageSources}
           initialAnimateValue="-160%"
           hoverDuration="180"
           duration="100"
-        />
+        /> */}
+        <div class="scroller" data-direction="left" data-speed="fast">
+          <div class="scroller__inner">
+            {imageSources.map((img, index) => (
+              <img key={index} src={img} alt="" className="logoClients" />
+            ))}
+          </div>
+        </div>
       </div>
       <div className="testimonialMainContainer">
         <div className="testimonialLeftContainer">
@@ -131,7 +163,7 @@ function Clients() {
                 priority={true}
                 unoptimized
               /> */}
-              <div style={{ display: "flex", flexDirection: "column" , alignItems:'flex-start'}}>
+              <div style={{ display: "flex", flexDirection: "column", alignItems: 'flex-start' }}>
                 {/* Display current testimonial's profile */}
                 <p className="profileName">{currentTestimonial.name}</p>
                 <p className="profileDesignation">
