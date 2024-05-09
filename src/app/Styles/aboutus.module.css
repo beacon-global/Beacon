@@ -236,12 +236,12 @@
 }
 
 .mission{
-    background: url("../../../public/AboutUsPage/mission.png");
+    background: url("../../../public/AboutUsPage/mission.webp");
 
 }
 
 .vission{
-    background: url("../../../public/AboutUsPage/vission.png");
+    background: url("../../../public/AboutUsPage/vission.webp");
 }
 
 .mission, .vission {

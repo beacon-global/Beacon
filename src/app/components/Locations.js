@@ -55,7 +55,7 @@ function Locations() {
 
         <div className="locationImgContainer">
           <Image
-            src="/location.png"
+            src="/location.webp"
             width={606}
             height={527}
             alt="ImageLocation"

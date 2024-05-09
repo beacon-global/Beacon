@@ -51,7 +51,7 @@ function Popup({ setShowPopup }) {
                     <img src="/close-b.svg" alt="close button" className="closeImage" />
                 </div>
                 <div className="imageForm">
-                    <img src="/Form.png" alt="popup image" className="popupImage" />
+                    <img src="/Form.webp" alt="popup image" className="popupImage" />
                 </div>
                 <div className="popupForm">
                     <p className="popupheading">Get your free consultation </p>

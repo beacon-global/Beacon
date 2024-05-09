@@ -254,7 +254,7 @@ function Services() {
               </div>
             )}
             <Image
-              src="/ServicesPage/aboutImage.png"
+              src="/ServicesPage/aboutImage.webp"
               width={576}
               height={540}
               layout="responsive"
