@@ -112,6 +112,7 @@ function About() {
             we have established a strong reputation in the industry. Our services go beyond traditional auditing
             and accounting to encompass business consultancy, tax advisory, regulatory compliance, and digital marketing.
             With a presence in the GCC region, we uphold values of professionalism, integrity, and reliability in all our endeavors.
+            Our ultimate goal is to provide unmatched service and value, built on enduring partnerships and positive client relationships.
           </p>
           <a href="/pages/Services">
             <div
