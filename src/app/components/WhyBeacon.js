@@ -49,14 +49,13 @@ function WhyBeacon() {
         </div>
         <div className="whyBeaconRight">
           <h2 className="whyBeaconHeading">
-            Redefining Business With Endless Transformation Possibilities
+            Redefine Your Business With Endless Transformation Possibilities
           </h2>
           <p className="whyBeaconDesc">
-            At Beacon Global, we&lsquo;re passionate about creating measurable
-            impact in everything we do for you. Our DNA is the spirit that lets
-            businesses grow and thrive. Established and specialized in providing
-            Business consulting services across the Middle East, we work towards
-            adding value to every client through our expertise.
+            At Beacon Global, we&lsquo;re here to help you grow. With our expertise in business
+            consulting across the Middle East, we're committed to making a real difference for every client.
+            Let's work together to achieve your goals. Welcome to a brighter future!
+
           </p>
         </div>
       </div>
