@@ -53,8 +53,8 @@ function WhyBeacon() {
           </h2>
           <p className="whyBeaconDesc">
             At Beacon Global, we&lsquo;re here to help you grow. With our expertise in business
-            consulting across the Middle East, we're committed to making a real difference for every client.
-            Let's work together to achieve your goals. Welcome to a brighter future!
+            consulting across the Middle East, we&apos;re committed to making a real difference for every client.
+            Let&apos;s work together to achieve your goals. Welcome to a brighter future!
 
           </p>
         </div>

@@ -10,11 +10,11 @@ function Contact() {
         </div>
         <div className="contactDescContainer">
           <p className="contactDesc">
-            If you're seeking tailored solutions, look no further. Get in touch with <br />{" "}
+            If you&apos;re seeking tailored solutions, look no further. Get in touch with <br />{" "}
             us today for expert business consultancy services across the GCC.
           </p>
           <p className="mContactDesc">
-          If you're seeking tailored solutions, look no further. Get in touch with 
+          If you&apos;re seeking tailored solutions, look no further. Get in touch with 
           us today for expert business consultancy services across the GCC.
           </p>
         </div>
@@ -22,7 +22,7 @@ function Contact() {
           <div className="hButtonContainer contactImageButton">
             <div className="visibleWrapperContainer">
               <div className="topVisibleContainer btn">
-                Let's Talk
+                Let&apos;s Talk
                 <div className="topVisibleArrow">
                   <Image
                     src="/whiteArrow.svg"
@@ -33,7 +33,7 @@ function Contact() {
                 </div>
               </div>
               <div className="bottomVisibleContainer btn">
-                Let's Talk
+                Let&apos;s Talk
                 <div className="bottomVisibleArrow">
                   <Image
                     src="/whiteArrow.svg"
