@@ -96,64 +96,62 @@ function About() {
             />
           </div>
           <p className={styles.hidetext}>
-            Established in 2022, Beacon Global consists of dedicated accountants,
-            auditors, and financial analysts. Acknowledging the demand for reliable
-            auditing and accounting services, we deliver exceptional business consulting
-            services in Saudi Arabia. With a solid industry reputation from the outset,
-            our consultants expand services to include business consultancy, tax advisory,
-            accounting, audit, regulatory services, and digital marketing, with offices in
-            the GCC. Committed to professionalism, integrity, and reliability,
-            we specialize in business incorporation services. Clients trust us to navigate tax,
-            auditing, and regulatory compliance challenges. Our team is devoted to delivering
-            unparalleled service and value, reinforced by robust partnerships and positive relationships
-            with clients and stakeholders.
+            At Beacon Global, we are a team of dedicated professionals, including accountants, auditors, and
+            financial analysts, committed to delivering exceptional business consultancy services in Saudi Arabia.
+            Recognizing the growing demand for reliable auditing and accounting services, we have established a strong
+            reputation in the industry. Our services go beyond traditional auditing and accounting to encompass business
+            consultancy, tax advisory, regulatory compliance, and digital marketing. With a presence in the GCC region, we
+            uphold values of professionalism, integrity, and reliability in all our endeavors. Specializing in business incorporation
+            services, we guide our clients through tax, auditing, and regulatory complexities with confidence. Our ultimate goal is
+            to provide unmatched service and value, built on enduring partnerships and positive client relationships.
           </p>
-          <p className={styles.visibletext}>Established in 2022, Beacon Global consists of dedicated accountants,
-            auditors, and financial analysts. Acknowledging the demand for reliable
-            auditing and accounting services, we deliver exceptional business consulting
-            services in Saudi Arabia. With a solid industry reputation from the outset,
-            our consultants expand services to include business consultancy, tax advisory,
-            accounting, audit, regulatory services, and digital marketing, with offices in
-            the GCC.</p>
-            <a href="/pages/Services">
-              <div
-                className={`hButtonContainer ${styles.servicesButton}`}
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
-              >
-                <div className="visibleWrapperContainer">
-                  <div className={`topVisibleContainer ${styles.btn}`}>
+          <p className={styles.visibletext}>
+            At Beacon Global, we are a team of dedicated professionals, including accountants, auditors,
+            and financial analysts, committed to delivering exceptional business consultancy services
+            in Saudi Arabia. Recognizing the growing demand for reliable auditing and accounting services,
+            we have established a strong reputation in the industry. Our services go beyond traditional auditing
+            and accounting to encompass business consultancy, tax advisory, regulatory compliance, and digital marketing.
+            With a presence in the GCC region, we uphold values of professionalism, integrity, and reliability in all our endeavors.
+          </p>
+          <a href="/pages/Services">
+            <div
+              className={`hButtonContainer ${styles.servicesButton}`}
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+            >
+              <div className="visibleWrapperContainer">
+                <div className={`topVisibleContainer ${styles.btn}`}>
 
-                    Our services&nbsp;&nbsp;
-                    <div className="topVisibleArrow">
-                      <Image
-                        src={imageSrc}
-                        width={23}
-                        height={23}
-                        alt="heroContact"
-                        quality={100}
-                        priority={true}
-                        unoptimized
-                      />
-                    </div>
+                  Our services&nbsp;&nbsp;
+                  <div className="topVisibleArrow">
+                    <Image
+                      src={imageSrc}
+                      width={23}
+                      height={23}
+                      alt="heroContact"
+                      quality={100}
+                      priority={true}
+                      unoptimized
+                    />
                   </div>
-                  <div className={`bottomVisibleContainer ${styles.btn}`}>
-                    Our services
-                    <div className="bottomVisibleArrow">
-                      <Image
-                        src={imageSrc}
-                        width={23}
-                        height={23}
-                        alt="heroContact"
-                        quality={100}
-                        priority={true}
-                        unoptimized
-                      />
-                    </div>
+                </div>
+                <div className={`bottomVisibleContainer ${styles.btn}`}>
+                  Our services
+                  <div className="bottomVisibleArrow">
+                    <Image
+                      src={imageSrc}
+                      width={23}
+                      height={23}
+                      alt="heroContact"
+                      quality={100}
+                      priority={true}
+                      unoptimized
+                    />
                   </div>
                 </div>
               </div>
-            </a>
+            </div>
+          </a>
         </div>
         <Stats useBackgroundImage={useBackgroundImage} isMainPage={false} />
 

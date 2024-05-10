@@ -3203,8 +3203,8 @@ option {
   }
 
   .backgrounddim {
-    z-index: 10;
-    background-color: rgba(0, 0, 0, 0);
+    z-index: 50;
+    background-color: rgba(0, 0, 0, 0.8);
   }
   .popup{
     z-index: 100;
@@ -3214,6 +3214,8 @@ option {
   }
 
   .popupForm{
+    padding-top: 42px;
+    padding-bottom: 30px;
     width: 100%;
     gap: 10px;
   }
