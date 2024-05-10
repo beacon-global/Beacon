@@ -22,7 +22,7 @@ function Clients() {
     },
     {
       message:
-        "Working with Beacon made setting up our business in Saudi Arabia hassle-free. Their comprehensive services covered everything from paperwork to logistics, ensuring a smooth and successful expansion.",
+        "Working with Beacon made setting up our business in Saudi Arabia hassle-free. Their comprehensive services covered everything from paperwork to best business suggestions, ensuring a smooth and successful expansion.",
       name: "Mohammed Al-Saud",
       designation: " Jeddah, KSA",
       img: "/profilePic3.webp",
