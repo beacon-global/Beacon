@@ -130,12 +130,13 @@ function MobileHeader() {
           >
             Our Presence{" "}
             <img
-              style={{
-                height: "4.8vw",
-                width: "3.5vw",
-              }}
+              // style={{
+              //   height: "4.8vw",
+              //   width: "3.5vw",
+              // }}
               src="/dropDown.png"
               alt="Our Presence Arrow"
+              className="dropDownArrow"
             />
           </div>
           <div

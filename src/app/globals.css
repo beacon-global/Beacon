@@ -2023,6 +2023,11 @@ option {
     display: flex;
   }
 
+  .dropDownArrow{
+    width: 20px;
+    height: 20px;
+  }
+
   .greenBannerContiner{
     /* background: url("../../public/NewSvgs/Backgrounds/bg4.png"); */
     height: 256px;
@@ -2424,6 +2429,11 @@ option {
     font-style: normal;
     font-weight: 500;
     line-height: 140%; /* 22.4px */
+  }
+
+  .dropDownArrow{
+    width: 30px !important;
+    height: auto !important;
   }
 
   .mHeaderBtn{
