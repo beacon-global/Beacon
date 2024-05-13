@@ -48,7 +48,7 @@ const PersonalBlog = ({ blogPage }) => {
                 <Link
                   href={{
                     pathname: "/pages/blog",
-                    search: `?search=${JSON.stringify(data)}`,
+                    search: `?search=${data.currentSlug}`,
                   }}
                   target="_blank"
                   onClick={() => console.log("Link clicked:")}
@@ -76,7 +76,7 @@ const PersonalBlog = ({ blogPage }) => {
                   </div>
                   <div className={styles.companyBlogContent}>
                     <h6 className={styles.text5}>{data.title}</h6>
-                    <h6 className={styles.text6}>{data.description}</h6>
+                    <h6 className={styles.text6}>{data?.description[1]?.children[0]?.text}</h6>
                   </div>
                 </Link>
               </div>

@@ -4,11 +4,94 @@ import styles from "../../Styles/blogs.module.css";
 import Image from "next/image";
 import Header from "@/app/components/Header";
 import MobileHeader from "@/app/components/MobileHeader";
-import { urlFor } from "../../../../test";
+import fetchDataAndExport, { urlFor } from "../../../../test";
 import Blogs from "@/app/components/Blogs";
 import Contact from "../../components/Contact";
 import Footer from "../../components/Footer";
 import PersonalBlog from "@/app/components/PersonalBlog";
+
+
+const SanityComponent = ({ textData }) => {
+
+  return (
+    <div>
+      {textData.style == 'h2' &&
+        <>
+          {textData.children.map((data, index) => (
+            <h2
+              // className={`${styles.blog}`}
+              style={{ display: "block" }}
+              key={index}>
+              {data.text}
+            </h2>
+          ))
+          }
+        </>
+      }
+      {textData.style == 'h3' &&
+        <>
+          {textData.children.map((data, index) => (
+            <h3
+              // className={`${styles.blog}`}
+              style={{ display: "block" }}
+              key={index}>
+              {data.text}
+            </h3>
+          ))
+          }
+        </>
+      }
+      {textData.style == 'h4' &&
+        <>
+          {textData.children.map((data, index) => (
+            <h4
+              // className={`${styles.blog}`}
+              style={{ display: "block" }}
+              key={index}>
+              {data.text}
+            </h4>
+          ))}
+        </>
+      }
+      {textData.style == 'h5' &&
+        <>
+          {textData.children.map((data, index) => (
+            <h5
+              // className={`${styles.blog}`}
+              style={{ display: "block" }}
+              key={index}>
+              {data.text}
+            </h5>
+          ))}
+        </>
+      }
+      {textData.style == 'h6' &&
+        <>
+          {textData.children.map((data, index) => (
+            <h6
+              // className={`${styles.blog}`}
+              style={{ display: "block" }}
+              key={index}>
+              {data.text}
+            </h6>
+          ))}
+        </>
+      }
+      {textData.style == 'normal' &&
+        <>
+          {textData.children.map((data, index) => (
+            <p
+              // className={`${styles.description}`}
+              style={{ display: "block" }}
+              key={index}>
+              {data.text}
+            </p>
+          ))}
+        </>
+      }
+    </div>
+  );
+}
 
 const Page = () => {
   const [dataArray, setDataArray] = useState([]);
@@ -17,17 +100,25 @@ const Page = () => {
   useEffect(() => {
     const searchParams = new URLSearchParams(window.location.search);
     const searchData = searchParams.get("search");
-    const parsedData = searchData ? JSON.parse(searchData) : [];
-    console.log(parsedData, "DataArray");
-    setDataArray(parsedData);
-    console.log(dataArray, "Link clickeddddd");
+    async function fetchData() {
+      try {
+        if (searchData === null || searchData === undefined) {
+          return;
+        }
+        const data = await fetchDataAndExport(searchData);
+        setDataArray(data[0]);
+      } catch (error) {
+        console.error("Error in component:", error.message);
+      }
+    }
+
+    fetchData();
 
     setDfor(true);
   }, []);
 
-  useEffect(() => {
-    console.log(dataArray, "Link clickeddddd");
-  }, [dataArray]);
+
+  console.log(dataArray, "Link clickeddddd")
 
   if (dfor) {
     return (
@@ -35,7 +126,7 @@ const Page = () => {
         <Header />
         <MobileHeader />
         {
-          (dataArray !== undefined && dataArray !== null && dataArray.length !== 0) &&
+          (dataArray !== undefined && dataArray !== null && dataArray?.length !== 0) &&
           <div className={styles.mainContainer}>
             <h2
               className={`${styles.blog} blogBusinessDesc`}
@@ -63,14 +154,13 @@ const Page = () => {
                   unoptimized
                 />
               }
-
-              <div className={styles.description}>
-                <p>{dataArray.description}</p>
-              </div>
             </div>
+            {dataArray.description.map((data, index) => (
+              <SanityComponent key={index} textData={data} />
+            ))}
           </div>
         }
-        <div className={`forContactFromBlog ${dataArray.length === 0 && styles.blogtopmargin}`}>
+        <div className={`forContactFromBlog ${dataArray?.length === 0 && styles.blogtopmargin}`}>
           <PersonalBlog blogPage={dataArray?.titleImage ? true : false} />
         </div>
         <div className="forContactFromBlog">
