@@ -16,7 +16,7 @@ function Locations() {
               Expand your reach and boost sales in the exciting GCC market.
               We make it easy to set up and grow your business. Our experts craft
               personalized plans to help you succeed. From starting your business to
-              marketing it online, we've got you covered. Ready to unlock your GCC potential? Let's get started.
+              marketing it online, we&apos;ve got you covered. Ready to unlock your GCC potential? Let&apos;s get started.
             </p>
           </div>
           <a href="/pages/About">
