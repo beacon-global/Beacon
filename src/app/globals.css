@@ -2432,8 +2432,8 @@ option {
   }
 
   .dropDownArrow{
-    width: 30px !important;
-    height: auto !important;
+    width: 15px !important;
+    height: 20px !important;
   }
 
   .mHeaderBtn{

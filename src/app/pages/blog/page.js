@@ -5,7 +5,6 @@ import Image from "next/image";
 import Header from "@/app/components/Header";
 import MobileHeader from "@/app/components/MobileHeader";
 import fetchDataAndExport, { urlFor } from "../../../../test";
-import Blogs from "@/app/components/Blogs";
 import Contact from "../../components/Contact";
 import Footer from "../../components/Footer";
 import PersonalBlog from "@/app/components/PersonalBlog";
@@ -24,19 +23,6 @@ const SanityComponent = ({ textData }) => {
               key={index}>
               {data.text}
             </h2>
-          ))
-          }
-        </>
-      }
-      {textData.style === 'h3' &&
-        <>
-          {textData.children.map((data, index) => (
-            <h3
-              className={styles.blohsh3}
-              style={{ display: "block" }}
-              key={index}>
-              {data.text}
-            </h3>
           ))
           }
         </>
@@ -175,7 +161,7 @@ const Page = () => {
           </div>
         }
         <div className={`forContactFromBlog ${dataArray?.length === 0 && styles.blogtopmargin}`}>
-          <PersonalBlog blogPage={dataArray?.titleImage ? true : false} />
+          <PersonalBlog blogPage={dataArray?.titleImage ? true : false} isInnerPage={true}/>
         </div>
         <div className="forContactFromBlog">
           <Contact />

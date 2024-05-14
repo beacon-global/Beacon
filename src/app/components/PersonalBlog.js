@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import fetchDataAndExport, { urlFor } from "../../../test";
 
-const PersonalBlog = ({ blogPage }) => {
+const PersonalBlog = ({ blogPage, isInnerPage = false }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [blogData, setBlogData] = useState([]);
 
@@ -43,7 +43,7 @@ const PersonalBlog = ({ blogPage }) => {
       <div className={styles.companyBlogCards}>
         {blogData.map((data, index) => (
           <>
-            {( blogPage || ismobile || (index < 4 && index > 0) )&& (
+            {(blogPage || isInnerPage || ismobile || (index < 4 && index > 0)) && (
               <div className={styles.companyBlogCard} key={index}>
                 <Link
                   href={{
@@ -76,7 +76,7 @@ const PersonalBlog = ({ blogPage }) => {
                   </div>
                   <div className={styles.companyBlogContent}>
                     <h6 className={styles.text5}>{data.title}</h6>
-                    <h6 className={styles.text6}>{data?.description[1]?.children[0]?.text}</h6>
+                    <h6 className={styles.text6}>{data?.description[0]?.children[0]?.text}</h6>
                   </div>
                 </Link>
               </div>
@@ -85,41 +85,43 @@ const PersonalBlog = ({ blogPage }) => {
         ))}
       </div>
 
-      <div
-        className={`${styles.blogButton} hButtonContainer servicesButton`}
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-      // style={{ marginTop: blogPage ? "-30px" : "" }}
-      >
-        <div className="visibleWrapperContainer">
-          <div className="topVisibleContainer">
-            <a href="/pages/blog" className={`${styles.blogButtonText} btn`}>
-              Learn More
-              <div className={`${styles.topBlogArrow} topVisibleArrow`}>
-                <Image
-                  src={imageSrc}
-                  width={23}
-                  height={23}
-                  alt="heroContact"
-                />
-              </div>
-            </a>
-          </div>
-          <div className="bottomVisibleContainer">
-            <a href="/pages/blog" className={`${styles.blogButtonText} btn`}>
-              Learn More
-              <div className={`${styles.bottomBlogArrow} bottomVisibleArrow`}>
-                <Image
-                  src={imageSrc}
-                  width={23}
-                  height={23}
-                  alt="heroContact"
-                />
-              </div>
-            </a>
+      {!isInnerPage && (
+        <div
+          className={`${styles.blogButton} hButtonContainer servicesButton`}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        // style={{ marginTop: blogPage ? "-30px" : "" }}
+        >
+          <div className="visibleWrapperContainer">
+            <div className="topVisibleContainer">
+              <a href="/pages/blog" className={`${styles.blogButtonText} btn`}>
+                Learn More
+                <div className={`${styles.topBlogArrow} topVisibleArrow`}>
+                  <Image
+                    src={imageSrc}
+                    width={23}
+                    height={23}
+                    alt="heroContact"
+                  />
+                </div>
+              </a>
+            </div>
+            <div className="bottomVisibleContainer">
+              <a href="/pages/blog" className={`${styles.blogButtonText} btn`}>
+                Learn More
+                <div className={`${styles.bottomBlogArrow} bottomVisibleArrow`}>
+                  <Image
+                    src={imageSrc}
+                    width={23}
+                    height={23}
+                    alt="heroContact"
+                  />
+                </div>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };
