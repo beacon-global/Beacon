@@ -49,8 +49,7 @@ function WhyBeacon() {
         </div>
         <div className="whyBeaconRight">
           <h2 className="whyBeaconHeading">
-            Redefine Your Business With Endless Transformation Possibilities
-            Change to Stop Existing, Start Dominating
+            Stop Existing, Start Dominating
           </h2>
           <p className="whyBeaconDesc">
             Many businesses dream of entering the GCC market, but navigating the complexities can feel overwhelming.
