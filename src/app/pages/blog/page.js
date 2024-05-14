@@ -15,11 +15,11 @@ const SanityComponent = ({ textData }) => {
 
   return (
     <div>
-      {textData.style == 'h2' &&
+      {textData.style === 'h2' &&
         <>
           {textData.children.map((data, index) => (
             <h2
-              // className={`${styles.blog}`}
+              className={styles.blogsh2}
               style={{ display: "block" }}
               key={index}>
               {data.text}
@@ -28,11 +28,11 @@ const SanityComponent = ({ textData }) => {
           }
         </>
       }
-      {textData.style == 'h3' &&
+      {textData.style === 'h3' &&
         <>
           {textData.children.map((data, index) => (
             <h3
-              // className={`${styles.blog}`}
+              className={styles.blohsh3}
               style={{ display: "block" }}
               key={index}>
               {data.text}
@@ -41,11 +41,11 @@ const SanityComponent = ({ textData }) => {
           }
         </>
       }
-      {textData.style == 'h4' &&
+      {textData.style === 'h4' &&
         <>
           {textData.children.map((data, index) => (
             <h4
-              // className={`${styles.blog}`}
+              className={styles.blogsh4}
               style={{ display: "block" }}
               key={index}>
               {data.text}
@@ -53,11 +53,11 @@ const SanityComponent = ({ textData }) => {
           ))}
         </>
       }
-      {textData.style == 'h5' &&
+      {textData.style === 'h5' &&
         <>
           {textData.children.map((data, index) => (
             <h5
-              // className={`${styles.blog}`}
+              className={styles.blogsh5}
               style={{ display: "block" }}
               key={index}>
               {data.text}
@@ -65,11 +65,11 @@ const SanityComponent = ({ textData }) => {
           ))}
         </>
       }
-      {textData.style == 'h6' &&
+      {textData.style === 'h6' &&
         <>
           {textData.children.map((data, index) => (
             <h6
-              // className={`${styles.blog}`}
+              className={styles.blogsh6}
               style={{ display: "block" }}
               key={index}>
               {data.text}
@@ -77,17 +77,31 @@ const SanityComponent = ({ textData }) => {
           ))}
         </>
       }
-      {textData.style == 'normal' &&
+      {textData.style === 'normal' && (textData.listItem === 'bullet' ? (
+        <>
+            {textData.children.map((data, index) => (
+              <div
+                className={styles.blogsli}
+                style={{ display: "block" }}
+                key={index}>
+                {data.text}
+              </div>
+            ))}
+        </>
+      ) : (
         <>
           {textData.children.map((data, index) => (
             <p
-              // className={`${styles.description}`}
+              className={styles.blogsp}
               style={{ display: "block" }}
               key={index}>
               {data.text}
             </p>
           ))}
         </>
+      ))}
+      {textData.children.length === 1 && (textData.children[0].text === '\n' || textData.children[0].text === "")&&
+        <br />
       }
     </div>
   );

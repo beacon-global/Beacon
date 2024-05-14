@@ -52,6 +52,69 @@
   font-size: 1.0582010582010581vw;
 }
 
+
+
+.blogsh2 {
+  font-size: 2.6455026455026456vw;
+  margin: 0 auto 1.3227513227513228vw auto;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  text-transform: capitalize;
+}
+
+.blogsh3 {
+  font-size: 2.6455026455026456vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  text-transform: capitalize;
+}
+
+.blogsh4 {
+  font-size: 2.6455026455026456vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  text-transform: capitalize;
+}
+
+.blogsh5 {
+  font-size: 1.8455026455026456vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  text-transform: capitalize;
+}
+
+.blogsh6 {
+  font-size: 1.3455026455026456vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  text-transform: capitalize;
+}
+
+.blogsp {
+  font-size: 1.0582010582010581vw;
+}
+
+.blogsli {
+  font-size: 1.0582010582010581vw;
+  list-style-type: none;
+  padding-left: 1em;
+  
+  color: #58595B;
+}
+
+.blogsli:before {
+  content: "\2022"; 
+  color: black;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
 @media (max-width: 600px) {
   .mainContainer {
     margin-top: 125px;
@@ -81,7 +144,66 @@
     font-size: 2.8582010582010581vw;
   }
 
-  .blogtopmargin{
+  .blogtopmargin {
     margin-top: 25.333333333333334vw;
+  }
+
+  .blogsh2 {
+    font-size: 2.6455026455026456vw;
+    margin: 0 auto 1.3227513227513228vw auto;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    text-transform: capitalize;
+  }
+  
+  .blogsh3 {
+    font-size: 2.6455026455026456vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    text-transform: capitalize;
+  }
+  
+  .blogsh4 {
+    font-size: 2.6455026455026456vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    text-transform: capitalize;
+  }
+  
+  .blogsh5 {
+    font-size: 4.8455026455026456vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    text-transform: capitalize;
+  }
+  
+  .blogsh6 {
+    font-size: 3.8455026455026456vw !important;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    text-transform: capitalize;
+  }
+  
+  .blogsp {
+    font-size: 2.8582010582010581vw;
+    text-align: left;
+  }
+  
+  .blogsli {
+    font-size: 2.7582010582010581vw !important;
+    padding-left: 1em;
+    color: #58595B !important;
+    text-align: left;
+  }
+  
+  .blogsli:before {
+    content: "\2022"; 
+    color: black;
+    display: inline-block;
   }
 }
