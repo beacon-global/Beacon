@@ -8,19 +8,15 @@ function Locations() {
         <div className="locationContentContainer">
           <div>
             <h2 className="locationHeading">
-              Our Journey that Inspires <br /> Businesses Globally
+              Connecting Businesses to <br /> Success in the GCC
             </h2>
           </div>
           <div>
             <p className="locationDesc">
-              Businesses need qualified business consulting and professional
-              advice to win clients from all over the world. Since our
-              inception, we have been dedicated to assisting organizations of 
-              all sizes with strategies that contribute to businesses with great 
-              performance and success. With true results and a clear focus on 
-              the strategic actions tailored to achieve the unique expectations 
-              of our clients, we provide a detailed blueprint and picture of how 
-              to establish and manage your business in GCC.
+              Expand your reach and boost sales in the exciting GCC market.
+              We make it easy to set up and grow your business. Our experts craft
+              personalized plans to help you succeed. From starting your business to
+              marketing it online, we've got you covered. Ready to unlock your GCC potential? Let's get started.
             </p>
           </div>
           <a href="/pages/About">

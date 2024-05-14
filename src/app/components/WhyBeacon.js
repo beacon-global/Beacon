@@ -50,12 +50,15 @@ function WhyBeacon() {
         <div className="whyBeaconRight">
           <h2 className="whyBeaconHeading">
             Redefine Your Business With Endless Transformation Possibilities
+            Change to Stop Existing, Start Dominating
           </h2>
           <p className="whyBeaconDesc">
-            At Beacon Global, we&lsquo;re here to help you grow. With our expertise in business
-            consulting across the Middle East, we&apos;re committed to making a real difference for every client.
-            Let&apos;s work together to achieve your goals. Welcome to a brighter future!
-
+            Many businesses dream of entering the GCC market, but navigating the complexities can feel overwhelming.
+            At Beacon Global, we understand your struggles. We&apos;re not just consultants; we&apos;re your trusted partner in conquering the GCC.
+          </p>
+          <br/>
+          <p className="whyBeaconDesc">
+            Our team of seasoned professionals has a proven track record of helping businesses like yours overcome obstacles and achieve remarkable success in the GCC. We don&apos;t offer generic solutions – we tailor our strategies to your unique goals and challenges
           </p>
         </div>
       </div>

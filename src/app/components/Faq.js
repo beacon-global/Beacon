@@ -8,15 +8,15 @@ function Faq() {
       img: "01",
       heading: "What is Beacon and what services do you offer?",
       description:
-      "Beacon is your global business advisory partner who offers you a range of services that enable your business growth and ultimate business transformation. We provide a plethora of services like Business Incorporation, Digital Marketing, Technology, Finance and Accounting, Audit & Taxation and Business Consulting services.",
+        "Beacon is your global business advisory partner who offers you a range of services that enable your business growth and ultimate business transformation. We provide a plethora of services like Business Incorporation, Digital Marketing, Technology, Finance and Accounting, Audit & Taxation and Business Consulting services.",
       isAnswerVisible: true,
     },
     {
       img: "02",
       heading:
-        "What sets Beacon apart from the other business incorporation and consulting firms?",
+        "What Sets Beacon Apart From The Other Business Incorporation And Consulting Firms?",
       description:
-        "With significant expertise and a team with strong professional know-how, Beacon takes on projects with 100% confidence and a perfect blueprint of how to accomplish the business objectives. Through clear delivery models and customer-centric approaches, our efforts consider the business’s expectations with adherence to the global standards that make us stand out from the crowd.",
+        "At Beacon, we stand out because of our expertise and dedicated team. We take on projects with 100% confidence and a perfect blueprint of how to accomplish the business objectives. Through clear delivery models and customer-centric approaches, our efforts consider the business’s expectations with adherence to the global standards that make us stand out from the crowd.",
     },
     {
       img: "03",
@@ -34,9 +34,9 @@ function Faq() {
     },
     {
       img: "05",
-      heading: "Do you offer website development and maintenance services?",
+      heading: "Do You Offer Website Development And Maintenance Services?",
       description:
-        "Beacon can assist you with digital marketing and help you take your online presence to the next level. With digital marketing, we let you connect with the prospective and existing client base which is essential to improve the brand awareness and your business.",
+        "Yes, we do offer website development and maintenance services at Beacon. We digitally transform your business and maintain your online presence. With our comprehensive approach, we ensure that your business not only has a professional website but also utilizes digital marketing strategies to connect with potential and existing clients, ultimately driving growth and success.",
     },
   ]);
 
@@ -80,9 +80,8 @@ function Faq() {
                     <h1>{data.heading}</h1>
                   </div>
                   <div
-                    className={`faqAddIcon ${
-                      data.isAnswerVisible ? "rotateIcon" : ""
-                    }`}
+                    className={`faqAddIcon ${data.isAnswerVisible ? "rotateIcon" : ""
+                      }`}
                   >
                     <button>
                       <Image
