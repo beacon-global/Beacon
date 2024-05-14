@@ -49,13 +49,13 @@ function WhyBeacon() {
         </div>
         <div className="whyBeaconRight">
           <h2 className="whyBeaconHeading">
-            Stop Existing, Start Dominating
+            Redefine your business with endless transformation possibilities
           </h2>
           <p className="whyBeaconDesc">
             Many businesses dream of entering the GCC market, but navigating the complexities can feel overwhelming.
             At Beacon Global, we understand your struggles. We&apos;re not just consultants; we&apos;re your trusted partner in conquering the GCC.
           </p>
-          <br/>
+          <br />
           <p className="whyBeaconDesc">
             Our team of seasoned professionals has a proven track record of helping businesses like yours overcome obstacles and achieve remarkable success in the GCC. We don&apos;t offer generic solutions – we tailor our strategies to your unique goals and challenges
           </p>
