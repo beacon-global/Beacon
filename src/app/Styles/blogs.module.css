@@ -37,7 +37,7 @@
 .content img {
   width: 73.54497354497354vw !important;
   height: 33.06878306878307vw !important;
-  object-fit: contain;
+  object-fit: cover;
   object-position: top;
   margin-bottom: 1.984126984126984vw;
 }
