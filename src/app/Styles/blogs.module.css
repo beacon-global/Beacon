@@ -37,7 +37,7 @@
 .content img {
   width: 73.54497354497354vw !important;
   height: 33.06878306878307vw !important;
-  object-fit: cover;
+  object-fit: contain;
   object-position: top;
   margin-bottom: 1.984126984126984vw;
 }
@@ -104,7 +104,8 @@
 .blogsli {
   font-size: 1.0582010582010581vw;
   list-style-type: none;
-  padding-left: 1em;
+  padding-left: 3em;
+  padding-right: 8vw;
   
   color: #58595B;
 }

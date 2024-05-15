@@ -66,13 +66,13 @@ const PersonalBlog = ({ blogPage, isInnerPage = false }) => {
                       {/* <div className={styles.blogDot}></div>
                       <h6 className={styles.text3}>{data.date}</h6> */}
                     </div>
-                    <Image
+                    {/* <Image
                       src="/blackArrow.svg"
                       width={23}
                       height={23}
                       alt="Image"
                       className={styles.blogArrow}
-                    />
+                    /> */}
                   </div>
                   <div className={styles.companyBlogContent}>
                     <h6 className={styles.text5}>{data.title}</h6>
