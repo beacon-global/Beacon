@@ -43,8 +43,8 @@ const PersonalBlog = ({ blogPage, isInnerPage = false }) => {
       <div className={styles.companyBlogCards}>
         {blogData.map((data, index) => (
           <>
-            {(blogPage || isInnerPage || ismobile || (index < 4 && index > 0)) && (
-              <div className={styles.companyBlogCard} key={index}>
+            {(blogPage || isInnerPage || (ismobile && (index < 5 && index > 0)) || (index < 4 && index > 0)) && (
+              <div className={isInnerPage ? ((index%5===0) ? styles.companyBlogCard2 : styles.companyBlogCard) : (styles.companyBlogCard)} key={index}>
                 <Link
                   href={{
                     pathname: "/pages/blog",
@@ -77,7 +77,7 @@ const PersonalBlog = ({ blogPage, isInnerPage = false }) => {
                   <div className={styles.companyBlogContent}>
                     <h6 className={styles.text5}>{data.title}</h6>
                     <h6 className={styles.text6}>{data?.description[0]?.children[0]?.text}</h6>
-                    <h6>Read More</h6>
+                    <h6>Read More  &rarr;</h6>
                   </div>
                 </Link>
               </div>
