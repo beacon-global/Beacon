@@ -22,13 +22,14 @@
 
 .companyBlogCards {
   display: flex;
+  flex-wrap: wrap;
   gap: 1.984126984126984vw;
 }
 
 .companyBlogCard {
   display: flex;
   flex-direction: column;
-  width: 25.396825396825395vw;
+  width: 24.396825396825395vw;
 }
 
 .blogImage {
