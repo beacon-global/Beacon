@@ -63,8 +63,8 @@ const PersonalBlog = ({ blogPage, isInnerPage = false }) => {
                   <div className={styles.dateAndLocationContainer}>
                     <div className={styles.dateTextContainer}>
                       <h6 className={styles.text4}>{data.location}</h6>
-                      <div className={styles.blogDot}></div>
-                      <h6 className={styles.text3}>{data.date}</h6>
+                      {/* <div className={styles.blogDot}></div>
+                      <h6 className={styles.text3}>{data.date}</h6> */}
                     </div>
                     <Image
                       src="/blackArrow.svg"
@@ -77,6 +77,7 @@ const PersonalBlog = ({ blogPage, isInnerPage = false }) => {
                   <div className={styles.companyBlogContent}>
                     <h6 className={styles.text5}>{data.title}</h6>
                     <h6 className={styles.text6}>{data?.description[0]?.children[0]?.text}</h6>
+                    <h6>Read More</h6>
                   </div>
                 </Link>
               </div>

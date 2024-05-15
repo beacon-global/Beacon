@@ -136,8 +136,8 @@ const Page = () => {
             </h2>
             <div className={styles.locationDateContainer}>
               {dataArray.location}
-              <div className={styles.dot}></div>
-              {dataArray.date}
+              {/* <div className={styles.dot}></div>
+              {dataArray.date} */}
             </div>
             <div className={styles.content}>
               {
