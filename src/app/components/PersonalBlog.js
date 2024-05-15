@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import fetchDataAndExport, { urlFor } from "../../../test";
 
-const PersonalBlog = ({ blogPage, isInnerPage = false }) => {
+const PersonalBlog = ({ blogPage, isInnerPage = false ,blog =null}) => {
   const [isHovered, setIsHovered] = useState(false);
   const [blogData, setBlogData] = useState([]);
 
@@ -13,7 +13,8 @@ const PersonalBlog = ({ blogPage, isInnerPage = false }) => {
     async function fetchData() {
       try {
         const data = await fetchDataAndExport();
-        setBlogData(data);
+        const filteredData = data.filter(item => item.currentSlug !== blog);
+        setBlogData(filteredData);
 
         console.log("Fetched data in component:", data);
       } catch (error) {
@@ -22,7 +23,7 @@ const PersonalBlog = ({ blogPage, isInnerPage = false }) => {
     }
 
     fetchData();
-  }, []);
+  }, [blog]);
 
   const imageSrc = isHovered ? "/whiteArrow.svg" : "/blackArrow.svg";
   const ismobile = typeof window !== "undefined" && window.innerWidth < 768;

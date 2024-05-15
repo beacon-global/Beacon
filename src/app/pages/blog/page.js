@@ -161,7 +161,7 @@ const Page = () => {
           </div>
         }
         <div className={`forContactFromBlog ${dataArray?.length === 0 && styles.blogtopmargin}`}>
-          <PersonalBlog blogPage={dataArray?.titleImage ? true : false} isInnerPage={true}/>
+          <PersonalBlog blogPage={dataArray?.titleImage ? true : false} isInnerPage={true} blog={dataArray?.currentSlug}/>
         </div>
         <div className="forContactFromBlog">
           <Contact />
