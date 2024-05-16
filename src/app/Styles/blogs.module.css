@@ -205,8 +205,6 @@
   }
   
   .blogsli:before {
-    content: "\2022"; 
-    color: black;
     display: inline-block;
   }
 }
