@@ -321,6 +321,7 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   margin-bottom: -10px;
   white-space: nowrap;
   margin-top: 57px;
+  letter-spacing: 3px;
 }
 
 .heroDesc {
