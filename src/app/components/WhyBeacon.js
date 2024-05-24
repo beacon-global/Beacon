@@ -52,8 +52,8 @@ function WhyBeacon() {
             Redefine your business with endless transformation possibilities
           </h2>
           <p className="whyBeaconDesc">
-            Many businesses dream of entering the GCC market, but navigating the complexities can feel overwhelming.
-            At Beacon Global, we understand your struggles. We&apos;re not just consultants; we&apos;re your trusted partner in conquering the GCC.
+            Many businesses dream of entering the market, but navigating the complexities can feel overwhelming.
+            At Beacon Global, we understand your struggles. We&apos;re not just consultants; we&apos;re your trusted partner.
           </p>
           <br />
           <p className="whyBeaconDesc">

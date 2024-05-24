@@ -17,7 +17,7 @@ function Footer() {
           />
         </div>
         <div className="footerContentContainer">
-        <ul className="footercontent">
+          <ul className="footercontent">
             <a href="/">
               <p>Home</p>
             </a>
@@ -95,15 +95,15 @@ function Footer() {
               <div className="footerContactTextDetails">
                 <h1>Head Office:</h1>
                 <p>
-                  Building no. 4626, Hamza Shehatah St,
-                  <br /> Al-Baghdadiyah Al-Gharbiyah, Jeddah 22235
+                  6th floor  le cygne commercial center,
+                  <br /> Kaab Bin Malik Street, Al Olaya, Riyadh 11533
                 </p>
               </div>
             </a>
           </div>
         </div>
         <div className="footerSocialContainer">
-        <a href="https://wa.me/+971568352250"  target="_blank">
+          <a href="https://wa.me/+971568352250" target="_blank">
             <Image
               quality={100}
               priority={true}

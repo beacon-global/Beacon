@@ -18,6 +18,8 @@ function Services() {
         "Limited Liability Company",
         "Multi Country Business Setup",
         "Branch of Foreign Company",
+        "Saudi National Company",
+        "Saudi Establishment"
       ],
     },
     {
@@ -76,6 +78,8 @@ function Services() {
         "Web Development",
         "Ecommerce Development",
         "App Development",
+        "ERP Solutions",
+        "AI Chatbots & Predictive modeling"
       ],
     },
     {
@@ -88,6 +92,9 @@ function Services() {
         "Search Engine Marketing (Google Ads)",
         "Social Media Marketing (Meta Ads)",
         "Social Media Management",
+        "Brand profile creation",
+        "Content Marketing",
+        "Digital marketing strategy"
       ],
     },
   ];
@@ -149,33 +156,33 @@ function Services() {
         >
           <div className="visibleWrapperContainer">
             <div className="topVisibleContainer btn">
-              
-                Explore More
-                <div className="topVisibleArrow">
-                  <Image
-                    src={imageSrc}
-                    width={23}
-                    height={23}
-                    alt="heroContact"
-                    quality={100}
-                    priority={true}
-                    unoptimized
-                  />
-                </div>
+
+              Explore More
+              <div className="topVisibleArrow">
+                <Image
+                  src={imageSrc}
+                  width={23}
+                  height={23}
+                  alt="heroContact"
+                  quality={100}
+                  priority={true}
+                  unoptimized
+                />
+              </div>
             </div>
             <div className="bottomVisibleContainer btn">
-                Explore More
-                <div className="bottomVisibleArrow">
-                  <Image
-                    src={imageSrc}
-                    width={23}
-                    height={23}
-                    alt="heroContact"
-                    quality={100}
-                    priority={true}
-                    unoptimized
-                  />
-                </div>
+              Explore More
+              <div className="bottomVisibleArrow">
+                <Image
+                  src={imageSrc}
+                  width={23}
+                  height={23}
+                  alt="heroContact"
+                  quality={100}
+                  priority={true}
+                  unoptimized
+                />
+              </div>
             </div>
           </div>
         </div>

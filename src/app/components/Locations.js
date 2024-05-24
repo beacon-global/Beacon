@@ -8,7 +8,7 @@ function Locations() {
         <div className="locationContentContainer">
           <div>
             <h2 className="locationHeading">
-              Connecting Businesses to <br /> Success in the GCC
+              Driving Business Success <br /> Through Strategic Solutions
             </h2>
           </div>
           <div>

@@ -21,6 +21,8 @@ function Services() {
         "Limited Liability Company",
         "Multi Country Business Setup",
         "Branch of Foreign Company",
+        "Saudi National Company",
+        "Saudi Establishment"
       ],
     },
     {
@@ -79,6 +81,8 @@ function Services() {
         "Web Development",
         "Ecommerce Development",
         "App Development",
+        "ERP Solutions",
+        "AI Chatbots & Predictive modeling"
       ],
     },
     {
@@ -91,6 +95,9 @@ function Services() {
         "Search Engine Marketing (Google Ads)",
         "Social Media Marketing (Meta Ads)",
         "Social Media Management",
+        "Brand profile creation",
+        "Content Marketing",
+        "Digital marketing strategy"
       ],
     },
   ];
@@ -139,20 +146,20 @@ function Services() {
     },
     {
       message:
-      "Working with Beacon made setting up our business in Saudi Arabia hassle-free. Their comprehensive services covered everything from paperwork to best business suggestions, ensuring a smooth and successful expansion.",
+        "Working with Beacon made setting up our business in Saudi Arabia hassle-free. Their comprehensive services covered everything from paperwork to best business suggestions, ensuring a smooth and successful expansion.",
       name: "Mohammed Al-Saud",
       designation: " Jeddah, KSA",
       img: "/profilePic3.webp",
     },
     {
       message:
-      "Working with Beacon felt like having an extended team member. Their transparency and unwavering commitment made the partnership seamless and productive.",
+        "Working with Beacon felt like having an extended team member. Their transparency and unwavering commitment made the partnership seamless and productive.",
       name: " Ahmed Al-Sayed",
       designation: " Dubai , UAE",
       img: "/profilePic4.webp",
     },
     {
-      message:"Beacon's guidance and expertise have been instrumental in our business's growth and success. Their tailored solutions and dedicated support have exceeded our expectations.",
+      message: "Beacon's guidance and expertise have been instrumental in our business's growth and success. Their tailored solutions and dedicated support have exceeded our expectations.",
       name: "Abdul Rasheed",
       designation: " Dammam, KSA",
       img: "/profilePic3.webp",
@@ -284,11 +291,11 @@ function Services() {
               regulations to ensure your business can thrive well in the dynamic
               world through comprehensive services to drive business success.
             </p>
-            <a href="/pages/blog">
+            <a href="/pages/About">
               <div className={`hButtonContainer ${styles.cont2Button}`}>
                 <div className="visibleWrapperContainer">
                   <div className="topVisibleContainer btn">
-                    Learn More
+                    Know More
                     <div className="topVisibleArrow">
                       <Image
                         src="/whiteArrow.svg"
@@ -299,7 +306,7 @@ function Services() {
                     </div>
                   </div>
                   <div className="bottomVisibleContainer btn">
-                    Learn More
+                    Know More
                     <div className="bottomVisibleArrow">
                       <Image
                         src="/whiteArrow.svg"
