@@ -57,7 +57,7 @@ function WhyBeacon() {
           </p>
           <br />
           <p className="whyBeaconDesc">
-            Our team of seasoned professionals has a proven track record of helping businesses like yours overcome obstacles and achieve remarkable success in the GCC. We don&apos;t offer generic solutions – we tailor our strategies to your unique goals and challenges
+            Our team of seasoned professionals has a proven track record of helping businesses like yours overcome obstacles and achieve remarkable success in the GCC. We don&apos;t offer generic solutions we tailor our strategies to your unique goals and challenges
           </p>
         </div>
       </div>
