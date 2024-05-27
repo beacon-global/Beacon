@@ -61,7 +61,7 @@ export default function Home() {
 
   return (
     <>
-      
+      <WhatsAppChat />
       <Header />
       <MobileHeader />
       {showPopup && <Popup setShowPopup={setShowPopup}/>}

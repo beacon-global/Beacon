@@ -3,6 +3,7 @@ import styles from "../../Styles/aboutus.module.css";
 import React, { useState } from "react";
 import Image from "next/image";
 import dynamic from "next/dynamic";
+import WhatsAppChat from "@/app/components/WhatsAppChat";
 
 const Header = dynamic(() => import("@/app/components/Header"));
 const MobileHeader = dynamic(() => import("@/app/components/MobileHeader"));
@@ -71,6 +72,7 @@ function About() {
 
   return (
     <>
+      <WhatsAppChat />
       <Header />
       <MobileHeader />
       <div className={styles.aboutUsMainContainer}>

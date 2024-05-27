@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import styles from "../../Styles/servicesPage.module.css";
 import Image from "next/image";
 import dynamic from "next/dynamic";
+import WhatsAppChat from "@/app/components/WhatsAppChat";
 
 const Header = dynamic(() => import("@/app/components/Header"));
 const MobileHeader = dynamic(() => import("@/app/components/MobileHeader"));
@@ -196,6 +197,7 @@ function Services() {
 
   return (
     <>
+      <WhatsAppChat />
       <Header />
       <MobileHeader />
       <div className={styles.servicePageMainContainer}>
