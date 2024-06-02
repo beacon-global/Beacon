@@ -95,8 +95,8 @@ function Footer() {
               <div className="footerContactTextDetails">
                 <h1>Head Office:</h1>
                 <p>
-                  6th floor  le cygne commercial center,
-                  <br /> Kaab Bin Malik Street, Al Olaya, Riyadh 11533
+                Le Cygne Commercial Center, Kaab
+                  <br /> Bin Malik Street, Al Olaya, Riyadh 12611
                 </p>
               </div>
             </a>
