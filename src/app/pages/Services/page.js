@@ -4,6 +4,7 @@ import styles from "../../Styles/servicesPage.module.css";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 import WhatsAppChat from "@/app/components/WhatsAppChat";
+import Button from "@/app/components/Button";
 
 const Header = dynamic(() => import("@/app/components/Header"));
 const MobileHeader = dynamic(() => import("@/app/components/MobileHeader"));
@@ -293,7 +294,7 @@ function Services() {
               regulations to ensure your business can thrive well in the dynamic
               world through comprehensive services to drive business success.
             </p>
-            <a href="/pages/About">
+            {/* <a href="/pages/About">
               <div className={`hButtonContainer ${styles.cont2Button}`}>
                 <div className="visibleWrapperContainer">
                   <div className="topVisibleContainer btn">
@@ -320,7 +321,10 @@ function Services() {
                   </div>
                 </div>
               </div>
-            </a>
+            </a> */}
+            <div className={` ${styles.cont2Button}`}>
+              <Button content="Know More" href="/pages/About" />
+            </div>
           </div>
         </div>
 
@@ -371,7 +375,7 @@ function Services() {
               to the changes in the dynamic landscape and gain sustainable
               business advantage.
             </p>
-            <a href="/pages/Contact">
+            {/* <a href="/pages/Contact">
               <div className={`hButtonContainer ${styles.cont3Button}`}>
                 <div className="visibleWrapperContainer">
                   <div className="topVisibleContainer btn">
@@ -398,7 +402,10 @@ function Services() {
                   </div>
                 </div>
               </div>
-            </a>
+            </a> */}
+            <div className={` ${styles.cont3Button}`}>
+              <Button content="Get in Touch" href="/pages/Contact" />
+            </div>
 
           </div>
           <div className={styles.container4ImgContainer}>

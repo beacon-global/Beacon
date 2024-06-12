@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Button from "./Button";
 
 function Locations() {
   return (
@@ -19,7 +20,7 @@ function Locations() {
               marketing it online, we&apos;ve got you covered. Ready to unlock your potential? Let&apos;s get started.
             </p>
           </div>
-          <a href="/pages/About">
+          {/* <a href="/pages/About">
             <div className="hButtonContainer locationButton">
               <div className="visibleWrapperContainer">
                 <div className="topVisibleContainer btn">
@@ -46,7 +47,10 @@ function Locations() {
                 </div>
               </div>
             </div>
-          </a>
+          </a> */}
+          <div>
+            <Button content="Explore More" href="/pages/About" />
+          </div>
         </div>
 
         <div className="locationImgContainer">
