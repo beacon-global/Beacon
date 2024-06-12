@@ -14,6 +14,7 @@ function Header() {
     { text: "Our Presence", href: "#", hasDropdown: true },
     { text: "About Us", href: "/pages/About/" },
     { text: "Services", href: "/pages/Services/" },
+    { text: "Blogs", href: "/pages/blog/"},
     { text: "Contact Us", href: "/pages/Contact/" },
   ];
 

@@ -72,9 +72,16 @@
   background-color: #fff;
 }
 
+.readmore{
+  display: flex;
+  flex-direction: row;
+  gap: 0.4629629629629629vw;
+  padding-top: 0.4629629629629629vw;
+}
+
 .blogArrow {
-  width: 1.5211640211640212vw;
-  height: 1.5211640211640212vw;
+  width: 1.21640211640212vw;
+  height: 1.21640211640212vw;
   align-self: center;
 }
 
