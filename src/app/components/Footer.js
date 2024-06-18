@@ -51,10 +51,10 @@ function Footer() {
             <div className="footerContactTextDetails footerContactTextDetailsEmail">
               <h1>Email us:</h1>
               <a
-                href="mailto:info@bmcglobal.co"
+                href="mailto:info@beaconarabia.com"
                 style={{ textTransform: "none" }}
               >
-                info@bmcglobal.co
+                info@beaconarabia.com
               </a>
             </div>
           </div>
