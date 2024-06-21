@@ -148,7 +148,7 @@ function MobileHeader() {
             }}
           >
             <a
-              href="https://ksa.bmcglobal.co"
+              href="https://www.ksa.beaconarabia.com"
               target="_blank"
               style={{
                 textDecoration: "none",
@@ -160,7 +160,7 @@ function MobileHeader() {
               Saudi Arabia
             </a>
             <a
-              href="https://uae.bmcglobal.co"
+              href="https://www.uae.beaconarabia.com"
               target="_blank"
               style={{
                 textDecoration: "none",
