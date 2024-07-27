@@ -1,10 +1,13 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import styles from "../../Styles/careers.module.css";
+import styles from "../../Styles/partners.module.css";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import WhatsAppChat from "@/app/components/WhatsAppChat";
 import Faq from "@/app/components/Faq";
+import Button from "@/app/components/Button";
+import imageSrc from '/public/whiteArrow.svg'
+
 
 const Header = dynamic(() => import("@/app/components/Header"));
 const MobileHeader = dynamic(() => import("@/app/components/MobileHeader"));
@@ -79,7 +82,7 @@ const imageSources = [
 function Partners() {
 
   const [loaded, setLoaded] = useState(false);
-
+  const [isHovered, setIsHovered] = React.useState(false)
   const [faqData, setFaqData] = useState([
     {
       img: "01",
@@ -93,7 +96,7 @@ function Partners() {
       heading:
         "Requirements Gathering",
       description:
-      "Beacon is your global business advisory partner who offers you a range of services that enable your business growth and ultimate business transformation. We provide a plethora of services like Business Incorporation,  Digital Marketing,  Technology Finance and Accounting, Audit and Tax services, and Business Consulting services."
+        "Beacon is your global business advisory partner who offers you a range of services that enable your business growth and ultimate business transformation. We provide a plethora of services like Business Incorporation,  Digital Marketing,  Technology Finance and Accounting, Audit and Tax services, and Business Consulting services."
     },
     {
       img: "03",
@@ -107,14 +110,14 @@ function Partners() {
       heading:
         "Consideration",
       description:
-      "At Beacon, we make a precise understanding of the key areas where businesses can grow, thrive and create difference. We identify the major goals and issues that cater well to the organization and ensure alignment between the organization’s missions and plans. We also implement fine-tuning strategies to make an understanding and address existing barriers.",
+        "At Beacon, we make a precise understanding of the key areas where businesses can grow, thrive and create difference. We identify the major goals and issues that cater well to the organization and ensure alignment between the organization’s missions and plans. We also implement fine-tuning strategies to make an understanding and address existing barriers.",
 
     },
     {
       img: "05",
       heading: "Proposal",
       description:
-      "Yes. Beacon can help you with your needs of financial auditing and reporting. With a holistic approach toward scrutinizing the financial statements of the company and filing necessary regulations, we ensure the financial well-being of your business. Our financial reporting services help to report the income statements with summarized revenue and expenses for a complete analysis of the company’s financial status.",
+        "Yes. Beacon can help you with your needs of financial auditing and reporting. With a holistic approach toward scrutinizing the financial statements of the company and filing necessary regulations, we ensure the financial well-being of your business. Our financial reporting services help to report the income statements with summarized revenue and expenses for a complete analysis of the company’s financial status.",
     },
   ]);
 
@@ -183,6 +186,9 @@ function Partners() {
           </div>
           <p className={styles.subHeading}>Founded in 2022, Beacon Global comprises a team of passionate accountants, auditors, and financial analysts. With a complete understanding of the need for a reliable auditing and accounting firm that offers excellent services to clients, we deliver the leading business consulting services in Saudi Arabia. Right from its inception, our team of consultants has been adept at building a good industry reputation with remarkable services to the clients. With the growth of the goodwill of the firm, we have extended the roots to business consultancy, tax advisory, accounting, audit and regulatory services, and digital marketing, with offices across UAE, India, and KSA. We are committed to offering business incorporation services to clients with an emphasis on the principles of professionalism, integrity, and reliability. We are grateful for the recognition gifted by the clients who helped us navigate the complexities of tax, auditing, and regulatory compliance. Our team is dedicated to delivering unparalleled service and value to businesses with strong support of partners, clients, and other stakeholders through constructive relationships.
           </p>
+          <div>
+            <Button content="PARTNER WITH US" href="/pages/About" />
+          </div>
         </div>
         <div className={styles.CareersContainer}>
           <h2 className="businessDesc">Being a partner has its benefits</h2>
@@ -207,9 +213,9 @@ function Partners() {
 
           </div>
         </div>
-        <div>
+        <div className={styles.servicesPageContainer3}>
           <h1 className="businessDesc">
-            The Values We Live By
+            process & approach
           </h1>
           <h1 className={`${styles.servicePagecontainer2MobileHeading}`}>
             process & approach
@@ -227,7 +233,7 @@ function Partners() {
                 </div>
               )}
               <Image
-                src="/Careers/ValueImage.png"
+                src="/testimonial.png"
                 width={576}
                 height={540}
                 layout="responsive"
@@ -248,8 +254,8 @@ function Partners() {
                     key={index}
                     onClick={() => toggleAnswerVisibility(index)}
                   >
-                   
-                    <div className="faqContentContainer">
+
+                    <div className={`${styles.faqContentContainer}`}>
                       <div
                         style={{ display: "flex", justifyContent: "space-between" }}
                         className="faqQuestionContainer"
@@ -282,6 +288,38 @@ function Partners() {
               </div>
 
             </div>
+          </div>
+        </div>
+
+        <div className={styles.PartnersGreenbanner}>
+          <div className={styles.LeftGreenBanner}>
+            <h1 className={styles.bannerHeading}>Let’s turn your idea into reality</h1>
+            <h1 className={styles.bannersubHeading}>Be a part of a dynamic group of passionate researchers, designers </h1>
+          </div>
+          <div className={styles.RightGreenBanner}>
+            <button className='bg-white bg-opacity-10 m-auto py-3 md:py-5 px-6 md:px-10 rounded-full ' onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+              <a href="" className="flex flex-col relative overflow-hidden text-sm md:text-lg font-medium">
+                <div className={`flex flex-row gap-2 `}>
+                  <p className={`text-white  ease-in-out duration-300 ${isHovered && '-translate-y-[150%]'} `}>PARTNER WITH US</p>
+                  <Image
+                    src={imageSrc}
+                    width={23}
+                    height={23}
+                    alt='heroContact'
+                    className={`
+                            ease-in-out 
+                            duration-300 
+                            ${isHovered && '-translate-y-[150%] translate-x-5'} 
+                            w-[15px] h-[15px] md:w-[23px] md:h-[23px]
+                            `}
+                  />
+                </div>
+                <div className='flex flex-row gap-2 absolute bottom-0'>
+                  <p className={`text-white ease-in-out duration-300 ${isHovered ? '-translate-y-0' : 'translate-y-[150%] '} `}>PARTNER WITH US</p>
+                  <Image src={imageSrc} width={23} height={23} alt='heroContact' className={` ease-in-out duration-300 ${isHovered ? '' : 'translate-y-[150%] -translate-x-5'}`} />
+                </div>
+              </a>
+            </button>
           </div>
         </div>
 
