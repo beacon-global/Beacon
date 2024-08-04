@@ -52,7 +52,8 @@
 }
 
 .dateTextContainer {
-  width: 14.214814814814813vw;
+  width: auto;
+  padding: 0px 1.5227513227513228vw;
   border-radius: 14.814814814814813vw;
   height: 2.513227513227513vw;
   background-color: #13670b;
@@ -202,7 +203,8 @@
   }
 
   .dateTextContainer {
-    width: 34.133333vw;
+    width: auto;
+    padding: 0px 2.666666666666667vw;
     border-radius: 22.133333333333333vw;
     height: 6.4vw;
     background-color: #13670b;
@@ -217,7 +219,7 @@
   }
 
   .text4 {
-    font-size: 2.666666666666667vw !important;
+    font-size: 2.566666666666667vw !important;
   }
 
   .text3 {
