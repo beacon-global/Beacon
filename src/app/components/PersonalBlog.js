@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import fetchDataAndExport, { urlFor } from "../../../test";
 
-const PersonalBlog = ({ blogPage, isInnerPage = false ,blog =null}) => {
+const PersonalBlog = ({ blogPage, isInnerPage = false, blog = null }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [blogData, setBlogData] = useState([]);
 
@@ -45,7 +45,7 @@ const PersonalBlog = ({ blogPage, isInnerPage = false ,blog =null}) => {
         {blogData.map((data, index) => (
           <>
             {(blogPage || isInnerPage || (ismobile && (index < 5 && index > 0)) || (index < 4 && index > 0)) && (
-              <div className={isInnerPage ? ((index%5===0) ? styles.companyBlogCard2 : styles.companyBlogCard) : (styles.companyBlogCard)} key={index}>
+              <div className={isInnerPage ? ((index % 5 === 0) ? styles.companyBlogCard2 : styles.companyBlogCard) : (styles.companyBlogCard)} key={index}>
                 <Link
                   href={{
                     pathname: "/pages/blog",
@@ -78,7 +78,16 @@ const PersonalBlog = ({ blogPage, isInnerPage = false ,blog =null}) => {
                   <div className={styles.companyBlogContent}>
                     <h6 className={styles.text5}>{data.title}</h6>
                     <h6 className={styles.text6}>{data?.description[0]?.children[0]?.text}</h6>
-                    <h6>Read More  &rarr;</h6>
+                    <div className={styles.readmore}>
+                      <h6>Read More</h6>
+                      <Image
+                      src="/blackArrow.svg"
+                      width={23}
+                      height={23}
+                      alt="Image"
+                      className={styles.blogArrow}
+                    />
+                    </div>
                   </div>
                 </Link>
               </div>

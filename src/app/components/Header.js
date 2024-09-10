@@ -14,6 +14,7 @@ function Header() {
     { text: "Our Presence", href: "#", hasDropdown: true },
     { text: "About Us", href: "/pages/About/" },
     { text: "Services", href: "/pages/Services/" },
+    { text: "Blogs", href: "/pages/blog/"},
     { text: "Contact Us", href: "/pages/Contact/" },
   ];
 
@@ -79,10 +80,10 @@ function Header() {
                   </a>
                   {item.hasDropdown && isPresenceOpen && (
                     <div className="dropdownContent">
-                      <a href="https://ksa.bmcglobal.co" target="_blank">
+                      <a href="https://www.ksa.beaconarabia.com" target="_blank">
                         <p>Saudi Arabia</p>
                       </a>
-                      <a href="https://uae.bmcglobal.co" target="_blank">
+                      <a href="https://www.uae.beaconarabia.com" target="_blank">
                         <p>United Arab Emirates</p>
                       </a>
                     </div>

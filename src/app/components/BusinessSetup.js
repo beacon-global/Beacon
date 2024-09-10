@@ -17,7 +17,7 @@ function BusinessSetup() {
       </div>
       <div className="businessVideoContainer">
         <div className="ksa">
-      <a href="https://ksa.bmcglobal.co" target="_blank">
+      <a href="https://www.ksa.beaconarabia.com" target="_blank">
           <Image
             src="/KSA.webp"
             width={586}
@@ -51,7 +51,7 @@ function BusinessSetup() {
         </div>
 
         <div className="uae">
-        <a href="https://uae.bmcglobal.co" target="_blank">
+        <a href="https://www.uae.beaconarabia.com" target="_blank">
           <Image
             src="/UAE.webp"
             width={586}

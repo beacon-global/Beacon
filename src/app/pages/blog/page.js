@@ -8,6 +8,7 @@ import fetchDataAndExport, { urlFor } from "../../../../test";
 import Contact from "../../components/Contact";
 import Footer from "../../components/Footer";
 import PersonalBlog from "@/app/components/PersonalBlog";
+import WhatsAppChat from "@/app/components/WhatsAppChat";
 
 
 const SanityComponent = ({ textData }) => {
@@ -65,14 +66,14 @@ const SanityComponent = ({ textData }) => {
       }
       {textData.style === 'normal' && (textData.listItem === 'bullet' ? (
         <>
-            {textData.children.map((data, index) => (
-              <div
-                className={styles.blogsli}
-                style={{ display: "block" }}
-                key={index}>
-                {data.text}
-              </div>
-            ))}
+          {textData.children.map((data, index) => (
+            <div
+              className={styles.blogsli}
+              style={{ display: "block" }}
+              key={index}>
+              {data.text}
+            </div>
+          ))}
         </>
       ) : (
         <>
@@ -86,7 +87,7 @@ const SanityComponent = ({ textData }) => {
           ))}
         </>
       ))}
-      {textData.children.length === 1 && (textData.children[0].text === '\n' || textData.children[0].text === "")&&
+      {textData.children.length === 1 && (textData.children[0].text === '\n' || textData.children[0].text === "") &&
         <br />
       }
     </div>
@@ -123,6 +124,7 @@ const Page = () => {
   if (dfor) {
     return (
       <>
+        <WhatsAppChat />
         <Header />
         <MobileHeader />
         {
@@ -161,7 +163,7 @@ const Page = () => {
           </div>
         }
         <div className={`forContactFromBlog ${dataArray?.length === 0 && styles.blogtopmargin}`}>
-          <PersonalBlog blogPage={dataArray?.titleImage ? true : false} isInnerPage={true} blog={dataArray?.currentSlug}/>
+          <PersonalBlog blogPage={dataArray?.titleImage ? true : false} isInnerPage={true} blog={dataArray?.currentSlug} />
         </div>
         <div className="forContactFromBlog">
           <Contact />

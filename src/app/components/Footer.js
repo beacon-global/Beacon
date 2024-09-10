@@ -17,7 +17,7 @@ function Footer() {
           />
         </div>
         <div className="footerContentContainer">
-        <ul className="footercontent">
+          <ul className="footercontent">
             <a href="/">
               <p>Home</p>
             </a>
@@ -51,10 +51,10 @@ function Footer() {
             <div className="footerContactTextDetails footerContactTextDetailsEmail">
               <h1>Email us:</h1>
               <a
-                href="mailto:info@bmcglobal.co"
+                href="mailto:info@beaconarabia.com"
                 style={{ textTransform: "none" }}
               >
-                info@bmcglobal.co
+                info@beaconarabia.com
               </a>
             </div>
           </div>
@@ -95,15 +95,15 @@ function Footer() {
               <div className="footerContactTextDetails">
                 <h1>Head Office:</h1>
                 <p>
-                  Building no. 4626, Hamza Shehatah St,
-                  <br /> Al-Baghdadiyah Al-Gharbiyah, Jeddah 22235
+                  Le Cygne Commercial Center, Kaab
+                  <br /> Bin Malik Street, Al Olaya, Riyadh 12611
                 </p>
               </div>
             </a>
           </div>
         </div>
         <div className="footerSocialContainer">
-        <a href="https://wa.me/+971568352250"  target="_blank">
+          <a href="https://wa.me/+971568352250" target="_blank">
             <Image
               quality={100}
               priority={true}

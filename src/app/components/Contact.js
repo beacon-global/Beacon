@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Button from "./Button";
 
 function Contact() {
   return (
@@ -18,7 +19,7 @@ function Contact() {
           us today for expert business consultancy services across the GCC.
           </p>
         </div>
-        <a href="/pages/Contact">
+        {/* <a href="/pages/Contact">
           <div className="hButtonContainer contactImageButton">
             <div className="visibleWrapperContainer">
               <div className="topVisibleContainer btn">
@@ -45,7 +46,10 @@ function Contact() {
               </div>
             </div>
           </div>
-        </a>
+        </a> */}
+        <div>
+          <Button content="Let's Talk" href="/pages/Contact" />
+        </div>
       </div>
     </div>
   );

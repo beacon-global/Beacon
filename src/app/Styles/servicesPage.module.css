@@ -77,23 +77,16 @@
     margin-bottom: 20px;
 }
 .cont2Button{
-    width: 240px;
-    height: 60px;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    overflow: hidden;
     margin-top: 30px;
 }
 .cont3Button{
-    width: 220px;
+    /* width: 220px;
     height: 60px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     position: relative;
-    overflow: hidden;
+    overflow: hidden; */
     margin-top: 30px;
 }
 .servicePagecontainer2MobileHeading{
@@ -435,25 +428,15 @@
         color: #02040E;
         text-align: left;
     }
-    .cont2Button{
-        width: 165px;
-        height: 40px;
-        cursor: pointer;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        overflow: hidden;
-        margin-top: 30px;
-    }
 
     .cont3Button{
-        width: 145px;
+        /* width: 145px;
         height: 40px;
         cursor: pointer;
         display: flex;
         flex-direction: column;
         position: relative;
-        overflow: hidden;
+        overflow: hidden; */
         margin-top: 30px;
         margin-bottom: 30px;
     }

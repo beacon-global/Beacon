@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Button from "./Button";
 
 function Locations() {
   return (
@@ -8,7 +9,7 @@ function Locations() {
         <div className="locationContentContainer">
           <div>
             <h2 className="locationHeading">
-              Connecting Businesses to <br /> Success in the GCC
+              Driving Business Success <br /> Through Strategic Solutions
             </h2>
           </div>
           <div>
@@ -16,10 +17,10 @@ function Locations() {
               Expand your reach and boost sales in the exciting GCC market.
               We make it easy to set up and grow your business. Our experts craft
               personalized plans to help you succeed. From starting your business to
-              marketing it online, we&apos;ve got you covered. Ready to unlock your GCC potential? Let&apos;s get started.
+              marketing it online, we&apos;ve got you covered. Ready to unlock your potential? Let&apos;s get started.
             </p>
           </div>
-          <a href="/pages/About">
+          {/* <a href="/pages/About">
             <div className="hButtonContainer locationButton">
               <div className="visibleWrapperContainer">
                 <div className="topVisibleContainer btn">
@@ -46,7 +47,10 @@ function Locations() {
                 </div>
               </div>
             </div>
-          </a>
+          </a> */}
+          <div>
+            <Button content="Explore More" href="/pages/About" />
+          </div>
         </div>
 
         <div className="locationImgContainer">

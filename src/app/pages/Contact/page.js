@@ -12,6 +12,7 @@ const Footer = dynamic(() => import("@/app/components/Footer"));
 
 function Contact() {
   const [showUAECard, setShowUAECard] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   const toggleUAECard = (buttonName) => {
     if (
@@ -85,9 +86,8 @@ function Contact() {
               United Arab Emirates
             </button>
             <button
-              className={`${styles.uae} ${styles.mUae} ${
-                showUAECard && styles.btnActive
-              }`}
+              className={`${styles.uae} ${styles.mUae} ${showUAECard && styles.btnActive
+                }`}
               onClick={() => toggleUAECard("uae")}
             >
               UAE
@@ -306,7 +306,19 @@ function Contact() {
               ></textarea>
             </div>
             <div className={styles.formSubmit}>
-              <button type="submit">Send Message</button>
+              {/* <button type="submit">Send Message</button> */}
+            </div>
+            <div className="ml-auto">
+              <button type="submit" className='bg-[#13670B] ml-auto py-3 md:py-5 px-6 md:px-14 rounded-full ' onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+                <div className="flex !w-full flex-col relative overflow-hidden text-sm md:text-lg font-medium">
+                  <div className={`flex !w-full flex-row `}>
+                    <p className={`text-white  ease-in-out duration-300 ${isHovered && '-translate-y-[150%]'} `}>Send Message</p>
+                  </div>
+                  <div className='flex flex-row !w-full absolute bottom-0'>
+                    <p className={`text-white ease-in-out duration-300 ${isHovered ? '-translate-y-0' : 'translate-y-[150%] '} `}>Send Message</p>
+                  </div>
+                </div>
+              </button>
             </div>
           </form>
         </div>

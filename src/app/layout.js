@@ -77,7 +77,9 @@ export default function RootLayout({ children }) {
         <meta property="og:image:width" content="1024" />
         <meta property="og:image:height" content="1024" />
       </head>
-      <body className={Sora.className}>{children}</body>
+      <body className={Sora.className}>
+        {children}
+      </body>
     </html>
   );
 }

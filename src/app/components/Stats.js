@@ -70,7 +70,7 @@ function Stats({ useBackgroundImage, isMainPage }) {
               count1: 1000, // Your final values here
               count2: 500,
               count3: 3,
-              count4: 5,
+              count4: 7,
             };
 
             animateValue("count1", finalCounts.count1, options, setCount1);
@@ -144,7 +144,7 @@ function Stats({ useBackgroundImage, isMainPage }) {
           <p>Years of Experience</p>
         </div>
         <div className="statContainer">
-          <h1>{count4}+</h1>
+          <h1>{count4}</h1>
           <p>Locations</p>
         </div>
       </div>

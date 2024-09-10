@@ -329,7 +329,7 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   font-style: normal;
   font-weight: 400;
   line-height: 140%; 
-  text-align: justify;
+  text-align: left;
 }
 
 .mainContainer{
@@ -1312,6 +1312,10 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   text-transform: capitalize;
 }
 
+.footercontent a :hover{
+  color: rgba(255, 255, 255, 0.5);
+}
+
 .bottomContainer{
   display: flex;
   justify-content: space-between;
@@ -1324,6 +1328,10 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   gap: 20px;
   align-items: center;
 } 
+
+.footerSocialContainer a :hover{
+  opacity: 0.5;
+}
 
 .footerContainer hr{
   opacity: 0.5;
@@ -1340,6 +1348,14 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   justify-content: center;
   align-items: center;
   gap: 15px;
+}
+
+.footerContactDetails a :hover{
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footerContactTextDetails :hover{
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .footerContactTextDetails{
@@ -1401,6 +1417,10 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
   font-weight: 400;
   line-height: 140%; /* 25.2px */
   text-align: center;
+}
+
+.footerCopyRightContainer p :hover{
+  color: rgba(255, 255, 255, 0.5);
 }
 
 /* Footer End */
@@ -1583,8 +1603,14 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom{
 .statsContiner{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
+}
+
+.statContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* card Anim or Transi End */

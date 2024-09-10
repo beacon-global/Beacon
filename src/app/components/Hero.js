@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Button from "./Button";
 
 function Hero({ initialScreenWidth }) {
   return (
@@ -46,7 +47,7 @@ function Hero({ initialScreenWidth }) {
               align with global business standards.
             </p>
           </div>
-          <a href="/pages/Contact">
+          {/* <a href="/pages/Contact">
             <div className="hButtonContainer heroButton">
               <div className="visibleWrapperContainer">
                 <div className="topVisibleContainer btn">
@@ -73,7 +74,10 @@ function Hero({ initialScreenWidth }) {
                 </div>
               </div>
             </div>
-          </a>
+          </a> */}
+          <div>
+            <Button content="Contact Us" href="/pages/Contact" />
+          </div>
         </div>
       </div>
     </div>
