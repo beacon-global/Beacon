@@ -154,7 +154,7 @@ function MobileHeader() {
                 textDecoration: "none",
                 color: "#333",
                 fontSize: "1rem",
-                textAlign:"right",
+                textAlign: "right",
               }}
             >
               Saudi Arabia
@@ -166,7 +166,7 @@ function MobileHeader() {
                 textDecoration: "none",
                 color: "#333",
                 fontSize: "1rem",
-                textAlign:"right",
+                textAlign: "right",
               }}
             >
               United Arab Emirates
