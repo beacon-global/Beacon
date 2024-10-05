@@ -30,6 +30,12 @@ function Footer() {
             <a href="pages/blog/">
               <p>Blogs</p>
             </a>
+            <a href="/pages/Partners">
+              <p>Partners</p>
+            </a>
+            <a href="/pages/Careers">
+              <p>Careers</p>
+            </a>
             <a href="/pages/Contact">
               <p>Contact</p>
             </a>
@@ -91,7 +97,7 @@ function Footer() {
               height={46}
               alt="ImageFooter2"
             />
-            <a href="https://maps.app.goo.gl/UzvX5K7o9c3Cepmx9">
+            <a href="https://maps.app.goo.gl/vWfGvAjAcHxV9AUT9">
               <div className="footerContactTextDetails">
                 <h1>Head Office:</h1>
                 <p>
@@ -127,7 +133,10 @@ function Footer() {
               alt="ImageFooter4"
             />
           </a>
-          <a href="https://www.facebook.com/people/Beacon-Management-Consultants/100086432425064/?mibextid=rS40aB7S9Ucbxw6v" target="_blank">
+          <a
+            href="https://www.facebook.com/people/Beacon-Management-Consultants/100086432425064/?mibextid=rS40aB7S9Ucbxw6v"
+            target="_blank"
+          >
             <Image
               quality={100}
               priority={true}

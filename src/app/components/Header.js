@@ -11,15 +11,16 @@ function Header() {
 
   const menuList = [
     { text: "Home", href: "/" },
-    { text: "Our Presence", href: "#", hasDropdown: true },
+    { text: "Explore", href: "#", hasDropdown: true },
     { text: "About Us", href: "/pages/About/" },
     { text: "Services", href: "/pages/Services/" },
-    { text: "Blogs", href: "/pages/blog/"},
+    { text: "Blogs", href: "/pages/blog/" },
+    { text: "Careers", href: "/pages/Careers/" },
     { text: "Contact Us", href: "/pages/Contact/" },
   ];
 
   const handleClick = (text) => {
-    if (text === "Our Presence") {
+    if (text === "Explore") {
       setIsPresenceOpen(!isPresenceOpen);
     } else {
       setIsPresenceOpen(false);
@@ -67,7 +68,7 @@ function Header() {
                 >
                   <a href={item.href}>
                     <div className="listHoverTop">
-                      {item.text === "Our Presence" ? (
+                      {item.text === "Explore" ? (
                         <div className="dropDown">
                           {item.text}
                           <img src="/dropDown.png" alt="Our Presence Arrow" />
@@ -80,10 +81,16 @@ function Header() {
                   </a>
                   {item.hasDropdown && isPresenceOpen && (
                     <div className="dropdownContent">
-                      <a href="https://www.ksa.beaconarabia.com" target="_blank">
+                      <a
+                        href="https://www.ksa.beaconarabia.com"
+                        target="_blank"
+                      >
                         <p>Saudi Arabia</p>
                       </a>
-                      <a href="https://www.uae.beaconarabia.com" target="_blank">
+                      <a
+                        href="https://www.uae.beaconarabia.com"
+                        target="_blank"
+                      >
                         <p>United Arab Emirates</p>
                       </a>
                     </div>

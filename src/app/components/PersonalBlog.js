@@ -4,8 +4,10 @@ import styles from "../Styles/personalBlog.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import sanityClient from "../../../sanity";
+import { useRouter } from "next/navigation";
 
 const PersonalBlog = ({ blogPage, isInnerPage = false }) => {
+  const router = useRouter();
   const [isHovered, setIsHovered] = useState(false);
   const [blogData, setBlogData] = useState(null);
 

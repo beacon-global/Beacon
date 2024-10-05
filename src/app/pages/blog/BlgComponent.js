@@ -36,10 +36,16 @@ const Card = ({ data }) => {
 
 const AllBlogs = ({ data }) => {
   return (
-    <div className={styles.allBlogsContainer}>
-      <Image src={data?.imageUrl} alt="img" width={300} height={208} />
-      <div className={styles.allBlogsContainerTitle}>{data?.subtitle}</div>
-    </div>
+    <Link
+      href={`/pages/blog/${data?.slug?.current}`}
+      target="_blank"
+      onClick={() => console.log(data.slug, "Link clicked:")}
+    >
+      <div className={styles.allBlogsContainer}>
+        <Image src={data?.imageUrl} alt="img" width={300} height={208} />
+        <div className={styles.allBlogsContainerTitle}>{data?.subtitle}</div>
+      </div>
+    </Link>
   );
 };
 

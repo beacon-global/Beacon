@@ -76,10 +76,23 @@ export default function RootLayout({ children }) {
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1024" />
         <meta property="og:image:height" content="1024" />
+
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-TFFRR5QM5E"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-TFFRR5QM5E');
+            `,
+          }}
+        />
       </head>
-      <body className={Sora.className}>
-        {children}
-      </body>
+      <body className={Sora.className}>{children}</body>
     </html>
   );
 }

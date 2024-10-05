@@ -128,7 +128,7 @@ function MobileHeader() {
             className="mLinks"
             onClick={toggleDropdown}
           >
-            Our Presence{" "}
+            Explore
             <img
               // style={{
               //   height: "4.8vw",
@@ -187,6 +187,13 @@ function MobileHeader() {
             className="mLinks"
           >
             Services
+          </a>
+          <a
+            href="/pages/Careers"
+            style={{ textDecoration: "none", color: "#333", fontSize: "1rem" }}
+            className="mLinks"
+          >
+            Careers
           </a>
           <a
             href="/pages/Contact"
