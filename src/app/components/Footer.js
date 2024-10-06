@@ -1,9 +1,13 @@
 import Image from "next/image";
 import React from "react";
+import NewsLetter from "./NewsLetter/NewsLetter";
 
 function Footer() {
   return (
     <div className="footerContainer">
+      <div>
+        <NewsLetter />
+      </div>
       <div className="topContainer">
         <div className="footerLogoContainer">
           <Image
@@ -162,7 +166,7 @@ function Footer() {
           </a>
         </div>
       </div>
-      <hr />
+      {/* <hr /> */}
       <div className="footerCopyRightContainer">
         <p className="footerCopyRight">
           © 2023 by Beacon Management Consultants CO.LTD | All Right Reserved |

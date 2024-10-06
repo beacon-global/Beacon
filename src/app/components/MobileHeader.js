@@ -189,6 +189,13 @@ function MobileHeader() {
             Services
           </a>
           <a
+            href="/pages/blog"
+            style={{ textDecoration: "none", color: "#333", fontSize: "1rem" }}
+            className="mLinks"
+          >
+            Blogs
+          </a>
+          <a
             href="/pages/Careers"
             style={{ textDecoration: "none", color: "#333", fontSize: "1rem" }}
             className="mLinks"
