@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./NewsLetter.module.css";
 import Image from "next/image";
-import icon1 from "../../../../public/newsletter/icon.png";
+import icon1 from "../../../../public/newsletter/Icon.png";
 
 
 // NewsLetter
