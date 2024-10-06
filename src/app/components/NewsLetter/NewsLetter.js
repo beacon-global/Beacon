@@ -3,6 +3,9 @@ import styles from "./NewsLetter.module.css";
 import Image from "next/image";
 import icon1 from "../../../../public/newsletter/icon.png";
 
+
+// NewsLetter
+
 const NewsLetter = () => {
   return (
     <>
