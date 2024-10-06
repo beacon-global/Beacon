@@ -3,8 +3,6 @@ import { useEffect, useState } from "react";
 import LoadingCircle from "./components/LoadingCircle";
 import dynamic from "next/dynamic";
 import WhatsAppChat from "./components/WhatsAppChat";
-import Blogs from "./components/Blogs";
-import { blogsData } from "./Contents/blogDatas";
 import PersonalBlog from "./components/PersonalBlog";
 const Header = dynamic(() => import("@/app/components/Header"));
 const MobileHeader = dynamic(() => import("@/app/components/MobileHeader"));
