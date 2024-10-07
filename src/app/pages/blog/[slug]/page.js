@@ -11,10 +11,10 @@ export const generateStaticParams = async () => {
     `*[_type == "blog"]{ "slug": slug.current }`
   );
 
-  // console.log(slugs, "Fetched slugs");
+  console.log(slugs, "Fetched slugs");
 
-  return slugs.map((slug) => ({
-    slug: slug.slug,
+  return slugs.map(({ slug }) => ({
+    slug,
   }));
 };
 
@@ -37,6 +37,8 @@ const BlogPage = async ({ params }) => {
     }`,
     { slug }
   );
+
+  console.log(slug, "Slug");
 
   return (
     <>
