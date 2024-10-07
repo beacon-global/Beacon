@@ -1,8 +1,9 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
+// import pdf from "../../../public/ebook/ebook.pdf";
 
-function Popup({ setShowPopup, heading }) {
+function Popup({ setShowPopup, heading, page }) {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -11,6 +12,7 @@ function Popup({ setShowPopup, heading }) {
   });
   const [error, setError] = useState("");
   const [success, setSuccess] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -21,6 +23,7 @@ function Popup({ setShowPopup, heading }) {
   };
 
   const handleSubmit = () => {
+    setIsLoading(true);
     emailjs
       .send(
         "service_7uemjx7",
@@ -31,15 +34,33 @@ function Popup({ setShowPopup, heading }) {
       .then(
         ({ status }) => {
           console.log("SUCCESS!");
-          setSuccess(true);
-          setError("");
-          setShowPopup(false);
+          if (page === "ebook") {
+            downloadEbook();
+            setSuccess(true);
+            setError("");
+            setShowPopup(false);
+          } else {
+            setSuccess(true);
+            setError("");
+            setShowPopup(false);
+          }
+          setIsLoading(false);
         },
         (error) => {
           console.log("FAILED...", error.text);
           setError(error.text);
+          setIsLoading(false);
         }
       );
+  };
+
+  const downloadEbook = () => {
+    if (page === "ebook") {
+      const link = document.createElement("a");
+      link.href = "/ebook/ebook.pdf";
+      link.download = "ebook.pdf";
+      link.click();
+    }
   };
 
   return (
@@ -95,7 +116,7 @@ function Popup({ setShowPopup, heading }) {
             </select>
           </div>
           <div className="subButton" onClick={handleSubmit}>
-            Book Now
+            {isLoading ? "Downloading..." : "Book Now"}
           </div>
         </div>
       </div>

@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./ebook.module.css";
 import img1 from "../../../../public/ebook/1.png";
 import icon1 from "../../../../public/ebook/icon.svg";
 import Image from "next/image";
+import Popup from "../Popup";
 
 const EbookBanner = () => {
+  const [showPopup, setShowPopup] = useState(false);
+  const openShowPopup = () => {
+    setShowPopup(true);
+  };
   return (
     <>
       <div className={styles.container}>
@@ -21,12 +26,22 @@ const EbookBanner = () => {
             insights help you to navigate regulatory requirements easily and
             create a systematic plan for business formation.
           </div>
-          <button class={styles.circulatingBorderButton}>
+          <button
+            class={styles.circulatingBorderButton}
+            onClick={openShowPopup}
+          >
             ACCESS THE GUIDE{" "}
             <Image src={icon1} alt="icon" width={23} height={23} />
           </button>
         </div>
       </div>
+      {showPopup && (
+        <Popup
+          setShowPopup={setShowPopup}
+          heading="Download Ebook"
+          page="ebook"
+        />
+      )}
     </>
   );
 };

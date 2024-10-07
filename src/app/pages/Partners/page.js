@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import styles from "../../Styles/partners.module.css";
+import contactStyles from "../../Styles/contact.module.css";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import WhatsAppChat from "@/app/components/WhatsAppChat";
@@ -86,6 +87,7 @@ const imageSources = [
 function Partners() {
   const [loaded, setLoaded] = useState(false);
   const [isHovered, setIsHovered] = React.useState(false);
+  const [isHoveredForm, setIsHoveredForm] = React.useState(false);
   const [faqData, setFaqData] = useState([
     {
       img: "01",
@@ -119,6 +121,43 @@ function Partners() {
         "Yes. Beacon can help you with your needs of financial auditing and reporting. With a holistic approach toward scrutinizing the financial statements of the company and filing necessary regulations, we ensure the financial well-being of your business. Our financial reporting services help to report the income statements with summarized revenue and expenses for a complete analysis of the company’s financial status.",
     },
   ]);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        emailjsConfig.serviceId,
+        emailjsConfig.templateId,
+        e.target,
+        emailjsConfig.userId
+      )
+      .then((response) => {
+        console.log("Email sent successfully!", response);
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          subject: "",
+          message: "",
+        });
+      })
+      .catch((error) => {
+        console.error("Email could not be sent:", error);
+      });
+  };
 
   useEffect(() => {
     const scrollers = document.querySelectorAll(".scroller");
@@ -233,7 +272,7 @@ function Partners() {
             ))}
           </div>
         </div>
-        <div className={styles.servicesPageContainer3}>
+        {/* <div className={styles.servicesPageContainer3}>
           <h1 className="businessDesc">process & approach</h1>
           <h1 className={`${styles.servicePagecontainer2MobileHeading}`}>
             process & approach
@@ -310,6 +349,102 @@ function Partners() {
               </div>
             </div>
           </div>
+        </div> */}
+
+        <div className={contactStyles.container2}>
+          <form className={contactStyles.formContainer} onSubmit={handleSubmit}>
+            <div>
+              <label htmlFor="name">Full name *</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+                placeholder="John David"
+              />
+            </div>
+            <div>
+              <label htmlFor="email">Your email *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+                placeholder="example@yourmail.com"
+              />
+            </div>
+            <div>
+              <label htmlFor="phone">Phone *</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
+                required
+                placeholder="your number here"
+              />
+            </div>
+            <div>
+              <label htmlFor="subject">Business Location *</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                value={formData.subject}
+                onChange={handleChange}
+                required
+                placeholder="How can we help"
+              />
+            </div>
+            {/* <div className={contactStyles.textBox}>
+              <label htmlFor="message">How May We Assist You?</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                value={formData.message}
+                onChange={handleChange}
+                placeholder="Type your message here..."
+              ></textarea>
+            </div> */}
+            <div className={contactStyles.formSubmit}>
+              {/* <button type="submit">Send Message</button> */}
+            </div>
+            <div className="ml-auto">
+              <button
+                type="submit"
+                className="bg-[#13670B] ml-auto py-3 md:py-5 px-6 md:px-14 rounded-full "
+                onMouseEnter={() => setIsHoveredForm(true)}
+                onMouseLeave={() => setIsHoveredForm(false)}
+              >
+                <div className="flex !w-full flex-col relative overflow-hidden text-sm md:text-lg font-medium">
+                  <div className={`flex !w-full flex-row `}>
+                    <p
+                      className={`text-white  ease-in-out duration-300 ${
+                        isHoveredForm && "-translate-y-[150%]"
+                      } `}
+                    >
+                      Become a partner
+                    </p>
+                  </div>
+                  <div className="flex flex-row !w-full absolute bottom-0">
+                    <p
+                      className={`text-white ease-in-out duration-300 ${
+                        isHoveredForm ? "-translate-y-0" : "translate-y-[150%] "
+                      } `}
+                    >
+                      Become a partner
+                    </p>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </form>
         </div>
 
         <div className={styles.PartnersGreenbanner}>
@@ -375,7 +510,7 @@ function Partners() {
           </div>
         </div>
 
-        <div className="clientsContainer">
+        {/* <div className="clientsContainer">
           <div className="businessContentContainer">
             <h2 className="businessDesc">Our partners</h2>
           </div>
@@ -388,7 +523,7 @@ function Partners() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <Faq />
         <Contact />
         <div className={styles.footerContainer}>
