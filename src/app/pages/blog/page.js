@@ -6,18 +6,7 @@ import Footer from "@/app/components/Footer";
 import Contact from "@/app/components/Contact";
 import styles from "./blogs.module.css";
 
-export const metadata = {
-  keywords: [
-    "Beacon",
-    "business advisory",
-    "business growth",
-    "digital marketing",
-    "technology services",
-    "finance and accounting",
-    "audit and taxation",
-    "business consulting",
-  ],
-};
+
 
 const page = () => {
   return (
