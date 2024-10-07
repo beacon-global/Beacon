@@ -203,6 +203,13 @@ function MobileHeader() {
             Careers
           </a>
           <a
+            href="/pages/Partners"
+            style={{ textDecoration: "none", color: "#333", fontSize: "1rem" }}
+            className="mLinks"
+          >
+            Partners
+          </a>
+          <a
             href="/pages/Contact"
             style={{ textDecoration: "none", color: "#333", fontSize: "1rem" }}
             className="mLinks"

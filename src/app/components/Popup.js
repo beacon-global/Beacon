@@ -116,7 +116,11 @@ function Popup({ setShowPopup, heading, page }) {
             </select>
           </div>
           <div className="subButton" onClick={handleSubmit}>
-            {isLoading ? "Downloading..." : "Book Now"}
+            {isLoading
+              ? "Downloading..."
+              : page === "ebook"
+              ? "Download Ebook"
+              : "Book Now"}
           </div>
         </div>
       </div>
