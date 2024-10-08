@@ -7,17 +7,19 @@ import emailjs from "@emailjs/browser";
 
 const NewsLetter = () => {
   const [email, setEmail] = useState("");
-  const [submissionStatus, setSubmissionStatus] = useState(""); // Added state for submission status
+  const [submissionStatus, setSubmissionStatus] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleChange = (e) => {
     setEmail(e.target.value);
   };
 
   const handleSubmit = () => {
-    if (!email) {
+    if (email === "") {
       setSubmissionStatus("Please enter a valid email.");
       return;
     }
+    setIsLoading(true);
 
     const templateParams = {
       email: email,
@@ -33,6 +35,7 @@ const NewsLetter = () => {
       .then(
         (response) => {
           if (response.status === 200) {
+            setIsLoading(false);
             setSubmissionStatus("Subscribed successfully.");
           }
           console.log("SUCCESS!", response.status, response.text);
@@ -41,6 +44,7 @@ const NewsLetter = () => {
         },
         (error) => {
           console.log("FAILED...", error.text);
+          setIsLoading(false);
           setSubmissionStatus("Failed to subscribe. Please try again.");
         }
       );
@@ -67,11 +71,15 @@ const NewsLetter = () => {
               placeholder="Enter your email"
               style={{ transition: "none" }}
               className={styles.input}
-              value={email}
+              // value={email}
               onChange={handleChange}
             />
             <div className={styles.button} onClick={handleSubmit}>
-              Subscribe
+              {isLoading
+                ? "Loading..."
+                : submissionStatus === "Subscribed successfully."
+                ? "Subscribed"
+                : "Subscribe"}
             </div>
           </div>
           {submissionStatus && (

@@ -531,7 +531,11 @@ function Partners() {
         </div>
       </div>
       {showPopup && (
-        <Popup setShowPopup={setShowPopup} heading="Partner With Us" />
+        <Popup
+          setShowPopup={setShowPopup}
+          heading="Partner With Us"
+          page="Partners"
+        />
       )}
     </>
   );

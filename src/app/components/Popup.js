@@ -3,6 +3,10 @@ import React, { useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
 // import pdf from "../../../public/ebook/ebook.pdf";
 
+// import image1 from "../../../public/Form.png";
+// import image2 from "../../../public/Form.png";
+// import image3 from "../../../public/Form.png";
+
 function Popup({ setShowPopup, heading, page }) {
   const [formData, setFormData] = useState({
     name: "",
@@ -71,7 +75,17 @@ function Popup({ setShowPopup, heading, page }) {
           <img src="/close-b.svg" alt="close button" className="closeImage" />
         </div>
         <div className="imageForm">
-          <img src="/Form.webp" alt="popup image" className="popupImage" />
+          <img
+            src={
+              page === "Partners"
+                ? "/form2.png"
+                : page === "ebook"
+                ? "/form3.png"
+                : "/Form.webp"
+            }
+            alt="popup image"
+            className="popupImage"
+          />
         </div>
         <div className="popupForm">
           <p className="popupheading">

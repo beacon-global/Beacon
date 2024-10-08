@@ -39,7 +39,7 @@ const AllBlogs = ({ data }) => {
     <Link
       href={`/pages/blog/${data?.slug?.current}`}
       target="_blank"
-      onClick={() => console.log(data.slug, "Link clicked:")}
+      // onClick={() => console.log(data.slug, "Link clicked:")}
     >
       <div className={styles.allBlogsContainer}>
         <Image src={data?.imageUrl} alt="img" width={300} height={208} />
@@ -71,7 +71,7 @@ const BlgComponent = ({ singleBlogData }) => {
     }`
       )
       .then((data) => {
-        console.log(data, "Sanity data");
+        // console.log(data, "Sanity data");
         setAllBlogsData(data);
       })
       .catch((err) => {

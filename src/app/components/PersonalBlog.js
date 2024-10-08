@@ -29,7 +29,7 @@ const PersonalBlog = ({ blogPage, isInnerPage = false }) => {
         }`
       )
       .then((data) => {
-        console.log(data, "Sanity data");
+        // console.log(data, "Sanity data");
         setBlogData(data);
       })
       .catch((err) => {
