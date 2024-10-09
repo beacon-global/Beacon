@@ -24,6 +24,8 @@ function Blogs({ blogPage }) {
     fetchData();
   }, []);
 
+  console.log(blogData,"fkdslajjfklas");
+
 
   const imageSrc = isHovered ? "/whiteArrow.svg" : "/blackArrow.svg";
 

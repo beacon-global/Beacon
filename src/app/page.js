@@ -23,17 +23,12 @@ export default function Home() {
   const textOptions = ["Growth", "Success", "Strategy", "Expansion"];
   const [showPopup, setShowPopup] = useState(false);
 
-  useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      setShowPopup(true);
-    }, 5000); 
-    return () => clearTimeout(timeoutId);
-  }, []);
-
-
-
-
-
+  // useEffect(() => {
+  //   const timeoutId = setTimeout(() => {
+  //     setShowPopup(true);
+  //   }, 5000);
+  //   return () => clearTimeout(timeoutId);
+  // }, []);
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
@@ -62,7 +57,7 @@ export default function Home() {
       <WhatsAppChat />
       <Header />
       <MobileHeader />
-      {showPopup && <Popup setShowPopup={setShowPopup}/>}
+      {showPopup && <Popup setShowPopup={setShowPopup} />}
       <div id="white-screen">
         <LoadingCircle />
         <div className="changeTextContainer">

@@ -9,6 +9,7 @@ import { useRouter } from "next/navigation";
 const PersonalBlog = ({ blogPage, isInnerPage = false }) => {
   const router = useRouter();
   const [isHovered, setIsHovered] = useState(false);
+  const [isHovered2, setIsHovered2] = useState(false);
   const [blogData, setBlogData] = useState(null);
 
   useEffect(() => {
@@ -29,7 +30,7 @@ const PersonalBlog = ({ blogPage, isInnerPage = false }) => {
         }`
       )
       .then((data) => {
-        // console.log(data, "Sanity data");
+        console.log(data, "Sanity data");
         setBlogData(data);
       })
       .catch((err) => {
@@ -38,6 +39,7 @@ const PersonalBlog = ({ blogPage, isInnerPage = false }) => {
   }, []);
 
   const imageSrc = isHovered ? "/whiteArrow.svg" : "/blackArrow.svg";
+  const imageSrc2 = isHovered2 ? "/whiteArrow.svg" : "/blackArrow.svg";
   const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
 
   const shouldDisplayCard = (index) => {
@@ -49,9 +51,12 @@ const PersonalBlog = ({ blogPage, isInnerPage = false }) => {
     );
   };
 
+  console.log(blogPage, "blogPage");
   const blogsToDisplay = blogPage
     ? blogData !== null && blogData
-    : blogData !== null && blogData.slice(0, 3);
+    : blogData !== null && !isInnerPage
+    ? blogData.slice(0, 3)
+    : blogData;
 
   if (blogData === null) {
     return <div className="dataLoading">Loading...</div>;
@@ -124,9 +129,10 @@ const PersonalBlog = ({ blogPage, isInnerPage = false }) => {
       {!isInnerPage && (
         <div
           className={`${styles.blogButton} hButtonContainer servicesButton`}
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
+          onMouseEnter={() => setIsHovered2(true)}
+          onMouseLeave={() => setIsHovered2(false)}
           // style={{ marginTop: blogPage ? "-30px" : "" }}
+          onClick={() => router.push("/pages/blog")}
         >
           <div className="visibleWrapperContainer">
             <div className="topVisibleContainer">
@@ -147,7 +153,7 @@ const PersonalBlog = ({ blogPage, isInnerPage = false }) => {
                 Learn More
                 <div className={`${styles.bottomBlogArrow} bottomVisibleArrow`}>
                   <Image
-                    src={imageSrc}
+                    src={imageSrc2}
                     width={23}
                     height={23}
                     alt="heroContact"
