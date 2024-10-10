@@ -86,8 +86,9 @@ function Contact() {
               United Arab Emirates
             </button>
             <button
-              className={`${styles.uae} ${styles.mUae} ${showUAECard && styles.btnActive
-                }`}
+              className={`${styles.uae} ${styles.mUae} ${
+                showUAECard && styles.btnActive
+              }`}
               onClick={() => toggleUAECard("uae")}
             >
               UAE
@@ -96,30 +97,36 @@ function Contact() {
 
           {showUAECard ? (
             <div className={styles.contactMainCard}>
-              <div className={`${styles.contactCard} ${styles.contactCardUAE}`}>
-                <div className={styles.contactImgContainer}>
-                  <Image
-                    src="/NewSvgs/SVG2/Group7.svg"
-                    width={72}
-                    height={72}
-                    alt="contactLocactionIcon"
-                  />
+              <a href="https://maps.app.goo.gl/LEiVynHhrTepAcWw9 ">
+                <div
+                  className={`${styles.contactCard} ${styles.contactCardUAE}`}
+                >
+                  <div className={styles.contactImgContainer}>
+                    <Image
+                      src="/NewSvgs/SVG2/Group7.svg"
+                      width={72}
+                      height={72}
+                      alt="contactLocactionIcon"
+                    />
+                  </div>
+                  <div className={styles.contactCardContents}>
+                    <h1 className={`${styles.jeddah} servicesHeading`}>
+                      DUBAI
+                    </h1>
+                    <p className={styles.cardDesc}>
+                      Office #39, 7th Floor, Dubai National Insurance Building.
+                      Port Saeed Deira, Dubai, UAE
+                    </p>
+                  </div>
+                  <div className={styles.numberContainer}>
+                    <a href="tel:971 568 352 250">
+                      + 971 568 352 250
+                      <br />+ 971 502 574 396
+                      <br /> + 971 488 324 58
+                    </a>
+                  </div>
                 </div>
-                <div className={styles.contactCardContents}>
-                  <h1 className={`${styles.jeddah} servicesHeading`}>DUBAI</h1>
-                  <p className={styles.cardDesc}>
-                    Office #39, 7th Floor, Dubai National Insurance Building.
-                    Port Saeed Deira, Dubai, UAE
-                  </p>
-                </div>
-                <div className={styles.numberContainer}>
-                  <a href="tel:971 568 352 250">
-                    + 971 568 352 250
-                    <br />+ 971 502 574 396
-                    <br /> + 971 488 324 58
-                  </a>
-                </div>
-              </div>
+              </a>
             </div>
           ) : (
             <div className={styles.contactMainCard}>
@@ -309,13 +316,30 @@ function Contact() {
               {/* <button type="submit">Send Message</button> */}
             </div>
             <div className="ml-auto">
-              <button type="submit" className='bg-[#13670B] ml-auto py-3 md:py-5 px-6 md:px-14 rounded-full ' onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+              <button
+                type="submit"
+                className="bg-[#13670B] ml-auto py-3 md:py-5 px-6 md:px-14 rounded-full "
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
+              >
                 <div className="flex !w-full flex-col relative overflow-hidden text-sm md:text-lg font-medium">
                   <div className={`flex !w-full flex-row `}>
-                    <p className={`text-white  ease-in-out duration-300 ${isHovered && '-translate-y-[150%]'} `}>Send Message</p>
+                    <p
+                      className={`text-white  ease-in-out duration-300 ${
+                        isHovered && "-translate-y-[150%]"
+                      } `}
+                    >
+                      Send Message
+                    </p>
                   </div>
-                  <div className='flex flex-row !w-full absolute bottom-0'>
-                    <p className={`text-white ease-in-out duration-300 ${isHovered ? '-translate-y-0' : 'translate-y-[150%] '} `}>Send Message</p>
+                  <div className="flex flex-row !w-full absolute bottom-0">
+                    <p
+                      className={`text-white ease-in-out duration-300 ${
+                        isHovered ? "-translate-y-0" : "translate-y-[150%] "
+                      } `}
+                    >
+                      Send Message
+                    </p>
                   </div>
                 </div>
               </button>

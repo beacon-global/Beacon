@@ -146,6 +146,12 @@
   margin-bottom: 1.984126984126984vw;
 }
 
+.mainHeading {
+  font-size: 2vw;
+  margin-bottom: 1.984126984126984vw;
+  font-weight: 600;
+}
+
 .link {
   color: #104add;
   margin-bottom: 0;

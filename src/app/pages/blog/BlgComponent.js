@@ -14,6 +14,11 @@ import icon4 from "../../../../public/Blogs/icons/4.svg";
 const Card = ({ data }) => {
   return (
     <div className={styles.cardContainer}>
+      {data?.type === "mainHeading" && (
+        <div className={` ${styles.mainHeading}`}>
+          {data?.content}
+        </div>
+      )}
       {data?.type === "subheading" && (
         <div className={styles.subHeading}>{data?.content}</div>
       )}
