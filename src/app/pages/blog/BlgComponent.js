@@ -30,11 +30,38 @@ const Card = ({ data }) => {
           />
         </div>
       )}
+      {data?.ul !== undefined && (
+        <>
+          <ul className={styles.ul}>
+            {data?.ul.map((data, index) => (
+              <li key={index}>
+                <p className={` ${styles.description}`}> {data}</p>
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
+      {data?.hyperLink !== undefined && (
+        <a
+          href={
+            data?.hyperLink.startsWith("http://") ||
+            data?.hyperLink.startsWith("https://")
+              ? data?.hyperLink
+              : `http://${data?.hyperLink}`
+          }
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`${styles.link} ${styles.description}`}
+        >
+          {data?.hyperLink}
+        </a>
+      )}
     </div>
   );
 };
 
 const AllBlogs = ({ data }) => {
+  console.log(data, "sanityData");
   return (
     <Link
       href={`/pages/blog/${data?.slug?.current}`}

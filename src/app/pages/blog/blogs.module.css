@@ -146,6 +146,26 @@
   margin-bottom: 1.984126984126984vw;
 }
 
+.link {
+  color: #104add;
+  margin-bottom: 0;
+}
+
+.ul {
+  list-style: outside;
+  margin-left: 1.5vw;
+}
+
+.ul .description {
+  margin-bottom: calc(1.984126984126984vw / 2);
+  text-decoration: dotted;
+  text-align: left;
+}
+
+.link:hover {
+  color: rgba(16, 74, 221, 0.4);
+}
+
 @media only screen and (max-width: 767px) {
   .blogsMainInnerPage {
     margin: 7.2751322751322745vw 0;
@@ -233,6 +253,18 @@
   .description {
     margin-bottom: 5.333333333333334vw;
     font-size: 3.2vw;
+  }
+
+  .ul {
+    margin-left: 6.4vw;
+  }
+
+  .ul li {
+    padding-left: 0;
+  }
+
+  .ul .description {
+    margin-bottom: calc(5.333333333333334vw / 2);
   }
 
   .cardContainer .imageContainer {
