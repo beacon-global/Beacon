@@ -15,9 +15,7 @@ const Card = ({ data }) => {
   return (
     <div className={styles.cardContainer}>
       {data?.type === "mainHeading" && (
-        <div className={` ${styles.mainHeading}`}>
-          {data?.content}
-        </div>
+        <div className={` ${styles.mainHeading}`}>{data?.content}</div>
       )}
       {data?.type === "subheading" && (
         <div className={styles.subHeading}>{data?.content}</div>
@@ -131,10 +129,7 @@ const BlgComponent = ({ singleBlogData }) => {
             </div>
             <div className={styles.titleContainer}>{data.title}</div>
             <div className={styles.socialContainer}>
-              <span className={styles.share}>Share:</span>
-              <Link href="https://wa.me/+971568352250">
-                <Image src={icon4} alt="social icons" />
-              </Link>
+              <span className={styles.share}>Follow us on:</span>
               <Link href="https://www.instagram.com/beaconconsultants">
                 <Image src={icon1} alt="social icons" />
               </Link>
@@ -143,6 +138,9 @@ const BlgComponent = ({ singleBlogData }) => {
               </Link>
               <Link href="https://www.linkedin.com/company/beacon-management-consultants/">
                 <Image src={icon3} alt="social icons" />
+              </Link>
+              <Link href="https://wa.me/+971568352250">
+                <Image src={icon4} alt="social icons" />
               </Link>
             </div>
           </div>
