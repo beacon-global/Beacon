@@ -26,23 +26,26 @@
 body {
   background: #fff;
 
-  scrollbar-width: none; /* Firefox */
+  scrollbar-width: none;
+  /* Firefox */
   -ms-overflow-style: none;
 
-  scrollbar-width: thin; /* Width of the scrollbar */
+  scrollbar-width: thin;
+  /* Width of the scrollbar */
   scrollbar-color: transparent transparent;
 }
 
 body::-webkit-scrollbar {
-  width: 0rem; /* Width of the scrollbar */
+  width: 0rem;
+  /* Width of the scrollbar */
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: transparent; /* Color of the thumb */
+  background-color: transparent;
+  /* Color of the thumb */
 }
 
-h2 {
-}
+h2 {}
 
 p {
   font-size: 1.0416666666666665vw;
@@ -154,6 +157,7 @@ li.huListTransitionWrapper.hasDropdown {
 li.huListTransitionWrapper.hasDropdown:hover .listHoverTop {
   transform: translate(0%, -0%);
 }
+
 li.huListTransitionWrapper.hasDropdown .listHoverBottom {
   transform: translate(0%, -0%);
   visibility: hidden;
@@ -272,6 +276,7 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom {
   width: 100%;
   height: auto;
   object-fit: cover;
+  filter: brightness(0.6);
 }
 
 .MobilehImage {
@@ -302,7 +307,8 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom {
   /* color: white;  */
   gap: 30px;
   text-align: center;
-  padding-left: 135px; /* Adjust as needed */
+  padding-left: 135px;
+  /* Adjust as needed */
   /* padding-top: 300px;  */
 }
 
@@ -312,7 +318,8 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom {
   font-size: 58px;
   font-style: normal;
   font-weight: 500;
-  line-height: 120%; /* 76.8px */
+  line-height: 120%;
+  /* 76.8px */
   text-transform: capitalize;
   text-align: left;
   margin-bottom: -10px;
@@ -334,6 +341,7 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom {
   flex-direction: column;
   gap: 8.463541666666668vw;
 }
+
 /* Hero End */
 
 /* Location Start  */
@@ -370,10 +378,11 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom {
   font-size: 2.604166666666667vw;
   font-style: normal;
   font-weight: 600;
-  line-height: 135%; /* 56px */
+  line-height: 135%;
+  /* 56px */
   text-transform: capitalize;
   margin-bottom: -10px;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 .locationDesc {
@@ -422,7 +431,8 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom {
   text-align: center;
   font-style: normal;
   font-weight: 600;
-  line-height: 120%; /* 19.2px */
+  line-height: 120%;
+  /* 19.2px */
   text-transform: uppercase;
   margin-bottom: 10px;
   font-size: 1.33333vw;
@@ -438,7 +448,8 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom {
   font-size: 36px;
   font-style: normal;
   font-weight: 600;
-  line-height: 140%; /* 56px */
+  line-height: 140%;
+  /* 56px */
   text-transform: capitalize;
 }
 
@@ -448,7 +459,8 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom {
   font-size: 36px;
   font-style: normal;
   font-weight: 600;
-  line-height: 140%; /* 56px */
+  line-height: 140%;
+  /* 56px */
   text-transform: capitalize;
 }
 
@@ -495,7 +507,8 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom {
   font-size: 30px;
   font-style: normal;
   font-weight: 600;
-  line-height: 120%; /* 36px */
+  line-height: 120%;
+  /* 36px */
   text-transform: capitalize;
   margin-bottom: 10px;
   white-space: nowrap;
@@ -512,7 +525,8 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom {
 }
 
 .businessCircle {
-  position: relative; /* Add this to make ::before pseudo-element work */
+  position: relative;
+  /* Add this to make ::before pseudo-element work */
   border: 2px solid white;
   border-radius: 50%;
   width: 40px;
@@ -520,7 +534,8 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden; /* Add this to hide overflow from ::before */
+  overflow: hidden;
+  /* Add this to hide overflow from ::before */
   transition: transform 0.3s ease-in-out, border 0.3s ease-out;
 }
 
@@ -532,9 +547,12 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom {
   width: 100%;
   height: 100%;
   background-color: #13670b;
-  z-index: -1; /* Add this to place ::before behind the circle */
-  transform: translateY(100%); /* Start with translateY(100%) to hide it */
-  transition: transform 0.3s ease-in-out; /* Transition the transform property */
+  z-index: -1;
+  /* Add this to place ::before behind the circle */
+  transform: translateY(100%);
+  /* Start with translateY(100%) to hide it */
+  transition: transform 0.3s ease-in-out;
+  /* Transition the transform property */
 }
 
 .businessCircle img {
@@ -546,7 +564,8 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom {
 }
 
 .businessCircle:hover::before {
-  transform: translateY(0%); /* Move ::before from bottom to top */
+  transform: translateY(0%);
+  /* Move ::before from bottom to top */
 }
 
 .businessCircle:hover {
@@ -603,14 +622,18 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom {
   align-items: center;
   gap: 20px;
   padding: 30px;
-  position: relative; /* Create a stacking context */
-  overflow: hidden; /* Hide overflow to contain the animation */
+  position: relative;
+  /* Create a stacking context */
+  overflow: hidden;
+  /* Hide overflow to contain the animation */
 }
 
 .cardContainer:hover::before {
-  height: 100%; /* Expand the "curtain" from bottom to top on hover */
+  height: 100%;
+  /* Expand the "curtain" from bottom to top on hover */
   transition: height 0.6s ease;
-  z-index: 1; /* Keep it below the content while expanding */
+  z-index: 1;
+  /* Keep it below the content while expanding */
 }
 
 .cardContainerOverlay {
@@ -672,7 +695,8 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom {
   /* font-size: 5vw; */
   font-style: normal;
   font-weight: 600;
-  line-height: 120%; /* 28.8px */
+  line-height: 120%;
+  /* 28.8px */
   text-transform: capitalize;
 }
 
@@ -710,7 +734,8 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 120%; /* 19.2px */
+  line-height: 120%;
+  /* 19.2px */
   text-transform: uppercase;
   white-space: nowrap;
   transition: height 0.6s ease;
@@ -757,7 +782,8 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom {
   font-size: 36px;
   font-style: normal;
   font-weight: 600;
-  line-height: 140%; /* 56px */
+  line-height: 140%;
+  /* 56px */
   text-transform: capitalize;
   width: 100%;
   margin-bottom: 30px;
@@ -768,7 +794,8 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom {
   /* font-size: 15px; */
   font-style: normal;
   font-weight: 400;
-  line-height: 140%; /* 22.4px */
+  line-height: 140%;
+  /* 22.4px */
   text-align: justify;
 }
 
@@ -816,7 +843,8 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom {
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
-  line-height: 120%; /* 24px */
+  line-height: 120%;
+  /* 24px */
   text-transform: capitalize;
 }
 
@@ -824,7 +852,8 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom {
   color: #58595b;
   font-style: normal;
   font-weight: 400;
-  line-height: 140%; /* 22.4px */
+  line-height: 140%;
+  /* 22.4px */
 }
 
 /* Why Beacon End */
@@ -914,7 +943,8 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom {
   font-size: 36px;
   font-style: normal;
   font-weight: 600;
-  line-height: 140%; /* 56px */
+  line-height: 140%;
+  /* 56px */
   text-transform: capitalize;
   margin-bottom: 20px;
 }
@@ -934,7 +964,8 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom {
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
-  line-height: 120%; /* 36px */
+  line-height: 120%;
+  /* 36px */
   text-transform: capitalize;
 }
 
@@ -955,7 +986,8 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom {
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height: 140%; /* 28px */
+  line-height: 140%;
+  /* 28px */
 }
 
 .profileDesignation {
@@ -963,7 +995,8 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom {
   /* font-size: 15px; */
   font-style: normal;
   font-weight: 400;
-  line-height: 140%; /* 22.4px */
+  line-height: 140%;
+  /* 22.4px */
 }
 
 /* Clients End  */
@@ -1038,7 +1071,7 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom {
   height: 100%;
 }
 
-.blogsContainer > div:nth-child(3) {
+.blogsContainer>div:nth-child(3) {
   margin-top: -0px;
 }
 
@@ -1084,7 +1117,8 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom {
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
-  line-height: 140%; /* 22.4px */
+  line-height: 140%;
+  /* 22.4px */
 }
 
 .forContactFromBlog {
@@ -1094,6 +1128,7 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom {
 .forFooterFromBlog {
   margin-top: 7.2751322751322745vw;
 }
+
 /* Blogs End */
 
 /* FAQ Starts */
@@ -1143,7 +1178,8 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom {
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
-  line-height: 120%; /* 28.8px */
+  line-height: 120%;
+  /* 28.8px */
   text-transform: capitalize;
 }
 
@@ -1163,7 +1199,8 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom {
   font-size: 22px;
   font-style: normal;
   font-weight: 500;
-  line-height: 120%; /* 28.8px */
+  line-height: 120%;
+  /* 28.8px */
   text-transform: capitalize;
 }
 
@@ -1229,7 +1266,8 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom {
   font-size: 36px;
   font-style: normal;
   font-weight: 600;
-  line-height: 140%; /* 56px */
+  line-height: 140%;
+  /* 56px */
   text-transform: capitalize;
 }
 
@@ -1243,7 +1281,8 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 140%; /* 28px */
+  line-height: 140%;
+  /* 28px */
 }
 
 .contactContainer .contactImageButton {
@@ -1286,7 +1325,8 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom {
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 120%; /* 21.6px */
+  line-height: 120%;
+  /* 21.6px */
   text-transform: capitalize;
 }
 
@@ -1354,7 +1394,8 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 120%; /* 21.6px */
+  line-height: 120%;
+  /* 21.6px */
   text-transform: capitalize;
 }
 
@@ -1364,7 +1405,8 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 120%; /* 21.6px */
+  line-height: 120%;
+  /* 21.6px */
   text-transform: capitalize;
 }
 
@@ -1391,7 +1433,8 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom {
   /* font-size: 15px; */
   font-style: normal;
   font-weight: 400;
-  line-height: 140%; /* 25.2px */
+  line-height: 140%;
+  /* 25.2px */
   text-align: center;
 }
 
@@ -1454,6 +1497,7 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom {
 .topVisibleContainer {
   transform: translate(-55%, -50%);
 }
+
 .bottomVisibleContainer {
   transform: translate(-55%, 250%);
 }
@@ -1561,7 +1605,8 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom {
   font-size: 48px;
   font-style: normal;
   font-weight: 600;
-  line-height: 140%; /* 67.2px */
+  line-height: 140%;
+  /* 67.2px */
   text-transform: capitalize;
 }
 
@@ -1612,8 +1657,10 @@ li.huListTransitionWrapper.hasDropdown .listHoverBottom {
   background-color: rgba(0, 0, 0, 0.4);
   top: 0;
   width: 100%;
-  height: 100vh; /* Equivalent to h-screen in Tailwind CSS */
+  height: 100vh;
+  /* Equivalent to h-screen in Tailwind CSS */
 }
+
 .popup {
   position: fixed;
   z-index: 20;
@@ -1983,8 +2030,7 @@ option {
     font-size: 11px;
   }
 
-  .footerContactTextDetails p {
-  }
+  .footerContactTextDetails p {}
 
   .footerSocialContainer {
     margin-top: 30px;
@@ -2036,7 +2082,8 @@ option {
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
-    line-height: 140%; /* 33.6px */
+    line-height: 140%;
+    /* 33.6px */
     text-transform: capitalize;
   }
 
@@ -2071,7 +2118,8 @@ option {
     color: #02040e;
     font-style: normal;
     font-weight: 600;
-    line-height: 140%; /* 56px */
+    line-height: 140%;
+    /* 56px */
     text-transform: capitalize;
     margin-bottom: 20px;
     text-align: left !important;
@@ -2200,15 +2248,19 @@ option {
   0% {
     transform: scale(1);
   }
+
   25% {
     transform: scale(1.1 rotate(20deg));
   }
+
   50% {
     transform: scale(1);
   }
+
   75% {
     transform: scale(1.1) rotate(20deg);
   }
+
   100% {
     transform: scale(1);
   }
@@ -2295,8 +2347,7 @@ option {
 .scroller[data-animated="true"] .scroller__inner {
   width: max-content;
   flex-wrap: nowrap;
-  animation: scroll var(--_animation-duration, 40s)
-    var(--_animation-direction, forwards) linear infinite;
+  animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite;
 }
 
 .scroller[data-direction="right"] {
@@ -2330,7 +2381,8 @@ option {
     font-size: 5.799vw !important;
     font-style: normal;
     font-weight: 600;
-    line-height: 140%; /* 33.6px */
+    line-height: 140%;
+    /* 33.6px */
     text-transform: capitalize;
   }
 
@@ -2412,7 +2464,8 @@ option {
     font-size: 16px !important;
     font-style: normal;
     font-weight: 500;
-    line-height: 140%; /* 22.4px */
+    line-height: 140%;
+    /* 22.4px */
   }
 
   .dropDownArrow {
@@ -2433,6 +2486,7 @@ option {
   .mhuList {
     margin: 0;
   }
+
   #white-screen {
     position: fixed;
     top: 0;
@@ -2440,10 +2494,12 @@ option {
     width: 100%;
     height: 100vh;
     background-color: white;
-    z-index: 9999; /* Make sure it's on top of other content */
+    z-index: 9999;
+    /* Make sure it's on top of other content */
     /* You can also add transitions for a smoother effect */
     transition: opacity 1s ease-in-out;
-    opacity: 1; /* Initially visible */
+    opacity: 1;
+    /* Initially visible */
     overflow: hidden;
   }
 
@@ -2495,6 +2551,7 @@ option {
 
   .MobilehImage {
     display: block;
+    filter: brightness(0.6);
   }
 
   .heroDescContainer {
@@ -2508,7 +2565,8 @@ option {
     font-size: 8.835432vw;
     font-style: normal;
     font-weight: 600;
-    line-height: 120%; /* 43.2px */
+    line-height: 120%;
+    /* 43.2px */
     text-transform: capitalize;
     margin-top: -0px;
   }
@@ -2525,7 +2583,8 @@ option {
 
     font-style: normal;
     font-weight: 400;
-    line-height: 140%; /* 16.8px */
+    line-height: 140%;
+    /* 16.8px */
   }
 
   .locationContainer {
@@ -2579,7 +2638,8 @@ option {
     text-align: center;
     font-style: normal;
     font-weight: 600;
-    line-height: 140%; /* 56px */
+    line-height: 140%;
+    /* 56px */
     text-transform: capitalize;
   }
 
@@ -2646,7 +2706,8 @@ option {
     text-align: center;
     font-style: normal;
     font-weight: 600;
-    line-height: 140%; /* 56px */
+    line-height: 140%;
+    /* 56px */
     text-transform: capitalize;
   }
 
@@ -2781,7 +2842,8 @@ option {
     color: #02040e;
     font-style: normal;
     font-weight: 600;
-    line-height: 140%; /* 56px */
+    line-height: 140%;
+    /* 56px */
     text-transform: capitalize;
     margin-bottom: 20px;
     text-align: left !important;
@@ -2889,7 +2951,7 @@ option {
     gap: 10px;
   }
 
-  .blogsContainer > div:nth-child(3) {
+  .blogsContainer>div:nth-child(3) {
     margin-top: 0px;
   }
 
@@ -3012,7 +3074,8 @@ option {
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 140%; /* 19.6px */
+    line-height: 140%;
+    /* 19.6px */
   }
 
   .contactContainer .contactImageButton {
@@ -3067,8 +3130,7 @@ option {
     font-size: 11px;
   }
 
-  .footerContactTextDetails p {
-  }
+  .footerContactTextDetails p {}
 
   .footerSocialContainer {
     margin-top: 30px;
@@ -3107,7 +3169,8 @@ option {
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
-    line-height: 140%; /* 33.6px */
+    line-height: 140%;
+    /* 33.6px */
     text-transform: capitalize;
   }
 
@@ -3198,6 +3261,7 @@ option {
     z-index: 50;
     background-color: rgba(0, 0, 0, 0.8);
   }
+
   .popup {
     z-index: 100;
     border: #02040e;
@@ -3319,7 +3383,8 @@ option {
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
-  line-height: 120%; /* 28.8px */
+  line-height: 120%;
+  /* 28.8px */
   text-transform: capitalize;
 }
 
@@ -3341,7 +3406,8 @@ option {
   bottom: 0;
   width: 10px;
   height: 50%;
-  background: #13670b; /* Use the bar color directly */
+  background: #13670b;
+  /* Use the bar color directly */
   transform-origin: center bottom;
   box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
 }
@@ -3382,7 +3448,8 @@ option {
   left: 0;
   width: 10px;
   height: 10px;
-  background: #13670b; /* Use the ball color directly */
+  background: #13670b;
+  /* Use the ball color directly */
   border-radius: 50%;
   animation: ball 4s infinite;
 }
@@ -3391,57 +3458,75 @@ option {
   0% {
     transform: translate(0, 0);
   }
+
   5% {
     transform: translate(8px, -14px);
   }
+
   10% {
     transform: translate(15px, -10px);
   }
+
   17% {
     transform: translate(23px, -24px);
   }
+
   20% {
     transform: translate(30px, -20px);
   }
+
   27% {
     transform: translate(38px, -34px);
   }
+
   30% {
     transform: translate(45px, -30px);
   }
+
   37% {
     transform: translate(53px, -44px);
   }
+
   40% {
     transform: translate(60px, -40px);
   }
+
   50% {
     transform: translate(60px, 0);
   }
+
   57% {
     transform: translate(53px, -14px);
   }
+
   60% {
     transform: translate(45px, -10px);
   }
+
   67% {
     transform: translate(37px, -24px);
   }
+
   70% {
     transform: translate(30px, -20px);
   }
+
   77% {
     transform: translate(22px, -34px);
   }
+
   80% {
     transform: translate(15px, -30px);
   }
+
   87% {
     transform: translate(7px, -44px);
   }
+
   90% {
     transform: translate(0, -40px);
   }
+
   100% {
     transform: translate(0, 0);
   }
@@ -3451,74 +3536,95 @@ option {
   0% {
     transform: scale(1, 0.2);
   }
+
   40% {
     transform: scale(1, 0.2);
   }
+
   50% {
     transform: scale(1, 1);
   }
+
   90% {
     transform: scale(1, 1);
   }
+
   100% {
     transform: scale(1, 0.2);
   }
 }
+
 @keyframes barUp2 {
   0% {
     transform: scale(1, 0.4);
   }
+
   40% {
     transform: scale(1, 0.4);
   }
+
   50% {
     transform: scale(1, 0.8);
   }
+
   90% {
     transform: scale(1, 0.8);
   }
+
   100% {
     transform: scale(1, 0.4);
   }
 }
+
 @keyframes barUp3 {
   0% {
     transform: scale(1, 0.6);
   }
+
   100% {
     transform: scale(1, 0.6);
   }
 }
+
 @keyframes barUp4 {
   0% {
     transform: scale(1, 0.8);
   }
+
   40% {
     transform: scale(1, 0.8);
   }
+
   50% {
     transform: scale(1, 0.4);
   }
+
   90% {
     transform: scale(1, 0.4);
   }
+
   100% {
     transform: scale(1, 0.8);
   }
 }
+
 @keyframes barUp5 {
   0% {
     transform: scale(1, 1);
   }
+
   40% {
     transform: scale(1, 1);
   }
+
   50% {
     transform: scale(1, 0.2);
   }
+
   90% {
     transform: scale(1, 0.2);
   }
+
   100% {
     transform: scale(1, 1);
   }
@@ -3547,20 +3653,24 @@ option {
 }
 
 @keyframes pulsar {
+
   0%,
   100% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.1);
   }
 }
 
 @keyframes shrink {
+
   0%,
   100% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(0.7);
   }

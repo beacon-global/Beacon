@@ -11,17 +11,12 @@ const MobileHeader = dynamic(() => import("@/app/components/MobileHeader"));
 const Footer = dynamic(() => import("@/app/components/Footer"));
 
 function Contact() {
-  const [showUAECard, setShowUAECard] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
-  const toggleUAECard = (buttonName) => {
-    if (
-      (buttonName === "uae" && !showUAECard) ||
-      (buttonName === "ksa" && showUAECard)
-    ) {
-      // Only toggle the card if the clicked button's state is different
-      setShowUAECard(!showUAECard);
-    }
+  const [activeCard, setActiveCard] = useState("ksa");
+
+  const toggleCard = (buttonName) => {
+    setActiveCard(buttonName);
   };
 
   const [formData, setFormData] = useState({
@@ -74,33 +69,165 @@ function Contact() {
         <div className={styles.container1}>
           <div className={styles.loctaionButtonContainer}>
             <button
-              className={`${styles.ksa} ${!showUAECard && styles.btnActive}`}
-              onClick={() => toggleUAECard("ksa")}
-            >
-              Saudi arabia
-            </button>
-            <button
-              className={`${styles.uae} ${showUAECard && styles.btnActive}`}
-              onClick={() => toggleUAECard("uae")}
-            >
-              United Arab Emirates
-            </button>
-            <button
-              className={`${styles.uae} ${styles.mUae} ${
-                showUAECard && styles.btnActive
+              className={`${styles.ksa} ${
+                activeCard === "ksa" && styles.btnActive
               }`}
-              onClick={() => toggleUAECard("uae")}
+              onClick={() => toggleCard("ksa")}
+            >
+              Saudi Arabia
+            </button>
+            <button
+              className={`${styles.ksa} ${
+                activeCard === "uae" && styles.btnActive
+              }`}
+              onClick={() => toggleCard("uae")}
             >
               UAE
             </button>
+            <button
+              className={`${styles.ksa} ${
+                activeCard === "bahrain" && styles.btnActive
+              }`}
+              onClick={() => toggleCard("bahrain")}
+            >
+              Bahrain
+            </button>
+            <button
+              className={`${styles.ksa} ${
+                activeCard === "qatar" && styles.btnActive
+              }`}
+              onClick={() => toggleCard("qatar")}
+            >
+              Qatar
+            </button>
           </div>
 
-          {showUAECard ? (
+          {activeCard === "ksa" && (
             <div className={styles.contactMainCard}>
-              <a href="https://maps.app.goo.gl/LEiVynHhrTepAcWw9 ">
-                <div
-                  className={`${styles.contactCard} ${styles.contactCardUAE}`}
-                >
+              <div className={styles.contactCard}>
+                <a href="https://maps.app.goo.gl/UzvX5K7o9c3Cepmx9">
+                  <div className={styles.contactImgContainer}>
+                    <Image
+                      src="/NewSvgs/SVG2/Group7.svg"
+                      width={72}
+                      height={72}
+                      alt="contactLocactionIcon"
+                    />
+                  </div>
+                  <div className={styles.contactCardContents}>
+                    <h1 className={`${styles.jeddah} servicesHeading`}>
+                      JEDDAH
+                    </h1>
+                    <p className={styles.cardDesc}>
+                      Building no. 4626, 501, 5th Floor, Hamza Shehatah St.
+                      Al-Baghdadiyah Al-Gharbiyah Jeddah 22235
+                    </p>
+                  </div>
+                </a>
+                <div className={styles.numberContainer}>
+                  <a href="tel:966 570 807 175">
+                    + 966 570 807 175
+                    <br /> + 966 539 067 414
+                    <br /> + 966 531 170 957
+                  </a>
+                </div>
+              </div>
+
+              <div className={styles.contactCard}>
+                <a href="https://maps.app.goo.gl/Vk3noguNHKx7GrMD8">
+                  <div className={styles.contactImgContainer}>
+                    <Image
+                      src="/NewSvgs/SVG2/Group7.svg"
+                      width={72}
+                      height={72}
+                      alt="contactLocactionIcon"
+                    />
+                  </div>
+                  <div className={styles.contactCardContents}>
+                    <h1 className={`${styles.jeddah} servicesHeading`}>
+                      DAMMAM
+                    </h1>
+                    <p className={styles.cardDesc}>
+                      Building no. 7447, B31, 3rd Floor, Al-Thasih St.
+                      Al-Amamrah, 8th street Dammam <br />
+                      32415
+                    </p>
+                  </div>
+                </a>
+                <div className={styles.numberContainer}>
+                  <a href="tel:966 566 416 774">
+                    + 966 566 416 774
+                    <br /> + 966 539 067 414
+                    <br /> + 966 531 170 957
+                  </a>
+                </div>
+              </div>
+
+              <div className={styles.contactCard}>
+                <a href="https://maps.app.goo.gl/vWfGvAjAcHxV9AUT9">
+                  <div className={styles.contactImgContainer}>
+                    <Image
+                      src="/NewSvgs/SVG2/Group7.svg"
+                      width={72}
+                      height={72}
+                      alt="contactLocactionIcon"
+                    />
+                  </div>
+                  <div className={styles.contactCardContents}>
+                    <h1 className={`${styles.jeddah} servicesHeading`}>
+                      Riyadh
+                    </h1>
+                    <p className={styles.cardDesc}>
+                      Le Cygne Commercial Center 2, 6th FloorAl-Arz,
+                      Al-Olaya,Riyadh <br /> 12611
+                    </p>
+                  </div>
+                </a>
+                <div className={styles.numberContainer}>
+                  <a href="tel:966 540 599 655">
+                    + 966 540 599 655
+                    <br /> + 966 539 067 414
+                    <br /> + 966 531 170 957
+                  </a>
+                </div>
+              </div>
+
+              <div className={styles.contactCard}>
+                <a href="https://maps.app.goo.gl/UzvX5K7o9c3Cepmx9">
+                  <div className={styles.contactImgContainer}>
+                    <Image
+                      src="/NewSvgs/SVG2/Group7.svg"
+                      width={72}
+                      height={72}
+                      alt="contactLocactionIcon"
+                    />
+                  </div>
+                  <div className={styles.contactCardContents}>
+                    <h1 className={`${styles.jeddah} servicesHeading`}>
+                      Jazan
+                    </h1>
+                    <p className={styles.cardDesc}>
+                      Room No: 05, 4th Floor Makhtha 6, Prince Muhammed bin
+                      Abdulaziz St. Ash Shati District. Jazan 82812
+                    </p>
+                  </div>
+                </a>
+
+                <div className={styles.numberContainer}>
+                  <a href="tel:966 570 807 175">
+                    + 966 563144588
+                    <br /> + 966 539 067 414
+                    <br /> + 966 531 170 957
+                  </a>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {activeCard === "uae" && (
+            <div className={styles.contactMainCard}>
+              <div className={`${styles.contactCard} ${styles.contactCardUAE}`}>
+                <a href="https://maps.app.goo.gl/xt6jVWFhQ3srs2ua8">
                   <div className={styles.contactImgContainer}>
                     <Image
                       src="/NewSvgs/SVG2/Group7.svg"
@@ -118,15 +245,138 @@ function Contact() {
                       Port Saeed Deira, Dubai, UAE
                     </p>
                   </div>
-                  <div className={styles.numberContainer}>
-                    <a href="tel:971 568 352 250">
-                      + 971 568 352 250
-                      <br />+ 971 502 574 396
-                      <br /> + 971 488 324 58
-                    </a>
-                  </div>
+                </a>
+                <div className={styles.numberContainer}>
+                  <a href="tel:971 568 352 250">
+                    + 971 568 352 250
+                    <br />+ 971 502 574 396
+                    <br /> + 971 488 324 58
+                  </a>
                 </div>
-              </a>
+              </div>
+            </div>
+          )}
+
+          {activeCard === "bahrain" && (
+            <div className={styles.contactMainCard}>
+              <div className={`${styles.contactCard} ${styles.contactCardUAE}`}>
+                <a href="https://maps.app.goo.gl/vTsbDFuitEtWHyJJA">
+                  <div className={styles.contactImgContainer}>
+                    <Image
+                      src="/NewSvgs/SVG2/Group7.svg"
+                      width={72}
+                      height={72}
+                      alt="contactLocactionIcon"
+                    />
+                  </div>
+                  <div className={styles.contactCardContents}>
+                    <h1 className={`${styles.jeddah} servicesHeading`}>
+                      Bahrain
+                    </h1>
+                    <p className={styles.cardDesc}>
+                      Office 132, RA 58 Tower. Manama Diplomatic Area, Bahrain
+                    </p>
+                  </div>
+                </a>
+                <div className={styles.numberContainer}>
+                  <a href="tel:973 3312 9709">
+                    +973 3312 9709
+                    <br />+ 971 502 574 396
+                    <br /> + 971 488 324 58
+                  </a>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {activeCard === "qatar" && (
+            <div className={styles.contactMainCard}>
+              <div className={`${styles.contactCard} ${styles.contactCardUAE}`}>
+                <a href="https://maps.app.goo.gl/eCZTsSBdDDgq64iD8">
+                  <div className={styles.contactImgContainer}>
+                    <Image
+                      src="/NewSvgs/SVG2/Group7.svg"
+                      width={72}
+                      height={72}
+                      alt="contactLocactionIcon"
+                    />
+                  </div>
+                  <div className={styles.contactCardContents}>
+                    <h1 className={`${styles.jeddah} servicesHeading`}>
+                      Qatar
+                    </h1>
+                    <p className={styles.cardDesc}>
+                      Street 820 Emrair Street, 8 Corniche, Doha, Qatar
+                    </p>
+                  </div>
+                </a>
+                <div className={styles.numberContainer}>
+                  <a href="tel:974 7744 9644">
+                    +974 7744 9644
+                    <br />+ 971 502 574 396
+                    <br /> + 971 488 324 58
+                  </a>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* {showUAECard ? (
+            <div className={styles.contactMainCard}>
+              <div className={`${styles.contactCard} ${styles.contactCardUAE}`}>
+                <div className={styles.contactImgContainer}>
+                  <Image
+                    src="/NewSvgs/SVG2/Group7.svg"
+                    width={72}
+                    height={72}
+                    alt="contactLocactionIcon"
+                  />
+                </div>
+                <div className={styles.contactCardContents}>
+                  <h1 className={`${styles.jeddah} servicesHeading`}>DUBAI</h1>
+                  <p className={styles.cardDesc}>
+                    Office #39, 7th Floor, Dubai National Insurance Building.
+                    Port Saeed Deira, Dubai, UAE
+                  </p>
+                </div>
+                <div className={styles.numberContainer}>
+                  <a href="tel:971 568 352 250">
+                    + 971 568 352 250
+                    <br />+ 971 502 574 396
+                    <br /> + 971 488 324 58
+                  </a>
+                </div>
+              </div>
+            </div>
+          ) : showBahCard ? (
+            <div className={styles.contactMainCard}>
+              <div className={`${styles.contactCard} ${styles.contactCardUAE}`}>
+                <a href="https://maps.app.goo.gl/vTsbDFuitEtWHyJJA">
+                  <div className={styles.contactImgContainer}>
+                    <Image
+                      src="/NewSvgs/SVG2/Group7.svg"
+                      width={72}
+                      height={72}
+                      alt="contactLocactionIcon"
+                    />
+                  </div>
+                  <div className={styles.contactCardContents}>
+                    <h1 className={`${styles.jeddah} servicesHeading`}>
+                      Bahrain
+                    </h1>
+                    <p className={styles.cardDesc}>
+                      Office 132, RA 58 Tower. Manama Diplomatic Area, Bahrain
+                    </p>
+                  </div>
+                </a>
+                <div className={styles.numberContainer}>
+                  <a href="tel:973 3312 9709">
+                    +973 3312 9709
+                    <br />+ 971 502 574 396
+                    <br /> + 971 488 324 58
+                  </a>
+                </div>
+              </div>
             </div>
           ) : (
             <div className={styles.contactMainCard}>
@@ -248,7 +498,7 @@ function Contact() {
                 </div>
               </div>
             </div>
-          )}
+          )} */}
         </div>
 
         <div className={styles.container2}>
