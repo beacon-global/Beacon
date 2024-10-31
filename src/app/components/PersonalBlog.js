@@ -30,7 +30,7 @@ const PersonalBlog = ({ blogPage, isInnerPage = false }) => {
         }`
       )
       .then((data) => {
-        console.log(data, "Sanity data");
+        // console.log(data, "Sanity data");
         setBlogData(data);
       })
       .catch((err) => {
@@ -51,7 +51,6 @@ const PersonalBlog = ({ blogPage, isInnerPage = false }) => {
     );
   };
 
-  console.log(blogPage, "blogPage");
   const blogsToDisplay = blogPage
     ? blogData !== null && blogData
     : blogData !== null && !isInnerPage

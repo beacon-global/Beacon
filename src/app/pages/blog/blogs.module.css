@@ -322,4 +322,10 @@
     font-size: 3.733333333333334vw;
     margin-bottom: 0;
   }
+
+  .mainHeading {
+    font-size: 4.8vw;
+    margin-bottom: 3.2vw;
+    font-weight: 600;
+  }
 }

@@ -24,7 +24,7 @@ function Blogs({ blogPage }) {
     fetchData();
   }, []);
 
-  console.log(blogData,"fkdslajjfklas");
+  // console.log(blogData,"blogs are here");
 
 
   const imageSrc = isHovered ? "/whiteArrow.svg" : "/blackArrow.svg";
@@ -55,7 +55,7 @@ function Blogs({ blogPage }) {
                   search: `?search=${JSON.stringify(data)}`,
                 }}
                 target="_blank"
-                 onClick={() => console.log("Link clicked:")}
+                //  onClick={() => console.log("Link clicked:")}
               >
                 <div className="cardContainer">
                   <div className="imgContainer">
