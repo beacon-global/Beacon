@@ -15,7 +15,7 @@ function Header() {
     { text: "About Us", href: "/pages/About/" },
     { text: "Services", href: "/pages/Services/" },
     { text: "Blogs", href: "/pages/blog/" },
-    { text: "Careers", href: "/pages/Careers/" },
+    // { text: "Careers", href: "/pages/Careers/" },
     { text: "Contact Us", href: "/pages/Contact/" },
   ];
 

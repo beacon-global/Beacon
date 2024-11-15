@@ -195,7 +195,7 @@ function MobileHeader() {
           >
             Blogs
           </a>
-          <a
+          {/* <a
             href="/pages/Careers"
             style={{ textDecoration: "none", color: "#333", fontSize: "1rem" }}
             className="mLinks"
@@ -208,7 +208,7 @@ function MobileHeader() {
             className="mLinks"
           >
             Partners
-          </a>
+          </a> */}
           <a
             href="/pages/Contact"
             style={{ textDecoration: "none", color: "#333", fontSize: "1rem" }}

@@ -34,9 +34,9 @@ function Footer() {
             <a href="pages/blog/">
               <p>Blogs</p>
             </a>
-            <a href="/pages/Partners">
+            {/* <a href="/pages/Partners">
               <p>Partners</p>
-            </a>
+            </a> */}
             <a href="/pages/Careers">
               <p>Careers</p>
             </a>
