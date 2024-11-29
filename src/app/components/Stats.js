@@ -22,19 +22,19 @@ function Stats({ useBackgroundImage, isMainPage }) {
       // Set the background image URL based on the width
       const newBackgroundImageUrl =
         width >= 600 ? largeBackgroundImageUrl : smallBackgroundImageUrl;
-        const newPadding =
+      const newPadding =
         isMainPage && width >= 1280
           ? mainPagePadding
           : isMainPage && width < 600
-          ? "54px 45px"
-          : !isMainPage && width >= 1280
-          ? aboutPagePadding
-          : !isMainPage && width < 600
-          ? "30px 45px"
-          : isMainPage && width < 1280
-          ? "50px 30px" 
-          : !isMainPage && width < 1280 
-          ? "50px 30px" : "50px 30px";
+            ? "54px 45px"
+            : !isMainPage && width >= 1280
+              ? aboutPagePadding
+              : !isMainPage && width < 600
+                ? "30px 45px"
+                : isMainPage && width < 1280
+                  ? "50px 30px"
+                  : !isMainPage && width < 1280
+                    ? "50px 30px" : "50px 30px";
 
       // Update the background image URL only if it has changed
       if (newBackgroundImageUrl !== backgroundImageUrl) {
@@ -68,8 +68,8 @@ function Stats({ useBackgroundImage, isMainPage }) {
 
             const finalCounts = {
               count1: 1000, // Your final values here
-              count2: 500,
-              count3: 3,
+              count2: 50,
+              count3: 4,
               count4: 7,
             };
 
@@ -104,7 +104,7 @@ function Stats({ useBackgroundImage, isMainPage }) {
     let start = 0;
     const interval = setInterval(() => {
       if (start < end) {
-        if (id === "count1" || id === "count2") {
+        if (id === "count1") {
           start += 10; // Increase by 10 for count1 and count2
         } else {
           start += step; // Increase by 1 for others
@@ -133,11 +133,11 @@ function Stats({ useBackgroundImage, isMainPage }) {
       <div className="statsContiner">
         <div className="statContainer">
           <h1>{count1}+</h1>
-          <p>Projects Completed</p>
+          <p>Happy Clients</p>
         </div>
         <div className="statContainer">
           <h1>{count2}+</h1>
-          <p>Happy Clients</p>
+          <p>Employees</p>
         </div>
         <div className="statContainer">
           <h1>{count3}+</h1>
