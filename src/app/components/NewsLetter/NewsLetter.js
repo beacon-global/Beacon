@@ -23,7 +23,10 @@ const NewsLetter = () => {
 
     const templateParams = {
       email: email,
+      clickedpopupname: "Newsletter"
     };
+
+    console.log(templateParams, "fdksljksl");
 
     emailjs
       .send(
@@ -78,8 +81,8 @@ const NewsLetter = () => {
               {isLoading
                 ? "Loading..."
                 : submissionStatus === "Subscribed successfully."
-                ? "Subscribed"
-                : "Subscribe"}
+                  ? "Subscribed"
+                  : "Subscribe"}
             </div>
           </div>
           {submissionStatus && (
