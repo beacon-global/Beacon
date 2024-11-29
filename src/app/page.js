@@ -23,12 +23,12 @@ export default function Home() {
   const textOptions = ["Growth", "Success", "Strategy", "Expansion"];
   const [showPopup, setShowPopup] = useState(false);
 
-  // useEffect(() => {
-  //   const timeoutId = setTimeout(() => {
-  //     setShowPopup(true);
-  //   }, 5000);
-  //   return () => clearTimeout(timeoutId);
-  // }, []);
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setShowPopup(true);
+    }, 5000);
+    return () => clearTimeout(timeoutId);
+  }, []);
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {

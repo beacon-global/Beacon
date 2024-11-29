@@ -28,11 +28,16 @@ function Popup({ setShowPopup, heading, page }) {
 
   const handleSubmit = () => {
     setIsLoading(true);
+
+    const transfromData = { ...formData, clickedpopupname: heading ? heading : "Get your free consultation" }
+
+    console.log(transfromData, "transformData");
+
     emailjs
       .send(
         "service_7uemjx7",
         "template_q4oug1a",
-        formData,
+        transfromData,
         "csDBhWE6hOKzpnV3K"
       )
       .then(
@@ -71,7 +76,8 @@ function Popup({ setShowPopup, heading, page }) {
     <>
       <div className="backgrounddim"></div>
       <div className="popup">
-        <div className="closeButton" onClick={() => setShowPopup(false)}>
+        <div className="closeButton" onClick={() => setShowPopup(false)}
+          style={{ cursor: "pointer", position: "absolute", zIndex: "999" }}>
           <img src="/close-b.svg" alt="close button" className="closeImage" />
         </div>
         <div className="imageForm">
@@ -80,17 +86,18 @@ function Popup({ setShowPopup, heading, page }) {
               page === "Partners"
                 ? "/form2.png"
                 : page === "ebook"
-                ? "/form3.png"
-                : "/Form.webp"
+                  ? "/form3.png"
+                  : "/Form.webp"
             }
             alt="popup image"
             className="popupImage"
           />
         </div>
-        <div className="popupForm">
+        <div className="popupForm" style={{ position: "relative" }}>
           <p className="popupheading">
             {heading ? heading : "Get your free consultation"}
           </p>
+
           <input
             type="text"
             name="name"
@@ -112,7 +119,14 @@ function Popup({ setShowPopup, heading, page }) {
             className="inputBoxF"
             onChange={handleChange}
           />
-          <div className="select-wrapper">
+          <input
+            type="text"
+            name="companylocation"
+            placeholder="Company Location"
+            className="inputBoxF"
+            onChange={handleChange}
+          />
+          {/* <div className="select-wrapper">
             <select
               name="country"
               className="inputBoxF"
@@ -128,13 +142,13 @@ function Popup({ setShowPopup, heading, page }) {
               <option value="KUWAIT">KUWAIT</option>
               <option value="OMAN">OMAN</option>
             </select>
-          </div>
+          </div> */}
           <div className="subButton" onClick={handleSubmit}>
             {isLoading
               ? "Downloading..."
               : page === "ebook"
-              ? "Download Ebook"
-              : "Book Now"}
+                ? "Download Ebook"
+                : "Book Now"}
           </div>
         </div>
       </div>
