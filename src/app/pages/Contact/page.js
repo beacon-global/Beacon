@@ -29,7 +29,7 @@ function Contact() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    setFormData({ ...formData, [name]: value, website: "Beacon Global" });
   };
 
   const handleSubmit = (e) => {
@@ -69,33 +69,29 @@ function Contact() {
         <div className={styles.container1}>
           <div className={styles.loctaionButtonContainer}>
             <button
-              className={`${styles.ksa} ${
-                activeCard === "ksa" && styles.btnActive
-              }`}
+              className={`${styles.ksa} ${activeCard === "ksa" && styles.btnActive
+                }`}
               onClick={() => toggleCard("ksa")}
             >
               Saudi Arabia
             </button>
             <button
-              className={`${styles.ksa} ${
-                activeCard === "uae" && styles.btnActive
-              }`}
+              className={`${styles.ksa} ${activeCard === "uae" && styles.btnActive
+                }`}
               onClick={() => toggleCard("uae")}
             >
               UAE
             </button>
             <button
-              className={`${styles.ksa} ${
-                activeCard === "bahrain" && styles.btnActive
-              }`}
+              className={`${styles.ksa} ${activeCard === "bahrain" && styles.btnActive
+                }`}
               onClick={() => toggleCard("bahrain")}
             >
               Bahrain
             </button>
             <button
-              className={`${styles.ksa} ${
-                activeCard === "qatar" && styles.btnActive
-              }`}
+              className={`${styles.ksa} ${activeCard === "qatar" && styles.btnActive
+                }`}
               onClick={() => toggleCard("qatar")}
             >
               Qatar
@@ -396,18 +392,16 @@ function Contact() {
                 <div className="flex !w-full flex-col relative overflow-hidden text-sm md:text-lg font-medium">
                   <div className={`flex !w-full flex-row `}>
                     <p
-                      className={`text-white  ease-in-out duration-300 ${
-                        isHovered && "-translate-y-[150%]"
-                      } `}
+                      className={`text-white  ease-in-out duration-300 ${isHovered && "-translate-y-[150%]"
+                        } `}
                     >
                       Send Message
                     </p>
                   </div>
                   <div className="flex flex-row !w-full absolute bottom-0">
                     <p
-                      className={`text-white ease-in-out duration-300 ${
-                        isHovered ? "-translate-y-0" : "translate-y-[150%] "
-                      } `}
+                      className={`text-white ease-in-out duration-300 ${isHovered ? "-translate-y-0" : "translate-y-[150%] "
+                        } `}
                     >
                       Send Message
                     </p>
