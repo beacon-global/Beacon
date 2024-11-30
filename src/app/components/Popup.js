@@ -29,7 +29,7 @@ function Popup({ setShowPopup, heading, page }) {
   const handleSubmit = () => {
     setIsLoading(true);
 
-    const transfromData = { ...formData, clickedpopupname: heading ? heading : "Get your free consultation" }
+    const transfromData = { ...formData, clickedpopupname: heading ? heading : "Book a call with us", website: "Beacon Global" }
 
     console.log(transfromData, "transformData");
 
@@ -95,7 +95,7 @@ function Popup({ setShowPopup, heading, page }) {
         </div>
         <div className="popupForm" style={{ position: "relative" }}>
           <p className="popupheading">
-            {heading ? heading : "Get your free consultation"}
+            {heading ? heading : "Book a call with us"}
           </p>
 
           <input
@@ -121,8 +121,8 @@ function Popup({ setShowPopup, heading, page }) {
           />
           <input
             type="text"
-            name="companylocation"
-            placeholder="Company Location"
+            name="companyname"
+            placeholder="Company Name"
             className="inputBoxF"
             onChange={handleChange}
           />
