@@ -29,17 +29,20 @@ function Contact() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value, website: "Beacon Global" });
+    setFormData({ ...formData, [name]: value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    const transformData = { ...formData, website: "https://www.beaconarabia.com/" }
+
+
     emailjs
-      .sendForm(
+      .send(
         emailjsConfig.serviceId,
         emailjsConfig.templateId,
-        e.target,
+        transformData,
         emailjsConfig.userId
       )
       .then((response) => {
