@@ -100,7 +100,7 @@ function Header() {
             </ul>
           </div>
         </div>
-        <a href="tel:966 570 807 175">
+        <a href="tel:971 527 733 789">
           <div className="hButtonContainer headerContactButton">
             <div className="visibleWrapperContainer">
               <div className="topVisibleContainer btn">
@@ -110,7 +110,7 @@ function Header() {
                   height={18}
                   alt="heroContact"
                 />
-                + 966 570 807 175
+                + 971 527 733 789
               </div>
               <div className="bottomVisibleContainer btn">
                 <Image

@@ -220,7 +220,7 @@ const page = () => {
                     Services.
                     <bdt className="block-component" /> If you still have any
                     questions or concerns, please contact us at{" "}
-                    <bdt className="question">info@beaconarabia.com</bdt>.
+                    <bdt className="question">mail@beaconarabia.com</bdt>.
                   </span>
                 </span>
               </span>
@@ -2924,7 +2924,7 @@ const page = () => {
                                                           <span data-custom-class="body_text">
                                                             <bdt className="block-component" />
                                                             <bdt className="question">
-                                                              info@beaconarabia.com
+                                                              mail@beaconarabia.com
                                                             </bdt>
                                                             <bdt className="else-block" />
                                                           </span>
@@ -3584,7 +3584,7 @@ const page = () => {
                                                       privacy rights, you may
                                                       email us at{" "}
                                                       <bdt className="question">
-                                                        info@beaconarabia.com
+                                                        mail@beaconarabia.com
                                                       </bdt>
                                                       .
                                                     </span>
@@ -3991,7 +3991,7 @@ const page = () => {
                                                             </bdt>
                                                             email us at{" "}
                                                             <bdt className="question">
-                                                              info@beaconarabia.com
+                                                              mail@beaconarabia.com
                                                               or&nbsp;
                                                             </bdt>
                                                             <bdt className="statement-end-if-in-editor">

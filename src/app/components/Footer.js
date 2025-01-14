@@ -61,10 +61,10 @@ function Footer() {
             <div className="footerContactTextDetails footerContactTextDetailsEmail">
               <h1>Email us:</h1>
               <a
-                href="mailto:info@beaconarabia.com"
+                href="mailto:mail@beaconarabia.com"
                 style={{ textTransform: "none" }}
               >
-                info@beaconarabia.com
+                mail@beaconarabia.com
               </a>
             </div>
           </div>
@@ -83,10 +83,10 @@ function Footer() {
               style={{ whiteSpace: "nowrap" }}
             >
               <h1>Call us on:</h1>
-              <a href="tel:966 570 807 175">
+              <a href="tel:971 527 733 789">
                 <p>
                   + 966 570 807 175
-                  <br /> + 971 568 352 250
+                  <br /> + 971 527 733 789
                 </p>
               </a>
             </div>
@@ -113,7 +113,7 @@ function Footer() {
           </div>
         </div>
         <div className="footerSocialContainer">
-          <a href="https://wa.me/+971568352250" target="_blank">
+          <a href="https://wa.me/+971527733789" target="_blank">
             <Image
               quality={100}
               priority={true}
