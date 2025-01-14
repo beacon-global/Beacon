@@ -119,7 +119,7 @@ function Header() {
                   height={18}
                   alt="heroContact"
                 />
-                + 966 570 807 175
+                + 971 527 733 789
               </div>
             </div>
           </div>
