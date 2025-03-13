@@ -93,13 +93,24 @@ function Clients() {
 
   useEffect(() => {
     const scrollers = document.querySelectorAll(".scroller");
-
+  
     const addAnimation = () => {
       scrollers.forEach((scroller) => {
+        // Force a reflow to ensure proper animation initialization
+        scroller.style.display = 'none';
+        scroller.offsetHeight; // Trigger reflow
+        scroller.style.display = '';
+        
         scroller.setAttribute("data-animated", true);
-
+  
         const scrollerInner = scroller.querySelector(".scroller__inner");
         const scrollerContent = Array.from(scrollerInner.children);
+        
+        // Clear existing cloned elements
+        const existingClones = scrollerInner.querySelectorAll('[aria-hidden="true"]');
+        existingClones.forEach(clone => clone.remove());
+        
+        // Add new clones
         scrollerContent.forEach((item) => {
           const duplicatedItem = item.cloneNode(true);
           duplicatedItem.setAttribute("aria-hidden", true);
@@ -107,12 +118,19 @@ function Clients() {
         });
       });
     };
-
+  
+    // Check if the browser supports smooth animations
     if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      addAnimation();
+      // Add a small delay to ensure proper initialization
+      setTimeout(addAnimation, 100);
     }
-
-    return () => {};
+  
+    return () => {
+      // Cleanup animation when component unmounts
+      scrollers.forEach(scroller => {
+        scroller.removeAttribute("data-animated");
+      });
+    };
   }, []);
 
   return (
