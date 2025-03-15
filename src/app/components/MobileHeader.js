@@ -148,7 +148,7 @@ function MobileHeader() {
             }}
           >
             <a
-              href="https://www.ksa.beaconarabia.com"
+              href="https://ksa.beaconarabia.com"
               target="_blank"
               style={{
                 textDecoration: "none",
