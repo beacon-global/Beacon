@@ -226,7 +226,7 @@ function Contact() {
           {activeCard === "uae" && (
             <div className={styles.contactMainCard}>
               <div className={`${styles.contactCard} ${styles.contactCardUAE}`}>
-                <a href="https://maps.app.goo.gl/xt6jVWFhQ3srs2ua8">
+                <a href="https://g.co/kgs/HQrx35n">
                   <div className={styles.contactImgContainer}>
                     <Image
                       src="/NewSvgs/SVG2/Group7.svg"
