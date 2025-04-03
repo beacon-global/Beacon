@@ -240,8 +240,7 @@ function Contact() {
                       DUBAI
                     </h1>
                     <p className={styles.cardDesc}>
-                      Office #39, 7th Floor, Dubai National Insurance Building.
-                      Port Saeed Deira, Dubai, UAE
+                      Office 10, 341A, 3rd floor, office tower, Al Ghurrair center, Al Rigga Road, Dubai, United Arab Emirates
                     </p>
                   </div>
                 </a>
