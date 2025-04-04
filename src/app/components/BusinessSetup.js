@@ -51,7 +51,7 @@ function BusinessSetup() {
         </div>
 
         <div className="uae">
-          <a href="https://www.uae.beaconarabia.com" target="_blank">
+          <a href="https://uae.beaconarabia.com" target="_blank">
             <Image
               src="/UAE.webp"
               width={586}

@@ -160,7 +160,7 @@ function MobileHeader() {
               Saudi Arabia
             </a>
             <a
-              href="https://www.uae.beaconarabia.com"
+              href="https://uae.beaconarabia.com"
               target="_blank"
               style={{
                 textDecoration: "none",
